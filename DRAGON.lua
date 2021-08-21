@@ -924,7 +924,7 @@ send(msg.chat_id_, msg.id_," ☽ تمت الاذاعه الى *~ "..#list.." ~* 
 database:del(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end
-------by-bebo-- 
+------by-banda--
 if Chat_Type == 'UserBot' then
 if text == 'ukkk' and Dev(msg) then
 if not DevSoFi(msg) then 
@@ -943,14 +943,25 @@ end
 end
 ------by-banda--
 if Chat_Type == 'UserBot' then
-if not DevSoFi(msg) then 
+if not DevSoFi(msg) then
+if text == '/start' or text == 'العوده✨'  then  
+local bl = '›'
+local keyboard = {
+{'قـسم مـطورين الـسورس'},
+{'اسعارالتنصيب'},
+{'اسعار السورسات باكمل الحقوق'},
+{'قـسم الالـعـاب'},
+{'قـسم ممـيزات php'},
+}
+send_inline_key(msg.chat_id_,bl,keyboard)
+end
 if text == "/start" then
 if not DevSoFi(msg) then
-local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
-local DRAGON_Msg = { 
-' 🔵°اهـــلا انا بـوت اسمــي '..Namebot..' ⛓│آختـصاصـي حمايـه آلمجـموعـات ..🥺\n🔵│ مـن آلسـبآم وآلتوجيه وآلتكرآر وآلخ..\n🚸╽ لتفعيل آلبوت آتبــع الشـروط 😈❕\n↫ ❬اضف البوت الى المجموعه❭\n↫ ❬ارفع البوت ادمن في المجموعه❭\n↫ ❬وارسل تفعيل وسيتم تفعيل البوت ورفع مشرفي الكروب تلقائين ❭',
+local Namebot = (database:get(bot_id..'Name:Bot') or 'سون') 
+local BANDA_Msg = { 
+'  🤖╿آهلا انآ بــــوت آســمـي  '..Namebot..' ⛓│آختـصاصـي حمايـه آلمجـموعـات ..🥺\n🛡│ مـن آلسـبآم وآلتوجيه وآلتكرآر وآلخ..\n🚸╽ لتفعيل آلبوت آتبــع الشـروط 😈❕\n↫ ❬اضف البوت الى المجموعه❭\n↫ ❬ارفع البوت ادمن في المجموعه❭\n↫ ❬وارسل تفعيل وسيتم تفعيل البوت ورفع مشرفي الكروب تلقائين ❭',
 } 
-Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
+Namebot = BANDA_Msg[math.random(#BANDA_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -958,7 +969,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = '  اضف البوت الي مجموعتك'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -15353,7 +15364,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ◣: 𝒔𝒕𝒂𓂅 #stast 𓍯➥♡.
-◣: 𝐮𝐬𝐞𝐫𓂅 #username 𓍯➥♡.
+◣: 𝐮𝐬??𝐫𓂅 #username 𓍯➥♡.
 ◣: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➥♡.
 ◣: 𝐢?? 𓂅 #id 𓍯➥♡.
 ◣: 𝗖𝗛 - ↝@Sadauam↜ ☽
