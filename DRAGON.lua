@@ -4606,7 +4606,7 @@ keyboard.inline_keyboard = {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
 {
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ↯' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -12046,8 +12046,8 @@ send(msg.chat_id_, msg.id_,' ☽ لا تستطيع استخدام البوت \n 
 end
 return false
 end
-if num > 1000 then 
-send(msg.chat_id_, msg.id_,' ☽تستطيع التنظيف 1000 رساله كحد اقصى') 
+if num > 1500 then 
+send(msg.chat_id_, msg.id_,' ☽تستطيع التنظيف 1500 رساله كحد اقصى') 
 return false  
 end  
 local msgm = msg.id_
@@ -16023,7 +16023,7 @@ Msᴀɢ ~ #msgs
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
 ⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ🍭
 ⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
-⭐️??𝖉 : #id ـ 🍭
+⭐️???? : #id ـ 🍭
 ⭐️𝗖𝗛 - ↝@S_a_i_d_i↜ ☽
 ]],
 [[
