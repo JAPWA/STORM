@@ -3261,7 +3261,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{{text = '𖣘 𝙹𝙰𝙱𝚆𝙰 𖣘',url="t.me/J_A_B_W_A"},{text = '𖣘 𝚃𝙰𝙷𝙰 𝙾𝚂𝙺𝙰𝚁 𖣘', url="t.me/xxx_ksomk_xxx"}},
+{{text = '𖣘 𝙹𝙰𝙱𝚆𝙰 𖣘',url="t.me/J_A_B_W_A"},{text = '𖣘 𝚃𝙰𝙷𝙰 𝙾𝚂𝙺𝙰𝚁 𖣘', url="t.me/xxx_ksomk_xxx"}},
 {{text = '𖣘 𝚃𝙾 𝙰𝚂𝙺 𖣘',url="t.me/J_a_b_w_a_bot"}}, 
 {{text = '𖣘 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰𝙸𝙳𝙸 𖣘 ', url="t.me/S_a_i_d_i"}},
 {{text = 'اضف البوت الي مجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
@@ -12907,7 +12907,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⦅ 𖣘 𝚂𝙾??𝚁𝙲𝙴 𝚂𝙰𝙸𝙳𝙸 𖣘 ⦆', url="t.me/S_a_i_d_i"}},
+{{text = '⦅ 𖣘 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰𝙸𝙳𝙸 𖣘 ⦆', url="t.me/S_a_i_d_i"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qtdao/16&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
