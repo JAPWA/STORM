@@ -3428,18 +3428,6 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == "غنيلي بفيديو" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(2,22); 
-local Text ='تم اختيار اغنيه بفديو  لك 🌚❤️ ' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '𖣘 𝙹𝙰𝙱𝚆𝙰 𖣘',url="t.me/J_A_B_W_A"}},
-{{text = '𖣘 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰𝙸𝙳𝙸 𖣘',url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 if text == "صور انيمي" or text == 'انيمي' and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,62); 
 local Text ='تم اختيار هذه الصوره لـك 🌚❤️' 
@@ -13565,15 +13553,26 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, 
 end
 
 
-if text == 'رتبتي' then
-local rtp = Rutba(msg.sender_user_id_,msg.chat_id_)
-local function getpro(extra, result, success)
-if result.photos_[0] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_," رتبتك يا قلبي ⇇"..Rutba(msg.sender_user_id_,msg.chat_id_).." 🌚❤️", msg.id_, msg.id_, "md")
-else
-send(msg.chat_id_, msg.id_,'لا تمتلك صوره في حسابك', 1, 'md')
-  end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
+f text == "رتبتي" then
+local msg_id = msg.id_/2097152/0.5  
+local textt = ' 🌚💘 رتبتك في  ⤌ '..Rutba(msg.sender_user_id_,msg.chat_id_)
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+},
+{
+{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./Bkar.lua").botUserName.."?startgroup=start"},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,textt, 1, 'md') 
+end 
+end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
 
 if text == 'انا مين' then
@@ -14754,10 +14753,10 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n¦ 𝚄𝚂𝙴𝚁 »  ↝'..username..'↜  ↝🖤\n¦ 𝙼𝚂𝙶𝚂 » ↝'..Msguser..'↜  ↝🖤\n¦• 𝚁𝙰𝙽𝙺 » ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜  ↝🖤\n¦ 𝙸𝙳 »   ↝'..msg.sender_user_id_..'↜ ↝🖤\n¦ 𝙱𝙸𝙾 »  ↝'..getbioY..'↜ ↝🖤\n ¦ 𝙲𝙷 »  ↝@S_a_i_d_i↜   ↝🖤\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n¦ 𝚄𝚂𝙴𝚁 »  ↝'..username..'↜  ↝🖤\n¦ 𝙼𝚂𝙶𝚂 » ↝'..Msguser..'↜  ↝🖤\n¦ 𝚁𝙰𝙽𝙺 » ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜  ↝🖤\n¦ 𝙸𝙳 »   ↝'..msg.sender_user_id_..'↜ ↝🖤\n¦ 𝙱𝙸𝙾 »  ↝'..getbioY..'↜ ↝🖤\n ¦ 𝙲𝙷 »  ↝@S_a_i_d_i↜   ↝🖤\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي ↝'..Name..'↜ \n¦ 𝚄𝚂𝙴𝚁 ↬  ↝'..Name..'↜    ↝🖤\n¦ 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ↝🖤\n ¦ 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝🖤\n¦• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ↝🖤\n¦• 𝒄𝒉↬   ↝@S_a_i_d_i↜ ↝🇧??\n')
+send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي ↝'..Name..'↜ \n¦ 𝚄𝚂𝙴𝚁 ↬  ↝'..Name..'↜    ↝🖤\n¦ 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ↝🖤\n ¦ 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝🖤\n¦ 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ↝🖤\n¦• 𝒄𝒉↬   ↝@S_a_i_d_i↜ ↝🇧??\n')
 else
 send(msg.chat_id_, msg.id_, '\n ☽ الصوره ⇜ ليس لديك صور في حسابك'..'[\n¦• 𝚄𝚂𝙴𝚁 ↬ ↝'..username..'↜\n¦• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜\n¦• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜\n¦• 𝒄𝒉↬  ↝@S_a_i_d_i↜\n')
 end 
@@ -15120,7 +15119,7 @@ local List = {
 [[
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
 - 𓏬 𝐌𝐬𝐆  : #msgs 𓂅 .
-- 𓏬 ??𝐭𝐀 : #stast 𓂅 .
+- 𓏬 𝐒𝐭𝐀 : #stast 𓂅 .
 - 𓏬 𝐈𝐃 : #id 𓂅 .
 - 𓏬 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽.
 ]],
