@@ -934,6 +934,7 @@ local keyboard = {
 {'قـسم مـطورين الـسورس'},
 {'اسعار التنصيب'},
 {'اسعار السورسات باكمل الحقوق'},
+{'قسـم قنوات'},
 {'قـسم الالـعـاب'},
 {'قـسم ممـيزات php'},
 }
@@ -952,6 +953,7 @@ local keyboard = {
 {'قـسم مـطورين الـسورس'},
 {'اسعار التنصيب'},
 {'اسعار السورسات باكمل الحقوق'},
+{'قسـم قنوات'},
 {'قـسم الالـعـاب'},
 {'php قـسم ممـيزات'},
 }
@@ -1013,6 +1015,20 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = 'المـبـرمــج طـه', url="t.me/TahaSayed9"}},
 {{text = 'بـوت تـواصل طه',url="t.me/TAHA_7XBOT"}}, 
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+end
+if text == 'قسـم قنوات' then
+if not DevSoFi(msg) then
+local Text = [[
+↯ افضـل قنوات في التليجـرام اشـترك في القنوات وتابــع كل جـديد ↯
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'Tᗩᕼᗩ 7᙭ ꙰🇪🇬',url="t.me/XxTaha_SayedxX"}},
+{{text = 'كـل ما هوا لطـيف ❀',url="t.me/OMARJABWA"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
