@@ -3288,9 +3288,9 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑱𝒂𝒃𝒘𝒂',url="t.me/J_A_B_W_A"},{text = '☾ 𝚃𝙰𝙷𝙰 𝙾𝚂𝙺𝙰𝚁 ☽', url="t.me/TahaSayed9"}},
-{{text = '𝑴𝒂𝒔𝒓𝒚',url="t.me/PPPPP7P"}},
-{{text = '☾ 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰𝙸𝙳𝙸 ☽',url="t.me/S_a_i_d_i"}},
+{{text = 'ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"},{text = 'ᴅᴇᴠ ᴛᴀʜᴀ ᴏѕᴋᴀʀ', url="t.me/TahaSayed9"}},
+{{text = 'ᴍᴀѕʀʏ',url="t.me/PPPPP7P"}},
+{{text = 'ѕᴏ𝗎ʀᴄᴇ ѕᴀɪᴅɪ',url="t.me/S_a_i_d_i"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -17841,7 +17841,7 @@ keyboard.inline_keyboard = {
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
-if Text == '/help30' then
+if Text == 'لعبه البات' then
 local Text = 'لتجربه العلبه عليك ان تكتب البات في الشات☽↯'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
