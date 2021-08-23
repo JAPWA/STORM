@@ -3122,15 +3122,15 @@ if text and database:get(bot_id.."Ttn:BBE:stats"..msg.chat_id_) == "open" then
 tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
 if data.id_ then 
 if data.id_ ~= bot_id then
-local DRAGONChengName = database:get(bot_id.."DRAGON:Cheng:Name"..data.id_)
+local BANDAChengName = database:get(bot_id.."BANDA:Cheng:Name"..data.id_)
 if not data.first_name_ then 
-if DRAGONChengName then 
-send(msg.chat_id_, msg.id_, " خوش معرف جان ["..DRAGONChengName..']')
-database:del(bot_id.."DRAGON:Cheng:Name"..data.id_) 
+if BANDAChengName then 
+send(msg.chat_id_, msg.id_, " خوش معرف جان ["..BANDAChengName..']')
+database:del(bot_id.."BANDA:Cheng:Name"..data.id_) 
 end
 end
 if data.first_name_ then 
-if DRAGONChengName ~= data.first_name_ then 
+if BANDAChengName ~= data.first_name_ then 
 local Text = {
   "جان اسمك خوش اسم ",
 "ليش غيرت اسمك يحلو ",
@@ -3138,7 +3138,7 @@ local Text = {
 }
 send(msg.chat_id_, msg.id_,Text[math.random(#Text)])
 end  
-database:set(bot_id.."DRAGON:Cheng:Name"..data.id_, data.first_name_) 
+database:set(bot_id.."BANDA:Cheng:Name"..data.id_, data.first_name_) 
 end
 end
 end
@@ -8467,7 +8467,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع حمير من الج�
 end
 if text == ("تاك للحمير") and Mod(msg) then
 local list = database:smembers(bot_id..'Sakl:User'..msg.chat_id_)
-t = "\n ☽ قائمة حمير الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃?? 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة حمير الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
