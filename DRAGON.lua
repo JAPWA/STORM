@@ -12929,8 +12929,7 @@ ght = math.random(30,199);
 local Text ='تم اختيار المقطع الصوتي لك 🌚❤️'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -12942,8 +12941,7 @@ ght = math.random(2,22);
 local Text ='تم اختيار اغنيه بفديو  لك 🌚❤️ ' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -12954,8 +12952,7 @@ ght = math.random(2,22);
 local Text ='تم اختيار فديو استوري  لك 🌚❤️ ' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text =  '𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒂𝒉𝒂',url="t.me/XxTaha_SayedxX"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -12966,8 +12963,7 @@ ght = math.random(1,33);
 local Text ='الستخدم ثيم اخر اكتب ثيم لك 🌚❤️'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
- {{text = '𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒂𝒉𝒂', url="t.me/XxTaha_SayedxX"}},
- {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
@@ -15121,7 +15117,7 @@ local List = {
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 🇪🇬 - 𝚄𝚂𝙴𝚁 ⟿ #username 💘.
 🇪🇬 - ??𝚂𝙶𝚂 ⟿  #msgs 💘.
-🇪🇬 - ??𝙼𝙰𝚂 ⟿ #stast 💘.
+🇪🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast 💘.
 🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 🇪🇬 - 𝗖?? - ↝@S_a_i_d_i↜ ☽.
@@ -15588,7 +15584,7 @@ Msᴀɢ ~ #msgs
 𝐓𝐓• 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽.
 ]],
 [[
-𝟓 𝟔 𖡻 #username  ࿇🦄
+𝟓 𝟔 ?? #username  ࿇🦄
 𝟓 𝟔 𖡻 #msgs  ࿇🦄
 𝟓 𝟔 𖡻 #auto  ࿇🦄
 𝟓 𝟔 𖡻 #stast  ࿇🦄
