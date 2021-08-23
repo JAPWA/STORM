@@ -3282,7 +3282,7 @@ keyboard.inline_keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
+end 
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
 local Text = [[
@@ -3293,8 +3293,8 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '𝑫𝒆𝒗 𝑱𝒂𝒃𝒘𝒂',url="t.me/J_A_B_W_A"},{text = '𝑩𝒐𝒕 𝑱𝒂𝒃𝒘𝒂', url="t.me/J_a_b_w_a_bot"}},
 {{text = '𝑫𝒆𝒗 𝑻𝒂𝒉𝒂',url="t.me/J_a_b_w_a_bot"},{text = '𝑩𝒐𝒕 𝑻𝒂𝒉𝒂', url="t.me/TAHA_7XBOT"}},
-{{text = '𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑺𝒂𝒊𝒅𝒊', url="t.me/S_a_i_d_i"}},
-{{text = 'اضف البوت الي مجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/162&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3307,7 +3307,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑫𝒆𝒗 𝑱𝒂𝒃𝒘𝒂',url="t.me/J_A_B_W_A"}},
+{{text = '• ᴅᴇᴠ➧ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -15927,7 +15927,7 @@ Msᴀɢ ~ #msgs
 
 • 🖤 | 𝑰𝑫 :  #id
 
-• 🖤 | 𝑴𝑺𝑮 : #msgs
+• 🖤 | 𝑴𝑺?? : #msgs
 
 • 🖤 | 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽
 ]],
