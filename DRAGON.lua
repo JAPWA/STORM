@@ -3504,6 +3504,17 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/mkjao/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+if text == "بوستات بصور" or text == "بوستات بصوره" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(1,18); 
+local Text ='مـرحبـاً ألـيـك مـعلومـه جـديـده فـي ألـصـوره 🌚❤️' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑺𝒂𝒊𝒅𝒊', url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/JABWA4'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == "بوستات بصوره" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(2,22); 
 local Text ='تم اختيار صورة بوستات لك 🌚❤️' 
@@ -8456,7 +8467,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع حمير من الج�
 end
 if text == ("تاك للحمير") and Mod(msg) then
 local list = database:smembers(bot_id..'Sakl:User'..msg.chat_id_)
-t = "\n ☽ قائمة حمير الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة حمير الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃?? 𖥳❳⊷━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
