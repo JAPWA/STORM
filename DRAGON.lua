@@ -1572,7 +1572,6 @@ local Text = [[
 خش علي تواصل هيدخلك قناه اليوزرات 
 ]] 
 keyboard = {}  
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
 keyboard.inline_keyboard = { 
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},  
 } 
