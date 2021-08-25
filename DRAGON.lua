@@ -4607,6 +4607,116 @@ database:del(bot_id.."Set:Cmd:Group1"..msg.chat_id_..':'..msg.sender_user_id_)
 return false
 end
 --------------------------------------------------------------------------------------------------------------
+
+
+
+if text == "$-+)(&@٠١" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(3,200); 
+local Text ='تم اختيار المقطع الصوتي لك' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/Ccckkc/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+end
+if text == 'غنيلي' then 
+Num = math.random(8,83)
+Mhm = math.random(108,143)
+Mhhm = math.random(166,179)
+Mmhm = math.random(198,216)
+Mhmm = math.random(257,626)
+local Texting = {Num,Mhm,Mhhm,Mmhm,Mhmm}
+local Rrr = Texting[math.random(#Texting)]
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/mmsst13/'..Rrr..'') 
+end
+if text == 'غنيلي تامر حسني' then 
+T = math.random(3,12)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي عمرو دياب' then 
+T = math.random(20,23)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي تامر عاشور' then 
+T = math.random(25,28)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي محمد فؤاد' then 
+T = math.random(30,38)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي حماقي' then 
+T = math.random(51,61)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي ابو الانوار' then 
+T = math.random(63,67)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي رامي صبري' then 
+T = math.random(69,73)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي مسلم' then 
+T = math.random(83,92)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي ويجز' then 
+T = math.random(94,102)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي عمار حسني' then 
+T = math.random(104,110)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي عنبه' then 
+T = math.random(113,122)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي مهرجانات' then 
+T = math.random(124,133)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي اصاله' then 
+T = math.random(135,147)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي اليسا' then 
+T = math.random(149,159)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي كايروكي' then 
+T = math.random(161,175)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي بابلو' then 
+T = math.random(177,183)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
+if text == 'غنيلي محمد منير' then 
+T = math.random(187,199)
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
+end
 if text == "المطور" or text == "مطور" then
 local TEXT_SUD = database:get(bot_id..'Tshake:TEXT_SUDO')
 if TEXT_SUDO then 
@@ -15385,7 +15495,7 @@ local List = {
 𖡋 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽.
 ]],
 [[
-𖤂 ~ 𝑢𝑠𝑒 #username  𖤐
+𖤂 ~ 𝑢𝑠?? #username  𖤐
 𖤂 ~ 𝑚??𝑔 #msgs 𖤐
 𖤂 ~ 𝑠𝑡𝑎 #stast  
 𖤂 ~ 𝑖𝑑 #id 𖤐
@@ -16248,7 +16358,7 @@ Msᴀɢ ~ #msgs
 • 🦄 | 𝑼𝑬𝑺 : #username ‌‌‏⚚
 • 🦄 | 𝑺𝑻𝑨 : #stast ☥
 • 🦄 | 𝑰𝑫 : #id ‌‌‏♕
-• 🦄 | 𝑴𝑺𝑮 : #msgs 𓆊
+• 🦄 | ??𝑺𝑮 : #msgs 𓆊
 • 🦄 | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 : ⁞
 • 🦄 | 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽
 ]],
