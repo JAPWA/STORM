@@ -148,32 +148,12 @@ _redis = load_redis()
 --------------------------------------------------------------------------------------------------------------
 print([[
 
- ______          __                  
-/\__  _\        /\ \                 
-\/_/\ \/    __  \ \ \___      __     
-   \ \ \  /'__`\ \ \  _ `\  /'__`\   
-    \ \ \/\ \L\.\_\ \ \ \ \/\ \L\.\_ 
-     \ \_\ \__/.\_\\ \_\ \_\ \__/.\_\
-      \/_/\/__/\/_/ \/_/\/_/\/__/\/_/
-
-
-                                                      
-                                                      
-  .--.--.                                             
- /  /     .               ,--,         ,---,  ,--,    
-|  :  /`. /             ,--. |       ,---. |,--. |    
-;  |  |--`              |  |,        |   | :|  |,     
-|  :  ;_      ,--.--.   `-- _        |   | |`-- _     
- \  \    `.  /       \  ,  , |     ,--.__| |,  , |    
-  `----.   \.--.  .-. |    | |    /   ,    |   | |    
-  __ \  \  | \__\/: . . |  | :   .      /  ||  | :    
- /  /`--   / ," .--.; |    : |__     ; |:  |   : |__  
- -- .     / /  /  ,.  | |  |  . ||   |  /   |  |  . | 
-  `-- ---  ;  :   .    \;  :    ;|   :    :|;  :    ; 
-           |  ,     .-./|  ,   /  \   \  /  |  ,   /  
-            `--`---      ---`-     `----     ---`-    
-                                                      
-                                                                                             
+____.  _____ __________  __      __  _____   
+    |    | /  _  \\______   \/  \    /  \/  _  \  
+    |    |/  /_\  \|    |  _/\   \/\/   /  /_\  \ 
+/\__|    /    |    \    |   \ \        /    |    \
+\________\____|__  /______  /  \__/\  /\____|__  /
+                 \/       \/        \/         \/ 
                           
 > Channel ↯ ↝@S_a_i_d_i↜
 ~> DEVELOPER ↯ @TahaSayed
@@ -932,7 +912,7 @@ if not DevSoFi(msg) then
 local bl = '›'
 local keyboard = {
 {'مبرمج السورس'},
-{'قـسم مـطورين الـسورس'},
+{'قسـم مـطـورين السـورس'},
 {'اسعار التنصيب'},
 {'اسعار السورسات باكمل الحقوق'},
 {'قسم القنوات'},
@@ -951,7 +931,7 @@ if text == '/start' or text == 'العوده✨'  then
 local bl = '›'
 local keyboard = {
 {'مبرمج السورس'},
-{'قـسم مـطورين الـسورس'},
+{'قسـم مـطـورين السـورس'},
 {'اسعار التنصيب'},
 {'اسعار السورسات باكمل الحقوق'},
 {'قسم القنوات'},
@@ -1104,7 +1084,7 @@ local keyboard = {
 {'ضع اسم للبوت','معلومات الكيبورد'},
 {'المطور','الاحصائيات'},
 {'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
-{'قسـم مـطـورين ومـبــرمـجـين السـورس','اوامـر اضـف ومـسـح'},
+{'قسـم مـطـورين السـورس','اوامـر اضـف ومـسـح'},
 {'اوامـر تفعيل و تعطـيل','اوامـر الحـمـايه'},
 {'اوامـر الاذاعـه'},
 {'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
@@ -1145,7 +1125,7 @@ return false
 end 
 if text =='الغاء الحظر' then
 local Name = '['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..id_user..')'
-local Text = ' ☽المستخدم ⇇↝'..Name..'↜\n ☽تم الغاء حظره من التواصل'
+local Text = ' ☽المستخدم ⇇↝'..Name..'↜\n ☽ تم الغاء حظره من التواصل'
 sendText(SUDO,Text,msg.id_/2097152/0.5,'md')
 database:srem(bot_id..'Ban:User_Bot',data.id_)  
 return false  
@@ -1175,14 +1155,14 @@ end
 if msg.content_.ID == 'MessagePhoto' then    
 sendPhoto(id_user, msg.id_, 0, 1, nil,msg.content_.photo_.sizes_[0].photo_.persistent_id_,(msg.content_.caption_ or ''))    
 local Name = '['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..id_user..')'
-local Text = ' ☽المستخدم ⇇↝'..Name..'↜\n ☽تم ارسال الرساله اليه'
+local Text = ' ☽المستخدم ⇇↝'..Name..'↜\n ☽ تم ارسال الرساله اليه'
 sendText(SUDO,Text,msg.id_/2097152/0.5,'md')
 return false
 end     
 if msg.content_.ID == 'MessageAnimation' then    
 sendDocument(id_user, msg.id_, 0, 1,nil, msg.content_.animation_.animation_.persistent_id_)    
 local Name = '['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..id_user..')'
-local Text = ' ☽المستخدم ⇇↝'..Name..'↜\n ☽تم ارسال الرساله اليه'
+local Text = ' ☽المستخدم ⇇↝'..Name..'↜\n ☽ تم ارسال الرساله اليه'
 sendText(SUDO,Text,msg.id_/2097152/0.5,'md')
 return false
 end     
@@ -1339,6 +1319,16 @@ local Key = {
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
+if text == 'قسـم مـطـورين السـورس' and DevSoFi(msg) then 
+local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
+local Key = {
+{'⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣'},
+{'المبرمج جابوا','المبرمج طه','مصري'},
+{'قناة السورس','التواصل'},
+{'العوده🌟'},
+}
+send_inline_key(msg.chat_id_,Text,Key)
+end 
 if text == 'اوامـر اضـف ومـسـح' and DevSoFi(msg) then 
 local Text = 'مـرحـبــا بــك في قسـم اضـف ومـسـح 🥵❤️‍🔥'
 local Key = {
@@ -1451,7 +1441,7 @@ if text == 'الاصدار' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ☽ اصدار سورس صعيدي{ 3x☆}')
 end
-if text == '☾•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•☽' then
+if text == '⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣' then
 local Text = [[ 
 ↯ قناة مبرمجين السورس
 محتاج تنصب بوت حمايه بس سعر مميز وبي كل المميزات تواصل معنا ↯
@@ -1486,7 +1476,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == '━┅┅┄⟞𓊈 𝚂𝙰𝙸𝙳𝙸 𓊉⟝┄┉┉━' and DevSoFi(msg) then
+if text == 'قناة السورس' and DevSoFi(msg) then
 local Text = [[ 
 [قناه سورس صعيدي ادخل وتابع الجديد](t.me/S_a_i_d_i)
 ]] 
@@ -3294,7 +3284,7 @@ local Text = [[
 ☽ معني + اسمك ⤌ لعرض الميزه
 ☽ خلفيات ⤌ لعرض الميزه
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
-𓆩𝗖𝗛 - [ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔 ](t.me/S_a_i_d_i) 𓆪
+𓆩𝗖𝗛 - [ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔 ](t.me/S_a_i_d_i)𓆪
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 ]]
 keyboard = {}  
@@ -3362,7 +3352,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'طه' or text == 'taha 7x' or text == 'Taha 7x' or text == '²مبرمج السورس' then
+if text == 'طه' or text == 'taha 7x' or text == 'المبرمج جابوا' or text == '²مبرمج السورس' then
 local Text = [[
 طه مبرمج السورس لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
@@ -5582,7 +5572,7 @@ return false
 end
 if text == ("قائمه العام") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'GDRG:User')
-t = "\n ⦁ قائمة المحظورين عام \n≪━━━━☩𝑩𝑨𝑲𝑨𝑹☩━━━━≫\n"
+t = "\n ⦁ قائمة المحظورين عام \n≪━━━━☩𝑩𝑨??𝑨𝑹☩━━━━≫\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -13770,7 +13760,7 @@ end
 
 if text == "رتبتي" then
 local msg_id = msg.id_/2097152/0.5  
-local textt = '  رتبتك في  ⇇ '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = 'رتبتك يا قلبي ⇇ 'رتبتك يا قلبي ⇇ "..Rutba(msg.sender_user_id_,msg.chat_id_).." ❤️🙈", msg.id_, msg.id_, "md")
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -15253,7 +15243,7 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n¦• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜  ↝🖤༆\n¦• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜  ↝🖤༆\n¦• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜  ↝🖤༆\n¦• 𝒊𝒅 →   ↝'..msg.sender_user_id_..'↜ ↝🖤༆\n¦• 𝒃𝒊𝒐 →  ↝'..getbioY..'↜ ↝🖤༆\n ¦• 𝒄𝒉 →  ↝@S_a_i_d_i↜   ↝🖤༆\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n¦• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜  ↝🖤༆\n¦• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜  ↝🖤༆\n¦• 𝒓𝒂𝒏?? → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜  ↝🖤༆\n¦• 𝒊𝒅 →   ↝'..msg.sender_user_id_..'↜ ↝🖤༆\n¦• 𝒃𝒊𝒐 →  ↝'..getbioY..'↜ ↝🖤༆\n ¦• 𝒄𝒉 →  ↝@S_a_i_d_i↜   ↝🖤༆\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي ↝'..Name..'↜ \n¦ 𝒖𝒔𝒆𝒓 →  ↝'..Name..'↜    ↝🖤༆\n¦ 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜.   ↝🖤༆\n ¦ 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝🖤༆\n¦ 𝒊𝒅 →  ↝'..msg.sender_user_id_..'↜    ↝🖤༆\n¦• 𝒄𝒉→   ↝@S_a_i_d_i↜ 🖤༆\n')
@@ -15927,7 +15917,7 @@ local List = {
 ]],
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
-⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ🍭
+⭐️𝖚𝖘𝖊𝖗??𝖆𝖒𝖊 : #username ـ🍭
 ⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
 ⭐️𝖎𝖉 : #id ـ 🍭
 ⭐️𝗖𝗛 - ↝@S_a_i_d_i↜ 💞.
@@ -18149,7 +18139,7 @@ local Teext =[[
 📎╜ Wipe waves
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 👰╖ Khayen
-💬╢ Crown for him
+??╢ Crown for him
 📎╜ Clear the moon
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 
