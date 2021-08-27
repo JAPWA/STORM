@@ -148,7 +148,7 @@ _redis = load_redis()
 --------------------------------------------------------------------------------------------------------------
 print([[
 
-____.  _____ __________  __      __  _____   
+     ____.  _____ __________  __      __  _____   
     |    | /  _  \\______   \/  \    /  \/  _  \  
     |    |/  /_\  \|    |  _/\   \/\/   /  /_\  \ 
 /\__|    /    |    \    |   \ \        /    |    \
@@ -912,7 +912,7 @@ if not DevSoFi(msg) then
 local bl = '›'
 local keyboard = {
 {'مبرمج السورس'},
-{'قسـم مـطـورين السـورس'},
+{'قـسم مـطورين الـسورس'},
 {'اسعار التنصيب'},
 {'اسعار السورسات باكمل الحقوق'},
 {'قسم القنوات'},
@@ -931,7 +931,7 @@ if text == '/start' or text == 'العوده✨'  then
 local bl = '›'
 local keyboard = {
 {'مبرمج السورس'},
-{'قسـم مـطـورين السـورس'},
+{'قـسم مـطورين الـسورس'},
 {'اسعار التنصيب'},
 {'اسعار السورسات باكمل الحقوق'},
 {'قسم القنوات'},
@@ -1008,7 +1008,7 @@ local Text = [[
 ↯ افضـل قنوات في التليجـرام اشـترك في القنوات وتابــع كل جـديد ↯
 ]]
 keyboard.inline_keyboard = {
-{{text = '𝐓𝐞𝐚𝐦 7𝐱⋮🇪🇬𖤐!', url="t.me/XxTaha_SayedxX"}},
+{{text = 'Tᗩᕼᗩ 7᙭ ꙰🇪🇬.', url="t.me/XxTaha_SayedxX"}},
 {{text = 'كـل ما هوا لطـيف ❀',url="t.me/OMARJABWA"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -1055,7 +1055,7 @@ end
 if text == 'قـسم مـطورين الـسورس' then
 local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
-{'☽•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•☾'},
+{'⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣'},
 {'المبرمج طه','المبرمج جابوا'},
 {'المبرمج اكسسلفر','المالك المصري'},
 {'قناة السورس','التواصل'},
@@ -1300,7 +1300,7 @@ end
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil) 
 end
 if text == '/start' and DevSoFi(msg) then 
-local Text = '☽ انت الان المطور الاساسي في البوت \n ☽سورس صعيدي\n ☽يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/S_a_i_d_i)'
+local Text = '☽ انت الان المطور الاساسي في البوت \n ☽ سورس صعيدي\n ☽ يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/S_a_i_d_i)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName}}, 
@@ -1442,6 +1442,20 @@ if text == 'الاصدار' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ☽ اصدار سورس صعيدي{ 3x☆}')
 end
+if text == "قناة السورس" then
+if not DevSoFi(msg) then
+local Text = [[
+ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ sᴀɪᴅɪ ◂](http://t.me/S_a_i_d_i)
+]]
+keyboard.inline_keyboard = {
+{{text = 'مبرمج السورس', url="t.me/J_A_B_W_A"}},
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
+{{text = 'روم الـتواصل ☎️', url="t.me/TWASLJABWA"}}, 
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+end
 if text == '⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣' then
 local Text = [[ 
 ↯ قناة مبرمجين السورس
@@ -1476,17 +1490,6 @@ keyboard.inline_keyboard = {
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-if text == 'قناة السورس' and DevSoFi(msg) then
-local Text = [[ 
-[قناه سورس صعيدي ادخل وتابع الجديد](t.me/S_a_i_d_i)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qwressv/162&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'معلومات الكيبورد' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
@@ -3162,15 +3165,15 @@ if text and database:get(bot_id.."Ttn:BBE:stats"..msg.chat_id_) == "open" then
 tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
 if data.id_ then 
 if data.id_ ~= bot_id then
-local DRAGONChengName = database:get(bot_id.."DRAGON:Cheng:Name"..data.id_)
+local AVIRAChengName = database:get(bot_id.."AVIRA:Cheng:Name"..data.id_)
 if not data.first_name_ then 
-if DRAGONChengName then 
-send(msg.chat_id_, msg.id_, " خوش معرف جان ["..DRAGONChengName..']')
-database:del(bot_id.."DRAGON:Cheng:Name"..data.id_) 
+if AVIRAChengName then 
+send(msg.chat_id_, msg.id_, " خوش معرف جان ["..AVIRAChengName..']')
+database:del(bot_id.."AVIRA:Cheng:Name"..data.id_) 
 end
 end
 if data.first_name_ then 
-if DRAGONChengName ~= data.first_name_ then 
+if AVIRAChengName ~= data.first_name_ then 
 local Text = {
   "جان اسمك خوش اسم ",
 "ليش غيرت اسمك يحلو ",
@@ -3178,7 +3181,7 @@ local Text = {
 }
 send(msg.chat_id_, msg.id_,Text[math.random(#Text)])
 end  
-database:set(bot_id.."DRAGON:Cheng:Name"..data.id_, data.first_name_) 
+database:set(bot_id.."AVIRA:Cheng:Name"..data.id_, data.first_name_) 
 end
 end
 end
@@ -3377,7 +3380,7 @@ keyboard.inline_keyboard = {
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/TahaSayed9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Dv_Exlevr&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'يوتيوب' or text == 'بحث' or text == 'اليوتيوب' then
 local Text = [[
@@ -4300,7 +4303,7 @@ local TWEET_Msg = {
 " يَا حَيُّ يَا قيُّومُ بِرَحْمَتِكَ أسْتَغِيثُ أصْلِحْ لِي شَأنِي كُلَّهُ وَلاَ تَكِلُنِي إلَى نَفْسِي طَـرْفَةَ عَيْنٍ 🌚❤️",
 " أَصْبَـحْـنا وَأَصْبَـحْ المُـلكُ للهِ رَبِّ العـالَمـين ، اللّهُـمَّ إِنِّـي أسْـأَلُـكَ خَـيْرَ هـذا الـيَوْم ، فَـتْحَهُ ، وَنَصْـرَهُ ، وَنـورَهُ وَبَـرَكَتَـهُ ، وَهُـداهُ ، وَأَعـوذُ بِـكَ مِـنْ شَـرِّ ما فـيهِ وَشَـرِّ ما بَعْـدَه 🌚❤️",
 " اللّهُـمَّ عالِـمَ الغَـيْبِ وَالشّـهادَةِ فاطِـرَ السّماواتِ وَالأرْضِ رَبَّ كـلِّ شَـيءٍ وَمَليـكَه ، أَشْهَـدُ أَنْ لا إِلـهَ إِلاّ أَنْت ، أَعـوذُ بِكَ مِن شَـرِّ نَفْسـي وَمِن شَـرِّ الشَّيْـطانِ وَشِـرْكِه ، وَأَنْ أَقْتَـرِفَ عَلـى نَفْسـي سوءاً أَوْ أَجُـرَّهُ إِلـى مُسْـلِم 🌚❤️",
-" أَعـوذُ بِكَلِمـاتِ اللّهِ التّـامّـاتِ مِنْ شَـرِّ ما خَلَـق 🌚❤️",
+" أَعـوذُ بِكَلِمـاتِ اللّهِ التّـامّـاتِ مِنْ شَـرِّ ما خَلَـق ??❤️",
 " اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ على نَبِيِّنَا مُحمَّد 🌚❤️",
 " اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنْ أَنْ نُشْرِكَ بِكَ شَيْئًا نَعْلَمُهُ ، وَنَسْتَغْفِرُكَ لِمَا لَا نَعْلَمُهُ 🌚❤️",
 " أسْتَغْفِرُ اللهَ العَظِيمَ الَّذِي لاَ إلَهَ إلاَّ هُوَ، الحَيُّ القَيُّومُ، وَأتُوبُ إلَيهِ 🌚❤️",
@@ -14196,7 +14199,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, 'اهلا عزيزي تم قفل المحن بنجاح اتمحونوا بف عشان المراره 😹??') 
+send(msg.chat_id_,msg.id_, 'اهلا عزيزي تم قفل المحن بنجاح اتمحونوا بف عشان المراره ????') 
 return false
 end
 end
@@ -17360,6 +17363,18 @@ database:set(bot_id.." sofi:age_Bots"..msg.chat_id_,"close")
 end
 if text == "تفعيل حساب العمر" and Manager(msg) then
 send(msg.chat_id_, msg.id_,' ☽ تم تفعيل حساب العمر')
+database:set(bot_id.." sofi:age_Bots"..msg.chat_id_,"open")
+end
+if text == "تعطيل الاله حاسبه" and Manager(msg) then
+send(msg.chat_id_, msg.id_, ' ☽ تم تعطيل الاله حاسبه')
+database:set(bot_id.." sofi:age_Bots"..msg.chat_id_,"close")
+end
+if text == "تعطيل الاله حاسبه" and Manager(msg) then
+send(msg.chat_id_, msg.id_, ' ☽ تم تعطيل الاله حاسبه')
+database:set(bot_id.." sofi:age_Bots"..msg.chat_id_,"close")
+end
+if text == "تفعيل الاله حاسبه" and Manager(msg) then
+send(msg.chat_id_, msg.id_,' ☽ تم تفعيل الاله حاسبه')
 database:set(bot_id.." sofi:age_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^احسب (.*)$") and database:get(bot_id.." sofi:age_Bots"..msg.chat_id_) == "open" then
