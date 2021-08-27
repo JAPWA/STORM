@@ -183,7 +183,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1549578895,1827953514, 1815428019,1994450469}   
+sudo_users = {SUDO,1549578895,1827953514,1815428019,1994450469}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -16691,7 +16691,7 @@ Msᴀɢ ~ #msgs
 👳🏼‍♂ - 𝄬 stast . #stast . 🇪🇬
 👳🏼‍♂ - 𝄬 id . #id . 🇪🇬
 👳🏼‍♂ - 𝄬 auto . #auto . 🇪🇬
-👳🏼‍♂ - 𝄬 msgs . #msgs . 🇪🇬
+👳??‍♂ - 𝄬 msgs . #msgs . 🇪🇬
 👳🏼‍♂ - 𝄬 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽
 ]],
 [[
