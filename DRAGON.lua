@@ -13796,7 +13796,7 @@ end
 
 if text == "رتبتي" then
 local msg_id = msg.id_/2097152/0.5  
-local textt = 'رتبتك يا قلبي ⇇ 'رتبتك يا قلبي ⇇ "..Rutba(msg.sender_user_id_,msg.chat_id_).." ❤️🙈", msg.id_, msg.id_, "md")
+local textt = ' 🌚❤️ رتبتك ياقلبي ⇇'..Rutba(msg.sender_user_id_,msg.chat_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -16696,7 +16696,7 @@ Msᴀɢ ~ #msgs
 𓄼 ѕᴛᴀ : #stast  ☥
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊 
-𓐀 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𓀃.
+𓐀 𝑾𝒆𝒍𝒄𝒐??𝒆 𓀃.
 𓄼 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽
 ]],
 [[
