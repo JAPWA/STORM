@@ -325,7 +325,7 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1549578895) then  
 var = 'المبـرمج أوسـكار ألـتونز'
-if tonumber(user_id) == tonumber(1994450469) then  
+elseif tonumber(user_id) == tonumber(1994450469) then
 var = 'المبـرمج اكسسلفر'
 elseif tonumber(user_id) == tonumber(1827953514) then
 var = 'المبرمج جابوا'
@@ -16256,7 +16256,7 @@ Msᴀɢ ~ #msgs
 [[
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
 - 𓏬 𝐌𝐬𝐆  : #msgs 𓂅 .
-- 𓏬 ??𝐭𝐀 : #stast 𓂅 .
+- 𓏬 𝐒𝐭𝐀 : #stast 𓂅 .
 - 𓏬 𝐈𝐃 : #id 𓂅 .
 - 𓏬 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽
 ]],
@@ -16691,7 +16691,7 @@ Msᴀɢ ~ #msgs
 [[
 👳🏼‍♂ - 𝄬 username . #username . 🇪🇬
 👳🏼‍♂ - 𝄬 stast . #stast . 🇪🇬
-👳🏼‍♂ - 𝄬 id . #id . 🇪🇬
+👳??‍♂ - 𝄬 id . #id . 🇪🇬
 👳🏼‍♂ - 𝄬 auto . #auto . 🇪🇬
 👳🏼‍♂ - 𝄬 msgs . #msgs . 🇪🇬
 👳🏼‍♂ - 𝄬 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽
