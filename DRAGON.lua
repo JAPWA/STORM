@@ -281,12 +281,16 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(1994450469) then  
-var = true 
+if tonumber(user_id) == tonumber(1549578895) then  
+var = true
 elseif tonumber(user_id) == tonumber(1827953514) then
-var = true  
-elseif tonumber(user_id) == tonumber(1815428019) then
-var = true  
+var = true
+elseif tonumber(user_id) == tonumber(1524355424) then
+var = true
+elseif tonumber(user_id) == tonumber(1741899314) then
+var = true
+elseif tonumber(user_id) == tonumber(1994450469) then
+var = true
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
 elseif tonumber(user_id) == tonumber(bot_id) then
@@ -16252,14 +16256,14 @@ Msᴀɢ ~ #msgs
 [[
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
 - 𓏬 𝐌𝐬𝐆  : #msgs 𓂅 .
-- 𓏬 𝐒𝐭𝐀 : #stast 𓂅 .
+- 𓏬 ??𝐭𝐀 : #stast 𓂅 .
 - 𓏬 𝐈𝐃 : #id 𓂅 .
 - 𓏬 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽
 ]],
 [[
 ᯓ 𝟔𝟔𝟔 𖡋 #username •✟
 ᯓ 𝟔𝟔𝟔𖡋 #stast  •✟
-ᯓ ??𝟔𝟔𖡋 #id  • ✟
+ᯓ 𝟔𝟔𝟔𖡋 #id  • ✟
 ᯓ 𝟔𝟔𝟔?? #msgs  •✟ 
 ᯓ 𝟔𝟔𝟔𖡋 #game •✟
 ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽
