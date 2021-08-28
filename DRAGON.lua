@@ -1063,7 +1063,7 @@ local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
 {'⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣'},
 {'المبرمج طه','المبرمج جابوا'},
-{'المبرمج اكسسلفر','المالك المصري'},
+{'المبرمج اكسسلفر'},
 {'قناة السورس','التواصل'},
 {'العوده✨'},
 }
@@ -3572,6 +3572,17 @@ keyboard.inline_keyboard = {
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA4/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "بوستات بالصوره" then  
+ght = math.random(1,33);  
+local Text ='مرحبا اليك بوسات بي الصوره'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/JABWA4/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "هل تعلم" or text == "معلومه" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,18); 
@@ -13808,7 +13819,7 @@ end
 
 if text == "رتبتي" then
 local msg_id = msg.id_/2097152/0.5  
-local textt = ' 🌚💘 رتبتك في  ⤌ '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = 'رتبتك في بوت  ⇇ '..Rutba(msg.sender_user_id_,msg.chat_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -15785,7 +15796,7 @@ local List = {
  ☽ - ??𝓽𝓪𝓼𝓽  ➪ #stast ☽.
  ☽ - 𝓲𝓭 ➪ #id ⸙ ☽.
  ☽ - 𝓰𝓶𝓪𝓼 ➪ #gmas ⸙ ☽.
- ☽ - 𝓶𝓼𝓰𝓼 ➪ #msgs ☽.
+ ☽ - 𝓶𝓼??𝓼 ➪ #msgs ☽.
  ☽ - 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽.
 ]],
 [[
@@ -16224,7 +16235,7 @@ Msᴀɢ ~ #msgs
 [[
 ••• ••• ••• ••• ••• ••• ••• 
 ࿕ ¦• 𝙐𝙎𝙀𝙍  ⟿ #username ༆
- ࿕ ¦• 𝙈𝙎𝙂??   ⟿ #msgs ༆
+ ࿕ ¦• ??𝙎𝙂??   ⟿ #msgs ༆
  ࿕ ¦• 𝙂𝙈𝘼𝙎  ⟿ #stast ༆
  ࿕ ¦• 𝙏𝘿 𝙎𝙏𝘼  ⟿ #id ༆
 ••• ••• ••• ••• ••• ••• •••
@@ -16256,7 +16267,7 @@ Msᴀɢ ~ #msgs
 [[
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
 - 𓏬 𝐌𝐬𝐆  : #msgs 𓂅 .
-- 𓏬 𝐒𝐭𝐀 : #stast 𓂅 .
+- 𓏬 𝐒𝐭𝐀 : #stast ?? .
 - 𓏬 𝐈𝐃 : #id 𓂅 .
 - 𓏬 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽
 ]],
