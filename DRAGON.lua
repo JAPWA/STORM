@@ -1058,22 +1058,6 @@ local Key = {
 send_inline_key(msg.chat_id_,Text,Key)
 end 
 
-if text == 'قناة السورس' and DevSoFi(msg) then
-database:del(bot_id..'Srt:Bot') 
-local Text = [[ 
-☽مين أحسن السورسات على التليجرام سورس صعيدي☾
-بجد سورس أمان جدا وفي مميزات جامده
-تع نصب بوتك عندنا لو محظور
-خش علي تواصل هيدخلك قناه اليوزرات 
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
-{{text = '`ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ´', url="t.me/TWASLJABWA"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 
 if text == 'قـسم مـطورين الـسورس' then
 local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
@@ -1333,28 +1317,19 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'قـسم الـسورس' and DevSoFi(msg) then 
-local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
-local Key = {
-{'⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣'},
-{'المبرمج جابوا','المبرمج طه','مصري'},
-{'قناة السورس','التواصل'},
-{'العوده🌟'},
-}
-send_inline_key(msg.chat_id_,Text,Key)
-end 
 if text == 'قسـم مـطـورين السـورس' and DevSoFi(msg) then 
 local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
 {'⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣'},
-{'المبرمج جابوا','المبرمج طه','مصري'},
+{'المبرمج جابوا','المبرمج طه'},
+{'المبرمج اكسسلفر','المالك مصري'},
 {'قناة السورس','التواصل'},
 {'العوده🌟'},
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
 if text == 'اوامـر اضـف ومـسـح' and DevSoFi(msg) then 
-local Text = 'مـرحـبــا بــك في قسـم اضـف ومـسـح 🥵❤️‍🔥'
+local Text = 'مـرحـبــا بــك في قسـم اضـف ومـسـح 🌚❤️'
 local Key = {
 {'اضف رد عام','مسح رد عام'},
 {'مسح رد استارت','اضف رد استارت'},
@@ -1366,7 +1341,7 @@ local Key = {
 send_inline_key(msg.chat_id_,Text,Key)
 end 
 if text == 'اوامـر تفعيل و تعطـيل' and DevSoFi(msg) then 
-local Text = 'مـرحـبــا بــك في قسـم تفعيل وتعطـيل 🥵❤️‍🔥'
+local Text = 'مـرحـبــا بــك في قسـم تفعيل وتعطـيل 🌚❤️'
 local Key = {
 {'تعطيل الاذاعه','تفعيل الاذاعه'},
 {'تعطيل المغادره','تفعيل المغادره'},
@@ -1378,7 +1353,7 @@ local Key = {
 send_inline_key(msg.chat_id_,Text,Key)
 end 
 if text == 'اوامـر الحـمـايه' and DevSoFi(msg) then 
-local Text = 'مـرحـبــا بــك في قسـم الحـمـآيه الخـاص بــي بــوتك 🥵❤️‍🔥'
+local Text = 'مـرحـبــا بــك في قسـم الحـمـآيه الخـاص بــي بــوتك 🌚❤️'
 local Key = {
 {'قائمه الكتم العام','المطورين','قائمه العام'},
 {'المشتركين','الجروبات ','الردود العامه'},
@@ -1390,7 +1365,7 @@ local Key = {
 send_inline_key(msg.chat_id_,Text,Key)
 end 
 if text == 'اوامـر الاذاعـه' and DevSoFi(msg) then 
-local Text = 'مـرحـبــا بــك في قسـم الاذاعه 🥵❤️‍🔥'
+local Text = 'مـرحـبــا بــك في قسـم الاذاعه 🌚❤️'
 local Key = {
 {'اذاعه ','اذاعه خاص '},
 {'اذاعه بالتثبيت '},
@@ -1465,42 +1440,30 @@ if text == 'الاصدار' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ☽ اصدار سورس صعيدي{ 3x☆}')
 end
-if text == 'قناة السورس' and DevSoFi(msg) then
-database:del(bot_id..'Srt:Bot') 
-local Text = [[ 
-☽مين أحسن السورسات على التليجرام سورس صعيدي☾
-بجد سورس أمان جدا وفي مميزات جامده
-تع نصب بوتك عندنا لو محظور
-خش علي تواصل هيدخلك قناه اليوزرات 
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
-{{text = '`ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ´', url="t.me/TWASLJABWA"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 if text == '⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣' then
 local Text = [[ 
-↯ قناة مبرمجين السورس
-محتاج تنصب بوت حمايه بس سعر مميز وبي كل المميزات تواصل معنا ↯
+قناه مطورين السورس 
+محتاج تنصب بوت حمايه تواصل معانا
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ', url="t.me/TWASLJABWA"}}, 
+{{text = 'مبرمج السورس ⚙', url="t.me/U880p"}}, 
+{{text = '`ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ´', url="t.me/TWASLJABWA"}}, 
 } 
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/c/1522880126/3=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/vagwg/8&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺' or text == 'عاوز بوت' then
 local Text = [[ 
-↯ قناة مبرمجين السورس
-محتاج تنصب بوت حمايه بس سعر مميز وبي كل المميزات تواصل معنا ↯
+⦁ من أحسن السورسات على التليجرام سورس صعيدي ⦁
+بجد سورس أمان جدا وفي مميزات جامده
+تع نصب بوتك عندنا لو محظور
+خش علي تواصل هيدخلك روم التواصل
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'روم الـتواصل ☎️', url="t.me/TWASLJABWA"}}, 
+{{text = 'مبرمج السورس ⚙', url="t.me/U880p"}}, 
+{{text = '`ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ´', url="t.me/TWASLJABWA"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/c/1522880126/3=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -1584,14 +1547,15 @@ end
 if text == 'قناة السورس' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
-↯ من أحسن السورسات على التليجرام سورس صعيدي ↯
+⦁ من أحسن السورسات على التليجرام سورس صعيدي ⦁
 بجد سورس أمان جدا وفي مميزات جامده
 تع نصب بوتك عندنا لو محظور
-خش علي تواصل هيدخلك قناه اليوزرات 
+خش علي تواصل هيدخلك روم التواصل
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
+{{text = '`ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ´', url="t.me/TWASLJABWA"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15449,7 +15413,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n¦• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜   🖤༆\n¦• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜   🖤༆\n¦• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜   🖤༆\n¦• 𝒊𝒅  →   ↝'..msg.sender_user_id_..'↜   🖤༆\n¦• 𝒄𝒉 → ↝ @S_a_i_d_i ↜   🖤༆\n')
+send(msg.chat_id_, msg.id_,'[\n¦• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜   🖤༆\n¦• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜   🖤༆\n¦• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜   🖤༆\n¦• 𝒊𝒅  →   ↝'..msg.sender_user_id_..'↜   🖤༆\n¦• 𝒄?? → ↝ @S_a_i_d_i ↜   🖤༆\n')
 end
 end
 
