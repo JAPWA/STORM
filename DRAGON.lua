@@ -1448,22 +1448,21 @@ if text == 'الاصدار' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ☽ اصدار سورس صعيدي{ 3x☆}')
 end
-if text == "قناة السورس" then
-if not DevSoFi(msg) then
-local Text = [[
-↯ من أحسن السورسات على التليجرام سورس الصعيدي ↯
+if text == 'قناة السورس' and DevSoFi(msg) then
+database:del(bot_id..'Srt:Bot') 
+local Text = [[ 
+● من أحسن السورسات على التليجرام سورس صعيدي ●
 بجد سورس أمان جدا وفي مميزات جامده
 تع نصب بوتك عندنا لو محظور
-خش على تواصل هيدخلك لروم التواصل 
-]]
-keyboard.inline_keyboard = {
-{{text = 'مبرمج السورس', url="t.me/J_A_B_W_A"}},
+خش علي تواصل هيدخلك قناه اليوزرات 
+]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
-{{text = 'روم الـتواصل ☎️', url="t.me/TWASLJABWA"}}, 
-}
+{{text = '`ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ´', url="t.me/TWASLJABWA"}}, 
+} 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == '⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣' then
 local Text = [[ 
@@ -1472,7 +1471,7 @@ local Text = [[
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'روم الـتواصل ☎️', url="t.me/TWASLJABWA"}}, 
+{{text = 'ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ', url="t.me/TWASLJABWA"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/c/1522880126/3=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3297,7 +3296,7 @@ local Text = [[
 ☽ معني + اسمك ⤌ لعرض الميزه
 ☽ خلفيات ⤌ لعرض الميزه
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
-𓆩𝗖𝗛 - [ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔 ](t.me/S_a_i_d_i)𓆪
+𓆩 𝗖𝗛 - [ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔 ](t.me/S_a_i_d_i)𓆪
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 ]]
 keyboard = {}  
@@ -3562,17 +3561,6 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end 
-if text == "بوستات بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(2,22); 
-local Text ='تم اختيار بوستات بالصور  لك 🌚❤️ ' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA4/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 if text == "بوستات بالصوره" then  
 ght = math.random(1,33);  
 local Text ='مرحبا اليك بوسات بي الصوره'  
