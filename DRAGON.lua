@@ -67,7 +67,7 @@ SUDO = database:get(id_server..":SUDO:ID"),
 UserName = database:get(id_server..":SUDO:USERNAME"),
  }
 create(config, "./Banda.lua")   
-end ذ
+end 
 
 infotnseb = {}
 infotnseb.id = database:get(id_server..":SUDO:ID")
