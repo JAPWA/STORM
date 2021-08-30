@@ -4687,7 +4687,7 @@ keyboard.inline_keyboard = {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
 {
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪↯' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -4711,15 +4711,14 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/wffhvv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "لو خيروك بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(28,56); 
-local Text ='تم اختيار المقطع لو خيروك لك 🌚❤️' 
+ght = math.random(1,24); 
+local Text ='مرحبا اليك لو خيروك بالصوره🍁🌝' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/kbbnv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/kbbnv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "حروف بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,15); 
@@ -15418,7 +15417,7 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝚄𝚂𝙴𝚁 ↬  ↝'..username..'↜     ↝💘\n|• 𝙼𝚂𝙶𝚂↬  ↝'..Msguser..'↜     ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜     ↝💘\n|• 𝙸𝙳↬   ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬  ↝@S_a_i_d_i↜     ↝💘\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝚄𝚂𝙴𝚁 ↬  ↝'..username..'↜     ↝💘\n|• ??𝚂𝙶𝚂↬  ↝'..Msguser..'↜     ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜     ↝💘\n|• 𝙸𝙳↬   ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬  ↝@S_a_i_d_i↜     ↝💘\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n|• 𝚄𝚂𝙴𝚁 ↬  ↝'..username..'↜    ↝💘\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝💘\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬   ↝@S_a_i_d_i↜    ↝💘\n')
@@ -16225,7 +16224,7 @@ Msᴀɢ ~ #msgs
 -↯   𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 . #username 🇪🇬 ꙰ 
 -↯   𝚂𝚃𝙰𝚂𝚃 . #stast 🇪🇬 ꙰
 -↯   𝙸𝙳 . #id 🇪🇬 ꙰ 
--↯   𝙶𝙼𝙰𝚂 . #stast 🇪🇬 ꙰ 
+-↯   𝙶𝙼𝙰𝚂 . #stast 🇪?? ꙰ 
 -↯   𝙼??𝙶𝚂 . #msgs 🇪🇬 ꙰
 -↯   𝗖𝗛 - ↝@S_a_i_d_i↜ 🇪?? ꙰.
 ]],
