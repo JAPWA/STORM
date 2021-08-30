@@ -67,7 +67,8 @@ SUDO = database:get(id_server..":SUDO:ID"),
 UserName = database:get(id_server..":SUDO:USERNAME"),
  }
 create(config, "./Banda.lua")   
-end 
+end ذ
+
 infotnseb = {}
 infotnseb.id = database:get(id_server..":SUDO:ID")
 infotnseb.username = database:get(id_server..":SUDO:USERNAME")
@@ -3325,7 +3326,7 @@ keyboard.inline_keyboard = {
 {{text = '• ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"},{text = '• ʙᴏᴛ ᴊᴀʙᴡᴀ', url="t.me/J_a_b_w_a_bot"}},
 {{text = '• ᴅᴇᴠ ᴛᴀʜᴀ',url="t.me/J_a_b_w_a_bot"},{text = '• ʙᴏᴛ ᴛᴀʜᴀ', url="t.me/TAHA_7XBOT"}},
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
-{{text = 'اضف البوت الي مجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/162&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13049,7 +13050,7 @@ ght = math.random(3,200);
 local Text ='تم اختيار المقطع الصوتي لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/Ccckkc/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13805,14 +13806,14 @@ end
 
 if text == "رتبتي" then
 local msg_id = msg.id_/2097152/0.5  
-local textt = 'رتبتك في بوت  ⇇ '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = 'رتبتك ياقلبي 🌚❤️ ⇇ '..Rutba(msg.sender_user_id_,msg.chat_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -13839,7 +13840,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -13867,7 +13868,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -13895,7 +13896,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -13923,7 +13924,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -13951,7 +13952,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -13979,7 +13980,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -14007,7 +14008,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -14035,7 +14036,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -14063,7 +14064,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -14091,7 +14092,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -16013,7 +16014,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 𝗖𝗛 - ↝@S_a_i_d_i↜  ☽ .
 ]],
 [[
-🇪🇬 - 𝄬 username . #username  𓃠
+??🇬 - 𝄬 username . #username  𓃠
 🇪?? - 𝄬 stast . #stast  ??
 🇪🇬 - ?? id . #id 𓃠
 🇪🇬 - 𝄬 gmas . #gmas 𓃠
