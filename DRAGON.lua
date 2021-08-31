@@ -1019,21 +1019,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-end
-if text == 'قناة السورس' and DevSoFi(msg) then
-database:del(bot_id..'Srt:Bot') 
-local Text = [[ 
-[▸ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ sᴀɪᴅɪ ◂](http://t.me/S_a_i_d_i)
-[▸ ʙᴏᴛ ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ ◂](http://t.me/J_a_b_w_a_bot)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
-{{text = '`ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ´', url="t.me/TWASLJABWA"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
+end 
 if text == 'قـسم الالـعـاب' then
 local Text = 'اهـلا بـك فـي قـسـم الالــعـاب✨'
 local Key = {
@@ -1070,7 +1056,6 @@ local Key = {
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
-
 
 if text == 'قـسم مـطورين الـسورس' then
 local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
@@ -1330,6 +1315,21 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
+if text == 'قناة السورس' and DevSoFi(msg) then
+database:del(bot_id..'Srt:Bot') 
+local Text = [[ 
+[▸ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ sᴀɪᴅɪ ◂](http://t.me/S_a_i_d_i)
+[▸ ʙᴏᴛ ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ ◂](http://t.me/J_a_b_w_a_bot)
+]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
+{{text = '`ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ´', url="t.me/TWASLJABWA"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
 if text == 'قسـم مـطـورين السـورس' and DevSoFi(msg) then 
 local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
@@ -1453,6 +1453,20 @@ if text == 'الاصدار' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ☽ اصدار سورس صعيدي{ 3x☆}')
 end
+if text == 'قناة السورس' and DevSoFi(msg) then
+database:del(bot_id..'Srt:Bot') 
+local Text = [[ 
+[▸ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ sᴀɪᴅɪ ◂](http://t.me/S_a_i_d_i)
+[▸ ʙᴏᴛ ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ ◂](http://t.me/J_a_b_w_a_bot)
+]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
+{{text = '`ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ´', url="t.me/TWASLJABWA"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == '⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣' then
 local Text = [[ 
 قناه مطورين السورس 
@@ -1465,6 +1479,20 @@ keyboard.inline_keyboard = {
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/vagwg/8&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == 'قناة السورس' and DevSoFi(msg) then
+database:del(bot_id..'Srt:Bot') 
+local Text = [[ 
+[▸ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ sᴀɪᴅɪ ◂](http://t.me/S_a_i_d_i)
+[▸ ʙᴏᴛ ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ ◂](http://t.me/J_a_b_w_a_bot)
+]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
+{{text = '`ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ´', url="t.me/TWASLJABWA"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺' or text == 'عاوز بوت' then
 local Text = [[ 
@@ -7038,7 +7066,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمدراء") or text == ("صيح المدراء") then
 local list = database:smembers(bot_id..'Manager'..msg.chat_id_)
-t = "\n ☽ وينكم تعالو يريدوكم بالجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈??𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ وينكم تعالو يريدوكم بالجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -15766,7 +15794,7 @@ local List = {
 ]],
 [[
 ▽|❀• USER ➭ ⁞ #username .
-▽|❀• ??𝚂𝙶𝚂 ➬ ⁞  #msgs  .
+▽|❀• 𝙼𝚂𝙶𝚂 ➬ ⁞  #msgs  .
 ▽|❀• STAT ➬ ⁞ #stast  .
 ▽|❀• 𝙸𝙳  ➬ ⁞ #id  .
 ▽|❀• 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
