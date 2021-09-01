@@ -3533,13 +3533,14 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end
 if text == "غنيلي بفيديو" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,31); 
-local Text ='تم اختيار اغنيه بفديو  لك 🌚❤️' 
+local Text ='تم اختيار فيديو مثالي لك وسيتم التغير عشوائي عند كتب غنيلي بفيديو 🙂♥️' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
+{{text = '❨  𖣘• ⁽𝙰𝚂𝙰𝙻𝙸𝚈𝙰₎ •𖣘 ❩', url="t.me/AsaliyaEgypt"}},
+{{text = '《𝚂𝙴𝙼 𝚅𝙸𝙺𝙸𝙽𝙶》',url="t.me/V_I_K_I_N_G_1"}},
+{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
-local msg_id = msg.id_/2097152/0.5  
+local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendVideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/dvdvdvdva/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "بوستات بالصوره" then  
