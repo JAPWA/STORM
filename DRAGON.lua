@@ -1264,7 +1264,6 @@ echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n
 echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ ↝ مـده تـشغيـل الـسـيـرفـر ↜ ↚\n* '"$uptime"'*'
 ]]):read('*all'))  
 end
-end
 if database:get(bot_id.."Ed:DevBots") then
 if text and text:match("^(%d+)$") then
 local IdDe = text:match("^(%d+)$")
@@ -1286,11 +1285,11 @@ end
 end,nil)
 end
 end
-if text =='تغيير المطور الاساسي' and SudoBot(msg) then
+if text =='تغيير المطور الاساسي ✬' and SudoBot(msg) then
 send(msg.chat_id_, msg.id_,'*✬︙ ارسل ايدي المطور الاساسي الجديد*')
 database:set(bot_id..'Ed:DevBots',true) 
 end
-if text =='تغيير المطور الاساسي' and not SudoBot(msg) then
+if text =='تغيير المطور الاساسي ✬' and not SudoBot(msg) then
 send(msg.chat_id_, msg.id_,'*✬︙لا يمكنك تغيير المطور الاساسي*')
 end
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
