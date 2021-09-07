@@ -4798,12 +4798,12 @@ end
 
 if text == "تفعيل تنظيف التلقائي" and BasicConstructor(msg)  then
 database:set(bot_id.."LoMsg"..msg.chat_id_,true)
-send(msg.chat_id_, msg.id_, ' ☽ مـن قبـل  ⇇ [「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」](T.ME/'..(data.username_ or 'textchuser')..') \n⦁ تم تفعيل التنظيف التلقائي* ')
+send(msg.chat_id_, msg.id_, ' ☽ مـن قبـل  ⇇ [「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」](T.ME/'..(data.username_ or 'textchuser')..') \n☽ تم تفعيل التنظيف التلقائي* ')
 return false
 end
 if text == "تعطيل تنظيف التلقائي" and BasicConstructor(msg) then
 database:del(bot_id.."LoMsg"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, ' ☽ مـن قبـل  ⇇ [「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」](T.ME/'..(data.username_ or 'textchuser')..') \n⦁ تم تعطيل التنظيف التلقائي* ')
+send(msg.chat_id_, msg.id_, ' ☽ مـن قبـل  ⇇ [「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」](T.ME/'..(data.username_ or 'textchuser')..') \n☽ تم تعطيل التنظيف التلقائي* ')
 return false
 end
 
@@ -14979,25 +14979,10 @@ send(msg.chat_id_, msg.id_, sofi)
 end,nil)
 end,nil)
 end 
-if text == 'اطردني' or text == 'طلعني' and GetChannelMember(msg) then   
-if not database:get(bot_id..'Cick:Me'..msg.chat_id_) then
-if Can_or_NotCan(msg.sender_user_id_, msg.chat_id_) == true then
-send(msg.chat_id_, msg.id_, '\n * ☽ عذرا لا استطيع طرد ( '..Rutba(msg.sender_user_id_,msg.chat_id_)..' )*')
-return false
-end
-_key = {
-{{text="تأكيد الامر",callback_data="OkKikedMe"..msg.sender_user_id_},{text="الغاء الامر",callback_data="noKikedMe"..msg.sender_user_id_}},
-}
-send_inlin_key(msg.chat_id_," * ☽ قم بتأكيد العمليه الان*",_key,msg.id_)
-return false
-else
-send(msg.chat_id_, msg.id_,' * ☽ تم تعطيل امر اطردني*') 
-end
-end
 if text == 'اطردني' or text == 'طلعني' then
 if not database:get(bot_id..'Cick:Me'..msg.chat_id_) then
 if Can_or_NotCan(msg.sender_user_id_, msg.chat_id_) == true then
-send(msg.chat_id_, msg.id_, '\n ☽ عذرا لا استطيع طرد ( ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜ )')
+send(msg.chat_id_, msg.id_, '\n ☽ عذرا لا استطيع طرد ( 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」 )')
 return false
 end
 tdcli_function({ID="ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=msg.sender_user_id_,status_={ID="ChatMemberStatusKicked"},},function(arg,data) 
@@ -15005,7 +14990,7 @@ if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_R
 send(msg.chat_id_, msg.id_,' ☽ ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !') 
 return false  
 end
-if (data and data.code_ and d ata.code_ == 3) then 
+if (data and data.code_ and data.code_ == 3) then 
 send(msg.chat_id_, msg.id_,' ☽ البوت ليس ادمن يرجى ترقيتي !') 
 return false  
 end
@@ -15044,7 +15029,7 @@ send(msg.chat_id_, msg.id_,'⚠| لا اسطيع صيح معرفات الجرو�
 return false  
 end
 if result.id_ then
-send(msg.chat_id_, msg.id_,' ☽ 😾تع يعم كلم الود دا قرفني [@↝'..username..'↜]') 
+send(msg.chat_id_, msg.id_,' 😾تع يعم كلم الود دا قرفني [@↝'..username..'↜]') 
 return false
 end
 end
@@ -15070,7 +15055,7 @@ Text = ' ☽ هوا ابن القمر دا الي ضافك😹 ⇇'..Name
 sendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 end,nil)
 else
-send(msg.chat_id_, msg.id_,' ☽ انت دخلت عبر الرابط يوسخ 🌝') 
+send(msg.chat_id_, msg.id_,' ☽ انت دخلت عبر الرابط يقميل 🌝') 
 end
 end,nil)
 else
@@ -15092,7 +15077,7 @@ Text = ' ☽ هوا ابن القمر دا الي ضافك😹 ⇇'..Name
 sendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 end,nil)
 else
-send(msg.chat_id_, msg.id_,' ☽ انت دخلت عبر الرابط يوسخ 🌝') 
+send(msg.chat_id_, msg.id_,' ☽ انت دخلت عبر الرابط يقميل 🌝') 
 end
 end,nil)
 else
