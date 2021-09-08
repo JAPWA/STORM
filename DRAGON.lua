@@ -6077,16 +6077,6 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
-if (text == "تغير المطور الاساسي" or text == "نقل ملكيه البوت" or text == "تغيير المطور الاساسي" or text == "↫ تغير المطور الاساسي ⌁") and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
-send(msg.chat_id_, msg.id_,'⌁︙يجب التاكد ان المطور الجديد ارسل start لخاص البوت بعد ذلك يمكنك ارسال ايدي المطور')
-DevAbs:setex(DevProx.."Abs:EditDev"..msg.sender_user_id_,300,true)
-end
-if DevAbs:get(DevProx.."Abs:EditDev"..msg.sender_user_id_) then
-if text and text:match("^الغاء$") then 
-send(msg.chat_id_, msg.id_,'⌁︙تم الغاء امر تغير المطور الاساسي')
-DevAbs:del(DevProx.."Abs:EditDev"..msg.sender_user_id_)
-return false
-end
 ------------------------------------------------------------------------
 if text == ("مسح المطورين") and DevSoFi(msg) then
 database:del(bot_id..'Sudo:User')
@@ -16580,7 +16570,7 @@ Msᴀɢ ~ #msgs
 𖣤 ᴜѕᴇʀɴᴀᴍᴇ 𓄹?? #id 🇪🇬
 𖦼 ʏᴏᴜʀ ɪᴅ 𓄹𓄼 #username  💛
 𖥪 ᴍѕɢѕ 𓄹𓄼 #msgs ✉️
-𖥧 ѕᴛᴀᴛѕ 𓄹?? #stast 👩🏿‍🚒 
+𖥧 ѕᴛᴀᴛѕ 𓄹𓄼 #stast 👩🏿‍🚒 
 𖥣 ᴇᴅɪᴛ 𓄹𓄼 #game🙇🏿‍♀💕
 ✰ ᴄʜ ᴇʟɪɴ ➣ #edit
 ┄─━━ ☽ ━━─┄
