@@ -3564,7 +3564,6 @@ ght = math.random(1,33);
 local Text ='مرحبا اليك بوسات بي الصوره'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{text = 'بوست اخر', callback_data="/بوستات بالصوره"},
 {{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }  
@@ -6076,6 +6075,16 @@ usertext = '\n ☽ العضو ← '..userid..''
 status  = '\n ☽ تم حظره عام من {'..Groups..'} مجموعه'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
+return false
+end
+if (text == "تغير المطور الاساسي" or text == "نقل ملكيه البوت" or text == "تغيير المطور الاساسي" or text == "↫ تغير المطور الاساسي ⌁") and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
+send(msg.chat_id_, msg.id_,'⌁︙يجب التاكد ان المطور الجديد ارسل start لخاص البوت بعد ذلك يمكنك ارسال ايدي المطور')
+DevAbs:setex(DevProx.."Abs:EditDev"..msg.sender_user_id_,300,true)
+end
+if DevAbs:get(DevProx.."Abs:EditDev"..msg.sender_user_id_) then
+if text and text:match("^الغاء$") then 
+send(msg.chat_id_, msg.id_,'⌁︙تم الغاء امر تغير المطور الاساسي')
+DevAbs:del(DevProx.."Abs:EditDev"..msg.sender_user_id_)
 return false
 end
 ------------------------------------------------------------------------
@@ -15738,7 +15747,7 @@ local List = {
 ]],
 [[
 - 𝑢𝑠𝑒𝑟𝑛𝑎𝑚𝑒 ⟿ #username
-- ??𝑠𝑔𝑠 ⟿ #msgs
+- 𝑚𝑠𝑔𝑠 ⟿ #msgs
 - 𝑖𝑑 ⟿ #id
 - 𝑒𝑑𝑖𝑡 ⟿ #edit
 - 𝑔𝑎𝑚𝑒 ⟿ #game
@@ -16571,7 +16580,7 @@ Msᴀɢ ~ #msgs
 𖣤 ᴜѕᴇʀɴᴀᴍᴇ 𓄹?? #id 🇪🇬
 𖦼 ʏᴏᴜʀ ɪᴅ 𓄹𓄼 #username  💛
 𖥪 ᴍѕɢѕ 𓄹𓄼 #msgs ✉️
-𖥧 ѕᴛᴀᴛѕ 𓄹𓄼 #stast 👩🏿‍🚒 
+𖥧 ѕᴛᴀᴛѕ 𓄹?? #stast 👩🏿‍🚒 
 𖥣 ᴇᴅɪᴛ 𓄹𓄼 #game🙇🏿‍♀💕
 ✰ ᴄʜ ᴇʟɪɴ ➣ #edit
 ┄─━━ ☽ ━━─┄
