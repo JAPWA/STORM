@@ -1913,7 +1913,13 @@ bot_data:del(ban_id.."YYYBD_aza3h3" .. msg.chat_id_ .. ":" .. msg.sender_user_id
 end
 end,nil)
 end
-local list = database:smembers(bot_id..'User_Bot') 
+if bot_data:get(ban_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
+if SourceCh(msg) and text == 'الغاء' or text == 'الغاء ●' then   
+send(msg.chat_id_, msg.id_," ● تم الغاء الاذاعه")
+bot_data:del(ban_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
+return false
+end 
+local list = bot_data:smembers(ban_id..'Chek:Groups') 
 if msg.content_.text_ then
 for k,v in pairs(list) do 
 send(v, 0,'['..msg.content_.text_..']')  
@@ -15919,7 +15925,7 @@ local List = {
 🌯| 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
 [[
-|• 𝚄𝚂𝙴𝚁  ⇉⁞ #username ↝🇪??.
+|• 𝚄𝚂𝙴??  ⇉⁞ #username ↝🇪??.
 |• 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  ↝ 🇪🇬.
 |• 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  ↝🇪🇬.
 |• 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  ↝🇪🇬.
