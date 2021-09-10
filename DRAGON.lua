@@ -1901,47 +1901,6 @@ send(msg.chat_id_, msg.id_," ☽ تم الغاء الاذاعه للخاص")
 database:del(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end 
-local textsudo = 'مرحبا عزيزي المطور الاساسي\n'..
-'رساله من ['..result.first_name_..'](tg://user?id='..msg.sender_user_id_..')\n'..
-'\n'..text
-local textmsa3d = 'مرحبا عزيزي المساعد\n'..
-'رساله من ['..result.first_name_..'](tg://user?id='..msg.sender_user_id_..')\n'..
-'\n'..text
-sendText(SUDO,textsudo,0,'md')
-sendText(msa3d,textmsa3d,0,'md')
-bot_data:del(ban_id.."YYYBD_aza3h3" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-end
-end,nil)
-end
-if bot_data:get(ban_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if SourceCh(msg) and text == 'الغاء' or text == 'الغاء ●' then   
-send(msg.chat_id_, msg.id_," ● تم الغاء الاذاعه")
-bot_data:del(ban_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end 
-local list = bot_data:smembers(ban_id..'Chek:Groups') 
-if msg.content_.text_ then
-for k,v in pairs(list) do 
-send(v, 0,'['..msg.content_.text_..']')  
-end
-elseif msg.content_.photo_ then
-if msg.content_.photo_.sizes_[0] then
-photo = msg.content_.photo_.sizes_[0].photo_.persistent_id_
-elseif msg.content_.photo_.sizes_[1] then
-photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
-end
-for k,v in pairs(list) do 
-sendPhoto(v, 0, 0, 1, nil, photo,(msg.content_.caption_ or ''))
-end 
-elseif msg.content_.animation_ then
-for k,v in pairs(list) do 
-sendDocument(v, 0, 0, 1,nil, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ''))    
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, 0, 1, nil, msg.content_.sticker_.sticker_.persistent_id_)   
-end 
-end
 send(msg.chat_id_, msg.id_," ☽ تمت الاذاعه الى >>{"..#list.."} مشترك في البوت ")
 database:del(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 end
@@ -15925,7 +15884,7 @@ local List = {
 🌯| 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
 [[
-|• 𝚄𝚂𝙴??  ⇉⁞ #username ↝🇪??.
+|• 𝚄𝚂𝙴𝚁  ⇉⁞ #username ↝🇪??.
 |• 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  ↝ 🇪🇬.
 |• 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  ↝🇪🇬.
 |• 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  ↝🇪🇬.
@@ -16441,7 +16400,7 @@ Msᴀɢ ~ #msgs
 ► 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
 [[
-- UsEr🇪🇬 ꙰ #username
+- UsEr🇪?? ꙰ #username
 - StA🇪🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
@@ -16876,7 +16835,7 @@ Msᴀɢ ~ #msgs
 金 - 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
 [[
-- 🇪🇬 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 . #username 𖣂.
+- 🇪🇬 𝐮𝐬??𝐫𝒏𝒂𝒎𝒆 . #username 𖣂.
 - 🇪🇬 𝒔𝒕𝒂𝒔𝒕 . #stast 𖣂.
 - 🇪🇬 𝐢?? . #id 𖣂.
 - 🇪🇬 𝒈𝒂𝒎𝒆𝒔 . #game 𖣂.
