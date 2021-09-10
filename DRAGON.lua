@@ -2992,6 +2992,7 @@ end,nil)
 end,nil)
 end
 
+
 if text == 'تحديث السورس' and DevSoFi(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -16400,7 +16401,7 @@ Msᴀɢ ~ #msgs
 ► 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
 [[
-- UsEr🇪?? ꙰ #username
+- UsEr🇪🇬 ꙰ #username
 - StA🇪🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
@@ -16835,7 +16836,7 @@ Msᴀɢ ~ #msgs
 金 - 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
 [[
-- 🇪🇬 𝐮𝐬??𝐫𝒏𝒂𝒎𝒆 . #username 𖣂.
+- 🇪🇬 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 . #username 𖣂.
 - 🇪🇬 𝒔𝒕𝒂𝒔𝒕 . #stast 𖣂.
 - 🇪🇬 𝐢?? . #id 𖣂.
 - 🇪🇬 𝒈𝒂𝒎𝒆𝒔 . #game 𖣂.
