@@ -2737,10 +2737,10 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⌯｟JABWA｠⌯',url="t.me/J_a_b_w_a"}},
-{{text = '⌯｟ASALIYA｠⌯',url="t.me/AsaliyaEgypt"}},
-{{text = '⌯｟TWASL｠⌯',url="t.me/J_a_b_w_a_bot"}},
-{{text = 'CHANNEL', url="t.me/Sadauam"}},
+{{{text = '• ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"},{text = '• ᴅᴇᴠ ᴛᴀʜᴀ', url="t.me/TahaSayed9"}},
+{{text = '• ᴅᴇᴠ ᴍᴀsʀʏ',url="t.me/PPPPP7P"},{text = '• ᴅᴇᴠ ᴇʟᴋᴇʙᴇʀ', url="t.me/Dv_Exlevr"}},
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Vbaajaj/4&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -2752,10 +2752,10 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text =  ⌯｟JABWA✯｠⌯ ,url="t.me/J_a_b_w_a"}},
-{{text =  ⌯｟ASALIYA✰｠⌯ ,url="t.me/AsaliyaEgypt"}},
-{{text =  ⌯｟TWASL✰｠⌯ ,url="t.me/J_a_b_w_a_bot"}},
-{{text =  CHANNEL , url="t.me/Sadauam"}},
+{{text = '• ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"},{text = '• ᴅᴇᴠ ᴛᴀʜᴀ', url="t.me/TahaSayed9"}},
+{{text = '• ᴅᴇᴠ ᴍᴀsʀʏ',url="t.me/PPPPP7P"},{text = '• ᴅᴇᴠ ᴇʟᴋᴇʙᴇʀ', url="t.me/Dv_Exlevr"}},
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/sssstaaar/7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -13211,7 +13211,7 @@ Msᴀɢ ~ #msgs
 ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
 ᯓ 𝗦𝗧𝗮𝗦𝗧 . #stast 🇪🇬 ꙰
 ᯓ 𝗜𝗗 . #id 🇪🇬 ꙰
-ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game 🇪🇬 ꙰
+ᯓ 𝗚𝗮??𝗘𝗦 . #game 🇪🇬 ꙰
 ᯓ 𝗺𝗦𝗚𝗦 . #msgs 🇪🇬 ꙰
 ᯓ 𝗖𝗛 - @Sadauam ✯
 ]],
