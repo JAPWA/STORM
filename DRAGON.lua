@@ -17476,6 +17476,12 @@ end
 end -- Chat_Type = 'GroupBot' 
 end -- end msg 
 --------------------------------------------------------------------------------------------------------------
+function tdcli_update_callback(data)  -- clback
+if data.ID == "UpdateChannel" then 
+if data.channel_.status_.ID == "ChatMemberStatusKicked" then 
+bot_data:srem(ban_id..'Chek:Groups','-100'..data.channel_.id_)  
+end
+end
 if data.ID == "UpdateNewCallbackQuery" then
 local Chat_id = data.chat_id_
 local Msg_id = data.message_id_
@@ -17544,52 +17550,6 @@ else
 send(msg.chat_id_, msg.id_,'● لا يوجد رابط ارسل ضع رابط') 
 end 
 end,nil) 
-end
-if text == 'اصنع يوزر' or text == 'اصنع' then
-local Text = [[
-مرحبا اختار يوزرك من الأسفل
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '@jjjx33', callback_data="/jjjx33"},{text = '@Xccp', callback_data="/Xccp"},
-},
-{
-{text = '@Lj_llIll', callback_data="/Lj_llIll"},{text = '@pivsn', callback_data="/pivsn"},
-},
-{
-{text = '•@k1op', callback_data="/k1op"},{text = '@Q10d', callback_data="/Q10d"},
-},
-{
-{text = '@llll_iiij', callback_data="/whoop"},{text = '@Xjak', callback_data="/Xjak"},
-},
-{
-{text = '@Xjljlj', callback_data="/Xjljlj"},{text = '@jk1bn', callback_data="/jk1bn"},
-},
-{
-{text = '@A0op', callback_data="/A0op"},{text = '@vip_iij', callback_data="/vip_iij"},
-},
-{
-{text = '@iii_llij', callback_data="/iii_llij"},{text = '@YtIIIl', callback_data="/YtIIIl"},
-},
-{
-{text = '@hjljilj', callback_data="/hjljilj"},{text = '@vbvy', callback_data="/vbvy"},
-},
-{
-{text = '@Diiolk', callback_data="/Diiolk"},{text = '@Bi01j', callback_data="/Bi01j"},
-},
-{
-{text = '@frrili', callback_data="/frrili"},{text = '@Xcvb', callback_data="/Xcvb"},
-},
-{
-{text = '@Dlik', callback_data="/Dlik"},
-},
-{
-{text = 'اخفاء اليوزرات', callback_data="/hide"},
-},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if Text == '/help1' then
 if not Mod(data) then
