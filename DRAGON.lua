@@ -14632,7 +14632,7 @@ end,nil)
 end 
 if text == 'بايو' then   
 send(msg.chat_id_, msg.id_,getbio(msg.sender_user_id_)) 
-end 
+end
 if text == 'ايديي' then
 send(msg.chat_id_, msg.id_,' ☽ ايديك  ⇇'..msg.sender_user_id_)
 end
@@ -15502,7 +15502,7 @@ local List = {
 - 𝑖𝑑 ⟿ #id
 - 𝑒𝑑𝑖𝑡 ⟿ #edit
 - 𝑔𝑎𝑚𝑒 ⟿ #game
-- 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
+- ??𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
