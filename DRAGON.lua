@@ -4686,19 +4686,6 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = SUDO, offset_ = 0, lim
 end,nil)
 end
 end
-
-if text == "غنيلي" and not  bot_data:get(ban_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='دوس علي الزرار لاختيار أغنيه أخري 🍁' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/allstate"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/faioo8/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
-
 if text == "تويت بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,28); 
 local Text ='مرحبا إليك تويت بالصور🌚❤️' 
@@ -16041,7 +16028,7 @@ Msᴀɢ ~ #msgs
 [[
 ᯓ 𝟔𝟔𝟔 𖡋 #username •✟
 ᯓ 𝟔𝟔𝟔𖡋 #stast  •✟
-ᯓ 𝟔𝟔𝟔𖡋 #id  • ✟
+ᯓ 𝟔𝟔𝟔?? #id  • ✟
 ᯓ 𝟔𝟔𝟔?? #msgs  •✟ 
 ᯓ 𝟔𝟔𝟔𖡋 #game •✟
 ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
