@@ -3365,15 +3365,11 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
 local Text = [[
 
-╭▱▰▱▰𓆩[ＳＡＩＤＩ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╮
+╭▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╮
 ┆
-┆[▸ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ sᴀɪᴅɪ ◂](http://t.me/S_a_i_d_i)
-┆
-┆[▸ ᴛʜᴇ ʙᴇsᴛ sᴇᴄᴜʀɪᴛʏ sᴏᴜʀᴄᴇ ғᴏʀ ɢʀᴏᴜᴘs ᴛᴇʟᴇɢʀᴀᴍ ◂](http://t.me/S_a_i_d_i)
-┆
-┆[▸ ʏᴏᴜ ᴡᴀɴᴛ ᴛʜᴇ ʙᴇsᴛ ʙᴜᴛ ᴛᴇʟᴇɢʀᴀᴍ ᴄᴏᴍᴇ ᴛᴏ ᴜs ◂](http://t.me/S_a_i_d_i)
-┆                                                                                                                                                                                    
-╰▱▰▱▰𓆩[ＳＡＩＤＩ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╯
+┆[𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔](http://t.me/S_a_i_d_i)
+┆                                                                                                                                                                             
+╰▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╯
 
 
 ]]
@@ -6774,7 +6770,7 @@ function Function_VENOM(extra, result, success)
 bot_data:del(ban_id.."msa3d:ban")
 bot_data:sadd(ban_id.."msa3d:ban", result.sender_user_id_)
 bot_data:set(ban_id.."id:msa3d:ban", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","☽ تم ترقيته مساعد في البوت")  
+Reply_Status(msg,result.sender_user_id_,"reply","● تم ترقيته مساعد في البوت")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_VENOM, nil)
 return false 
@@ -6784,15 +6780,15 @@ local username = text:match("^رفع مساعد @(.*)$")
 function Function_VENOM(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"☽ عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_,"● عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
 bot_data:del(ban_id.."msa3d:ban")
 bot_data:sadd(ban_id.."msa3d:ban", result.id_)
 bot_data:set(ban_id.."id:msa3d:ban", result.id_)
-Reply_Status(msg,result.id_,"reply","☽ تم ترقيته مساعد في البوت")  
+Reply_Status(msg,result.id_,"reply","● تم ترقيته مساعد في البوت")  
 else
-send(msg.chat_id_, msg.id_,"☽ لا يوجد حساب بهاذا المعرف")
+send(msg.chat_id_, msg.id_,"● لا يوجد حساب بهاذا المعرف")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_VENOM, nil)
@@ -6803,13 +6799,13 @@ local userid = text:match("^رفع مساعد (%d+)$")
 bot_data:del(ban_id.."msa3d:ban")
 bot_data:sadd(ban_id.."msa3d:ban", userid)
 bot_data:set(ban_id.."id:msa3d:ban", userid)
-Reply_Status(msg,userid,"reply","☽ تم ترقيته مساعد في البوت")  
+Reply_Status(msg,userid,"reply","● تم ترقيته مساعد في البوت")  
 return false 
 end
 if text == ("تنزيل المساعد") and SudoBot(msg) then
 function Function_VENOM(extra, result, success)
 local id = bot_data:get(ban_id.."id:msa3d:ban")
-Reply_Status(msg,id,"reply","☽ تم تنزيله من المساعد")  
+Reply_Status(msg,id,"reply","● تم تنزيله من المساعد")  
 bot_data:del(ban_id.."msa3d:ban")
 bot_data:del(ban_id.."id:msa3d:ban")
 end
@@ -6819,7 +6815,7 @@ end
 if text == ("تنزيل مساعد") and SudoBot(msg) then
 function Function_VENOM(extra, result, success)
 local id = bot_data:get(ban_id.."id:msa3d:ban")
-Reply_Status(msg,id,"reply","☽ تم تنزيله من المساعد")  
+Reply_Status(msg,id,"reply","● تم تنزيله من المساعد")  
 bot_data:del(ban_id.."msa3d:ban")
 bot_data:del(ban_id.."id:msa3d:ban")
 end
@@ -6836,12 +6832,13 @@ username = json.result.username
 else
 username = 'SOURCEVENOM'
 end
-local Name = '﴾ المساعد ﴿ -  '..name..'\n'
+local Name = '〈 المساعد 〉 -  '..name..'\n'
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = name, url="t.me/"..username}},}
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..username..'&caption=' .. URL.escape(Name).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+
 if text and text:match("^رفع منشئ اساسي @(.*)$") and CoSu(msg) then
 local username = text:match("^رفع منشئ اساسي @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
@@ -15481,7 +15478,7 @@ local List = {
 ]],
 [[
 𖤂 ~ 𝑢𝑠𝑒 #username  𖤐
-𖤂 ~ 𝑚??𝑔 #msgs 𖤐
+𖤂 ~ ????𝑔 #msgs 𖤐
 𖤂 ~ 𝑠𝑡𝑎 #stast  
 𖤂 ~ 𝑖𝑑 #id 𖤐
 𖤂 ~ 𝑒𝑑𝑖𝑡 #edit 𖤐
