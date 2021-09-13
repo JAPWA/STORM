@@ -17491,151 +17491,54 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == "تفعيل مريم"  then
-if Constructor(msg) then  
-database:set(bot_id.."my_maryam:status"..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_," ☽ تـم تـفعـيل مريم") 
+
+if text == 'مريم' then
+local my_ph = bot_data:get(ban_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_," ● مريم  معطله") 
 return false  
 end
+local Text = [[
+🥀اطفي النور واستمتع بلعبه 
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = 'حسنا', callback_data="/may"},
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qtdao/37&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == "تعطيل مريم"  then
-if Constructor(msg) then  
-database:del(bot_id.."my_maryam:status"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_," ☽ تـم تـعـطـيل مريم") 
-return false end
+if text == 'اسالني' or text == 'اختار' or text == 'لغز' or text == 'الغاز' then
+local Text = [[
+﴿ هل انت جهاز للعب ﴾
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = 'ابدا العب', callback_data="/guitar"},
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qtdao/40&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == "مريم" then
-local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_," ☽ مريم  معطله") 
-return false  
-end
-if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"هل انت جاهز ؟🧟‍♀🧟‍♂ ❲لو هتكمل ارسل يلا❳"}
-send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
-end
-end
-if text == "يلا" or text == "هيا بنا"  then
-local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-return false  
-end
-if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {" ؟لا تصدر اي صوت ! 🧟‍♀🧟‍♂ ❲لو هتكمل ارسال حاضر ❳"}
-send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
-end
-end
-if text == "ماشي" or text == "حاضر"  then
-local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-return false  
-end
-if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {" لقد وصلنا الى المنزل شكراَ جزيلَ انتطرني ثواني وسوف اعود! 🧟‍♀🧟‍♂ ❲لو هتكمل ارسال مستني ❳"}
-send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
-end
-end
-if text == "مستني" or text == "منتظر"  then
-local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-return false  
-end
-if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {" لقد عودت إليك ظهر شيئ 🧟‍♂🧟‍♀ ❲لو هتكمل إرسال احد ما خرج من المنزل! 🧟‍♀🧟‍♂❳"}
-send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
-end
-end
-if text == "احد ما خرج من المنزل! 🧟‍♀🧟‍♂" or text == "احد ما خرج من المنزل"  then
-local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-return false  
-end
-if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"هيا نذهب داخل المنزل🧟‍♀🧟‍♂ ❲لو هتكمل ارسال هيا❳"}
-send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
-end
-end
-if text == "هيا"  then
-local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-return false  
-end
-if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {" نحنو نتوه في هذه المكان🧟‍♀🧟‍♂❲لو هتكمل ارسال تعالي نذهب الي الضوء❳"}
-send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
-end
-end
-if text == "تعالي نذهب الي الضوء"  then
-local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-return false  
-end
-if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"❲لو هتكمل ارسل ياالهي كان هناك❳ 🧟‍♀🧟‍♂لايوجد ضوء هناك انظر"}
-send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
-end
-end
-if text == "ياالهي كان هناك" then
-local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-return false  
-end
-if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"تع نذهب الي الباب الرئيسي🧟‍♀🧟‍♂ ❲لو هتكمل ارسل انهو مغلق❳"}
-send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
-end
-end
-if text == "انهو مغلق" then
-local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-return false  
-end
-if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"انها النهايه  ❲هتكمل ولا لا❳"}
-send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
-end
-end
-if text == "هكمل" then
-local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-return false  
-end
-if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"سارسل اليك اختيارت لو حليت صح ستنجو من العقاب لو خطأ سيقوم عليك العقاب🧟‍♀🧟‍♂❲عدد يقبل القسمة على 2,3,4,5,6 وعند القسمة في كل مرة يتبقى واحد، ما هو العدد؟❳❲61،44,00,121,90،99,70❳"}
-
-send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
-end
-end
-if text == "لا" then
-local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-return false  
-end
-if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"هي انت ستندم سأقتلك🧟‍♀🧟‍♂"}
-send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
-end
-end
-if text == "61" then
-local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-return false  
-end
-if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"لقد فازت ونجوت من العقاب 👻🌟"}
-send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
-end
-end
-if text == "99" or text == "70" or text == "44" or text == "00" or text == "121" or text == "90" then
-local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-return false  
-end
-if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"قل لواحد ماتعرفه عطني كف خطأ العقاب هوا ؟؟","خطأ العقاب هوا ؟؟سو مشهد تمثيلي عن مصرية بتولد","خطأ العقاب هوا ؟؟صور اي شيء يطلبه منك الاعبين","خطأ العقاب هوا ؟؟البس طرحه امك او اختك ","خطأ العقاب هوا ؟؟لا خلاص معتش في سمحتك"," خطأ العقاب هوا ؟؟اتصل لاخوك و قول له انك سويت حادث و الخ....","خطأ العقاب هوا ؟؟تكلم باللغة الانجليزية الين يجي دورك مرة ثانية لازم تتكلم اذا ما تكلمت تنفذ عقاب ثاني","خطأ العقاب هوا ؟؟تروح عند شخص تقول له ","خطأ العقاب هوا ؟؟ اتصل على ابوك و قول له انك رحت مع بنت و احين هي حامل....","خطأ العقاب هوا ؟؟اتصل على امك و قول لها انك ","خطأ العقاب هوا ؟؟اذا انت ولد اكسر اغلى او احسن عطور عندك اذا انتي بنت اكسري الروج حقك او الميك اب حقك"}
-send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
-end
+if text == 'اختبار الذكاء' or text == 'نسبه الذكاء' then
+local Text = [[
+رجل اشترى جهاز كهربائي بخصم 20% من إجمالي قيمة الجهاز، وهي نسبة تساوي 150 ريال؟.ما هي قيمة الجهاز؟.
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = '600', callback_data="/verp"},{text = '700', callback_data="/plling"},
+},
+{
+{text = '550', callback_data="/pullin"},{text = '237', callback_data="/pulng"},
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qtdao/38&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == "بنت" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
@@ -18537,7 +18440,7 @@ keyboard.inline_keyboard = {
 {text = '◗القائمه الرائسيه◖', callback_data="/add"},
 },
 {
-{text = '◗تــغــير الــلــغــه◖', callback_data="/adui74"},
+{text = '﴾ تــغــير الــلــغــه ﴿', callback_data="/adui74"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -18708,6 +18611,138 @@ keyboard.inline_keyboard = {
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
+if data.ID == "UpdateNewMessage" then  -- new msg
+msg = data.message_
+text = msg.content_.text_
+if Text == '/@jjjx33' then
+local Teext =[[
+@jjjx33
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/Xccp' then
+local Teext =[[
+@Xccp
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/Lj_llIll' then
+local Teext =[[
+@Lj_llIll
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/pivsn' then
+local Teext =[[
+@pivsn
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+
+if Text == '/k1op' then
+local Teext =[[
+@k1op
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/Q10d' then
+local Teext =[[
+@Q10d
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+
+if Text == '/whoop' then
+local Teext =[[
+@llll_iiij
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+
+if Text == '/Xjljlj' then
+local Teext =[[
+@Xjljlj
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/Xjak' then
+local Teext =[[
+@Xjak
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/jk1bn' then
+local Teext =[[
+@jk1bn
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/A0op' then
+local Teext =[[
+@A0op
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/vip_iij' then
+local Teext =[[
+@vip_iij
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/YtIIIl' then
+local Teext =[[
+@YtIIIl
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/iii_llij' then
+local Teext =[[
+@iii_llij
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/vbvy' then
+local Teext =[[
+@vbvy
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/hjljilj' then
+local Teext =[[
+@hjljilj
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/Diiolk' then
+local Teext =[[
+@Diiolk
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/Bi01j' then
+local Teext =[[
+@Bi01j
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/frrili' then
+local Teext =[[
+@frrili
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+if Text == '/Xcvb' then
+local Teext =[[
+@Xcvb
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
+
+if Text == '/Dlik' then
+local Teext =[[
+@Dlik
+]]
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
+end
 if Text == '/change-id' then
 local Teext =[[
  اتبع الاوامر الاعضاء
@@ -18871,138 +18906,6 @@ keyboard.inline_keyboard = {
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
-end
-if data.ID == "UpdateNewMessage" then  -- new msg
-msg = data.message_
-text = msg.content_.text_
-if Text == '/@jjjx33' then
-local Teext =[[
-@jjjx33
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/Xccp' then
-local Teext =[[
-@Xccp
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/Lj_llIll' then
-local Teext =[[
-@Lj_llIll
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/pivsn' then
-local Teext =[[
-@pivsn
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-
-if Text == '/k1op' then
-local Teext =[[
-@k1op
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/Q10d' then
-local Teext =[[
-@Q10d
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-
-if Text == '/whoop' then
-local Teext =[[
-@llll_iiij
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-
-if Text == '/Xjljlj' then
-local Teext =[[
-@Xjljlj
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/Xjak' then
-local Teext =[[
-@Xjak
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/jk1bn' then
-local Teext =[[
-@jk1bn
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/A0op' then
-local Teext =[[
-@A0op
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/vip_iij' then
-local Teext =[[
-@vip_iij
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/YtIIIl' then
-local Teext =[[
-@YtIIIl
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/iii_llij' then
-local Teext =[[
-@iii_llij
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/vbvy' then
-local Teext =[[
-@vbvy
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/hjljilj' then
-local Teext =[[
-@hjljilj
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/Diiolk' then
-local Teext =[[
-@Diiolk
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/Bi01j' then
-local Teext =[[
-@Bi01j
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/frrili' then
-local Teext =[[
-@frrili
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-if Text == '/Xcvb' then
-local Teext =[[
-@Xcvb
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-end
-
-if Text == '/Dlik' then
-local Teext =[[
-@Dlik
-]]
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
 end
 --------------------------------------------------------------------------------------------------------------
 if text and not database:sismember(bot_id..'Spam:Texting'..msg.sender_user_id_,text) then
