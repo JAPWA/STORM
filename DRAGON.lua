@@ -1074,7 +1074,7 @@ local Key = {
 {'⩹━━━━━━❪ركن الافلام❫━━━━━━⩺'},
 {'افلام اجنبي',' افلام كرتون'},
 {'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
-{'افلام عربيه','غنيلي بفديو'},
+{'افلام عربي','غنيلي بفديو'},
 {'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
 {'غنيلي'},
 {'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
@@ -3660,19 +3660,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BOY_GIRLM/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == "غنيلي بفيديو" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(1,31); 
-local Text ='تم اختيار فيديو مثالي لك وسيتم التغير عشوائي عند كتب غنيلي بفيديو 🙂♥️' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '❨  𖣘• ⁽𝙰𝚂𝙰𝙻𝙸𝚈𝙰₎ •𖣘 ❩', url="t.me/AsaliyaEgypt"}},
-{{text = '《𝚂𝙴𝙼 𝚅𝙸𝙺𝙸𝙽𝙶》',url="t.me/V_I_K_I_N_G_1"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/dvdvdvdva/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "بوستات بالصوره" then  
+if text == "بوستات بالصور" then  
 ght = math.random(1,33);  
 local Text ='مرحبا اليك بوسات بي الصوره'  
 keyboard = {}   
@@ -3693,6 +3681,83 @@ keyboard.inline_keyboard = {
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MALUEMA/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "صور كرتون" then  
+ght = math.random(1,33);  
+local Text ='إليك صور كرتون إنمي 🌚💘'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/swary0/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "خلفيات رومانسيه" then  
+ght = math.random(1,33);  
+local Text ='مرحبا اليك خلفيه جميله يا بتاع الحب 🌚💘'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/jrumdi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "افلام اجنبي" then  
+ght = math.random(1,33);  
+local Text ='مرحبا اليك فلام من الافلام الاجنبيه 🌚💘'
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/jdjie1/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "افلام عربي" then  
+ght = math.random(1,33);  
+local Text ='مرحبا اليك فلام عربي من افضل الافلام 🌚💘'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/jndjkdkd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "كرتون" then  
+ght = math.random(1,33);  
+local Text ='إليك حلقه من بعض أفلام الكرتون يطفل 🙈😂'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/y_giu/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "فديو اجنبي" then  
+ght = math.random(1,33);  
+local Text ='تم أختيار الفيديو الأجنبي إليك الأن 🌚💘'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/agany001/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "غنيلي بفديو" then  
+ght = math.random(1,33);  
+local Text ='تم اختيار اغنيه عشوائية من اغني بفديو 🌚💘'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/jfudb637/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == "تويت" or text == "كت تويت" then 
