@@ -2086,7 +2086,7 @@ end
 if text == 'قناه السورس' and Devban(msg) then
 bot_data:del(ban_id..'Srt:Bot') 
 local Text = [[ 
-  ☽  من أحسن السورسات على التليجرام سورس فينوم  ☽ 
+  ﴿ من أحسن السورسات على التليجرام سورس صعيدي ﴾
 بجد سورس أمان جدا وفي مميزات جامده
 تع نصب بوتك عندنا لو محظور
 خش على تواصل هيدخلك لروم التواصل 
@@ -15981,7 +15981,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 𝒔𝒕𝒂𝒔𝒕 . #stast 𖣂.
 - 🇪🇬 𝐢?? . #id 𖣂.
 - 🇪🇬 𝒈𝒂𝒎𝒆?? . #game 𖣂.
-- 🇪🇬 𝐦??𝐠 . #msgs 𖣂.
+- 🇪🇬 𝐦𝐬𝐠 . #msgs 𖣂.
 - 🇪🇬 𝗖𝗛 - 『@SOURCEDRAGON』  ☽ 
 ]],
 [[
@@ -18589,7 +18589,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙴𝙽𝙾𝙼 2⤶',url="t.me/SOURCEDRAGON2"},{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙴𝙽𝙾𝙼 1⤶', url="t.me/SOURCEDRAGON1"}},
+{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙴𝙽𝙾𝙼 2⤶',url="t.me/SOURCEDRAGON2"},{text = '𝚂𝙾𝚄??𝙲𝙴 𝚅𝙴𝙽𝙾𝙼 1⤶', url="t.me/SOURCEDRAGON1"}},
 {{text = '•ᴛᴀᴡᴏsʟ♪',url="t.me/DRAGON_TeAm1"}}, 
 {{text = ' ☽ 𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 }
