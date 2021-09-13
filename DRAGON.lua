@@ -19210,7 +19210,7 @@ local name = data.first_name_
 local iduser = data.id_
 local users = ('[@'..data.username_..']' or iduser)
 local list = database:smembers(bot_id..'Constructor'..msg.chat_id_)
-t = "\n ☽ شخص ما يحاول تعديل الميديا \n"
+t = "\n 𖢄 شخص ما يحاول تعديل الميديا \n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -19220,9 +19220,9 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = " ☽ لا يوجد ادمن"
+t = " 𖢄 لا يوجد ادمن"
 end
-send(msg.chat_id_,0,''..t..'\n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ تم التعديل على الميديا\n ☽ الشخص الي قام بالتعديل\n ☽ ايدي الشخص ◂ '..result.sender_user_id_..'\n ☽ معرف الشخص ↚{ '..users..' }') 
+send(msg.chat_id_,0,''..t..'\n⩹━━━━━❲𖥳 𝐕𝐎𝐃𝐓𝐊𝐀 𖥳❳━━━━━⩺\n 𖢄 تم التعديل على الميديا\n 𖢄 الشخص الي قام بالتعديل\n 𖢄 ايدي الشخص ◂ '..result.sender_user_id_..'\n 𖢄 معرف الشخص ↚{ '..users..' }') 
 end,nil)
 DeleteMessage(msg.chat_id_,{[0] = msg.message_id_}) 
 end
