@@ -6991,7 +6991,7 @@ if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 owner_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = owner_id},function(arg,b) 
 if b.first_name_ == false then
-send(msg.chat_id_, msg.id_," 𖢄 حساب المنشئ محذوف")
+send(msg.chat_id_, msg.id_," ☽ حساب المنشئ محذوف")
 return false  
 end
 if b.username_ then
@@ -6999,11 +6999,11 @@ UserName = b.username_
 else
 UserName = 'Abdaskndar'
 end
-local Text = " 𖢄 منشئ الجروب  ⇇ ["..b.first_name_.."](tg://user?id="..b.id_..")\n"..getbio(b.id_):gsub('لايوجد','')
+local Text = " ☽ منشئ الجروب  ⇇ ["..b.first_name_.."](tg://user?id="..b.id_..")\n"..getbio(b.id_):gsub('لايوجد','')
 local msg_id = msg.id_/2097152/0.5
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𖢄 '..b.first_name_..' 𖢄', url="t.me/"..UserName}}, 
+{{text = '☽ '..b.first_name_..' ☽', url="t.me/"..UserName}}, 
 }
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..UserName..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
@@ -7029,7 +7029,7 @@ LinkGroup = LinkGp.result
 else
 LinkGroup = 'لا يوجد'
 end
-sendText(b.id_," 𖢄 مرحبا عزيزي المنشئ هناك شخص يريدك \n 𖢄 الشخص  {"..Name.."}\n 𖢄 اسم الجروب {"..NameChat.."}\n 𖢄 ايدي الجروب {"..msg.chat_id_.."}\n 𖢄 رابط الجروب \n ["..LinkGroup.."] ",0,'md')
+sendText(b.id_," ☽ مرحبا عزيزي المنشئ هناك شخص يريدك \n ☽ الشخص  {"..Name.."}\n ☽ اسم الجروب {"..NameChat.."}\n ☽ ايدي الجروب {"..msg.chat_id_.."}\n ☽ رابط الجروب \n ["..LinkGroup.."] ",0,'md')
 end,nil)
 end,nil)
 end,nil)
@@ -16316,7 +16316,7 @@ Msᴀɢ ~ #msgs
 • 🦄 | 𝑼𝑬𝑺 : #username ‌‌‏⚚
 • 🦄 | 𝑺𝑻𝑨 : #stast ☥
 • 🦄 | 𝑰𝑫 : #id ‌‌‏♕
-• 🦄 | 𝑴𝑺𝑮 : #msgs 𓆊
+• 🦄 | 𝑴𝑺𝑮 : #msgs ??
 • 🦄 | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 : ⁞
 • 🦄 | 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
