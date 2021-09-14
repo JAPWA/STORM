@@ -3602,18 +3602,6 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BOY_GIRLM/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == "غنيلي بفيديو" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(1,31); 
-local Text ='تم اختيار فيديو مثالي لك وسيتم التغير عشوائي عند كتب غنيلي بفيديو 🙂♥️' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '❨  𖣘• ⁽𝙰𝚂𝙰𝙻𝙸𝚈𝙰₎ •𖣘 ❩', url="t.me/AsaliyaEgypt"}},
-{{text = '《𝚂𝙴𝙼 𝚅𝙸𝙺𝙸𝙽𝙶》',url="t.me/V_I_K_I_N_G_1"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/dvdvdvdva/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 if text == "بوستات بالصوره" then  
 ght = math.random(1,33);  
 local Text ='مرحبا اليك بوسات بي الصوره'  
@@ -3635,6 +3623,83 @@ keyboard.inline_keyboard = {
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MALUEMA/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "صور كرتون" then  
+ght = math.random(1,33);  
+local Text ='إليك صور كرتون إنمي 🌚❤️'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/swary0/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "خلفيات رومانسيه" then  
+ght = math.random(1,33);  
+local Text ='مرحبا اليك خلفيه جميله يا بتاع الحب 🌚❤️'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/jrumdi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "افلام اجنبي" then  
+ght = math.random(1,33);  
+local Text ='مرحبا اليك فلام من الافلام الاجنبيه 🌚❤️'
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/jdjie1/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "افلام عربي" then  
+ght = math.random(1,33);  
+local Text ='مرحبا اليك فلام عربي من افضل الافلام 🌚❤️'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/jndjkdkd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "كرتون" then  
+ght = math.random(1,33);  
+local Text ='إليك حلقه من بعض أفلام الكرتون يطفل 🙈😂'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/y_giu/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "فديو اجنبي" then  
+ght = math.random(1,33);  
+local Text ='تم أختيار الفيديو الأجنبي إليك الأن 🌚❤️'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/agany001/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "غنيلي بفديو" then  
+ght = math.random(1,33);  
+local Text ='تم اختيار اغنيه عشوائية من اغني بفديو 🌚❤️'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/jfudb637/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == "تويت" or text == "كت تويت" then 
@@ -6926,15 +6991,51 @@ if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 owner_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = owner_id},function(arg,b) 
 if b.first_name_ == false then
-send(msg.chat_id_, msg.id_," ☽ حساب المنشئ محذوف")
+send(msg.chat_id_, msg.id_," 𖢄 حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "SRC-DRAGON")
-send(msg.chat_id_, msg.id_," ☽ منشئ الجروب  ⇇["..b.first_name_.."](T.me/"..UserName..")")  
-end,nil)   
+if b.username_ then
+UserName = b.username_
+else
+UserName = 'Abdaskndar'
+end
+local Text = " 𖢄 منشئ الجروب  ⇇ ["..b.first_name_.."](tg://user?id="..b.id_..")\n"..getbio(b.id_):gsub('لايوجد','')
+local msg_id = msg.id_/2097152/0.5
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '𖢄 '..b.first_name_..' 𖢄', url="t.me/"..UserName}}, 
+}
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..UserName..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
+tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,dp) 
+local Name1 = result.first_name_
+local Name1 = Name1:gsub('"',"") 
+local Name1 = Name1:gsub("'","") 
+local Name1 = Name1:gsub("","") 
+local Name1 = Name1:gsub("*","") 
+local Name1 = Name1:gsub("{","") 
+local Name1 = Name1:gsub("}","") 
+local Name = '['..Name1..'](tg://user?id='..result.id_..')'
+local NameChat = dp.title_
+local NameChat = NameChat:gsub('"',"") 
+local NameChat = NameChat:gsub("'","") 
+local NameChat = NameChat:gsub("","") 
+local NameChat = NameChat:gsub("*","") 
+local NameChat = NameChat:gsub("{","") 
+local NameChat = NameChat:gsub("}","") 
+local LinkGp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_))
+if LinkGp.ok == true then 
+LinkGroup = LinkGp.result
+else
+LinkGroup = 'لا يوجد'
+end
+sendText(b.id_," 𖢄 مرحبا عزيزي المنشئ هناك شخص يريدك \n 𖢄 الشخص  {"..Name.."}\n 𖢄 اسم الجروب {"..NameChat.."}\n 𖢄 ايدي الجروب {"..msg.chat_id_.."}\n 𖢄 رابط الجروب \n ["..LinkGroup.."] ",0,'md')
+end,nil)
+end,nil)
+end,nil)
 end
 end
-end,nil)   
+end,nil)
 end
 
 if text == "رفع منشئ" and msg.reply_to_message_id_ and BasicConstructor(msg) then
@@ -12383,7 +12484,7 @@ local DRAGON_Msg = {
 'اسمي  '..Namebot..' يامزه 🥺❤️',
 'اسمي  '..Namebot..' يعم 😒',
 'مقولت اسمي '..Namebot..' في اي 🙄',
-'اسمي الكيوت '..Namebot..' 🌝💘',
+'اسمي الكيوت '..Namebot..' 🌝❤️',
 'اسمي  '..Namebot..' ياحياتي🧸♥️',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
@@ -13267,86 +13368,6 @@ sender = rpl[math.random(#rpl)]
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. msg.sender_user_id_ .. '&text=' .. URL.escape(sender))
 end
-if text == 'حصل' then
-local Text = [[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/18&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == 'كسمهم' then
-local Text = [[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/19&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == 'انا جيت' then
-local Text = [[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = ' `sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/comxnxp/20&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == 'النرد' then
-local Text = [[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = ' `sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/Qtdao/14&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == 'النشال' then
-local Text = [[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = ' `sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/Qtdao/15&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == 'طرطر' then
-local Text = [[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == 'كره الساله' then
-local Text = [[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qtdao/16&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "تويت بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(3,300); 
-local Text =' ' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&Photo=https://t.me/wffhvv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 if text and text:match("^وضع لقب (.*)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
 local timsh = text:match("^وضع لقب (.*)$")
 function start_function(extra, result, success)
@@ -13982,7 +14003,7 @@ end
 if text == 'هاي' or text == 'هيي' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_," ☽ معطله") 
+send(msg.chat_id_, msg.id_,"الردود معطله  يرجاء كتب تفعيل ردود السورس") 
 return false  
 end
 send(msg.chat_id_,msg.id_, '[باي..😺💜](t.me/S_a_i_d_i)')
@@ -14090,6 +14111,16 @@ send(msg.chat_id_, msg.id_,"  ")
 return false  
 end
 send(msg.chat_id_,msg.id_, '[انت الي حلو ياقمر..🌚♥️](t.me/S_a_i_d_i)')
+return false
+end
+
+if text == "ويت"  or text == "خمسه وجاي" then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[اي ثقافه دي 😹](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14243,7 +14274,7 @@ send(msg.chat_id_,msg.id_, '[محات حياتي يروحي..🌚💔](t.me/S_a_
 return false
 end
 
-if text == "🙂"  or text == "🌚" then
+if text == "🌝"  or text == "🌚" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
@@ -14419,10 +14450,7 @@ return false
 end
 end
 end
-if text then 
-list = {'اه'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == "اه"  or text == "اها" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
@@ -14430,8 +14458,6 @@ return false
 end
 send(msg.chat_id_,msg.id_, '[اه اي يا قدع عيب 😹💔](t.me/S_a_i_d_i)')
 return false
-end
-end
 end
 if text then 
 list = {'كسم'}
@@ -15230,10 +15256,10 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝚄??𝙴𝚁 ↬  ↝'..username..'↜     ↝💘\n|• ??𝚂𝙶𝚂↬  ↝'..Msguser..'↜     ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜     ↝💘\n|• 𝙸𝙳↬   ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬  ↝@S_a_i_d_i↜     ↝💘\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝚄??𝙴𝚁 ↬  ↝'..username..'↜     ↝❤️\n|• ??𝚂𝙶𝚂↬  ↝'..Msguser..'↜     ↝❤️\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜     ↝❤️\n|• 𝙸𝙳↬   ↝'..msg.sender_user_id_..'↜    ↝❤️\n|• 𝒄𝒉↬  ↝@S_a_i_d_i↜     ↝❤️\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n|• 𝚄𝚂𝙴𝚁 ↬  ↝'..username..'↜    ↝💘\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝💘\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬   ↝@S_a_i_d_i↜    ↝💘\n')
+send(msg.chat_id_, msg.id_,'[\n|• 𝚄𝚂𝙴𝚁 ↬  ↝'..username..'↜    ↝❤️\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ↝❤️\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝❤️\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ↝❤️\n|• 𝒄𝒉↬   ↝@S_a_i_d_i↜    ↝❤️\n')
 else
 send(msg.chat_id_, msg.id_, '\n ☽ الصوره ⇜ ليس لديك صور في حسابك'..'[\n|• 𝚄𝚂𝙴𝚁 ↬ ↝'..username..'↜\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜\n|• 𝒄𝒉↬  ↝@S_a_i_d_i↜\n')
 end 
@@ -15404,11 +15430,11 @@ local List = {
 𓅓➪ : 𝗖𝗛 - ↝@S_a_i_d_i↜ 💞.
 ]],
 [[
-- ايديڪ  ⁞ #id 💘 ٬
+- ايديڪ  ⁞ #id ❤️ ٬
 - يوزرڪ القميل ⁞ #username ?? ٬
-- رسائلڪ  الطيفهہَ ⁞ #msgs 💘 ٬
-- رتبتڪ الحلوه ⁞ #stast  💘٬
-- سحڪاتڪ الفول ⁞ #edit 💘 ٬
+- رسائلڪ  الطيفهہَ ⁞ #msgs ❤️ ٬
+- رتبتڪ الحلوه ⁞ #stast  ❤️٬
+- سحڪاتڪ الفول ⁞ #edit ❤️ ٬
 - 𝗖𝗛 - ↝@S_a_i_d_i↜ 💞.
 ]],
 [[
@@ -15467,10 +15493,10 @@ local List = {
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 - 𝚄𝚂𝙴𝚁 ⟿ #username 💘.
-🇪🇬 - ??𝚂𝙶𝚂 ⟿  #msgs 💘.
-🇪🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast 💘.
-🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
+🇪🇬 - 𝚄𝚂𝙴𝚁 ⟿ #username ❤️.
+🇪🇬 - ??𝚂𝙶𝚂 ⟿  #msgs ❤️.
+🇪🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast ❤️.
+🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id ❤️.  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 🇪🇬 - 𝗖?? - ↝@S_a_i_d_i↜ ☽ .
 ]],
@@ -15697,7 +15723,7 @@ local List = {
 • ❏ | 𝗖𝗛 - ↝@S_a_i_d_i↜ 💞.
 ]],
 [[
-┇iD ➺ #id 💘
+┇iD ➺ #id ❤️
 ┇UsEr ➺ #username 💕
 ┇MsG ➺ #msgs 🧸 
 ┇StAtE ➺ #stast 🎀
@@ -16003,11 +16029,11 @@ Msᴀɢ ~ #msgs
 𓅓➪ : 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
 [[
-- ايديڪ  ⁞ #id 💘 ٬
-- يوزرڪ القميل ⁞ #username 💘 ٬
-- رسائلڪ  الطيفهہَ ⁞ #msgs 💘 ٬
-- رتبتڪ الحلوه ⁞ #stast  💘٬
-- سحڪاتڪ الفول ⁞ #edit 💘 ٬
+- ايديڪ  ⁞ #id ❤️ ٬
+- يوزرڪ القميل ⁞ #username ❤️ ٬
+- رسائلڪ  الطيفهہَ ⁞ #msgs ❤️ ٬
+- رتبتڪ الحلوه ⁞ #stast  ❤️٬
+- سحڪاتڪ الفول ⁞ #edit ❤️ ٬
 - 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
 [[
@@ -16066,10 +16092,10 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 - 𝚄𝚂𝙴𝚁 ⟿ #username 💘.
-🇪🇬 - 𝙼𝚂𝙶𝚂 ⟿  #msgs 💘.
-??🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast 💘.
-🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
+🇪🇬 - 𝚄𝚂𝙴𝚁 ⟿ #username ❤️.
+🇪🇬 - 𝙼𝚂𝙶𝚂 ⟿  #msgs ❤️.
+??🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast ❤️.
+🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id ❤️.  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 🇪🇬 - 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
@@ -16303,7 +16329,7 @@ Msᴀɢ ~ #msgs
 • ❏ | 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
 [[
-┇iD ➺ #id 💘
+┇iD ➺ #id ❤️
 ┇UsEr ➺ #username 💕
 ┇MsG ➺ #msgs 🧸 
 ┇StAtE ➺ #stast 🎀
@@ -18083,7 +18109,7 @@ local Teext =[[
 
 📎╜ Habayeb survey
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
-💘╖ my husband
+❤️╖ my husband
 💬╢ Crown for couples
 📎╜ Survey of couples
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
@@ -18099,7 +18125,7 @@ local Teext =[[
 💬╢ Crown for the two
 📎╜ Khiennine survey
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
-💘╖ Abit
+❤️╖ Abit
 💬╢ Crown for the mixture
 📎╜ Survey
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
@@ -18193,7 +18219,7 @@ local Teext =[[
 🏭╢ Destination by guidance for groups
 🖐╢ A radio face
 ☀️╢ Special radio
-💘╢ A special guidance
+❤️╢ A special guidance
 🎙️╢ Fix the installation
 📶╢ bring back copy
 🏋╢ raise its backup copy
