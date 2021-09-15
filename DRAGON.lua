@@ -4583,7 +4583,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. ms
 end
 if text == 'العاب' then
 local Text = [[ 
-𓆩 مرحبا اليك العاب سورس الصعيدي الافضل 𓆪
+𓆩مرحبا اليك العاب سورس الصعيدي الافضل𓆪
  ]]  
 keyboard = {}   
 keyboard.inline_keyboard = {  
