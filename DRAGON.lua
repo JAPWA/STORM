@@ -3316,7 +3316,7 @@ keyboard.inline_keyboard = {
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/S_a_i_d_i/406/903&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/DEV_MOSTAFA/13&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
@@ -15864,7 +15864,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 StAsT . #stast 𖠲
 - 🇪🇬 Id . #id 𖠲
 - 🇪🇬 GaMeS . #game 𖠲
-- 🇪🇬 MsGs . #msgs ??
+- 🇪🇬 MsGs . #msgs 𖠲
 - 🇪🇬 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
 [[
@@ -16293,8 +16293,8 @@ Msᴀɢ ~ #msgs
 • 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
 [[
-🌨⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺Use ⇨ #username ??
-🌨⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺iD ⇨ #id 🌨
+🌨⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺Use ⇨ #username 🌨
+??⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺iD ⇨ #id 🌨
 🌨⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺Sta ⇨  #stast 🌨
 🌨⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺Msg ⇨ #msgs 🌨
 🌨⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺NaMe ⇨ #name  🌨
