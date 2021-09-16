@@ -15143,7 +15143,7 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜  ↝• 🖤\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜  ↝• 🖤\n|• 𝒓𝒂𝒏𝒌→ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜  ↝• 🖤\n|• 𝒊𝒅 →   ↝'..msg.sender_user_id_..'↜ ↝• 🖤\n|• 𝒃𝒊𝒐 →  ↝'..getbioY..'↜ ↝• 🖤\n|• 𝒄𝒉 →  ↝@S_a_i_d_i↜   ↝• 🖤\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, ban.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n• 🖤 | 𝑼𝑬𝑺 : '..username..' \n• 🖤 | 𝑴𝑺𝑮 : '..Msguser..' \n• 🖤 | 𝑺𝑻𝑨 : '..Rutba(msg.sender_user_id_,msg.chat_id_)..'  \n• 🖤 | 𝑰𝑫 :  '..msg.sender_user_id_..' \n• 🖤 | 𝑩𝑰𝑶 : '..getbioY..' \n• 🖤 | 𝑪𝑯 : @S_a_i_d_i \n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n|✙ بيك عزيزي ↝'..Name..'↜ \n|• 𝒖𝒔𝒆𝒓 →  ↝'..Name..'↜    ↝• 🖤\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜.   ↝• 🖤\n|• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝• 🖤\n|• 𝒊𝒅  →  ↝'..msg.sender_user_id_..'↜    ↝• 🖤\n|• 𝒄𝒉 →   ↝@S_a_i_d_i↜ • 🖤\n')
@@ -17494,7 +17494,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end
 if text == 'بوت الحذف' or text == 'بوت حذف' or text == 'بوت حذف حسابات' then
 local Text = [[
-بوت  مسح حسابات،🍂
+بوت  مسح حسابات 
 فكر قبل لا تتسرع وتروح
 ]]
 keyboard = {} 
@@ -17505,15 +17505,15 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/yhu79/7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'رابط البار' or text == 'رابط الجروب'  then
+if text == 'الرابط' or text == 'رابط' or text == 'رابط البار'  then
 local Text = [[
-•اختار نوع الرابط الي ترودي⇣
+𓆩 اختار نوع الرابط الي ترودي 𓆪
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'رابط اونلاين', callback_data="/ven2"},{text = 'رابط بالصور', callback_data="/ven1"}},   
 {{text = 'رابط بنص', callback_data="/ven3"}},
-{{text = '•ᴍʏ ᴄʜᴀɴɴᴇʟ♪', url="t.me/SOURCEDRAGON"}},
+{{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
