@@ -3316,7 +3316,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '• ᴍʏ ᴅᴇᴠ', callback_data="/devsoo"},{text = '• ᴍʏ ᴄʜᴀɴɴᴇʟ', callback_data="/devsoo"}},
+{{text = '• ᴍʏ ᴅᴇᴠ', callback_data="/devsoo"},{text = '• ᴍʏ ᴄʜᴀɴɴᴇʟ', callback_data="/change-siusr"}},
 {{text = 'ضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
