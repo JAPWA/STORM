@@ -17549,7 +17549,7 @@ send(msg.chat_id_, msg.id_,'☽ لا يوجد رابط ارسل ضع رابط')
 end 
 end,nil) 
 end
-Text == '/devsoo' then
+if Text == '/devsoo' then
 local Teext =[[
 ╭▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╮
 ┆
