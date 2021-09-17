@@ -3657,6 +3657,17 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SourceSaidi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+if text == "روايات رومانسيه" then  
+ght = math.random(1,33);  
+local Text ='مرحبا اليك روايات رومانسيه 🌼❤️'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MO_ST_AF_A_A/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == "لو خيروك بالصور" then  
 ght = math.random(1,33);  
 local Text ='مرحبا اليك لو خيروك بالصوره 🌚❤️'  
@@ -16013,7 +16024,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ➜𝗨𝗦??𝗥𝗡𝗔𝗠𝗘 : #username
-➜𝗠𝗘𝗦𝗦𝗔𝗚𝗘𝗦 : #msgs
+➜𝗠𝗘𝗦??𝗔𝗚𝗘𝗦 : #msgs
 ➜𝗦𝗧𝗔𝗧𝗦 : #stast
 ➜𝗜𝗗 : #id
 ➜𝗖𝗛 - ↝@S_a_i_d_i↜ 💞.
