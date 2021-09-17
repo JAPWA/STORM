@@ -3506,7 +3506,7 @@ local Text = [[
 𓆩 𝐓𝐇𝐄 𝐋𝐈𝐒𝐓 𝐎𝐅 𝐍𝐎𝐕𝐄𝐋𝐒 𓆪
 ]]
 keyboard = {} keyboard.inline_keyboard = {
-{{text = '📖رواية"رومنسيه"', callback_data="/chair"}},
+{{text = '📖رواية "أرض زيكولا"',url="https://t.me/S_a_i_d_i"}},
 {{text = '📖موسوعة الظلام رعب وما شابه ذلك', url="https://t.me/barfrends/263376"}},
 {{text = '📖رواية "الشفق الجزء الأول"', url="https://t.me/S_a_i_d_i"}},
 {{text = '📖رواية "المخلوق', url="https://t.me/S_a_i_d_i"}},
@@ -3645,17 +3645,6 @@ keyboard.inline_keyboard = {
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BOY_GIRLM/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "روايات رومانسيه" then  
-ght = math.random(1,33);  
-local Text ='مرحبا اليك راوايات 🌼❤️'  
-keyboard = {}   
-keyboard.inline_keyboard = {  
-{{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
-}  
-local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MO_ST_AF_A_A/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "بوستات بالصور" then  
 ght = math.random(1,33);  
@@ -4647,17 +4636,6 @@ send(msg.chat_id_, msg.reply_to_message_id_, 'ها رد يكسمك')
 send(msg.chat_id_, msg.reply_to_message_id_, 'الحق الواد هرب')  
 send(msg.chat_id_, msg.reply_to_message_id_, 'هقوره😿')  
 return false 
-end
-
-if SourceCh(msg) and text == "روايات رومانسيه" and not  bot_data:get(ban_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(1,57); 
-local Text ='مرحبا اليك روايات رومانسيه 🌼❤️' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'روايه اخري', callback_data="/chair"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/senddocument?chat_id=' .. msg.chat_id_ .. '&document=https://t.me/MO_ST_AF_A_A/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text and text:match('^الحساب (%d+)$') then
@@ -15604,7 +15582,7 @@ local List = {
 𖡋 𝐔𝐒𝐄 #username 
 𖡋 𝐌𝐒𝐆 #msgs 
 𖡋 𝐒𝐓𝐀 #stast 
-𖡋 𝐈?? #id 
+𖡋 𝐈𝐃 #id 
 𖡋 𝐄𝐃𝐈𝐓 #edit
 𖡋 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
@@ -18870,22 +18848,6 @@ keyboard.inline_keyboard = {
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if data.ID == "UpdateNewMessage" then  -- new msg
-msg = data.message_
-text = msg.content_.text_
-if SourceCh(msg) and text == '/chair' then
-Text = 'مرحبا اليك راوايات 🌼❤️' 
-ban = math.random(1,57); 
-keyboard = {}
-keyboard.inline_keyboard = {
-{
-{text = 'روايه اخري', callback_data="/chair"},
-},
-}
-DeleteMessage(Chat_id,{[0] = Msg_id})  
-https.request("https://api.telegram.org/bot"..token..'/senddocument?chat_id=' .. Chat_id .. '&document=https://t.me/MO_ST_AF_A_A/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
 end
 if data.ID == "UpdateNewMessage" then  -- new msg
 msg = data.message_
