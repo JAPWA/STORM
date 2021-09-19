@@ -1041,6 +1041,18 @@ end
 if text == 'قسـم مـمـيزات' then
 local Text = 'مرحبا بك في قسم مميزات السورس اتباع الأزرار'
 local Key = {
+{'⩹━━━━━━❪ركن مميزات❫━━━━━━⩺'},
+{'حساب العمر','حساب الوزن'},
+{'كشف الكذب'},
+{'نسبه الحب','نسبه جمالي'},
+{'نكته','باد'},
+{'صراحه','عقاب'},
+{'كتبات','تويت'},
+{'انصحني','روايات'},
+{'لو خيروك','بوستات'},
+{'اذكار','اذكار الصباح'},
+{'حكمه','قصيده'},
+{'ثيم'},
 {'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
 {'لو خيروك بالصور','تويت بالصور'},
 {'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
@@ -1484,9 +1496,19 @@ if text == 'الاصدار' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ☽ اصدار سورس صعيدي{ 3x☆}')
 end
+if text == '⩹━━━━━━❪ركن مميزات❫━━━━━━⩺' then
+local Text = [[ 
+❪ مرحبا بك في قسم مميزات السورس اتباع الازرار ❫
+]]
+keyboard = {}  
+keyboard.inline_keyboard = { 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == '𓆩•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•𓆪' then
 local Text = [[ 
-𓆩 قناة مبرمجين السورس ??
+𓆩 قناة مبرمجين السورس 𓆪
 𓆩 محتاج تنصب بوت حمايه تواصل معانا 𓆪
 ]]
 keyboard = {}  
@@ -3155,15 +3177,15 @@ end
 bnnaGet(id, sofi_mrsofi_new)
 end
 end
-if text == "تفعيل تنبيه الاسماء" and Manager(msg) and database:get(bot_id.."AL:Sre:stats") == "✔" then
-send(msg.chat_id_, msg.id_, '•تم تفعيل تنبيه الاسماء')
-database:set(bot_id.."Ttn:BBE:stats"..msg.chat_id_,"open")
+if text == "تفعيل تنبيه الاسماء" and Manager(msg) and database:get(bot_id.."AL:AddS0FI:stats") == "✔" then
+send(msg.chat_id_, msg.id_, '✭︙ تم تفعيل تنبيه الاسماء')
+database:set(bot_id.."Ttn:DRG:stats"..msg.chat_id_,"open")
 end
-if text == "تعطيل تنبيه الاسماء" and Manager(msg) and database:get(bot_id.."AL:Sre:stats") == "✔" then
-send(msg.chat_id_, msg.id_, '•تم تعطيل تنبيه الاسماء')
-database:set(bot_id.."Ttn:BBE:stats"..msg.chat_id_,"close")
+if text == "تعطيل تنبيه الاسماء" and Manager(msg) and database:get(bot_id.."AL:AddS0FI:stats") == "✔" then
+send(msg.chat_id_, msg.id_, '✭︙ تم تعطيل تنبيه الاسماء')
+database:set(bot_id.."Ttn:DRG:stats"..msg.chat_id_,"close")
 end
-if text and database:get(bot_id.."Ttn:BBE:stats"..msg.chat_id_) == "open" then 
+if text and database:get(bot_id.."Ttn:DRG:stats"..msg.chat_id_) == "open" then 
 tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
 if data.id_ then 
 if data.id_ ~= bot_id then
@@ -3177,9 +3199,9 @@ end
 if data.first_name_ then 
 if DRAGONChengName ~= data.first_name_ then 
 local Text = {
-  "جان اسمك خوش اسم ",
-"ليش غيرت اسمك يحلو ",
-"هذا لحلو غير اسمه ",
+  "جان خوش اسم يول",
+"ليش غيرته اسمك بس لا خانوك/ج",
+"هذا الحلو غير اسمه 😉",
 }
 send(msg.chat_id_, msg.id_,Text[math.random(#Text)])
 end  
@@ -16023,7 +16045,7 @@ Msᴀɢ ~ #msgs
 金 - 𝗖𝗛 - ↝@S_a_i_d_i↜ 💞.
 ]],
 [[
-➜𝗨𝗦??𝗥𝗡𝗔𝗠𝗘 : #username
+➜𝗨𝗦??𝗥𝗡𝗔𝗠?? : #username
 ➜𝗠𝗘𝗦??𝗔𝗚𝗘𝗦 : #msgs
 ➜𝗦𝗧𝗔𝗧𝗦 : #stast
 ➜𝗜𝗗 : #id
