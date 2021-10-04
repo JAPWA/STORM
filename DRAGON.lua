@@ -5792,7 +5792,7 @@ send(msg.chat_id_, msg.id_, " 𖥳 لا تسطيع حظر مرات بودي عا
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1966692733) then  
-send(msg.chat_id_, msg.id_, " 𖥳 لا تسطيع حظر مبرمج السورس عام)
+send(msg.chat_id_, msg.id_, " 𖥳 لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
 database:sadd(bot_id..'GBan:User', result.sender_user_id_)
@@ -16345,7 +16345,7 @@ Msᴀɢ ~ #msgs
 - StA🇪🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
-- 𝗖𝗛 🇪🇬 ꙰  ↝@SOURCE_STORM↜ 𖥳 
+- 𝗖?? 🇪🇬 ꙰  ↝@SOURCE_STORM↜ 𖥳 
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -16768,7 +16768,7 @@ Msᴀɢ ~ #msgs
 .𖣂 𝗖𝗛 - ↝@SOURCE_STORM↜ 𖥳 
 ]],
 [[
-金 - 𝓾𝓼𝓮𝓻??𝓪𝓶𝓮 . #username ⸙ 
+金 - 𝓾𝓼??𝓻??𝓪𝓶𝓮 . #username ⸙ 
 金 - 𝓼𝓽𝓪𝓼𝓽  . #stast ⸙ 
 金 - 𝓲𝓭 . #id ⸙ 
 金 - 𝓰𝓶𝓪𝓼 . #gmas ⸙ 
