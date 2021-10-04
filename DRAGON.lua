@@ -195,7 +195,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1965534755,1549578895,1372188096,1871165209,1330033222}   
+sudo_users = {SUDO,1965534755,1549578895,1372188096,1871165209}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -293,8 +293,6 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(1330033222) then  
-var = true
 if tonumber(user_id) == tonumber(1965534755) then  
 var = true
 elseif tonumber(user_id) == tonumber(1549578895) then
@@ -335,8 +333,6 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(1330033222) then  
-var = 'المـبــرمـج بيبو'
 if tonumber(user_id) == tonumber(1965534755) then  
 var = 'المـبــرمـج مـصـطـفى'
 elseif tonumber(user_id) == tonumber(1549578895) then
@@ -995,13 +991,10 @@ end
 if text == "مبرمج السورس" then
 if not DevSoFi(msg) then
 local Text = [[
-𓆩 قنوات وجروبات المبرمجين  𓆪
+𓆩 قنوات وجروبات المبرمج مصطفي 𓆪
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝖇𝖊𝖇𝖔🚀', url="t.me/Xx_Be_bO_xX"}},
-{{text = 'بوت بيبو🚀', url="t.me/@Bebo66_bot"}},
-{{text = 'بار بيبو🚀', url="t.me/https://t.me/barfrends"}},
 {{text = 'المبرمج مصطفى', url="t.me/J_A_B_W_A"}},
 {{text = 'بوت مصطفي',url="t.me/Bot_JABWA_Bot"}}, 
 {{text = 'جروب مصطفي', url="t.me/B_A_R_J_A_B_W_A"}},
@@ -1069,7 +1062,7 @@ local Key = {
 {'افلام عربي','كرتون '},
 {'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
 {'استوري'},
-{'⩹━━━━⊶❲𖥳 𝐒𝐀??𝐃𝐈 𖥳❳⊷━━━━⩺'},
+{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
 {'العوده ➷'},
 }
 send_inline_key(msg.chat_id_,Text,Key)
@@ -1171,7 +1164,6 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝖇𝖊𝖇𝖔🚀', url="t.me/Xx_Be_bO_xX"}},
 {{text = 'المـبـرمــج جـابــوا', url="t.me/J_A_B_W_A"}},
 {{text = 'بــوت تواصـل جـابــوا',url="t.me/Bot_JABWA_Bot"}}, 
 }
@@ -1191,7 +1183,6 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝖇𝖊𝖇𝖔🚀', url="t.me/Xx_Be_bO_xX"}},
 {{text = 'المـبـرمــج جـابــوا', url="t.me/J_A_B_W_A"}},
 {{text = 'بــوت تواصـل جـابــوا',url="t.me/Bot_JABWA_Bot"}}, 
 }
@@ -1523,7 +1514,7 @@ if text == 'قسـم مـطـورين السـورس' and DevSoFi(msg) then
 local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
 {'𓆩•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•𓆪'},
-{'بيبو','المبرمج طه','المبرمج جابوا'},
+{'المبرمج طه','المبرمج جابوا'},
 {'المبرمج عمر','المبرمج ابو المجد'},
 {'قناة السورس','التواصل'},
 {'العوده ➷'},
@@ -1767,17 +1758,6 @@ keyboard.inline_keyboard = {
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "بيبو" or text == "المبرمج بيبو" then
-local Text = [[
-بيبو  مبرمج السورس  للتواصل معه اتبع الزر الاسفل ⬇️🚀.
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '𓌹 ᯓ 𝙱𝙴𝙱𝙾 ★ 𓌺',url="t.me/Xx_Be_bO_xX"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/teslaphoto1/6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'طه مبرمج السورس²' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
@@ -3652,7 +3632,6 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝖇𝖊𝖇𝖔🚀', url="t.me/Xx_Be_bO_xX"}},
 {{text = '• ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"},{text = '• ʙᴏᴛ ᴊᴀʙᴡᴀ', url="t.me/Bot_JABWA_Bot"}},
 {{text = '• ᴅᴇᴠ ᴀʙᴏᴀʟᴍᴀɢᴅ',url="t.me/A_B_O_2"},{text = '• ʙᴏᴛ ᴀʙᴏᴀʟᴍᴀɢᴅ', url="t.me/ELMAGD2_BOT"}},
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
@@ -3752,7 +3731,6 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'بيبـو مـبــرمـج السـورس',url="t.me/@Xx_Be_bO_xX"}},
 {{text = 'جـابــوا مـبــرمـج السـورس',url="t.me/J_A_B_W_A"}},
 {{text = 'طـه مـبــرمـج السـورس',url="t.me/YtIIIl"}},
 {{text = 'عمـر مـبــرمـج السـورس',url="t.me/BOT3mora"}},
@@ -16555,7 +16533,7 @@ Msᴀɢ ~ #msgs
 [[
 𝟓 ?? 𖡻 #username  ࿇🦄
 𝟓 𝟔 𖡻 #msgs  ࿇🦄
-𝟓 𝟔 ?? #auto  ࿇??
+𝟓 𝟔 𖡻 #auto  ࿇??
 𝟓 𝟔 𖡻 #stast  ࿇🦄
 𝟓 𝟔 𖡻 #id  ࿇🦄
 𝟓 𝟔 𖡻 𝗖𝗛 - ↝@S_a_i_d_i↜ 💞.
