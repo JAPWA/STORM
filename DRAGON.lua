@@ -1055,7 +1055,6 @@ local Text = ' قسم مطورين السورس لدخول الي حسابتهم
 local Key = {
 {'━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━'},
 {'التواصل','عايز بوت','يا سورس'},
-{'اتش','عموره'},
 {'𝔟𝔞𝔠𝔨 ⚡'},
 }
 send_inline_key(msg.chat_id_,Text,Key)
@@ -1304,7 +1303,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/V_I_K_I_N_G_2/86/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'قسم مطورين السورس والمبرمجين' and DevSoFi(msg) then 
@@ -3221,7 +3220,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
  
-if text == 'عمر' or text == 'عموره' or text == 'مطور السورس'  then
+if text == 'عمر' or text == 'عموره' or text == 'عموري'  then
 local Text = [[
 مطور السورس عموري للتواصل معاه اتبع الزر ال في الاسفل ⇊
 ]]
@@ -3253,13 +3252,14 @@ local Text = [[
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}}, 
-{{text = '● 𝑩𝑶𝑻♢𝑻𝑰𝑴𝑶',url="t.me/Timo8Bot"}}, 
+{{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}},
+{{text = '● 𝑮𝑹𝑶𝑼𝑷',url="t.me/e_L_m_L_o_K"},{text = '● 𝑪𝑯𝑨𝑵𝑵𝑬𝑳 ',url="t.me/eLmLoK0"}},
+{{text = '● 𝑩𝑶𝑻 𝑻𝑰𝑴𝑶',url="t.me/Timo8Bot"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/timo_019/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'سيف' or text == 'عمك سيف ' or text == 'المجهول' or text == 'SAIF' then 
+if text == 'سيف' or text == 'عمك سيف ' or text == 'المجهول' or text == 'مطور السورس' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
 مطور السورس سيف للتواصل معاه اتبع الزر ال في الاسففل ⇊
@@ -3269,6 +3269,20 @@ keyboard.inline_keyboard = {
 {{text = '● 𝑺𝑨𝑰𝑭',url="t.me/A_L_M_G_H_O_L"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/A_L_M_G_H_O_L&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
+if text == 'سكس' or text == 'سقس' or text == 'اباحي' or text == 'XNXX' then 
+local msg_id = msg.id_/2097152/0.5  
+local Text = [[ 
+مواقع فيديوهات اباحيه في الاسفل ⇊
+   ]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '● 𝑿𝑵𝑿𝑿',url="https://www.xnxx.com"},{text = '● 𝑿 𝑽𝑰𝑫𝑬𝑶𝑺',url="https://www.xvideos.com"}}, 
+{{text = 'صاحب الفكره ●',url="t.me/HamoAz3arena"},{text = 'منفذ الفكره ●',url="t.me/ttimo_8lby"}},
+{{text = 'محب الفكره ●',url="t.me/A_L_M_G_H_O_L"}}, 
+} 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/timo_019/11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'مطورين السورس' then
@@ -15666,7 +15680,7 @@ Msᴀɢ ~ #msgs
 𖣘 |↶ #username    ꙰🇪🇬.
 𖣘 |↶ #msgs    ꙰🇪🇬.
 𖣘 |↶ #stast    ꙰🇪🇬.
-𖣘 |↶ 𝗖𝗛 - ↝@Alahzane1↜  ✹︙
+𖣘 |↶ 𝗖?? - ↝@Alahzane1↜  ✹︙
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
