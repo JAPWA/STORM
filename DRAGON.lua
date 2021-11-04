@@ -3278,9 +3278,8 @@ local Text = [[
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '● 𝑿𝑵𝑿𝑿',url="https://www.xnxx.com"},{text = '● 𝑿 𝑽𝑰𝑫𝑬𝑶𝑺',url="https://www.xvideos.com"}}, 
-{{text = 'صاحب الفكره ●',url="t.me/HamoAz3arena"},{text = 'منفذ الفكره ●',url="t.me/ttimo_8lby"}},
-{{text = 'محب الفكره ●',url="t.me/A_L_M_G_H_O_L"}}, 
+{{text = '● 𝑿𝑵𝑿𝑿',url="https://www.xnxx.com"}},
+{{text = '● 𝑿 𝑽𝑰𝑫𝑬𝑶𝑺',url="https://www.xvideos.com"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/timo_019/11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
