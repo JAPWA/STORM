@@ -2886,22 +2886,6 @@ database:set(bot_id..'Num:Add:Bot',Num)
 send(msg.chat_id_, msg.id_,'  ✹︙ تم تعيين عدد الاعضاء سيتم تفعيل الجروبات التي اعضائها اكثر من  >> {'..Num..'} عضو')
 end
 
-if text == 'تحديث السورس' and DevSoFi(msg) then 
-if AddChannel(msg.sender_user_id_) == false then
-local textchuser = database:get(bot_id..'text:ch:user')
-if textchuser then
-send(msg.chat_id_, msg.id_,'['..textchuser..']')
-else
-send(msg.chat_id_, msg.id_,'  ✹︙ لا تستطيع استخدام البوت \n  ✹︙  يرجى الاشتراك بالقناه اولا \n  ✹︙  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
-end
-return false
-end
-os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/DRAGON.lua')
-send(msg.chat_id_, msg.id_,'  ✹︙ تم تحديث السورس')
-dofile('DRAGON.lua')  
-end
-
 if text and text:match("^تغير الاشتراك$") and DevSoFi(msg) then  
 database:setex(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
 send(msg.chat_id_, msg.id_, '  ✹︙ حسنآ ارسل لي معرف القناة')
@@ -11605,7 +11589,7 @@ if #list == 0 then
 send(msg.chat_id_, msg.id_,'  ✹︙ لا توجد صلاحيات مضافه')
 return false
 end
-t = "\n  ✹︙ قائمة الصلاحيات المضافه \n??━┅┄⟞⟦𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔⟧⟝┄┉━𖣘\n"
+t = "\n  ✹︙ قائمة الصلاحيات المضافه \n??━┅┄⟞⟦𝗦𝗢𝗨𝗥𝗖𝗘 ??𝗭𝗠𝗔⟧⟝┄┉━𖣘\n"
 for k,v in pairs(list) do
 var = database:get(bot_id.."Comd:New:rt:bot:"..v..msg.chat_id_)
 if var then
