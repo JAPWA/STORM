@@ -1257,8 +1257,8 @@ echo '♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢\
 end
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/DRAGON.lua')
-send(msg.chat_id_, msg.id_,'  ✹︙ تم تحديث السورس')
+os.execute('wget https://raw.githubusercontent.com/3mora3/h/DRAGON.lua')
+send(msg.chat_id_, msg.id_,'  ⌯︙ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
 if text == 'جلب المشتركين' and DevSoFi(msg) then 
@@ -15259,7 +15259,7 @@ local List = {
 ¦• 𝗖𝗛 - ↝@Alahzane1↜  ✹︙.
 ]],
 [[
-➞: 𝒔𝒕??𓂅 #stast 𓍯➸💞.
+➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸💞.
 ➞: 𝒖??𝒆𝒓𓂅 #username 𓍯➸💞.
 ➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸💞.
 ➞: 𝐢𝐝 𓂅 #id 𓍯➸💞.
@@ -15692,7 +15692,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 🇪🇬≪💎≫ #username • メ
-🇪🇬≪💎≫ #stast  •メ
+??🇬≪💎≫ #stast  •メ
 🇪🇬≪💎≫ #id  • メ
 🇪🇬≪💎≫ #msgs  •メ
 🇪🇬≪💎≫ #game •メ
