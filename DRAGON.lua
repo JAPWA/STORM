@@ -1255,31 +1255,11 @@ echo '♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢\
 echo '♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢\n  ✹︙↝ مـده تـشغيـل الـسـيـرفـر ↜ ↚\n* '"$uptime"'*'
 ]]):read('*all'))  
 end
-if text == 'التحديث ' or text == 'تحديث السورس' or text == 'تحديث' and not database:get(bot_id..'Namebot'..msg.chat_id_) then     
-tdcli_function ({ID = "GetUser",user_id_ = bot_id, offset_},function(extra,result,success)
-local msg_id = msg.id_/2097152/0.5  
-local textt = "eLmLoK0"..(database:get(bot_id..'Name:Bot') or 'صعيدي')
-local DRAGON = 'https://t.me/Qtdao/71'
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '♔ تحديث السورس ♔', callback_data="/rsayly"},
-},
-{
-{text = '♔ تحديث الملفات ♔', callback_data="/s7katy"},
-},
-{
-{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔', url="t.me/eLmLoK0"},
-},
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(DRAGON).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_, offset_ = 0, limit_ = 1 }, getpro, nil) 
-end,nil)
+if text == 'تحديث السورس ' and DevSoFi(msg) then 
+os.execute('rm -rf DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/DRAGON.lua')
+send(msg.chat_id_, msg.id_,'  ⌯︙ تم تحديث السورس')
+dofile('DRAGON.lua')  
 end
 if text == 'جلب المشتركين' and DevSoFi(msg) then 
 local list = database:smembers(bot_id..'User_Bot') 
@@ -15279,7 +15259,7 @@ local List = {
 ¦• 𝗖𝗛 - ↝@Alahzane1↜  ✹︙.
 ]],
 [[
-➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸💞.
+➞: 𝒔𝒕??𓂅 #stast 𓍯➸💞.
 ➞: 𝒖??𝒆𝒓𓂅 #username 𓍯➸💞.
 ➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸💞.
 ➞: 𝐢𝐝 𓂅 #id 𓍯➸💞.
