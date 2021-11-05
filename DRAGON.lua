@@ -165,7 +165,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/3mora3/h/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/JAPWA/STORM/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -1255,11 +1255,31 @@ echo '♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢\
 echo '♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢\n  ✹︙↝ مـده تـشغيـل الـسـيـرفـر ↜ ↚\n* '"$uptime"'*'
 ]]):read('*all'))  
 end
-if text == 'تحديث السورس ' and DevSoFi(msg) then 
-os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/3mora3/h/DRAGON.lua')
-send(msg.chat_id_, msg.id_,'  ⌯︙ تم تحديث السورس')
-dofile('DRAGON.lua')  
+if text == 'التحديث ' or text == 'تحديث السورس' or text == 'تحديث' and not database:get(bot_id..'Namebot'..msg.chat_id_) then     
+tdcli_function ({ID = "GetUser",user_id_ = bot_id, offset_},function(extra,result,success)
+local msg_id = msg.id_/2097152/0.5  
+local textt = "eLmLoK0"..(database:get(bot_id..'Name:Bot') or 'صعيدي')
+local DRAGON = 'https://t.me/Qtdao/71'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = '♔ تحديث السورس ♔', callback_data="/rsayly"},
+},
+{
+{text = '♔ تحديث الملفات ♔', callback_data="/s7katy"},
+},
+{
+{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔', url="t.me/eLmLoK0"},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(DRAGON).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end,nil)
 end
 if text == 'جلب المشتركين' and DevSoFi(msg) then 
 local list = database:smembers(bot_id..'User_Bot') 
@@ -2903,7 +2923,7 @@ end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/3mora3/h/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/DRAGON.lua')
 send(msg.chat_id_, msg.id_,'  ✹︙ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -5887,7 +5907,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevSoFi(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/3mora3/h/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/JAPWA/STORM/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -5925,7 +5945,7 @@ t = "  ✹︙ الملف  ⇇"..file.."\n  ✹︙ تم تعطيل ملف \n"
 else
 t = "  ✹︙ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/3mora3/h/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/JAPWA/STORM/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -5945,7 +5965,7 @@ t = "  ✹︙ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = "  ✹︙ الملف  ⇇"..file.."\n  ✹︙ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/3mora3/h/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/JAPWA/STORM/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
