@@ -165,7 +165,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/JAPWA/STORM/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/3mora3/h/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -2903,7 +2903,7 @@ end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/3mora3/h/DRAGON.lua')
 send(msg.chat_id_, msg.id_,'  ✹︙ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -5887,7 +5887,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevSoFi(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/JAPWA/STORM/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/3mora3/h/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -5925,7 +5925,7 @@ t = "  ✹︙ الملف  ⇇"..file.."\n  ✹︙ تم تعطيل ملف \n"
 else
 t = "  ✹︙ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/JAPWA/STORM/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/3mora3/h/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -5945,7 +5945,7 @@ t = "  ✹︙ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = "  ✹︙ الملف  ⇇"..file.."\n  ✹︙ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/JAPWA/STORM/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/3mora3/h/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -13200,7 +13200,7 @@ end
 return false
 end
 local list = database:smembers(bot_id.."botss:DRAGON:List:Rd:Sudo")
-text = "\nقائمة ردود المتعدده \n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢\n"
+text = "\nقائمة ردود المتعدده \n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖?? 𝗔𝗭𝗠𝗔 ♢━━━♢\n"
 for k,v in pairs(list) do
 db = "رساله "
 text = text..""..k.." => ↝ '..v..' ↜ => ↝ '..db..' ↜\n"
@@ -15692,7 +15692,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 🇪🇬≪💎≫ #username • メ
-??🇬≪💎≫ #stast  •メ
+🇪🇬≪💎≫ #stast  •メ
 🇪🇬≪💎≫ #id  • メ
 🇪🇬≪💎≫ #msgs  •メ
 🇪🇬≪💎≫ #game •メ
