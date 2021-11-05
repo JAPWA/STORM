@@ -1255,12 +1255,6 @@ echo '♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢\
 echo '♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢\n  ✹︙↝ مـده تـشغيـل الـسـيـرفـر ↜ ↚\n* '"$uptime"'*'
 ]]):read('*all'))  
 end
-if text == 'تحديث السورس ' and DevSoFi(msg) then 
-os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/DRAGON.lua')
-send(msg.chat_id_, msg.id_,'  ⌯︙ تم تحديث السورس')
-dofile('DRAGON.lua')  
-end
 if text == 'جلب المشتركين' and DevSoFi(msg) then 
 local list = database:smembers(bot_id..'User_Bot') 
 local t = '{"users":['   
