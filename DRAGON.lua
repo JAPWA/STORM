@@ -1594,17 +1594,17 @@ end
 if text == 'قناه السورس' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
- ✵ من أحسن السورسات على التليجرام سورس عظمه ✵
+  ✹︙ من أحسن السورسات على التليجرام سورس عظمه  ✹︙
 بجد سورس أمان جدا وفي مميزات جامده
 تع نصب بوتك عندنا لو محظور
 خش علي تواصل هيدخلك قناه اليوزرات 
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '✵ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}}, 
+{{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Alahzane1/19&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == "ضع اسم للبوت" and DevSoFi(msg) then  
@@ -3114,7 +3114,7 @@ send(msg.chat_id_, msg.id_, texts)
 end
 if text == "الاسماء المكتومه" and Constructor(msg) and database:get(bot_id.."block:name:stats"..msg.chat_id_) == "open" then
 local All_name = database:smembers(bot_id.."DRAGON:blocname"..msg.chat_id_)
-t = "\n ✵ قائمة الاسماء المكتومه \n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 ??𝗭𝗠𝗔 ♢━━━♢  \n"
+t = "\n ✵ قائمة الاسماء المكتومه \n♢━━━♢ 𝗦𝗢𝗨𝗥??𝗘 ??𝗭𝗠𝗔 ♢━━━♢  \n"
 for k,v in pairs(All_name) do
 t = t..""..k.."- (["..v.."])\n"
 end
@@ -4289,33 +4289,33 @@ end
 end 
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil) 
 end
-if text == '✵ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ' then
+if text == '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔' then
 local Text = [[ 
- ✵من أحسن السورسات على التليجرام سورس عظمه ✵
+  ✹︙من أحسن السورسات على التليجرام سورس عظمه  ✹︙
 حمايه.سرعه.دقه وامان
  قناه السورس ⬇️
-  [𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺](http://t.me/Alahzane1)
+  [𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑺𝑶𝑼𝑹𝑪𝑬 𝑨𝒁𝑴𝑨](http://t.me/Alahzane1)
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '✵ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ', url="t.me/Alahzane1"}}, 
+{{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ', url="t.me/Alahzane1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Alahzane1/19&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == '♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ ' then
+if text == '♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢' then
 local Text = [[ 
- ✵من أحسن السورسات على التليجرام سورس عظمه ✵
+  ✹︙من أحسن السورسات على التليجرام سورس عظمه  ✹︙
 بجد سورس أمان جدا وفي مميزات جامده
 تع نصب بوتك عندنا لو محظور
 خش علي تواصل هيدخلك قناه اليوزرات تواصل معنا 💛. 
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '✵ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}}, 
+{{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Alahzane1/19&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'التواصل'  then
 database:del(bot_id..'Srt:Bot') 
