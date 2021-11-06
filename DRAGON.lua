@@ -1311,10 +1311,10 @@ echo '♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ 
 echo '♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ \n ✵» مـده تـشغيـل الـسـيـرفـر « ↚\n* '"$uptime"'*'
 ]]):read('*all'))  
 end
-if text == 'تحديث السورس ' and DevSoFi(msg) then 
+if text == 'ت ث' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/DRAGON.lua')
-send(msg.chat_id_, msg.id_,'  ⌯︙ تم تحديث السورس')
+os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/main/DRAGON.lua')
+send(msg.chat_id_, msg.id_,'♔  تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
 if text == 'جلب المشتركين' and DevSoFi(msg) then 
@@ -3114,7 +3114,7 @@ send(msg.chat_id_, msg.id_, texts)
 end
 if text == "الاسماء المكتومه" and Constructor(msg) and database:get(bot_id.."block:name:stats"..msg.chat_id_) == "open" then
 local All_name = database:smembers(bot_id.."DRAGON:blocname"..msg.chat_id_)
-t = "\n ✵ قائمة الاسماء المكتومه \n♢━━━♢ 𝗦𝗢𝗨??𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢  \n"
+t = "\n ✵ قائمة الاسماء المكتومه \n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 ??𝗭𝗠𝗔 ♢━━━♢  \n"
 for k,v in pairs(All_name) do
 t = t..""..k.."- (["..v.."])\n"
 end
@@ -3306,20 +3306,31 @@ end
 end
 end,nil)   
 end
-if text == 'تحديث السورس' and DevSoFi(msg) then 
-if AddChannel(msg.sender_user_id_) == false then
-local textchuser = database:get(bot_id..'text:ch:user')
-if textchuser then
-send(msg.chat_id_, msg.id_,'['..textchuser..']')
-else
-send(msg.chat_id_, msg.id_,'  ⌯︙ لا تستطيع استخدام البوت \n  ⌯︙  يرجى الاشتراك بالقناه اولا \n  ⌯︙  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
-end
-return false
-end
-os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/DRAGON.lua')
-send(msg.chat_id_, msg.id_,'  ⌯︙ تم تحديث السورس')
-dofile('DRAGON.lua')  
+if text == 'التحديث ' or text == 'تحديث السورس' or text == 'تحديث' and not database:get(bot_id..'Namebot'..msg.chat_id_) then     
+tdcli_function ({ID = "GetUser",user_id_ = bot_id, offset_},function(extra,result,success)
+local msg_id = msg.id_/2097152/0.5  
+local textt = "eLmLoK0"..(database:get(bot_id..'Name:Bot') or 'صعيدي')
+local DRAGON = 'https://t.me/Qtdao/71'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = '♔ تحديث السورس ♔', callback_data="/rsayly"},
+},
+{
+{text = '♔ تحديث الملفات ♔', callback_data="/s7katy"},
+},
+{
+{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔', url="t.me/eLmLoK0"},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(DRAGON).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end,nil)
 end
 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
@@ -11180,18 +11191,22 @@ database:del(bot_id.."pp_photo:status"..msg.chat_id_)
 send(msg.chat_id_, msg.id_," ✵ تم تعطيل نسبه جمالك") 
 return false end
 end
-if text == 'الرابط' or text == 'رابط'  then
-local Text = [[
-𓆩 اختار نوع الرابط الي ترودي 𓆪
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'رابط اونلاين', callback_data="/ven2"},{text = 'رابط بالصور', callback_data="/ven1"}},   
-{{text = 'رابط بنص', callback_data="/ven3"}},
-{{text = '✵ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ✵', url="t.me/Alahzane1"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+if text == "الرابط" then 
+local status_Link = database:get(bot_id.."Link_Group:status"..msg.chat_id_) 
+if not status_Link then 
+send(msg.chat_id_, msg.id_,"الرابط معطل")  
+return false   
+end 
+tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or database:get(bot_id.."Private:Group:Link"..msg.chat_id_) 
+if linkgpp.ok == true then 
+local Teext = '✹'..ta.title_..'\n'..linkgpp.result 
+local inline = {{{text = ta.title_, url=linkgpp.result}},} 
+send_inline_key(msg.chat_id_,Teext,nil,inline,msg.id_/2097152/0.5) 
+else 
+send(msg.chat_id_, msg.id_,'✹لا يوجد رابط ارسل ضع رابط') 
+end 
+end,nil) 
 end
 
 if text == 'مسح الرابط' or text == 'مسح الرابط' then
@@ -12918,7 +12933,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✵ 𝚂??𝚄??𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="t.me/Alahzane1"}},
+{{text = '✵ 𝚂𝙾𝚄??𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="t.me/Alahzane1"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15488,7 +15503,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 - 🇪🇬 UsErNaMe . #username 𖠲
-- 🇪🇬 StAsT . #stast 𖠲
+- ??🇬 StAsT . #stast 𖠲
 - 🇪🇬 Id . #id 𖠲
 - 🇪🇬 GaMeS . #game 𖠲
 - 🇪🇬 MsGs . #msgs 𖠲
@@ -15920,7 +15935,7 @@ Msᴀɢ ~ #msgs
 • 𝗖𝗛 - »@Alahzane1« ✵
 ]],
 [[
-🌨♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ Use ⇨ #username 🌨
+🌨♢━━━♢ 𝗦𝗢𝗨𝗥??𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ Use ⇨ #username 🌨
 🌨♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ iD ⇨ #id 🌨
 🌨♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ Sta ⇨  #stast 🌨
 🌨♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ Msg ⇨ #msgs 🌨
