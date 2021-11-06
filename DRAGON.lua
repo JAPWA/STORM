@@ -1314,7 +1314,7 @@ end
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
 os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/DRAGON.lua')
-send(msg.chat_id_, msg.id_,'  تم تحديث السورس')
+send(msg.chat_id_, msg.id_,'  ⌯︙ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
 if text == 'جلب المشتركين' and DevSoFi(msg) then 
@@ -3379,13 +3379,13 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'  لا تستطيع استخدام البوت \n 🔥  يرجى الاشتراك بالقناه اولا \n 🔥  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'  ⌯︙ لا تستطيع استخدام البوت \n  ⌯︙  يرجى الاشتراك بالقناه اولا \n  ⌯︙  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
 os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/DRAGON.lua')
-send(msg.chat_id_, msg.id_,' تم تحديث السورس')
+send(msg.chat_id_, msg.id_,'  ⌯︙ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
 
@@ -15334,7 +15334,7 @@ local List = {
 ✵♔ 𝚄𝚂𝙴??  ⇉⁞ #username »🇪??.
 ✵♔ 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  » 🇪🇬.
 ✵♔ 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  »🇪🇬.
-✵♔ ??𝙳 𝚂𝚃𝙰 ⇉ #id  »🇪🇬.
+✵♔ 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  »🇪🇬.
 ✵♔ 𝗖𝗛 - »@eLmLoK0« ♔.
 ]],
 [[
