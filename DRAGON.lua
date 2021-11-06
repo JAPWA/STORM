@@ -3399,10 +3399,9 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✵ 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨', url="t.me/HamoAz3arena"},{text = '✵ 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"}},
-{{text = '✵ 𝑻𝑨𝑾𝑨𝑺𝑶𝑳',url="t.me/A_twasolbot "}},
+{{text = '✵ 𝐀𝐙3𝐀𝐑𝐄𝐍𝐀',url="t.me/@HamoAz3arena"},{text = '✵ 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"}},
 {{text = '✵ 𝑬𝑳𝑴𝑨𝑺𝑹𝒀', url="t.me/XxxElmasry9xx"}},
-{{text = '✵ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔',url="t.me/Alahzane1"}},
+{{text = '✵ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ', url="t.me/Alahzane1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -3416,7 +3415,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✵ 𝐀𝐙3𝐀𝐑𝐄𝐍𝐀',url="t.me/@HamoAz3arena"},{{text = '✵ 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"}},
+{{text = '✵ 𝐀𝐙3𝐀𝐑𝐄𝐍𝐀',url="t.me/@HamoAz3arena"},{text = '✵ 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"}},
 {{text = '✵ 𝑬𝑳𝑴𝑨𝑺𝑹𝒀', url="t.me/XxxElmasry9xx"}},
 {{text = '✵ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ', url="t.me/Alahzane1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
@@ -8417,7 +8416,7 @@ send(msg.chat_id_, msg.id_, ' ✵ تم تنزيل جميع حمير من الج�
 end
 if text == ("تاك للحمير") and Mod(msg) then
 local list = database:smembers(bot_id..'Sakl:User'..msg.chat_id_)
-t = "\n ✵ قائمة حمير الجروب \n♢━━━♢ 𝗦𝗢??𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ \n"
+t = "\n ✵ قائمة حمير الجروب \n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ \n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -15008,7 +15007,7 @@ local List = {
 ➭- 𝒔𝒕𝒂𓂅 #stast 𓍯. 💕
 ➮- 𝒖𝒔𝒆𝒓𓂅 #username 𓍯. 💕
 ➭- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯. 💕
-➭- 𝒊?? 𓂅 #id 𓍯. 💕
+➭- 𝒊𝒅 𓂅 #id 𓍯. 💕
 ]],
 [[
 ⚕ 𓆰 𝑾𝒆𝒍??𝒐𝒎𝒆 𝑻𝒐 𝑮𝒓𝒐𝒖𝒑 ★
@@ -15443,7 +15442,7 @@ local List = {
 𖦼 ʏᴏᴜʀ ɪᴅ 𓄹𓄼 #username  💛
 𖥪 ᴍѕɢѕ 𓄹𓄼 #msgs ✉️
 𖥧 ѕᴛᴀᴛѕ 𓄹𓄼 #stast 👩🏿‍🚒 
-𖥣 ᴇᴅɪᴛ 𓄹?? #game🙇🏿‍♀💕
+𖥣 ᴇᴅɪᴛ 𓄹𓄼 #game🙇🏿‍♀💕
 ✰ ᴄʜ ᴇʟɪɴ ➣ #edit
 ┄─━━ ✵━━─┄
 ✰ 𝗖𝗛 - »@Alahzane1« ✵.
@@ -16298,7 +16297,7 @@ Msᴀɢ ~ #msgs
 ✵✵ 𝚄𝚂𝙴𝚁  ⇉⁞ #username »🇵🇷.
 ✵✵ 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  » 🇵🇷.
 ✵✵ 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  »🇵🇷.
-✵✵ 𝙸?? ??𝚃𝙰 ⇉ #id  »🇵🇷.
+✵✵ 𝙸𝙳 ??𝚃𝙰 ⇉ #id  »🇵🇷.
 ✵✵ 𝗶𝗗 - »@Alahzane1« ✵
 ]],
 [[
