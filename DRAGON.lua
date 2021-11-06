@@ -18714,7 +18714,7 @@ local list = database:smembers(bot_id.."User_Bot")
 for k,v in pairs(list) do 
 tdcli_function({ID= GetChat ,chat_id_ = v},function(arg,data) end,nil) 
 end         
-local list = database:smembers(bot_id.. Chek:Groups ) 
+local list = database:smembers(bot_id.. Chek:Groups') 
 for k,v in pairs(list) do 
 tdcli_function({ID= GetChat ,chat_id_ = v
 },function(arg,data)
