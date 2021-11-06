@@ -3399,9 +3399,9 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✵ 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨', url="t.me/HamoAz3arena"},{text = '✵ 3𝑴𝑶𝑹𝒀', url="t.me/BOT3mora"}},
+{{text = '✵ 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨', url="t.me/HamoAz3arena"},{text = '✵ 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"}},
 {{text = '✵ 𝑻𝑨𝑾𝑨𝑺𝑶𝑳',url="t.me/A_twasolbot "}},
-{{text = '✵ 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"},{text = '✵ 𝑬𝑳𝑴𝑨𝑺𝑹𝒀', url="t.me/A_L_M_G_H_O_L"}},
+{{text = '✵ 𝑬𝑳𝑴𝑨𝑺𝑹𝒀', url="t.me/XxxElmasry9xx"}},
 {{text = '✵ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔',url="t.me/Alahzane1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -3416,9 +3416,10 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐀𝐙3𝐀𝐑𝐄𝐍𝐀',url="t.me/@HamoAz3arena"},{text = '✵ 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"}},
-{{text = '✵ 𝑬𝑳𝑴𝑨𝑺𝑹𝒀', url="t.me/A_L_M_G_H_O_L"}},
-{{text = '✵ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ', url="t.me/Alahzane1"}},
+{{text = '✵ 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨', url="t.me/HamoAz3arena"},{text = '✵ 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"}},
+{{text = '✵ 𝑻𝑨𝑾𝑨𝑺𝑶𝑳',url="t.me/A_twasolbot "}},
+{{text = '✵ 𝑬𝑳𝑴𝑨𝑺𝑹𝒀', url="t.me/XxxElmasry9xx"}},
+{{text = '✵ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔',url="t.me/Alahzane1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -3459,9 +3460,9 @@ local Text = [[
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '✵ 𝑬𝑳𝑴𝑨𝑺𝑹𝒀',url="t.me/A_L_M_G_H_O_L"}}, 
+{{text = '✵ 𝑬𝑳𝑴𝑨𝑺𝑹𝒀',url="t.me/XxxElmasry9xx"}}, 
 } 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/A_L_M_G_H_O_L&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/XxxElmasry9xx&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'سكس' or text == 'سقس' or text == 'اباحي' or text == 'XNXX' then 
@@ -12917,7 +12918,7 @@ local Text ='الستخدم ثيم اخر اكتب ثيم'
 keyboard = {}   
 keyboard.inline_keyboard = {
 {{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}},
-{{text = '● 𝑺𝑨𝑰𝑭',url="t.me/A_L_M_G_H_O_L "}},
+{{text = '● 𝑺𝑨𝑰𝑭',url="t.me/XxxElmasry9xx "}},
 {{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
@@ -15333,7 +15334,7 @@ local List = {
 [[
 ✵✵ 𝚄𝚂𝙴??  ⇉⁞ #username »🇪??.
 ✵✵ 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  » 🇪🇬.
-✵✵ ??𝙰𝙽𝙺  ⇉⁞ #stast  »🇪🇬.
+✵✵ 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  »🇪🇬.
 ✵✵ 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  »🇪🇬.
 ✵✵ 𝗖𝗛 - »@Alahzane1« ✵.
 ]],
@@ -17299,7 +17300,7 @@ keyboard = {}
 keyboard.inline_keyboard = { 
 {{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}},
 {{text = '● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨',url="t.me/HamoAz3arena "}},
-{{text = '● 𝑺𝑨𝑰𝑭',url="t.me/A_L_M_G_H_O_L "}},
+{{text = '● 𝑺𝑨𝑰𝑭',url="t.me/XxxElmasry9xx "}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
