@@ -13593,7 +13593,7 @@ else
 username = 'sasa_boody'
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = '❤️🕊 رتبتك في البوت » '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = '😍🙈 رتبتك في البوت ➺ '..Rutba(msg.sender_user_id_,msg.chat_id_)
 local Sasa = 'https://t.me/xxxcccvvbbnn/903'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13633,7 +13633,7 @@ end
 if text == "انا مين" then
 local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_," ✵انا مين معطله") 
+send(msg.chat_id_, msg.id_," ✹انا مين معطله") 
 return false  
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
@@ -13643,7 +13643,7 @@ else
 username = 'sasa_boody'
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = ' ❤️🕊 انت يا قلبي '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = ' ✹● انت➼ '..Rutba(msg.sender_user_id_,msg.chat_id_)
 local Boody = 'https://t.me/xxxcccvvbbnn/903'
 keyboard = {} 
 keyboard.inline_keyboard = {
