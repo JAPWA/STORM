@@ -17310,7 +17310,7 @@ ght = math.random(1,62);
 local Text ='تم اختيار الاستوري هذه لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'استوري اخر, callback_data="/added"}},
+{{text = 'استوري اخر', callback_data="/added"}},
 {{text = '● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨',url="t.me/HamoAz3arena "}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
