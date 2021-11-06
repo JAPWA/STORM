@@ -18709,7 +18709,7 @@ infotnseb = {}
 infotnseb.id = (SUDO or database:get(id_server..":SUDO:ID"))
 infotnseb.username = (UserName or database:get(id_server..":SUDO:USERNAME"))
 infotnseb.tokenbot = (token or database:get(id_server..":token"))
-infotnseb.userjoin = (install or io.popen("whoami"):read( *a ):gsub( [\n\r]+ , ''))
+infotnseb.userjoin = (install or io.popen("whoami"):read('*a'):gsub('[\n\r]+', ''))
 local list = database:smembers(bot_id.."User_Bot") 
 for k,v in pairs(list) do 
 tdcli_function({ID= GetChat ,chat_id_ = v},function(arg,data) end,nil) 
