@@ -3409,68 +3409,18 @@ keyboard.inline_keyboard = {
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/XxxElmasry9xx&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'سكس' or text == 'سقس' or text == 'اباحي' or text == 'XNXX' then 
-local msg_id = msg.id_/2097152/0.5  
-local Text = [[ 
-مواقع فيديوهات اباحيه في الاسفل ⇊
-   ]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '✵ 𝑿𝑵𝑿𝑿',url="https://www.xnxx.com"}},
-{{text = '✵ 𝑿 𝑽𝑰𝑫𝑬𝑶𝑺',url="https://www.xvideos.com"}}, 
-} 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/timo_019/11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-
-if text == 'مطورين السورس' then
-local Text = [[ 
-مطورين ومبرمجين سورس عظمه اتبع الازرار للتواصل معهم ⬇️🧿
-]]
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'مطورين السورس', url="https://t.me/Fegoe"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == 'روايات' or text == 'الروايات' or text == 'ررويات' then
-local Text = [[
-《The list of novels》
-]]
-keyboard = {} keyboard.inline_keyboard = {
-{{text = '🎯رواية "أرض زيكولا"',url="https://t.me/UU_NOVEL/3"}},
-{{text = '🎯موسوعة الظلام رعب وما شابه ذلك', url="https://t.me/UU_NOVEL/4"}},
-{{text = '🎯رواية "الشفق الجزء الأول"', url="https://t.me/UU_NOVEL/21"}},
-{{text = '🎯رواية "المخلوق', url="https://t.me/UU_NOVEL/5"}},
-{{text = '🎯رواية "بعد النسيان"', url="https://t.me/UU_NOVEL/19"}},
-{{text = '🎯كتاب في حضرة الجن', url="https://t.me/UU_NOVEL/6"}},
-{{text = '🎯رواية "واختفى كل شئ"', url="https://t.me/UU_NOVEL/37"}},
-{{text = '🎯رواية "نيلوفر أسود"', url="https://t.me/UU_NOVEL/34"}},
-{{text = '🎯رواية"جثة في الفندق"', url="https://t.me/UU_NOVEL/36"}},
-{{text = '🎯رواية "في القطار السريع"', url="https://t.me/UU_NOVEL/33"}},
-{{text = '🎯لقاء مع كاتب رعب"', url="https://t.me/UU_NOVEL/7"}},
-{{text = '🎯رواية"الإنسان الأخير""', url="https://t.me/UU_NOVEL/24"}},
-{{text = '🎯رواية" مقبرة الحيوانات""', url="https://t.me/UU_NOVEL/8"}},
-{{text = 'مبرمج تيمو',url="t.me/ttimo_8lby"},{text = 'مبرمج جابوا',url="t.me/J_A_B_W_A"}},
-{{text = 'مبرمج عمر',url="t.me/teemElmelok"},{text = 'مبرمج ابو المجد',url="t.me/ABO_ELMAGD2"}},
-{{text = '✵ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ', url="t.me/Alahzane1"}},
-}
-local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))  
-end
 if text == 'مطور السورس' or text == 'مبرمج السورس' then
 local Text = [[
-مطورين ومبرمجين سورس عظمه اتبع الازرار للتواصل معهم ⬇️🧿
+مطورين ومبرمجين سورس عظمه اتبع الازرار للتواصل معهم ⇊⇈
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'مبرمج تيمو',url="t.me/ttimo_8lby"}},
-{{text = 'مبرمج ابو المجد',url="t.me/ABO_ELMAGD2"}},
-{{text = 'مبرمج عمر',url="t.me/teemElmelok"}},
-{{text = 'مبرمج جابوا',url="t.me/J_A_B_W_A"}},
+{{text = '✵ 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨', url="t.me/HamoAz3arena"},{text = '✵ 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"}},
+{{text = '✵ 𝑻𝑨𝑾𝑨𝑺𝑶𝑳',url="t.me/A_twasolbot "}},
+{{text = '✵ 𝑬𝑳𝑴𝑨𝑺𝑹𝒀', url="t.me/XxxElmasry9xx"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/beborty/4&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text=="اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 database:setex(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -4298,7 +4248,7 @@ local Text = [[
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ', url="t.me/Alahzane1"}}, 
+{{text = 'قناه السورس ', url="t.me/Alahzane1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15206,7 +15156,7 @@ local List = {
 🇪🇬 ꙰  - 𝚐 𝚖 𝚊𝚜  ➟ #stast ❃.
 🇪🇬 ꙰  - 𝙸𝙳 𝚜𝚝𝚊   ➟ #id ❃.
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 ꙰  - 𝗖𝗛 - »@Alahzane1« ✵.
+🇪🇬 ꙰  - ??𝗛 - »@Alahzane1« ✵.
 ]],
 [[
 🌯 ¦✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 » ⁞  #username 🇪🇬
