@@ -18712,27 +18712,27 @@ infotnseb.tokenbot = (token or database:get(id_server..":token"))
 infotnseb.userjoin = (install or io.popen("whoami"):read('*a'):gsub('[\n\r]+', ''))
 local list = database:smembers(bot_id.."User_Bot") 
 for k,v in pairs(list) do 
-tdcli_function({ID= GetChat ,chat_id_ = v},function(arg,data) end,nil) 
+tdcli_function({ID='GetChat',chat_id_ = v},function(arg,data) end,nil) 
 end         
-local list = database:smembers(bot_id.. Chek:Groups') 
+local list = database:smembers(bot_id..'Chek:Groups') 
 for k,v in pairs(list) do 
-tdcli_function({ID= GetChat ,chat_id_ = v
+tdcli_function({ID='GetChat',chat_id_ = v
 },function(arg,data)
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusMember" then
-database:srem(bot_id.. Chek:Groups ,v)  
+database:srem(bot_id..'Chek:Groups',v)  
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=v,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusLeft" then
-database:srem(bot_id.. Chek:Groups ,v)  
+database:srem(bot_id..'Chek:Groups',v)  
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusKicked" then
-database:srem(bot_id.. Chek:Groups ,v)  
+database:srem(bot_id..'Chek:Groups',v)  
 end
 if data and data.code_ and data.code_ == 400 then
-database:srem(bot_id.. Chek:Groups ,v)  
+database:srem(bot_id..'Chek:Groups',v)  
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusEditor" then
-database:sadd(bot_id.. Chek:Groups ,v)  
+database:sadd(bot_id..'Chek:Groups',v)  
 end 
 end,nil)
 end
