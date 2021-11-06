@@ -1628,93 +1628,26 @@ t = " ✵ لا يوجد مطورين ثانويين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == 'الاحصائيات' and Sudo(msg) then 
-local Namebot = (bot_data:get(bot_id..'Name:Bot') or 'عظمه') 
-local Groups = database:get(bot_id..'Chek:Groups')  
-local Users = database:get(bot_id..'User_Bot')  
-local getbioY = getbio(msg.sender_user_id_)
-tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}\nBIO ⇐ {'..getbioY..'}'
-local msg_id = msg.id_/2097152/0.5  
-local tessttmos = 'اسم بوت ⇐ '..Namebot..''
-local tessttmo = 'الجروبات ⇐ '..Groups..''
-local tessttm = 'المشتركين ⇐ '..Users..''
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = tessttmos, url = "https://t.me/Alahzane1"},
-},
-{
-{text = tessttmo, url = "https://t.me/Alahzane1"},
-},
-{
-{text = tessttm, url = "https://t.me/Alahzane1"},
-},
-{
-{text = 'اضف البوت الي مجموعتك ✵'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
-},
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end 
-end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
+if text == 'الاحصائيات' and SudoBot(msg) then 
+local Groups = database:scard(bot_id..'Chek:Groups')  
+local Users = database:scard(bot_id..'User_Bot')  
+Text = '  ✵︙ الاحصائيات  \n'..'  ✵︙ عدد الجروبات  ⇇{'..Groups..'}'..'\n  ✵︙  عدد المشتركين  ⇇{'..Users..'}'
+send(msg.chat_id_, msg.id_,Text) 
+return false
 end
-if text == 'الجروبات' and Sudo(msg) then 
-local Namebot = (bot_data:get(bot_id..'Name:Bot') or 'عظمه') 
-local Groups = database:get(bot_id..'Chek:Groups')  
-local Users = database:get(bot_id..'User_Bot')  
-local getbioY = getbio(msg.sender_user_id_)
-tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}\nBIO ⇐ {'..getbioY..'}'
-local msg_id = msg.id_/2097152/0.5  
-local tessttmos = 'اسم بوت ⇐ '..Namebot..''
-local tessttmo = 'الجروبات ⇐ '..Groups..''
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = tessttmos, url = "https://t.me/Alahzane1"},
-},
-{
-{text = tessttmo, url = "https://t.me/Alahzane1"},
-},
-{
-{text = 'اضف البوت الي مجموعتك ✵'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
-},
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end 
-end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
+if text == 'المشتركين' and SudoBot(msg) then 
+local Groups = database:scard(bot_id..'Chek:Groups')  
+local Users = database:scard(bot_id..'User_Bot')  
+Text = '\n  ✵︙ المشتركين ↚{`'..Users..'`}'
+send(msg.chat_id_, msg.id_,Text) 
+return false
 end
-if text == 'المشتركين' and Sudo(msg) then 
-local Namebot = (bot_data:get(bot_id..'Name:Bot') or 'عظمه') 
-local Groups = database:get(bot_id..'Chek:Groups')  
-local Users = database:get(bot_id..'User_Bot')  
-local getbioY = getbio(msg.sender_user_id_)
-tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}\nBIO ⇐ {'..getbioY..'}'
-local msg_id = msg.id_/2097152/0.5  
-local tessttmos = 'اسم بوت ⇐ '..Namebot..''
-local tessttm = 'المشتركين ⇐ '..Users..''
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = tessttmos, url = "https://t.me/Alahzane1"},
-},
-{
-{text = tessttm, url = "https://t.me/Alahzane1"},
-},
-{
-{text = 'اضف البوت الي مجموعتك ✵'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
-},
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end 
-end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
+if text == 'الجروبات ' and SudoBot(msg) then 
+local Groups = database:scard(bot_id..'Chek:Groups')  
+local Users = database:scard(bot_id..'User_Bot')  
+Text = '\n  ✵︙ الجروبات ↚{`'..Groups..'`}'
+send(msg.chat_id_, msg.id_,Text) 
+return false
 end
 if text == ("المطورين") and SudoBot(msg) then
 local list = database:smembers(bot_id..'Sudo:User')
@@ -3181,7 +3114,7 @@ send(msg.chat_id_, msg.id_, texts)
 end
 if text == "الاسماء المكتومه" and Constructor(msg) and database:get(bot_id.."block:name:stats"..msg.chat_id_) == "open" then
 local All_name = database:smembers(bot_id.."DRAGON:blocname"..msg.chat_id_)
-t = "\n ✵ قائمة الاسماء المكتومه \n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢  \n"
+t = "\n ✵ قائمة الاسماء المكتومه \n♢━━━♢ 𝗦𝗢𝗨??𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢  \n"
 for k,v in pairs(All_name) do
 t = t..""..k.."- (["..v.."])\n"
 end
@@ -3411,8 +3344,8 @@ end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
 local Text = [[
- ✹ اهلا بك في سورس عظمه الجمدان ✹
- ✹ عايز بوت بأسعار منسبه وبوت مميز كلمني ✹  
+ ✵ اهلا بك في سورس عظمه الجمدان ✵
+ ✵ عايز بوت بأسعار منسبه وبوت مميز كلمني ✵  
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -5570,7 +5503,7 @@ send(msg.chat_id_, msg.id_, " لا تستطيع حظر مالك السورس")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "✹ لا تسطيع حظر عمك تيمو عام")
+send(msg.chat_id_, msg.id_, "✵ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2087027101) then  
@@ -5620,7 +5553,7 @@ send(msg.chat_id_, msg.id_, " لا تستطيع حظر مالك السورس")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "✹ لا تسطيع حظر عمك تيمو عام")
+send(msg.chat_id_, msg.id_, "✵ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2087027101) then  
@@ -5660,15 +5593,15 @@ send(msg.chat_id_, msg.id_, " ✵ لا تسطيع حظر البوت عام")
 return false 
 end
 if tonumber(userid) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "لا تستطيع حظر عمك تيمو ✹ ")
+send(msg.chat_id_, msg.id_, "لا تستطيع حظر عمك تيمو ✵ ")
 return false 
 end
 if tonumber(userid) == tonumber(2087027101) then  
-send(msg.chat_id_, msg.id_, "  ✹︙ لا تستطيع حظر الواد المصري ")
+send(msg.chat_id_, msg.id_, "  ✵︙ لا تستطيع حظر الواد المصري ")
 return false 
 end
 if tonumber(userid) == tonumber(1911881905) then  
-send(msg.chat_id_, msg.id_, "  ✹︙ لا تسطيع حظر مالك السورس عام")
+send(msg.chat_id_, msg.id_, "  ✵︙ لا تسطيع حظر مالك السورس عام")
 return false 
 end
 database:sadd(bot_id..'GBan:User', userid)
@@ -5705,7 +5638,7 @@ send(msg.chat_id_, msg.id_, " ✵ لا تسطيع كتم البوت عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1911881905) then
-send(msg.chat_id_, msg.id_, "  ✹︙ د مالك السورس يعبيط")
+send(msg.chat_id_, msg.id_, "  ✵︙ د مالك السورس يعبيط")
 return false
 end
 if tonumber(result.sender_user_id_) == tonumber(2087027101) then  
@@ -5713,7 +5646,7 @@ send(msg.chat_id_, msg.id_, "لا تستطيع كتم الواد المصري")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "✹ لا تستطيع كتم تيمو عام")
+send(msg.chat_id_, msg.id_, "✵ لا تستطيع كتم تيمو عام")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', result.sender_user_id_)
@@ -5754,11 +5687,11 @@ send(msg.chat_id_, msg.id_, " ✵ لا يمكنك كتم المطور الاسا
 return false 
 end
 if result.id_ == tonumber(1911881905) then
-send(msg.chat_id_, msg.id_, "  ✹︙ لا يمكنك كتم مالك السورس \n")
+send(msg.chat_id_, msg.id_, "  ✵︙ لا يمكنك كتم مالك السورس \n")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "✹ لا تستطيع كتم تيمو عام")
+send(msg.chat_id_, msg.id_, "✵ لا تستطيع كتم تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2087027101) then  
@@ -5798,11 +5731,11 @@ send(msg.chat_id_, msg.id_, " ✵ لا تسطيع كتم البوت عام")
 return false 
 end
 if result.id_ == tonumber(1911881905) then
-send(msg.chat_id_, msg.id_, "  ✹︙ لا يمكنك كتم مالك السورس \n")
+send(msg.chat_id_, msg.id_, "  ✵︙ لا يمكنك كتم مالك السورس \n")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "✹ لا تستطيع كتم تيمو عام")
+send(msg.chat_id_, msg.id_, "✵ لا تستطيع كتم تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2087027101) then  
@@ -6749,11 +6682,11 @@ if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 owner_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = owner_id},function(arg,b) 
 if b.first_name_ == false then
-send(msg.chat_id_, msg.id_,"  ✹︙ حساب المنشئ محذوف")
+send(msg.chat_id_, msg.id_,"  ✵︙ حساب المنشئ محذوف")
 return false  
 end
 local UserName = (b.username_ or "SRC-DRAGON")
-send(msg.chat_id_, msg.id_,"  ✹︙ منشئ الجروب  ⇇["..b.first_name_.."](T.me/"..UserName..")")  
+send(msg.chat_id_, msg.id_,"  ✵︙ منشئ الجروب  ⇇["..b.first_name_.."](T.me/"..UserName..")")  
 end,nil)   
 end
 end
@@ -12180,7 +12113,7 @@ local msg_id = msg.id_/2097152/0.5
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'اضف البوت الي مجموعتك ✹' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+{text = 'اضف البوت الي مجموعتك ✵' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -12215,7 +12148,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ✹' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+{text = 'اضف البوت الي مجموعتك ✵' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -12917,9 +12850,9 @@ ght = math.random(1,33);
 local Text ='الستخدم ثيم اخر اكتب ثيم'  
 keyboard = {}   
 keyboard.inline_keyboard = {
-{{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}},
-{{text = '● 𝑺𝑨𝑰𝑭',url="t.me/XxxElmasry9xx "}},
-{{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}},
+{{text = '✵ 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}},
+{{text = '✵ 𝑺𝑨𝑰𝑭',url="t.me/XxxElmasry9xx "}},
+{{text = '✵ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendDocument?chat_id=' .. msg.chat_id_ .. '&document=https://t.me/ahmedthem1/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12985,7 +12918,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✵ 𝚂𝙾𝚄??𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="t.me/Alahzane1"}},
+{{text = '✵ 𝚂??𝚄??𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="t.me/Alahzane1"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13338,96 +13271,32 @@ database:srem(bot_id..'Chek:Groups',msg.chat_id_)
 end
 return false  
 end
-if text == 'الاحصائيات' and Sudo(msg) then
-local Namebot = (database:get(bot_id..'Name:Bot') or 'عظمه') 
+if text == 'الاحصائيات' then
+if Sudo(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}'
-local msg_id = msg.id_/2097152/0.5  
-local tessttmos = 'اسم بوت ⇐ '..Namebot..''
-local tessttmo = 'الجروبات ⇐ '..Groups..''
-local tessttm = 'المشتركين ⇐ '..Users..''
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = tessttmos, url = "https://t.me/Alahzane1"},
-},
-{
-{text = tessttmo, url = "https://t.me/Alahzane1"},
-},
-{
-{text = tessttm, url = "https://t.me/Alahzane1"},
-},
-{
-{text = 'اضف البوت الي مجموعتك ✵'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
-}
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
-end 
-end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
+Text = '  ✵︙ الاحصائيات  \n'..'  ✵︙ عدد الجروبات  ⇇{'..Groups..'}'..'\n  ✵︙  عدد المشتركين  ⇇{'..Users..'}'
+send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'الجروبات' and Sudo(msg) then
-local Namebot = (database:get(bot_id..'Name:Bot') or 'عظمه') 
-local Groups = database:scard(bot_id..'Chek:Groups')  
-local Users = database:scard(bot_id..'User_Bot')  
-tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}'
-local msg_id = msg.id_/2097152/0.5  
-local tessttmos = 'اسم بوت ⇐ '..Namebot..''
-local tessttmo = 'الجروبات ⇐ '..Groups..''
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = tessttmos, url = "https://t.me/Alahzane1"},
-},
-{
-{text = tessttmo, url = "https://t.me/Alahzane1"},
-},
-{
-{text = '  اضف البوت الي مجموعتك ✵'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
-}
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
-end 
-end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
+return false
 end
-if text == 'المشتركين' and Sudo(msg) then
-local Namebot = (database:get(bot_id..'Name:Bot') or 'عظمه') 
+if text == 'الجروبات' then
+if Sudo(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}'
-local msg_id = msg.id_/2097152/0.5  
-local tessttmos = 'اسم بوت ⇐ '..Namebot..''
-local tessttm = 'المشتركين ⇐ '..Users..''
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = tessttmos, url = "https://t.me/Alahzane1"},
-},
-{
-{text = tessttm, url = "https://t.me/Alahzane1"},
-},
-{
-{text = 'اضف البوت الي مجموعتك ✵'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
-}
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
-end 
-end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
+Text = '  ✵︙ عدد الجروبات  ⇇{`'..Groups..'`}'
+send(msg.chat_id_, msg.id_,Text) 
+end
+return false
+end
+if text == 'المشتركين' then
+if Sudo(msg) then 
+local Groups = database:scard(bot_id..'Chek:Groups')  
+local Users = database:scard(bot_id..'User_Bot')  
+Text = '  ✵︙ عدد المشتركين  ⇇{`'..Users..'|}'
+send(msg.chat_id_, msg.id_,Text) 
+end
+return false
 end
 if text == 'تفعيل المغادره' and DevSoFi(msg) then   
 if database:get(bot_id..'Left:Bot'..msg.chat_id_) then
@@ -13633,7 +13502,7 @@ end
 if text == "انا مين" then
 local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_," ✹انا مين معطله") 
+send(msg.chat_id_, msg.id_," ✵انا مين معطله") 
 return false  
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
@@ -13643,7 +13512,7 @@ else
 username = 'sasa_boody'
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = ' ✹● انت➼ '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = ' ✵✵ انت➼ '..Rutba(msg.sender_user_id_,msg.chat_id_)
 local Boody = 'https://t.me/xxxcccvvbbnn/903'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -17283,12 +17152,12 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end
 if text == 'بوت الحذف' or text == 'بوت حذف' or text == 'بوت حذف حسابات' then
 local Text = [[
-✹ بــوت حــذف حــسابــات ✹
+✵ بــوت حــذف حــسابــات ✵
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '● 𝑩𝑶𝑻', url="t.me/LC6BOT"}}, 
-{{text = 'اضف البوت الي مجموعتك ●' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = '✵ 𝑩𝑶𝑻', url="t.me/LC6BOT"}}, 
+{{text = 'اضف البوت الي مجموعتك ✵' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/LC6BOT&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -17298,9 +17167,9 @@ ght = math.random(1,62);
 local Text ='تم اختيار الاستوري هذه لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}},
-{{text = '● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨',url="t.me/HamoAz3arena "}},
-{{text = '● 𝑺𝑨𝑰𝑭',url="t.me/XxxElmasry9xx "}},
+{{text = '✵ 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}},
+{{text = '✵ 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨',url="t.me/HamoAz3arena "}},
+{{text = '✵ 𝑺𝑨𝑰𝑭',url="t.me/XxxElmasry9xx "}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -17312,7 +17181,7 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'استوري اخر', callback_data="/added"}},
-{{text = '● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨',url="t.me/HamoAz3arena "}},
+{{text = '✵ 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨',url="t.me/HamoAz3arena "}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
