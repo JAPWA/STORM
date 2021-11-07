@@ -3016,10 +3016,6 @@ LinkGroup = LinkGp.result
 else
 LinkGroup = 'لا يوجد'
 end
-sendText(2002118176,"✵ الحق ياض ياتيمو بينادو عليك \n✵الشخص  {"..Name.."}\n✵اسم الجروب {"..NameChat.."}\n✵ايدي الجروب { `"..msg.chat_id_.."` }\n✵رابط الجروب \n [ "..LinkGroup.." ]\n    ✵رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
-end,nil)
-end,nil)
-end
 
 if text and text:match("^تغير الاشتراك$") and DevSoFi(msg) then  
 database:setex(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
@@ -11421,7 +11417,7 @@ end
 
 if text == "قائمه المنع" and Manager(msg) then   
 local list = database:smembers(bot_id.."DRAGON1:List:Filter"..msg.chat_id_)  
-t = "\n ✵ قائمة المنع \n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠?? ♢━━━♢ \n"
+t = "\n ✵ قائمة المنع \n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ \n"
 for k,v in pairs(list) do  
 local DRAGON_Msg = database:get(bot_id.."DRAGON1:Add:Filter:Rp2"..v..msg.chat_id_)   
 t = t..""..k.."- "..v.."  ⇦✵{"..DRAGON_Msg.."}\n"    
@@ -12909,7 +12905,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' 《𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙾??𝙰??》', url="t.me/Alahzane1"}},
+{{text = ' 《𝚂𝙾𝚄𝚁𝙲𝙴 ??𝙾??𝙰??》', url="t.me/Alahzane1"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/comxnxp/20&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15023,7 +15019,7 @@ local List = {
 [[
 ➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸✵.
 ➞: ??𝒔𝒆𝒓𓂅 #username 𓍯➸✵.
-➞: 𝒎𝒔𝒈??𓂅 #msgs 𓍯➸✵.
+➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸✵.
 ➞: 𝒊𝒅 𓂅 #id 𓍯➸✵.
 ]],
 [[
