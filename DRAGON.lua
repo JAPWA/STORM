@@ -1320,7 +1320,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت الي مجموعتك ✵' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Alahzane1/19&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'قسم مطورين السورس والمبرمجين' and DevSoFi(msg) then 
@@ -3298,7 +3298,7 @@ if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or te
 local Text = [[
 ╭╾╾╾𓆩[𝑺𝑶𝑼𝑹𝑪𝑬 𝑨𝒁𝑴𝑨](https://t.me/Alahzane1)𓆪╾╾╾╮
 ┆
-┆[𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑪𝑶𝑼𝑹𝑪𝑬 𝑨𝒁𝑴𝑨](https://t.me/Alahzane1)
+┆[𝑾𝑬𝑳𝑪??𝑴𝑬 𝑻𝑶 𝑪𝑶𝑼𝑹𝑪𝑬 𝑨𝒁𝑴𝑨](https://t.me/Alahzane1)
 ┆
 ╰╾╾╾𓆩[𝑺𝑶𝑼𝑹𝑪𝑬 𝑨𝒁𝑴𝑨](https://t.me/Alahzane1)𓆪╾╾╾╯
 ]]
@@ -14787,7 +14787,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n✵✵ 𝚄𝚂𝙴𝚁 ↬  »'..username..'\n✵✵ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'\n✵✵ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵✵ 𝙸𝙳↬  »'..msg.sender_user_id_..'\n✵✵ 𝙲𝙷↬ »@Alahzane1\n')
+send(msg.chat_id_, msg.id_,'[\n✵✵ 𝚄??𝙴𝚁 ↬  »'..username..'\n✵✵ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'\n✵✵ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵✵ 𝙸𝙳↬  »'..msg.sender_user_id_..'\n✵✵ 𝙲𝙷↬ »@Alahzane1\n')
 end
 end
 
@@ -15487,7 +15487,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 🇪🇬 - 𝄬 username . #username  𓃠
-🇪?? - ?? stast . #stast  ??
+🇪?? - 𝄬 stast . #stast  ??
 🇪🇬 - ?? id . #id 𓃠
 🇪🇬 - 𝄬 gmas . #gmas 𓃠
 🇪🇬 - 𝄬 msgs . #msgs  𓃠
@@ -15914,7 +15914,7 @@ Msᴀɢ ~ #msgs
 🌨♢━━━♢ 𝗦𝗢𝗨𝗥??𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ Use ⇨ #username 🌨
 🌨♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ iD ⇨ #id 🌨
 🌨♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ Sta ⇨  #stast 🌨
-🌨♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ Msg ⇨ #msgs 🌨
+🌨♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠?? ♢━━━♢ Msg ⇨ #msgs 🌨
 🌨♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ NaMe ⇨ #name  🌨
 ]],
 [[
@@ -17602,7 +17602,7 @@ local Teext =[[
  ✵ ضع اسم+الاسم ♢ تحديث
  ✵ المنشئين ♢  مسح المنشئين
  ✵  ❲ + ❳ جميع ماسبق
- ♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ 
+ ♢━━━♢ 𝗦??𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ 
 ❲[《𝚂𝙾??𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ](t.me/Alahzane1)❳ 
 ]]
 keyboard = {} 
@@ -18300,7 +18300,7 @@ local Teext =[[
  ✵   بوسو ♢ بوسها
  ✵   بتحب دي ♢ بتحب ده
  ✵  بوت الحذف♢رابط الحذف
-♽^━━━━❆𝗘𝗟𝗠𝗟𝗢??❆━━━━^♽ 
+♽^━━━━❆𝗘𝗟𝗠??𝗢??❆━━━━^♽ 
  ❲[《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻??𝙻𝙾𝙺》 ](t.me/Alahzane1)❳ 
 ]]
 keyboard = {} 
