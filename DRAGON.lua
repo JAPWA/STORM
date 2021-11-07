@@ -6483,15 +6483,15 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ✵ لا تستطيع استخدام البوت \n ✵  يرجى الاشتراك بالقناه اولا \n ✵  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'  ✵ لا تستطيع استخدام البوت \n  ✵  يرجى الاشتراك بالقناه اولا \n  ✵  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Basic:Constructor'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ✵ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'sourcelosefir')..')'
-status  = '\n ✵ تم ترقيته منشئ اساسي'
+usertext = '\n  ✵ الـعـضو   ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
+status  = '\n  ✵ تم ترقيته منشئ اساسي'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
 end
@@ -6505,22 +6505,22 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ✵ لا تستطيع استخدام البوت \n ✵  يرجى الاشتراك بالقناه اولا \n ✵  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'  ✵ لا تستطيع استخدام البوت \n  ✵  يرجى الاشتراك بالقناه اولا \n  ✵  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," ✵ عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_,"  ✵ عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
 database:sadd(bot_id..'Basic:Constructor'..msg.chat_id_, result.id_)
-usertext = '\n ✵ الـعـضو   ↚ ['..result.title_..'](t.me/'..(username or 'sourcelosefir')..')'
-status  = '\n ✵ تم ترقيته منشئ اساسي'
+usertext = '\n  ✵ الـعـضو   ⇇['..result.title_..'](t.me/'..(username or 'textchuser')..')'
+status  = '\n  ✵ تم ترقيته منشئ اساسي'
 texts = usertext..status
 else
-texts = ' ✵ لا يوجد حساب بهاذا المعرف'
+texts = '  ✵ لا يوجد حساب بهاذا المعرف'
 end
 send(msg.chat_id_, msg.id_, texts)
 end
@@ -6534,19 +6534,19 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ✵ لا تستطيع استخدام البوت \n ✵  يرجى الاشتراك بالقناه اولا \n ✵  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'  ✵ لا تستطيع استخدام البوت \n  ✵  يرجى الاشتراك بالقناه اولا \n  ✵  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 database:sadd(bot_id..'Basic:Constructor'..msg.chat_id_, userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
-usertext = '\n ✵ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'sourcelosefir')..')'
-status  = '\n ✵ تم ترقيته منشئ اساسي'
+usertext = '\n  ✵ الـعـضو   ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
+status  = '\n  ✵ تم ترقيته منشئ اساسي'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
-usertext = '\n ✵ الـعـضو   ↚ '..userid..''
-status  = '\n ✵ تم ترقيته منشئ اساسي'
+usertext = '\n  ✵ الـعـضو   ⇇'..userid..''
+status  = '\n  ✵ تم ترقيته منشئ اساسي'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
@@ -6557,15 +6557,15 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ✵ لا تستطيع استخدام البوت \n ✵  يرجى الاشتراك بالقناه اولا \n ✵  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'  ✵ لا تستطيع استخدام البوت \n  ✵  يرجى الاشتراك بالقناه اولا \n  ✵  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 function start_function(extra, result, success)
 database:srem(bot_id..'Basic:Constructor'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ✵ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'sourcelosefir')..')'
-status  = '\n ✵ تم تنزيله من الاساسيين'
+usertext = '\n  ✵ الـعـضو   ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
+status  = '\n  ✵ تم تنزيله من الاساسيين'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
 end
@@ -6579,18 +6579,18 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ✵ لا تستطيع استخدام البوت \n ✵  يرجى الاشتراك بالقناه اولا \n ✵  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'  ✵ لا تستطيع استخدام البوت \n  ✵  يرجى الاشتراك بالقناه اولا \n  ✵  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 function start_function(extra, result, success)
 if result.id_ then
 database:srem(bot_id..'Basic:Constructor'..msg.chat_id_, result.id_)
-usertext = '\n ✵ الـعـضو   ↚ ['..result.title_..'](t.me/'..(username or 'sourcelosefir')..')'
-status  = '\n ✵ تم تنزيله من الاساسيين'
+usertext = '\n  ✵ الـعـضو   ⇇['..result.title_..'](t.me/'..(username or 'textchuser')..')'
+status  = '\n  ✵ تم تنزيله من الاساسيين'
 texts = usertext..status
 else
-texts = ' ✵ لا يوجد حساب بهاذا المعرف'
+texts = '  ✵ لا يوجد حساب بهاذا المعرف'
 end
 send(msg.chat_id_, msg.id_, texts)
 end
@@ -6604,19 +6604,19 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ✵ لا تستطيع استخدام البوت \n ✵  يرجى الاشتراك بالقناه اولا \n ✵  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'  ✵ لا تستطيع استخدام البوت \n  ✵  يرجى الاشتراك بالقناه اولا \n  ✵  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 database:srem(bot_id..'Basic:Constructor'..msg.chat_id_, userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
-usertext = '\n ✵ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'sourcelosefir')..')'
-status  = '\n ✵ تم تنزيله من الاساسيين'
+usertext = '\n  ✵ الـعـضو   ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
+status  = '\n  ✵ تم تنزيله من الاساسيين'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
-usertext = '\n ✵ الـعـضو   ↚ '..userid..''
-status  = '\n ✵ تم تنزيله من الاساسيين'
+usertext = '\n  ✵ الـعـضو   ⇇'..userid..''
+status  = '\n  ✵ تم تنزيله من الاساسيين'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
@@ -14288,34 +14288,10 @@ end end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end,nil)
 end
-if text == "بايو" and not database:get(bot_id..'ghiktr8'..msg.chat_id_) then     
-tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
-if result.username_ then
-username = result.username_ 
-else
-username = 'Alahzane1'
-end
-local msg_id = msg.id_/2097152/0.5  
-local textt = ' '..getbio(msg.sender_user_id_,msg.chat_id_)
-local Sasa3 = 'https://t.me/xxxcccvvbbnn/903'
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = textt, url = "https://t.me/"..result.username_..""},
-},
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Sasa3).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
-end,nil)
-end
-if text == 'ايديي' then
-send(msg.chat_id_, msg.id_,' ✵ ايديك  ⇦✵'..msg.sender_user_id_)
-end
+if text == 'بايو' then   
+send(msg.chat_id_, msg.id_,getbio(msg.sender_user_id_)) 
+end 
+
 if text == 'الرتبه' and tonumber(msg.reply_to_message_id_) > 0 then
 function start_function(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(extra,data) 
@@ -15110,7 +15086,7 @@ local List = {
 ]],
 [[
 - UsEr🇪🇬 ꙰ #username
-- StA🇪🇬 ꙰   #msgs
+- StA??🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
 - 𝗖𝗛 🇪🇬 ꙰  »@Alahzane1« ✵.
