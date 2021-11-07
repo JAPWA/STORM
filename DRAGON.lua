@@ -1328,8 +1328,8 @@ local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
 {'♽^━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━^♽'},
 {'التواصل','عايز بوت','يا سورس'},
-{'مبرمج تيمو','مبرمج ابو المجد'},
-{'مبرمج عمر','مبرمج جابوا'},
+{'مبرمج تيمو','ازعرينا'},
+{'المصري'},
 {'العوده✵'},
 }
 send_inline_key(msg.chat_id_,Text,Key)
@@ -3298,7 +3298,7 @@ if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or te
 local Text = [[
 ╭╾╾╾𓆩[𝑺𝑶𝑼𝑹𝑪𝑬 𝑨𝒁𝑴𝑨](https://t.me/Alahzane1)𓆪╾╾╾╮
 ┆
-┆[𝑾𝑬𝑳𝑪??𝑴𝑬 𝑻𝑶 𝑪𝑶𝑼𝑹𝑪𝑬 𝑨𝒁𝑴𝑨](https://t.me/Alahzane1)
+┆[𝑾𝑬𝑳𝑪??𝑴𝑬 𝑻𝑶 𝑪𝑶𝑼𝑹𝑪𝑬 ??𝒁𝑴𝑨](https://t.me/Alahzane1)
 ┆
 ╰╾╾╾𓆩[𝑺𝑶𝑼𝑹𝑪𝑬 𝑨𝒁𝑴𝑨](https://t.me/Alahzane1)𓆪╾╾╾╯
 ]]
@@ -3367,7 +3367,7 @@ keyboard = {}
 keyboard.inline_keyboard = { 
 {{text = '✵ 𝑬𝑳𝑴𝑨𝑺𝑹𝒀',url="t.me/XxxElmasry9xx"}}, 
 } 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/XxxElmasry9xx&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/timo_019/35&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'عايز سورس' or text == 'عايزه سورس' or text == 'مين يعملي سورس' or text == 'محتاج سورس' then 
