@@ -3373,6 +3373,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝒎𝒚 𝒅𝒆𝒗 ', callback_data="/units"},{text = '𝒎𝒚 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ', callback_data="/theytry"}},  
+{{text = '𝒕𝒂W𝒂𝒔𝒐𝒍',url="t.me/tawasol_1_bot"}}, 
 {{text = '𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌 ',url="https://t.me/eLmLoK0"}}, 
 {{text = 'أضفہ ألبہوتہ أليہ مہجہمہوعہتہكہ' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -12488,7 +12489,6 @@ if text == ""..(database:get(bot_id..'Name:Bot') or 'الملوك').."" then
 Namebot = (database:get(bot_id..'Name:Bot') or 'الملوك')
 local DRAGON_Msg = {
 '♤ نعم يروحي♥️🕊',
-'♤ انت تعرف انو بوت  '..Namebot..'  متنصب علي سورس الملوك❤️🕊',
 '♤ بتشقط وجي ويت 🤪🕊',
 '♤ ايوا جاي 🙈🕊',
 '♤ يعم هتسحر واجي 😾🕊',
@@ -12507,6 +12507,9 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {
 {text = texxtt, url="http://t.me/"..sudos.UserName},
+},
+{
+{text = 'أضفہ ألبہوتہ أليہ مہجہمہوعہتہكہ' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -12539,6 +12542,9 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {
 {text = texxtt, url="http://t.me/"..sudos.UserName},
+},
+{
+{text = 'أضفہ ألبہوتہ أليہ مہجہمہوعہتہكہ' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -15903,7 +15909,7 @@ local List = {
 ]],
 [[
 𓄼🇪🇬 𝑼??𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
-𓄼🇪🇬 𝑺𝒕𝒂𝒔𝒕 : #stast    ☥
+𓄼🇪🇬 𝑺𝒕𝒂??𝒕 : #stast    ☥
 ??🇪🇬 𝐢𝐝 : #id ‌‌‏⚚
 𓄼🇪🇬 ??𝒂𝒎𝒆𝑺 : #edit ⚚
 𓄼🇪🇬 𝑴??𝒈𝒔 : #msgs 𓆊
@@ -16340,7 +16346,7 @@ Msᴀɢ ~ #msgs
 
 • 🖤 ♤ 𝑴??𝑮 : #msgs
 
-• 🖤 ♤ 𝗖𝗛 - ♤@eLmLoK0♤ ♤
+• 🖤 ♤ ??𝗛 - ♤@eLmLoK0♤ ♤
 ]],
 [[
 • USE 𖦹 #username 
