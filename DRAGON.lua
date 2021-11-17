@@ -3373,7 +3373,6 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝒎𝒚 𝒅𝒆𝒗 ', callback_data="/units"},{text = '𝒎𝒚 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ', callback_data="/theytry"}},  
-{{text = '𝒕𝒂W𝒂𝒔𝒐𝒍',url="t.me/tawasol_1_bot"}}, 
 {{text = '𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌 ',url="https://t.me/eLmLoK0"}}, 
 {{text = 'أضفہ ألبہوتہ أليہ مہجہمہوعہتہكہ' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -3392,7 +3391,6 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝒕𝒊𝒎𝒐  ',url="t.me/ttimo_8lby"},{text = '𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅',url="t.me/ABO_ELMAGD2"}},
-{{text = '𝒕𝒂W𝒂𝒔𝒐𝒍',url="t.me/tawasol_1_bot"}}, 
 {{text = '𝒐𝒎𝒂𝒓  ',url="t.me/teemElmelok"},{text = '𝒎𝒐𝒔𝒕𝒂𝒇𝒂 ',url="t.me/J_A_B_W_A"}},
 {{text = '𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌 ', url="t.me/eLmLoK0"}},
 {{text = 'أضفہ ألبہوتہ أليہ مہجہمہوعہتہكہ' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
@@ -4606,11 +4604,11 @@ local msg_id = msg.id_/2097152/0.5
 local Text = "معلوماتك"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♤ معرفك⇐'..data.username_,url="t.me/"..data.username_}},
-{{text = '♤ رتبتك⇐'..rtp, url="t.me/"..data.username_}},
-{{text = '♤ رسائلك⇐'..Msguser, url="t.me/"..data.username_}},
-{{text = '♤ ايديك⇐'..msg.sender_user_id_, url="t.me/"..data.username_}},
-{{text = '♤ البايو⇐'..getbio(msg.sender_user_id_), url="t.me/"..data.username_}},
+{{text = 'معرفك⇐'..data.username_,url="t.me/"..data.username_}},
+{{text = 'رتبتك⇐'..rtp, url="t.me/"..data.username_}},
+{{text = ' رسائلك⇐'..Msguser, url="t.me/"..data.username_}},
+{{text = 'ايديك⇐'..msg.sender_user_id_, url="t.me/"..data.username_}},
+{{text = 'البايو⇐'..getbio(msg.sender_user_id_), url="t.me/"..data.username_}},
 }
 local function getpro(extra, result, success)
 if result.photos_[0] then
@@ -15909,7 +15907,7 @@ local List = {
 ]],
 [[
 𓄼🇪🇬 𝑼??𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
-𓄼🇪🇬 𝑺𝒕𝒂??𝒕 : #stast    ☥
+𓄼🇪🇬 𝑺𝒕𝒂𝒔𝒕 : #stast    ☥
 ??🇪🇬 𝐢𝐝 : #id ‌‌‏⚚
 𓄼🇪🇬 ??𝒂𝒎𝒆𝑺 : #edit ⚚
 𓄼🇪🇬 𝑴??𝒈𝒔 : #msgs 𓆊
@@ -16346,7 +16344,7 @@ Msᴀɢ ~ #msgs
 
 • 🖤 ♤ 𝑴??𝑮 : #msgs
 
-• 🖤 ♤ ??𝗛 - ♤@eLmLoK0♤ ♤
+• 🖤 ♤ 𝗖𝗛 - ♤@eLmLoK0♤ ♤
 ]],
 [[
 • USE 𖦹 #username 
