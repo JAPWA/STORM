@@ -3442,8 +3442,7 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '𝒐𝒎𝒂𝒓',url="t.me/teemElmelok"}}, 
-{{text = '𝑔𝑟𝑜𝑢𝑝 𝑒𝑙𝑚𝑙𝑜𝑘',url="t.me/e_L_m_L_o_K"},{text = '𝒄𝒉𝒂𝒏𝒏𝒆𝒍 𝑒𝑙𝑚𝑙𝑜𝑘',url="t.me/eLmLoK0"}},
-{{text = '𝑔𝑟𝑜𝑢𝑝 𝑒𝑙𝑚𝑙𝑜𝑘 2',url="t.me/omar_moot"},{text = '𝒄𝒉𝒂𝒏𝒏𝒆𝒍 𝑒𝑙𝑚𝑙𝑜𝑘 2',url="t.me/OMARmoot"}},
+{{text = '𝒈𝒓𝒐𝒖𝒑',url="t.me/omar_moot"},{text = '𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ',url="t.me/OMARmoot"}},
 {{text = '𝒃𝒐𝒕 𝒐𝒎𝒂𝒓',url="t.me/omarteembot"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/teemElmelok&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15971,7 +15970,7 @@ Msᴀɢ ~ #msgs
 𓄼 𝗖𝗛 - ♤@eLmLoK0♤ ♤.
 ]],
 [[
-𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
+𝐓𝐓• 𝐘𝐎𝐔?? 𝐈𝐃 𖠰 #id .
 𝐓𝐓• 𝐌𝐬𝐠𝐒 𖠰 #msgs .
 𝐓𝐓• 𝐔𝐬𝐞??𝐍𝐚 𖠰 #username .
 𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
@@ -16401,7 +16400,7 @@ Msᴀɢ ~ #msgs
 ♤ ♤ 𝐦𝐬𝐠 𓃠 #msgs .
 ♤ ♤ 𝐬𝐭𝐚 𓃠 #stast .
 ♤ ♤ 𝒆𝒅𝒊𝒕 𓃠 #edit .
-♤ ♤ ??𝗛 - ♤@eLmLoK0♤ ♤
+♤ ♤ 𝗖𝗛 - ♤@eLmLoK0♤ ♤
 ]],
 [[
 ♡ : 𝐼𝐷 𖠀 #id .
@@ -19771,7 +19770,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Teext =[[
-🎖┇ ??𝙰??𝙸𝙲 𝙳𝙴𝚅????𝙾𝙿𝙴?? 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .
+🎖┇ 𝙱𝙰??𝙸𝙲 𝙳𝙴𝚅????𝙾𝙿𝙴?? 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .
 ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
  ♤ اهلا بك عزيزي 🔊
  ♤ اوامر مطور الاساسي 👨🏼‍✈️
