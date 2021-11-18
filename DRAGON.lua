@@ -160,7 +160,7 @@ print([[
 
                                     
 > CH ♤ ♤@eLmLoK0♤
-~> DEVELOPER ♤ {text = @amr_8lby
+~> DEVELOPER ♤ {text = @ttimo_8lby
 ]])
 sudos = dofile("./kkkklInfo.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -1049,7 +1049,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' ♤ 𝒕𝒊𝒎𝒐  ',url="t.me/amr_8lby"},{text = ' ♤ 𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅  ',url="t.me/ABO_ELMAGD2"}},
+{{text = ' ♤ 𝒕𝒊𝒎𝒐  ',url="t.me/ttimo_8lby"},{text = ' ♤ 𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅  ',url="t.me/ABO_ELMAGD2"}},
 {{text = ' ♤ 𝒕𝒂W𝒂𝒔𝒐𝒍',url="t.me/tawasol_1_bot"}}, 
 {{text = ' ♤ 𝒐𝒎𝒂𝒓  ',url="t.me/teemElmelok"},{text = ' ♤ 𝒎𝒐𝒔𝒕𝒂𝒇𝒂  ',url="t.me/J_A_B_W_A"}},
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ', url="t.me/eLmLoK0"}},
@@ -1068,7 +1068,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'المبرمج تيمو ♤ ',url="t.me/amr_8lby"}}, 
+{{text = 'المبرمج تيمو ♤ ',url="t.me/ttimo_8lby"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/timo_019/40&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1360,7 +1360,7 @@ if text == '/start' and DevSoFi(msg) then
 local Text = '♤انت الان المطور الاساسي في البوت \n ♤سورس الملوك\n ♤يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/eLmLoK0)'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♤ 𝒕𝒊𝒎𝒐  ',url="t.me/amr_8lby"},{text = '♤ 𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅',url="t.me/ABO_ELMAGD2"}},
+{{text = '♤ 𝒕𝒊𝒎𝒐  ',url="t.me/ttimo_8lby"},{text = '♤ 𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅',url="t.me/ABO_ELMAGD2"}},
 {{text = '♤ 𝒐𝒎𝒂𝒓  ',url="t.me/teemElmelok"},{text = '♤ 𝒎𝒐𝒔𝒕𝒂𝒇𝒂 ',url="t.me/J_A_B_W_A"}},
 {{text = 'أضفہ ألبہوتہ أليہ مہجہمہوعہتہكہ°' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -3390,7 +3390,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝒕𝒊𝒎𝒐  ',url="t.me/amr_8lby"},{text = '𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅',url="t.me/ABO_ELMAGD2"}},
+{{text = '𝒕𝒊𝒎𝒐  ',url="t.me/ttimo_8lby"},{text = '𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅',url="t.me/ABO_ELMAGD2"}},
 {{text = '𝒐𝒎𝒂𝒓  ',url="t.me/teemElmelok"},{text = '𝒎𝒐𝒔𝒕𝒂𝒇𝒂 ',url="t.me/J_A_B_W_A"}},
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ', url="t.me/eLmLoK0"}},
 {{text = 'أضفہ ألبہوتہ أليہ مہجہمہوعہتہكہ°' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
@@ -3406,11 +3406,11 @@ local Text = [[
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝒕𝒊𝒎𝒐',url="t.me/amr_8lby"}},
+{{text = '𝒕𝒊𝒎𝒐',url="t.me/ttimo_8lby"}},
 {{text = '𝒈𝒓𝒐𝒖𝒑',url="t.me/e_L_m_L_o_K"},{text = '𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ',url="t.me/eLmLoK0"}},
 {{text = '𝒃𝒐𝒕 𝒕𝒊𝒎𝒐',url="t.me/Timo8Bot"}}, 
 } 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/amr_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'ابو المجد' or text == 'مبرمج ابو المجد' or text == 'المبرمج' or text == 'ABOELMAGD' then 
@@ -3539,11 +3539,11 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♤ 𝒕𝒊𝒎𝒐',url="t.me/amr_8lby"}},
+{{text = '♤ 𝒕𝒊𝒎𝒐',url="t.me/ttimo_8lby"}},
 {{text = '♤ 𝒃𝒐𝒕 𝒕𝒊𝒎𝒐',url="t.me/Timo8Bot"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/amr_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'روايات' or text == 'الروايات' or text == 'ررويات' then
 local Text = [[
@@ -3559,7 +3559,7 @@ keyboard = {} keyboard.inline_keyboard = {
 {{text = 'جثه في الفندق', url="https://t.me/rwayatelmlok/20"},{text = ' في القطار السريع', url="https://t.me/rwayatelmlok/17"}},
 {{text = 'لقاء مع كاتب رعب', url="https://t.me/rwayatelmlok/6"},{text = 'الانسان الاخير', url="https://t.me/rwayatelmlok/15"}},
 {{text = '⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺', url="https://t.me/eLmLoK0"}},
-{{text = '𝒕𝒊𝒎𝒐',url="t.me/amr_8lby"}},
+{{text = '𝒕𝒊𝒎𝒐',url="t.me/ttimo_8lby"}},
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 local msg_id = msg.id_/2097152/0.5  
@@ -3571,7 +3571,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝒕𝒊𝒎𝒐  ',url="t.me/amr_8lby"},{text = '𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅',url="t.me/ABO_ELMAGD2"}},
+{{text = '𝒕𝒊𝒎𝒐  ',url="t.me/ttimo_8lby"},{text = '𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅',url="t.me/ABO_ELMAGD2"}},
 {{text = '⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺', url="https://t.me/eLmLoK0"}},
 {{text = '𝒐𝒎𝒂𝒓  ',url="t.me/teemElmelok"},{text = '𝒎𝒐𝒔𝒕𝒂𝒇𝒂 ',url="t.me/J_A_B_W_A"}},
 }
@@ -8869,7 +8869,7 @@ send(msg.chat_id_, msg.id_, ' ♤ تم تنزيل جميع حمير من الج�
 end
 if text == ("تاك للحمير") and Mod(msg) then
 local list = database:smembers(bot_id..'Sakl:User'..msg.chat_id_)
-t = "\n ♤ قائمة حمير الجروب \n⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄?? 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n"
+t = "\n ♤ قائمة حمير الجروب \n⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -11063,7 +11063,7 @@ local Text = "● تم ترقيته مشرف"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'تعديل الصلاحيات', callback_data='amr@'..msg.sender_user_id_..'/user@'..result.sender_user_id_.."/setiinginfo"}
+{text = 'تعديل الصلاحيات', callback_data='tiimo@'..msg.sender_user_id_..'/user@'..result.sender_user_id_.."/setiinginfo"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -11085,7 +11085,7 @@ local Text = "● تم ترقيته مشرف"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'تعديل الصلاحيات', callback_data='amr@'..msg.sender_user_id_..'/user@'..result.id_.."/setiinginfo"}
+{text = 'تعديل الصلاحيات', callback_data='tiimo@'..msg.sender_user_id_..'/user@'..result.id_.."/setiinginfo"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -13500,7 +13500,7 @@ ght = math.random(1,33);
 local Text ='الستخدم ثيم اخر اكتب ثيم'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
- {{text = ' ♤ 𝒕𝒊𝒎𝒐  ',url="t.me/amr_8lby"}},
+ {{text = ' ♤ 𝒕𝒊𝒎𝒐  ',url="t.me/ttimo_8lby"}},
  {{text = 'أضفہ ألبہوتہ أليہ مہجہمہوعہتہكہ°' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }  
 local msg_id = msg.id_/2097152/0.5  
@@ -13537,7 +13537,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' °𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
+{{text = ' °𝒔𝒐??𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/V_I_K_I_N_G_2/30/14&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15975,7 +15975,7 @@ Msᴀɢ ~ #msgs
 𝟓 𝟔 𖡻 #msgs  ࿇🦄
 𝟓 𝟔 𖡻 #auto  ࿇🦄
 𝟓 𝟔 𖡻 #stast  ࿇🦄
-𝟓 𝟔 𖡻 #id  ࿇🦄
+𝟓 ?? 𖡻 #id  ࿇🦄
 𝟓 𝟔 𖡻 𝗖𝗛 - ♤@eLmLoK0♤ ♤.
 ]],
 [[
@@ -17794,6 +17794,816 @@ send(msg.chat_id_, msg.id_,' ♤  لا يوجد رابط ارسل ضع رابط'
 end 
 end,nil) 
 end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/setiinginfo') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/setiinginfo$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/voicetrue') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/voicetrue$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = '&can_manage_voice_chats=True'..manage..infoo..deletee..invitee..restrictt..pinn..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/voicefalse') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/voicefalse$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = '&can_manage_voice_chats=false'..manage..infoo..deletee..invitee..restrictt..pinn..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/managetrue') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/managetrue$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = voice..'&can_manage_chat=True'..infoo..deletee..invitee..restrictt..pinn..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/managefalse') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/managefalse$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = voice..'&can_manage_chat=false'..infoo..deletee..invitee..restrictt..pinn..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/addadmintrue') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/addadmintrue$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = voice..manage..infoo..deletee..invitee..restrictt..pinn..'&can_promote_members=true' 
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/chenginfotrue') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/chenginfotrue$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = voice..manage..'&can_change_info=True' ..deletee..invitee..restrictt..pinn..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/delmsggtrue') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/delmsggtrue$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = voice..manage.. infoo..'&can_delete_messages=True' ..invitee..restrictt..pinn..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/banusertrue') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/banusertrue$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = voice..manage.. infoo..deletee..invitee..'&can_restrict_members=True' ..pinn..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/pinmsgtrue') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/pinmsgtrue$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = voice..manage.. infoo..deletee..invitee..restrictt..'&can_pin_messages=True' ..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/addlinktrue') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/addlinktrue$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = voice..manage.. infoo..deletee..'&can_invite_users=True' ..restrictt..pinn..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+
+
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/addadminfalse') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/addadminfalse$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+if manage then
+local ListGruoup = voice..manage.. infoo..deletee..invitee..restrictt..pinn..'&can_promote_members=false'
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+end
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/chenginfofalse') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/chenginfofalse$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = voice..manage.. '&can_change_info=false' ..deletee..invitee..restrictt..pinn..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/delmsggfalse') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/delmsggfalse$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = voice..manage.. infoo..'&can_delete_messages=false'..invitee..restrictt..pinn..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/banuserfalse') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/banuserfalse$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = voice..manage.. infoo..deletee..invitee..'&can_restrict_members=false' ..pinn..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/pinmsgfalse') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/pinmsgfalse$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = voice..manage.. infoo..deletee..invitee..restrictt..'&can_pin_messages=false' ..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
+if Text and Text:match('tiimo@(%d+)/user@(%d+)/addlinkfalse') then
+local users = {string.match(Text,"^tiimo@(%d+)/user@(%d+)/addlinkfalse$")}
+if tonumber(users[1]) == tonumber(data.sender_user_id_) then
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
+local Json_Info = JSON.decode(Chek_Info)
+if Json_Info.result.can_change_info == true then
+infoo = '&can_change_info=True' 
+else 
+infoo = '&can_change_info=false' 
+end
+if Json_Info.result.can_delete_messages == true then
+deletee = '&can_delete_messages=True' 
+else 
+deletee = '&can_delete_messages=false' 
+end
+if Json_Info.result.can_invite_users == true then
+invitee = '&can_invite_users=True' 
+else 
+invitee = '&can_invite_users=false' 
+end
+if Json_Info.result.can_pin_messages == true then
+pinn = '&can_pin_messages=True' 
+else 
+pinn = '&can_pin_messages=false' 
+end
+if Json_Info.result.can_restrict_members == true then
+restrictt = '&can_restrict_members=True' 
+else 
+restrictt = '&can_restrict_members=false' 
+end
+if Json_Info.result.can_promote_members == true then
+promotee = '&can_promote_members=true' 
+else 
+promotee = '&can_promote_members=false' 
+end 
+if Json_Info.can_manage_voice_chats == true then
+voice = '&can_manage_voice_chats=True' 
+else 
+voice = '&can_manage_voice_chats=false' 
+end
+if Json_Info.can_manage_chat == true then
+manage = '&can_manage_chat=True' 
+else 
+manage = '&can_manage_chat=false' 
+end
+local ListGruoup = voice..manage.. infoo..deletee..'&can_invite_users=false'  ..restrictt..pinn..promotee
+https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
+sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
+end
+end
 if Text == '/rsayly' then
 if not CoSu(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
@@ -19118,817 +19928,6 @@ https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='
 return false
 end
 
-if Text and Text:match('amr@(%d+)/user@(%d+)/setiinginfo') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/setiinginfo$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/voicetrue') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/voicetrue$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = '&can_manage_voice_chats=True'..manage..infoo..deletee..invitee..restrictt..pinn..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/voicefalse') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/voicefalse$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = '&can_manage_voice_chats=false'..manage..infoo..deletee..invitee..restrictt..pinn..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/managetrue') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/managetrue$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = voice..'&can_manage_chat=True'..infoo..deletee..invitee..restrictt..pinn..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/managefalse') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/managefalse$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = voice..'&can_manage_chat=false'..infoo..deletee..invitee..restrictt..pinn..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/addadmintrue') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/addadmintrue$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = voice..manage..infoo..deletee..invitee..restrictt..pinn..'&can_promote_members=true' 
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/chenginfotrue') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/chenginfotrue$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = voice..manage..'&can_change_info=True' ..deletee..invitee..restrictt..pinn..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/delmsggtrue') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/delmsggtrue$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = voice..manage.. infoo..'&can_delete_messages=True' ..invitee..restrictt..pinn..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/banusertrue') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/banusertrue$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = voice..manage.. infoo..deletee..invitee..'&can_restrict_members=True' ..pinn..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/pinmsgtrue') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/pinmsgtrue$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = voice..manage.. infoo..deletee..invitee..restrictt..'&can_pin_messages=True' ..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/addlinktrue') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/addlinktrue$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = voice..manage.. infoo..deletee..'&can_invite_users=True' ..restrictt..pinn..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-
-
-if Text and Text:match('amr@(%d+)/user@(%d+)/addadminfalse') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/addadminfalse$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-if manage then
-local ListGruoup = voice..manage.. infoo..deletee..invitee..restrictt..pinn..'&can_promote_members=false'
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-end
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/chenginfofalse') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/chenginfofalse$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = voice..manage.. '&can_change_info=false' ..deletee..invitee..restrictt..pinn..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/delmsggfalse') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/delmsggfalse$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = voice..manage.. infoo..'&can_delete_messages=false'..invitee..restrictt..pinn..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/banuserfalse') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/banuserfalse$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = voice..manage.. infoo..deletee..invitee..'&can_restrict_members=false' ..pinn..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/pinmsgfalse') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/pinmsgfalse$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = voice..manage.. infoo..deletee..invitee..restrictt..'&can_pin_messages=false' ..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-if Text and Text:match('amr@(%d+)/user@(%d+)/addlinkfalse') then
-local users = {string.match(Text,"^amr@(%d+)/user@(%d+)/addlinkfalse$")}
-if tonumber(users[1]) == tonumber(data.sender_user_id_) then
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. data.chat_id_ ..'&user_id='.. users[2])
-local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.result.can_change_info == true then
-infoo = '&can_change_info=True' 
-else 
-infoo = '&can_change_info=false' 
-end
-if Json_Info.result.can_delete_messages == true then
-deletee = '&can_delete_messages=True' 
-else 
-deletee = '&can_delete_messages=false' 
-end
-if Json_Info.result.can_invite_users == true then
-invitee = '&can_invite_users=True' 
-else 
-invitee = '&can_invite_users=false' 
-end
-if Json_Info.result.can_pin_messages == true then
-pinn = '&can_pin_messages=True' 
-else 
-pinn = '&can_pin_messages=false' 
-end
-if Json_Info.result.can_restrict_members == true then
-restrictt = '&can_restrict_members=True' 
-else 
-restrictt = '&can_restrict_members=false' 
-end
-if Json_Info.result.can_promote_members == true then
-promotee = '&can_promote_members=true' 
-else 
-promotee = '&can_promote_members=false' 
-end 
-if Json_Info.can_manage_voice_chats == true then
-voice = '&can_manage_voice_chats=True' 
-else 
-voice = '&can_manage_voice_chats=false' 
-end
-if Json_Info.can_manage_chat == true then
-manage = '&can_manage_chat=True' 
-else 
-manage = '&can_manage_chat=false' 
-end
-local ListGruoup = voice..manage.. infoo..deletee..'&can_invite_users=false'  ..restrictt..pinn..promotee
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id="..data.chat_id_ .."&user_id="..users[2]..ListGruoup)
-sendin(Chat_id,msg_idd,data.sender_user_id_,users[2])
-end
-end
-
 if Text == '/mlp6' then
 Text = 'مرحبا اليك كتبات اخري ❤️🕊'
 ban = math.random(3,49); 
@@ -21021,7 +21020,7 @@ W??𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 °𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' 𝒕𝒊𝒎𝒐',url="t.me/amr_8lby"},{text = '𝒎𝒐𝒔𝒕𝒂𝒇𝒂',url="t.me/J_A_B_W_A"}},
+{{text = ' 𝒕𝒊𝒎𝒐',url="t.me/ttimo_8lby"},{text = '𝒎𝒐𝒔𝒕𝒂𝒇𝒂',url="t.me/J_A_B_W_A"}},
 {{text = ' 𝒐𝒎𝒂𝒓',url="t.me/teemElmelok"},{text = '𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅',url="t.me/ABO_ELMAGD2"}},
 {{text = '°𝒃𝒂𝒄𝒌°', callback_data="/HHH"}},
 }
