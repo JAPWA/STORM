@@ -4809,7 +4809,7 @@ rob = math.random(1,14);
 local Text ='حظك زي شكلك..😂💛' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'اضف بوت لمجموعتك' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"}}, 
+{{text =  '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°' ,url="t.me/eLmLoK0"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/q_p_lli/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -6661,7 +6661,7 @@ function start_function(extra, result, success)
 database:sadd(bot_id..'CoSu'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 usertext = '\n• العضو ✓ ['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
-status  = '\n• تم ترقيته مالك\n√'
+status  = '\n• تم ترقيته مالك\n'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
 end
@@ -6687,7 +6687,7 @@ return false
 end      
 database:sadd(bot_id..'CoSu'..msg.chat_id_, result.id_)
 usertext = '\n• العضو ✓ ['..result.title_..'](t.me/'..(username or 'textchuser')..')'
-status  = '\n• تم ترقيته مالك\n√'
+status  = '\n• تم ترقيته مالك\n'
 texts = usertext..status
 else
 texts = '• لا يوجد حساب بهاذا المعرف\n√'
@@ -6716,7 +6716,7 @@ status  = '\n• تم ترقيته مالك\n√'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
 usertext = '\n• العضو ✓ '..userid..''
-status  = '\n• تم ترقيته مالك\n√'
+status  = '\n• تم ترقيته مالك\n'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
@@ -6760,7 +6760,7 @@ usertext = '\n• العضو ✓ ['..result.title_..'](t.me/'..(username or 'tex
 status  = '\n• تم تنزيله من مالك لعضو\n√'
 texts = usertext..status
 else
-texts = '• لا يوجد حساب بهاذا المعرف\n√'
+texts = '• لا يوجد حساب بهاذا المعرف\n'
 end
 send(msg.chat_id_, msg.id_, texts)
 end
@@ -6786,7 +6786,7 @@ status  = '\n• تم تنزيله من مالك لعضو حقير\n√'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
 usertext = '\n• العضو ✓ '..userid..''
-status  = '\n• تم تنزيله من مالك لعضو\n√'
+status  = '\n• تم تنزيله من مالك لعضو\n'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
@@ -15703,7 +15703,7 @@ local List = {
 ► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 #username 𓃚  ꙰
 ► ??𝗗 #id 𓃚 ꙰
 ► 𝗦𝗧𝗔𝗦 #stast 𓃚 ꙰
-► 𝗠𝗦𝗔?? #msgs 𓃚 ꙰
+► ??𝗦𝗔?? #msgs 𓃚 ꙰
 ► 𝗖𝗛 - ♤@eLmLoK0♤ ♤.
 ]],
 [[
