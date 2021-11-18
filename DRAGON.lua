@@ -3371,7 +3371,7 @@ local Text = [[
   [𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 𝒐𝒏 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎](http://t.me/eLmLoK0)    
 ┗━━━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━━━┓
-           [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
+            [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
 ┗━━━━━━━━━━━━━━━┛
 ]]
 keyboard = {} 
@@ -3387,13 +3387,13 @@ end
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
 local Text = [[
 ┏━━━━━━━━━━━━━━━┓
-           [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
+            [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
 ┗━━━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━━━┓
   [𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 𝒐𝒏 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎](http://t.me/eLmLoK0)    
 ┗━━━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━━━┓
-           [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
+            [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
 ┗━━━━━━━━━━━━━━━┛
 ]]
 keyboard = {} 
@@ -3429,6 +3429,7 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅',url="t.me/ABO_ELMAGD2"}}, 
+{{text = '𝒈𝒓𝒐𝒖𝒑',url="t.me/omar_moot"},{text = '𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ',url="t.me/OMARmoot"}},
 {{text = '𝒃𝒐𝒕 𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅',url="t.me/Elmalek1bot"}},
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/timo_019/37&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3456,6 +3457,7 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '𝒎𝒐𝒔𝒕𝒂𝒇𝒂',url="t.me/J_A_B_W_A"}}, 
+{{text = '𝒈𝒓𝒐𝒖𝒑',url="t.me/BAR_JABWA"},{text = '𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ',url="t.me/S_a_i_d_i"}},
 {{text = '𝒃𝒐𝒕 𝒎𝒐𝒔𝒕𝒂𝒇𝒂',url="t.me/Bot_JABWA_Bot"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13535,7 +13537,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' °𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
+{{text = ' °𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐??‌‌‌°', url="t.me/eLmLoK0"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/V_I_K_I_N_G_2/27/14&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15958,7 +15960,7 @@ Msᴀɢ ~ #msgs
 ➭- 𝒔𝒕𝒂𓂅 #stast 𓍯. 💕
 ➮- 𝐮𝐬𝐞𝐫𓂅 #username 𓍯. 💕
 ➭- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯. 💕
-➭- 𝐢𝐝 𓂅 #id 𓍯. 💕
+➭- 𝐢?? 𓂅 #id 𓍯. 💕
 ➭- 𝗖𝗛 - ♤@eLmLoK0♤ ♤.
 ]],
 [[
@@ -15970,7 +15972,7 @@ Msᴀɢ ~ #msgs
 𓄼 𝗖𝗛 - ♤@eLmLoK0♤ ♤.
 ]],
 [[
-𝐓𝐓• 𝐘𝐎𝐔?? 𝐈𝐃 𖠰 #id .
+𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
 𝐓𝐓• 𝐌𝐬𝐠𝐒 𖠰 #msgs .
 𝐓𝐓• 𝐔𝐬𝐞??𝐍𝐚 𖠰 #username .
 𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
@@ -17543,6 +17545,82 @@ keyboard.inline_keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/LC6BOT&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+if text == 'تغير المطور الاساسي' and SudoBot(msg) then
+database:set(bot_id..'new:sudo'..msg.chat_id_..msg.sender_user_id_,'id') 
+send(msg.chat_id_, msg.id_, '♤ارسل ايدي المطور الاساسي الجديد')
+return false
+end
+if database:get(bot_id..'new:sudo'..msg.chat_id_..msg.sender_user_id_) == 'id' then
+database:set(bot_id..":Sudo:bot",text)
+send(msg.chat_id_, msg.id_, '♤ارسل معرف المطور الاساسي الجديد بدون @')
+database:set(bot_id..'new:sudo'..msg.chat_id_..msg.sender_user_id_,'user') 
+return false
+end
+if database:get(bot_id..'new:sudo'..msg.chat_id_..msg.sender_user_id_) == 'user' then
+database:set(bot_id..":SUDOUSER",text)
+send(msg.chat_id_, msg.id_, '♤تم تغير المطور الاساسي بنجاح')
+database:del(bot_id..'new:sudo'..msg.chat_id_..msg.sender_user_id_)
+dofile('kkkklInfo.lua')
+return false
+end
+if text == 'تغير شكل السورس' and SudoBot2(msg) then
+database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true1') 
+send(msg.chat_id_, msg.id_, 'ارسل رمز بدلا عن هاذا \n ┉')
+return false
+end
+if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true1' then
+database:set(bot_id..'new:sourse1',text)
+send(msg.chat_id_, msg.id_, 'ارسل رمز بدلا عن هاذا \n •')
+database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true2') 
+return false
+end
+if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true2' then
+database:set(bot_id..'new:sourse2',text)
+send(msg.chat_id_, msg.id_, 'ارسل رمز بدلا عن هاذا \n 𝔓𝔒𝔚𝔈ℜ')
+database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true3') 
+return false
+end
+if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true3' then
+database:set(bot_id..'new:sourse3',text)
+send(msg.chat_id_, msg.id_, 'الان ارسل رمز بدلا عن \n ☉ ')
+database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true4') 
+return false
+end
+if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true4' then
+database:set(bot_id..'new:sourse4',text)
+send(msg.chat_id_, msg.id_, 'ارسل رمز بدلا عن هاذا \n ┇')
+database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true5') 
+return false
+end
+if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true5' then
+database:set(bot_id..'new:sourse5',text)
+send(msg.chat_id_, msg.id_, 'ارسل رمز بدلا عن هاذا \n »')
+database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true6') 
+return false
+end
+if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true6' then
+database:set(bot_id..'new:sourse6',text)
+send(msg.chat_id_, msg.id_, 'ارسل رمز بدلا عن هاذا \n >')
+database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true7') 
+return false
+end
+if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true7' then
+database:set(bot_id..'new:sourse7',text)
+send(msg.chat_id_, msg.id_, 'تم تغير شكل السورس')
+database:del(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_)
+return false
+end
+
+if text == 'حذف شكل السورس' and SudoBot2(msg) then
+database:del(bot_id..'new:sourse1')
+database:del(bot_id..'new:sourse2')
+database:del(bot_id..'new:sourse3')
+database:del(bot_id..'new:sourse4')
+database:del(bot_id..'new:sourse5')
+database:del(bot_id..'new:sourse6')
+database:del(bot_id..'new:sourse7')
+send(msg.chat_id_, msg.id_, 'تم حذف تغير شكل السورس')
 end
 if text == 'استوري' or text == 'نوع استوري' or text == 'اختيارات استوري'  then
 local Text = [[
@@ -20214,7 +20292,7 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/units' then
 local Teext =[[
-W??𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 °𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°
+W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 °𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
