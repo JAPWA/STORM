@@ -11702,6 +11702,39 @@ t = t..i.."-  `"..v.."` \n"
 end
 send(msg.chat_id_, msg.id_, t..'⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\nاضغط علي الاسم ليتم نسخه\n⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺ٴ\n ♤ ❲[°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ](t.me/eLmLoK0)❳ ♤ ')
 end
+if text and text:match("^فلم (.*)$") then
+local Textm = text:match("^فلم (.*)$")
+data,res = https.request('https://boyka-api.ml/movie.php?serch='..URL.escape(Textm)..'')
+if res == 200 then
+getmo = json:decode(data)
+if getmo.Info == true then
+local Text ='♤قصه الفلم\n'..getmo.info:gsub('&hellip;','')
+local text1 = database:get(bot_id..'new:sourse1') or '┉'
+local text2 = database:get(bot_id..'new:sourse2') or '•'
+local text3 = database:get(bot_id..'new:sourse3') or '𝔓𝔒𝔚𝔈ℜ'
+local text4 = database:get(bot_id..'new:sourse4') or '☉'
+local text5 = database:get(bot_id..'new:sourse5') or '┇'
+local text6 = database:get(bot_id..'new:sourse6') or '»'
+local text7 = database:get(bot_id..'new:sourse7') or '>'
+Text = string.gsub(Text,"┉",text1)
+Text = string.gsub(Text,"•",text2)
+Text = string.gsub(Text,"𝔓𝔒𝔚𝔈ℜ",text3)
+Text = string.gsub(Text,"☉",text4)
+Text = string.gsub(Text,"┇",text5)
+Text = string.gsub(Text,"»",text6)
+Text = string.gsub(Text,">",text7)
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'مشاهده الفلم بجوده 240',url=getmo.sd}},
+{{text = 'مشاهده الفلم بجوده 480', url=getmo.Web}},
+{{text = 'مشاهده الفلم بجوده 1080', url=getmo.hd}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+end
+end
+
 if text == "ضع رابط" or text == 'وضع رابط' then
 if msg.reply_to_message_id_ == 0  and Mod(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
@@ -17553,74 +17586,16 @@ return false
 end
 if database:get(bot_id..'new:sudo'..msg.chat_id_..msg.sender_user_id_) == 'id' then
 database:set(bot_id..":Sudo:bot",text)
-send(msg.chat_id_, msg.id_, '♤ارسل معرف المطور الاساسي الجديد بدون @')
+send(msg.chat_id_, msg.id_, '♤ ارسل معرف المطور الاساسي الجديد بدون @')
 database:set(bot_id..'new:sudo'..msg.chat_id_..msg.sender_user_id_,'user') 
 return false
 end
 if database:get(bot_id..'new:sudo'..msg.chat_id_..msg.sender_user_id_) == 'user' then
 database:set(bot_id..":SUDOUSER",text)
-send(msg.chat_id_, msg.id_, '♤تم تغير المطور الاساسي بنجاح')
+send(msg.chat_id_, msg.id_, '♤ تم تغير المطور الاساسي بنجاح')
 database:del(bot_id..'new:sudo'..msg.chat_id_..msg.sender_user_id_)
 dofile('kkkklInfo.lua')
 return false
-end
-if text == 'تغير شكل السورس' and SudoBot2(msg) then
-database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true1') 
-send(msg.chat_id_, msg.id_, 'ارسل رمز بدلا عن هاذا \n ┉')
-return false
-end
-if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true1' then
-database:set(bot_id..'new:sourse1',text)
-send(msg.chat_id_, msg.id_, 'ارسل رمز بدلا عن هاذا \n •')
-database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true2') 
-return false
-end
-if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true2' then
-database:set(bot_id..'new:sourse2',text)
-send(msg.chat_id_, msg.id_, 'ارسل رمز بدلا عن هاذا \n 𝔓𝔒𝔚𝔈ℜ')
-database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true3') 
-return false
-end
-if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true3' then
-database:set(bot_id..'new:sourse3',text)
-send(msg.chat_id_, msg.id_, 'الان ارسل رمز بدلا عن \n ☉ ')
-database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true4') 
-return false
-end
-if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true4' then
-database:set(bot_id..'new:sourse4',text)
-send(msg.chat_id_, msg.id_, 'ارسل رمز بدلا عن هاذا \n ┇')
-database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true5') 
-return false
-end
-if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true5' then
-database:set(bot_id..'new:sourse5',text)
-send(msg.chat_id_, msg.id_, 'ارسل رمز بدلا عن هاذا \n »')
-database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true6') 
-return false
-end
-if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true6' then
-database:set(bot_id..'new:sourse6',text)
-send(msg.chat_id_, msg.id_, 'ارسل رمز بدلا عن هاذا \n >')
-database:set(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_,'true7') 
-return false
-end
-if database:get(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_) == 'true7' then
-database:set(bot_id..'new:sourse7',text)
-send(msg.chat_id_, msg.id_, 'تم تغير شكل السورس')
-database:del(bot_id..'new:sourse'..msg.chat_id_..msg.sender_user_id_)
-return false
-end
-
-if text == 'حذف شكل السورس' and SudoBot2(msg) then
-database:del(bot_id..'new:sourse1')
-database:del(bot_id..'new:sourse2')
-database:del(bot_id..'new:sourse3')
-database:del(bot_id..'new:sourse4')
-database:del(bot_id..'new:sourse5')
-database:del(bot_id..'new:sourse6')
-database:del(bot_id..'new:sourse7')
-send(msg.chat_id_, msg.id_, 'تم حذف تغير شكل السورس')
 end
 if text == 'استوري' or text == 'نوع استوري' or text == 'اختيارات استوري'  then
 local Text = [[
