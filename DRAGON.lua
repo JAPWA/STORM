@@ -11058,53 +11058,70 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 end
 if text == ("رفع مشرف") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
 function start_function(extra, result, success)
-if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,' ♤ البوت ليس ادمن يرجى ترقيتي !') 
-return false  
+https.request("https://api.telegram.org/bot" .. token .. "/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.sender_user_id_.."&can_invite_users=True")
+local Text = "• تم ترقيته مشرف\n√"
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = 'تعديل الصلاحيات', callback_data='amr@'..msg.sender_user_id_..'/user@'..result.sender_user_id_.."/setiinginfo"}
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ♤  الـعـضو   ⇦♤['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
-status  = '\n ♤  الايدي  ⇦♤`'..result.sender_user_id_..'`\n ♤  تم رفعه مشرف '
-send(msg.chat_id_, msg.id_, usertext..status)
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.sender_user_id_.."&can_change_info=false&can_delete_messages=false&can_invite_users=True&can_restrict_members=false&can_pin_messages=True&can_promote_members=false")
-end,nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+if text == ("$+") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
+function start_function(extra, result, success)
+https.request("https://api.telegram.org/bot" .. token .. "/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.sender_user_id_.."&can_invite_users=True")
+local Text = ".."
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = '++', callback_data='amr@'..msg.sender_user_id_..'/user@'..result.sender_user_id_.."/setiinginfo"}
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
 if text and text:match("^رفع مشرف @(.*)$") and Constructor(msg) then
 local username = text:match("^رفع مشرف @(.*)$")
-if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,' ♤ البوت ليس ادمن يرجى ترقيتي !') 
-return false  
-end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," ♤  عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_,"• عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
-end      
-usertext = '\n ♤ الـعـضو   ⇦♤['..result.title_..'](t.me/'..(username or 'textchuser')..')'
-status  = '\n ♤  تم رفعه مشرف '
-texts = usertext..status
-send(msg.chat_id_, msg.id_, texts)
-https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.id_.."&can_change_info=false&can_delete_messages=false&can_invite_users=True&can_restrict_members=false&can_pin_messages=True&can_promote_members=false")
+end
+https.request("https://api.telegram.org/bot" .. token .. "/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.id_.."&can_invite_users=True")
+local Text = "• تم ترقيته مشرف بنجاح\n√"
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = 'تعديل الصلاحيات', callback_data='amr@'..msg.sender_user_id_..'/user@'..result.id_.."/setiinginfo"}
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-send(msg.chat_id_, msg.id_, ' ♤  لا يوجد حساب بهاذا المعرف')
+send(msg.chat_id_, msg.id_,"• لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
 if text == ("تنزيل مشرف") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
 function start_function(extra, result, success)
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,' ♤ البوت ليس ادمن يرجى ترقيتي !') 
+send(msg.chat_id_, msg.id_,'• البوت ليس ادمن يرجى ترقيتي !') 
 return false  
 end
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ♤  الـعـضو   ⇦♤['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
-status  = '\n ♤  الايدي  ⇦♤`'..result.sender_user_id_..'`\n ♤  تم تنزيله ادمن من الجروب'
+usertext = '\n• العضو ✓ ['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
+status  = '\n• الايدي ✓ `'..result.sender_user_id_..'`\n•  تم تنزيله ادمن من الجروب\n√'
 send(msg.chat_id_, msg.id_, usertext..status)
 https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.sender_user_id_.."&can_change_info=false&can_delete_messages=false&can_invite_users=false&can_restrict_members=false&can_pin_messages=false&can_promote_members=false")
 end,nil)
@@ -11115,17 +11132,17 @@ end
 if text and text:match("^تنزيل مشرف @(.*)$") and Constructor(msg) then
 local username = text:match("^تنزيل مشرف @(.*)$")
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,' ♤ البوت ليس ادمن يرجى ترقيتي !') 
+send(msg.chat_id_, msg.id_,'• البوت ليس ادمن يرجى ترقيتي !') 
 return false  
 end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," ♤  عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_,"•  عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
-usertext = '\n ♤  الـعـضو   ⇦♤['..result.title_..'](t.me/'..(username or 'textchuser')..')'
-status  = '\n ♤  تم تنزيله ادمن من الجروب'
+usertext = '\n• العضو ✓ ['..result.title_..'](t.me/'..(username or 'textchuser')..')'
+status  = '\n• تم تنزيله ادمن من الجروب\n√'
 texts = usertext..status
 send(msg.chat_id_, msg.id_, texts)
 https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.id_.."&can_change_info=false&can_delete_messages=false&can_invite_users=false&can_restrict_members=false&can_pin_messages=false&can_promote_members=false")
@@ -11136,7 +11153,6 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 return false
 end
-
 
 if text == ("رفع مشرف كامل") and msg.reply_to_message_id_ ~= 0 and BasicConstructor(msg) then
 function start_function(extra, result, success)
@@ -12686,10 +12702,9 @@ if text == "بوت" then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'الملوك') 
 local DRAGON_Msg = { 
 'اسمي '..Namebot..' يا روحي🌝♥',
-'اسمي  '..Namebot..' يعمري🤍♥🌺',
 'اسمي  '..Namebot..' يا قمر 🌙🌹',
 'اسمي  '..Namebot..' يامزه 🌚🌹',
-'اسمي  '..Namebot..' يعم 🌝',
+'اسمي  '..Namebot..' يعم 🌝💜',
 'اسمي الكيوت '..Namebot..' 🌝🚶',
 'اسمي  '..Namebot..' ياحياتي🌚💜',
 'اسمي  '..Namebot..' يوتكه🌚💜',
@@ -19262,7 +19277,7 @@ local Teext =[[
  ♤ المنشئين ♢  مسح المنشئين
  ♤  ❲ + ❳ جميع ماسبق
  ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
-❲[《°𝒔𝒐𝒖𝒓𝒄?? 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°》 ](t.me/eLmLoK0)❳ 
+❲[《°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°》 ](t.me/eLmLoK0)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
