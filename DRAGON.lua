@@ -3258,7 +3258,7 @@ if DRAGONChengUserName ~= data.username_ then
 local Text = {
 'شكو غيرت معرفك شنو نشروك بقنوات نحراف 🌞😹😹😹',
 "هاها شو غيرت معرفك بس لا هددوك 🤞😂😂",
-"شسالفه شو غيرت معرفك 😐🌝",
+"شسالفه شو غيرت معرفك 😐🕊",
 "غير معرفه خمطو بساع بساع \n هاذه معرفه : @"..data.username_.."",
 'ها عار مو جان معرفك \n شكو غيرته ل @'..data.username_..' ',
 'ها يول شو مغير معرفك', 
@@ -4300,7 +4300,7 @@ local TWEET_Msg = {
 "لا تملح الا لمن يستحقاها ويحافظ عليها ♤ ",
 " الجمال يلفت الأنظار لكن الطيبه تلفت القلوب♤ ",
 " خليك طبيعي مش نورم😇♤️ ",
-" الدنيا حلوه متزعلش علي ناس ماتستاهلش🌝🏃‍♂️",
+" الدنيا حلوه متزعلش علي ناس ماتستاهلش🕊🏃‍♂️",
 " العقل السليم ف البعد عن الحريم😇♤️",
 "عيش الحياه يوم واحد 🙂 .! ",
 "امشي كتير عشان تخس 🧐 .! ",
@@ -12692,7 +12692,7 @@ local DRAGON_Msg = {
 'اسمي  '..Namebot..' يامزه 🥺♥',
 'اسمي  '..Namebot..' يعم 😒🕊',
 'مقولت اسمي '..Namebot..' في اي 🙄🕊',
-'اسمي الكيوت '..Namebot..' 🌝🕊',
+'اسمي الكيوت '..Namebot..' 🕊🕊',
 'اسمي  '..Namebot..' ياحياتي🧸♥️',
 'اسمي  '..Namebot..' يوتكه🙈🕊',
 } 
@@ -14116,514 +14116,228 @@ return false
 end
 end
 
-if text == 'عامل اي' then 
-send(msg.chat_id_,msg.id_, '[♤ عامل جمعيه..🙄💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'باي' or text == 'بيي' then
-send(msg.chat_id_,msg.id_, '[♤ باي ياحته مني..🥺💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'طيب' or text == 'تيب' then
-send(msg.chat_id_,msg.id_, '[فرح خالتك قريب..😂♥️](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'شكرا' or text == 'ميرسي' then
-send(msg.chat_id_,msg.id_, '[♤ العفو ياروحي..🌚💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'هلو' or text == 'هلا' then
-send(msg.chat_id_,msg.id_, '[♤ هلا بيك ياروحي..💛](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'تمم' or text == 'تمام' then
-send(msg.chat_id_,msg.id_, '[♤ امك اسمها احلام..🌚💜](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'حصل' or text == 'حصل😂' then
-send(msg.chat_id_,msg.id_, '[♤ محصلش بطل تطبيل..🙄💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'زخرفه' or text == 'زخرفة' then
-send(msg.chat_id_,msg.id_, 'اكتب زخرفه + الاسم للي هتزخرفه مثال  زخرفه تيمو ') 
-return false
-end
-
-if text == 'بحبك' or text == 'حبق' then
-send(msg.chat_id_,msg.id_, '[♤ بعشء امك..🥺??](t.me/eLmLoK0)')
-return false
-end
-
-if text == '🙄🙄' or text == '🙄??🙄' then
-send(msg.chat_id_,msg.id_, '[♤ سقف الجروب عاجبك..😂💜](t.me/eLmLoK0)')
-return false
-end
-
-if text == '😒😒' or text == '😒😒😒' then
-send(msg.chat_id_,msg.id_, '[♤ افرد وشك المعفن ده..😑💔](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'دي' or text == 'ده' then
-send(msg.chat_id_,msg.id_, '[♤ لا مش هي دي..😹🔥](t.me/eLmLoK0)')
-return false
-end
-
-if text == '.' or text == '..' then
-send(msg.chat_id_,msg.id_, '[♤ بتنقط لي ياحزين..🙂💔](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'بكرهك' then
-send(msg.chat_id_,msg.id_, '[♤ ونا والله مش طايقك..😒💔](t.me/eLmLoK0)')
-return false
-end
-
-if text == '😂😂😂' or text == '😂😂😂😂' then
-send(msg.chat_id_,msg.id_, '[♤ دامت ضحكتك يابيبي..🥺💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'اخرصي' or text == 'اخرص' then
-send(msg.chat_id_,msg.id_, '[♤ هات لازقه احطها ع بوئي..😹♥️](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'فين الادمن' or text == 'الادمن فين' then
-send(msg.chat_id_,msg.id_, '[♤ فلخاص بيخصخص..😂💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'بتحبني' or text == 'حبيبي' then
-send(msg.chat_id_,msg.id_, '[♤ بدمنك ياحبيبي..🥺♥️](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'شش' or text == 'ششش' then
-send(msg.chat_id_,msg.id_, '[♤ بنهش كتاكيت احنا هنا ولا اي..🐣😹](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'خلاص' or text == 'خلص' then
-send(msg.chat_id_,msg.id_, '[♤ خلصت روحك يابعيد..😹💔](t.me/eLmLoK0)')
-return false
-end
-
-if text then 
-list = {'متيجي'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '[♤ تؤ تعاله انته..🥺💘](t.me/eLmLoK0)')
-return false
-end
-end
-end
-
-if text then 
-list = {'متيقي'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '[♤ هتخدها فين ياوسخ..🙄💔](t.me/eLmLoK0)')
-return false
-end
-end
-end
-
-if text then 
-list = {'😳'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '[♤ احيه..😳](t.me/eLmLoK0)')
-return false
-end
-end
-end
-
-
-if text then 
-list = {'الخير'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '[هيجي منين وانت هنا..❤️](t.me/eLmLoK0)')
-return false
-end
-end
-end
-
-if text == 'جيت' or text == 'انا جيت' then
-send(msg.chat_id_,msg.id_, '[♤ نورت يارئيس اركان قلبي..🥺💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == '🌚' or text == '🌚🌚' then
-send(msg.chat_id_,msg.id_, '[♤ القمر دا شبهك..🥺💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == '😉' or text == '😉😉' then
-send(msg.chat_id_,msg.id_, '[♤ بتغمز لمين ياوسخ..🥺💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'نعم' or text == 'يانعم' then
-send(msg.chat_id_,msg.id_, '[♤ مين مؤدب ناوو..😹💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == '🙂🙂' or text == '🙂💔' then
-send(msg.chat_id_,msg.id_, '[♤ نت هتنكد لي طيب..🥺💔](t.me/eLmLoK0)')
-return false
-end
-
-if text == '😹😹😹' or text == '😹😹😹' then
-send(msg.chat_id_,msg.id_, '[♤ بتضحك علي خيبتك..🙄💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'قلبي' or text == 'ياقلبي' then
-send(msg.chat_id_,msg.id_, '[♤ تنشك في قلبك بتخوني..🙄💔](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'بتعمل اي' or text == 'بتعملي اي' then
-send(msg.chat_id_,msg.id_, '[♤ ونت مالك ياحشري..🙄💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'انتا مين' or text == 'مين' then
-send(msg.chat_id_,msg.id_, '[♤ انا بوت وبحبك..🥺💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'البوت واقف' or text == 'البوت وقف' then
-send(msg.chat_id_,msg.id_, '[♤ لا انا شغال متحورش..😒💔](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'فين' or text == 'انت فين' then
-send(msg.chat_id_,msg.id_, '[♤ هنا فقلبي..😹♥️](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'اوف' or text == 'يوه' then
-send(msg.chat_id_,msg.id_, '[♤ يتي القمر زعلان من اي..🥺🔥](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'بخ' or text == 'عو' then
-send(msg.chat_id_,msg.id_, '[♤ يوه خضتني ياسمك اي..🥺💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'احا' or text == 'احااا' then
-send(msg.chat_id_,msg.id_, '[♤ بالتكت بتعها..🙄💔](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'بعشقك' or text == 'بموت فيك' then
-send(msg.chat_id_,msg.id_, '[♤ بدمنك ياعيوني..🥺💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'عيب' or text == 'لا عيب' then
-send(msg.chat_id_,msg.id_, '[♤ سيب الواد يلعب..🙄💛](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'هه' or text == 'ههه' then
-send(msg.chat_id_,msg.id_, '[♤ ضحكه مش سالكه زيك..😹💘](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'تؤ' or text == 'تؤ تؤ' then
-send(msg.chat_id_,msg.id_, '[♤ يانوحي يانوحي..🥺💘](t.me/eLmLoK0)')
-return false
-end
-
-if text then 
-list = {'قفل المحن'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, 'اهلا عزيزي تم قفل المحن بنجاح اتمحونوا بف عشان المراره 😹◉') 
-return false
-end
-end
-end
-
-if text then 
-list = {'حصلخير'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '[♤ يتي كبرت وبقيت بتشبك الكلام..🥺💘](t.me/eLmLoK0)')
-return false
-end
-end
-end
-
-if text then 
-list = {'انتي مين'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '[♤ انا وحده نسوان ونت مين..😂💘](t.me/eLmLoK0)')
-return false
-end
-end
-end
-
-if text then 
-list = {'كسم'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '[♤ عيب ياوسخ..🙄💔](t.me/eLmLoK0)')
-return false
-end
-end
-end
-
-if text then 
-list = {'دا بوت'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '[♤ احيه هو كان مفكرني انسان ولا اي..😹💜](t.me/eLmLoK0)')
-return false
-end
-end
-end
-
-if text then 
-list = {'😔'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '[متزعلش بحبك..😥♥️](t.me/eLmLoK0)')
-return false
-end
-end
-end
-
 if text == 'تيست' then 
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[البوت شغال ياعم](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, ' البوت شغال ') 
 return false
 end
-if text == 'بوتي' then 
+
+if text == 'سلام' or text == 'مع سلامه' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ قلب بوتكك من جواا 🥺♥️](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'بدمنك' then 
-send(msg.chat_id_,msg.id_, '[وانا كمان بحب كل حاجه فيك 😉❤](t.me/eLmLoK0)')
-return false
-end
-if text == 'بقلك' then 
-send(msg.chat_id_,msg.id_, '[ وانا كمان بحب كل حاجه فيك 😉❤](t.me/eLmLoK0)')
-return false
-end
-if text == '🙂' then 
-send(msg.chat_id_,msg.id_, '[هنكد بقا اهو 😕](t.me/eLmLoK0)')
-return false
-end
-if text == 'روحي' then 
-send(msg.chat_id_,msg.id_, '[خلصتت روحكك يبعيد😹🚶🏻‍♀💔](t.me/eLmLoK0)')
-return false
-end
-if text == 'بت' then 
-send(msg.chat_id_,msg.id_, '[ليا اسم ياض يعره يمهزء نينينينني😹😎🏃🏻‍♀](t.me/eLmLoK0)')
-return false
-end
-if text == 'ها' then 
-send(msg.chat_id_,msg.id_, ' هاا ياروحي ') 
-return false
-end
-if text == 'وه' then 
-send(msg.chat_id_,msg.id_, '[ متبقاش شخص تيلجرامي كدا واستنضف 🙂🚶🎌](t.me/eLmLoK0)')
-return false
-end
-if text == 'بعشقك' then 
-send(msg.chat_id_,msg.id_, '[بعشقك امك ياواله ❤️😂](t.me/eLmLoK0)')
-return false
-end
-if text == 'اه' then 
-send(msg.chat_id_,msg.id_, '[اه اي يا قدع عيب 😹💔](t.me/eLmLoK0)')
-return false
-end
-if text == 'مساء النور' then 
-send(msg.chat_id_,msg.id_, '[ مسااااءو فل ❤️😂](t.me/eLmLoK0)')
-return false
-end
-if text == 'صباح الخير' then 
-send(msg.chat_id_,msg.id_, '[ صباحووو فل ❤️😂](t.me/eLmLoK0)')
-return false
-end 
-
-if text == "مشاهده المنشور" and ChCheck(msg) or text == "مشاهدات المنشور" and ChCheck(msg) or text == "عدد المشاهدات" and ChCheck(msg) then
-Queen:set(Queen..'Qu:viewget'..msg.sender_user_id_,true)
-Queen(msg.chat_id_, msg.id_, 1, '⌁︙حسنا قم باعادة توجيه للمنشور الذي تريدني حساب مشاهداته', 1, 'md')
-end
-
-if text == 'سيفي' or text == 'سي في' then 
-local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_,"  ") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[ كفايه شقط يبني سيب حاجه لغيرك 😹👅](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'نورت' or text == 'نورتي' then 
-local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_,"  ") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[♤ كداب قوي دا نور الفون..😂👻](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'سلام' then 
-local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_," ") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[مع الف سلامه يقلبي متجيش تاني..😹💔🎶](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'اشي' then 
-local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_," ") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[♤ اسمها ماشي شكلك ساقط عربي..😂👻](t.me/eLmLoK0)')
-return false
-end
-
-if text == 'فل' or text == 'فلل' then 
-local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_," ") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[فل عليك وعلي دماغك..😂👻](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[مع الف سلامه يقلبي متجيش تاني 😹💔🎶](t.me/eLmLoK0)')
 return false
 end
 
 if text == 'هاي' or text == 'هيي' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_,"  ♤︙معطله") 
+send(msg.chat_id_, msg.id_," ♤ معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[♤ خلتك جرت وراي..😺💜](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[خالتك جرت ورايا ❤️🕊](t.me/eLmLoK0)')
 return false
 end
 
-if text then 
-list = {'برايفت'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'برايفت' or text == 'تع برايفت' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[♤ خدوني معاكم برايفت والنبي..🥺💜](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[خدوني معاكم برايفت والنبي 🥺💜](t.me/eLmLoK0)')
 return false
 end
-end
-end
 
-if text then 
-list = {'النبي'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'النبي' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[♤ عليه الصلاه والسلام..💛🙂](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[عليه الصلاه والسلام ❤️🕊](t.me/eLmLoK0)')
 return false
 end
-end
-end
 
-if text then 
-list = {'قفل المحن'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'نعم' or text == 'يا نعم' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, 'اهلا عزيزي تم قفل المحن بنجاح اتمحونوا بف عشان المراره ????') 
+send(msg.chat_id_,msg.id_, '[نعم الله عليك ❤️🕊](t.me/eLmLoK0)')
 return false
 end
-end
-end
 
-if text then 
-list = {'🙄'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == '🙄' or text == '🙄🙄' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نزل عينك تحت كدا علشان هتخاد علي قفاك.. ♤︙♥️](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[نزل عينك تحت كدا علشان هتخاد علي قفاك 😒❤️](t.me/eLmLoK0)')
 return false
 end
-end
-end
 
-if text then 
-list = {'فتح المحن'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'شكرا' or text == 'مرسي' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, 'اهلا عزيزي تم فتح المحن بنجاح') 
+send(msg.chat_id_,msg.id_, '[العفو ياروحي ❤️🕊](t.me/eLmLoK0)')
 return false
 end
-end
-end
-if text == "حلوه"  or text == "حلو" then
+
+if text == 'حلوه' or text == 'حلو' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت الي حلو ياقمر..♥️🦋](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[انت الي حلو ياقمر 🤤🕊](t.me/eLmLoK0)')
 return false
 end
 
-if text then 
-list = {'💋'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'بموت' or text == 'هموت' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[موت بعيد م ناقصين مصايب 😑😂](t.me/eLmLoK0)')
+return false
+end
+
+
+if text == 'اي' or text == 'ايي' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[جتك اوهه م سامع ولا ايي 😹👻](t.me/eLmLoK0)')
+return false
+end
+
+if text == 'طيب' or text == 'تيب' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[فرح خالتك قريب 😹💋💃🏻](t.me/eLmLoK0)')
+return false
+end
+
+if text == 'حاضر' or text == 'حتر' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[حضرلك الخير يارب 🙂❤️](t.me/eLmLoK0)')
+return false
+end
+
+if text == 'جيت' or text == 'انا جيت' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[لف ورجع تانى مشحوار 😂🚶‍♂👻](t.me/eLmLoK0)')
+return false
+end
+if text == 'بخ' or text == 'عو' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[يوه خضتني ياسمك اي 🥺💔](t.me/eLmLoK0)')
+return false
+end
+if text == 'حبيبي' or text == 'حبيبتي' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[اوه ياه 🕊😂](t.me/eLmLoK0)')
+return false
+end
+if text == 'تمام' or text == 'تمم' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[امك اسمها احلام 😹😹](t.me/eLmLoK0)')
+return false
+end
+if text == 'خلاص' or text == 'خلص' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[خلصتت  روحكك يبعيد 😹💔](t.me/eLmLoK0)')
+return false
+end
+if text == 'سي في' or text == 'سيفي' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[طول عمري بقول عليك حكاك ❤️🕊](t.me/eLmLoK0)')
+return false
+end
+if text == '😂' or text == '😂😂😂' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي ❤️🕊](t.me/eLmLoK0)')
+return false
+end
+if text == '😹' or text == '😹😹😹' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي ❤️🕊](t.me/eLmLoK0)')
+return false
+end
+if text == '🤔' or text == '🤔🤔🤔' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[بتفكر في اي 🤔](t.me/eLmLoK0)')
+return false
+end
+if text == '🌚' or text == '🕊' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[القمر ده شبهك 🙂❤️](t.me/eLmLoK0)')
+return false
+end
+if text == '💋' or text == '💋💋💋' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
@@ -14632,239 +14346,211 @@ end
 send(msg.chat_id_,msg.id_, '[انا عايز مح انا كمان 🥺💛](t.me/eLmLoK0)')
 return false
 end
-end
-end
-
-if text then 
-list = {'بف'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == '😭' or text == '😭😭😭' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف...🥺💔](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[بتعيط تيب لي طيب 😥](t.me/eLmLoK0)')
 return false
 end
-end
-end
-
-if text then 
-list = {'😭'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == '🥺' or text == '🥺🥺🥺' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[بتعيط تيب لي طيب..😥](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[متزعلش بحبك 😻🤍](t.me/eLmLoK0)')
 return false
 end
-end
-end
-if text then 
-list = {'خاص'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == '😒' or text == '😒😒😒' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ونجيب اشخاص ...😂😜](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[اعدل وشك ونت بتكلمني 😒🙄](t.me/eLmLoK0)')
 return false
 end
-end
-end
-
-if text then 
-list = {'بحبك'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'بحبك' or text == 'حبق' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[بـعشـقق .🥰❤️](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[وانا كمان بعشقك يا روحي 🤗🥰](t.me/eLmLoK0)')
 return false
 end
-end
-end
-
-if text then 
-list = {'بيف'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'مح' or text == 'هات مح' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف...🥺💔](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[محات حياتي يروحي ❤️🕊](t.me/eLmLoK0)')
 return false
 end
-end
-end
-if text then 
-list = {'سلام عليكم'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'هلا' or text == 'اهلا' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وعليكم السلام ..🖤 ♤︙](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[هلا بيك ياروحي 👋💛](t.me/eLmLoK0)')
 return false
 end
-end
-end
-if text then 
-list = {'++٩٠'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'هشش' or text == 'اششش' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خخخ امال ..😹](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[ بنهش كتاكيت احنا هنا ولا اي 🐣😹](t.me/eLmLoK0)')
 return false
 end
-end
-end
-if text then 
-list = {'قامد'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'الحمد الله' or text == 'بخير الحمد الله' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[قامد قموده ..🌝♥️](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[دايما ياحبيبي ❤️🕊](t.me/eLmLoK0)')
 return false
 end
-end
-end
-if text then 
-list = {'جامد'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'بف' or text == 'بص بف' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انا اجمد .. ♤︙💕](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف 🥺💔](t.me/eLmLoK0)')
 return false
 end
-end
-end
-if text then 
-list = {'جمد'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'صباح الخير' or text == 'مساء الخير' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انا اجمد ..??💕](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[انت الخير يعمري ❤️🕊](t.me/eLmLoK0)')
 return false
 end
-end
-end
-if text then 
-list = {'تيجي'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'خاص' or text == 'بص خاص' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[مش هروح ..😹👻](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[ونجيب اشخاص 😂😜](t.me/eLmLoK0)')
 return false
 end
-end
-end
-if text then 
-list = {'مش'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'سلام عليكم' or text == 'السلام عليكم' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[مش هتيجي مش هروح ..😹👻](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[وعليكم السلام ❤️🕊](t.me/eLmLoK0)')
 return false
 end
-end
-end
-if text then 
-list = {'بنتي'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'حصل' or text == 'حثل' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[الود كبر وبقي عندو بنت ..😻💥](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[خخخ امال 😹](t.me/eLmLoK0)')
 return false
-end
-end
-end
-if text then 
-list = {'ابني'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+end 
+if text == 'اه' or text == 'اها' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[عندو كام سنه ..😹💥](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[اه اي يا قدع عيب 😹💔](t.me/eLmLoK0)')
 return false
 end
-end
-end
-if text then 
-list = {'😂'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'كسم' or text == 'كسمك' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه .. ♤︙💕](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[عيب ياوسخ 🙄💔](t.me/eLmLoK0)')
 return false
 end
-end
-end
-if text then 
-list = {'😹'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
+if text == 'بوتي' or text == 'يا بوتي' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه .. ♤︙💕](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[روح وعقل بوتك 🥺💔](t.me/eLmLoK0)')
 return false
 end
+if text == 'متيجي' or text == 'تع' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
 end
+send(msg.chat_id_,msg.id_, '[لا عيب بتكسف 😹💔](t.me/eLmLoK0)')
+return false
 end
-
-if text == 'تيست' then 
-send(msg.chat_id_,msg.id_, ' هاذا الامر يخص المطور الاساسي فقط ') 
+if text == 'هيح' or text == 'لسه صاحي' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[صح النوم 😹💔](t.me/eLmLoK0)')
+return false
+end
+if text == 'صباح النور' or text == 'باح خير' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[صباح العسل 😻🤍](t.me/eLmLoK0)')
+return false
+end
+if text == 'منور' or text == 'نورت' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[ده نورك ي قلبي 🕊💙](t.me/eLmLoK0)')
+return false
+end
+if text == 'باي' or text == 'انا ماشي' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[ع فين لوين رايح وسايبنى 🥺💔](t.me/eLmLoK0)')
+return false
+end
+if text == 'ويت' or text == 'ويتت' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[اي الثقافه دي 😒😹](t.me/eLmLoK0)')
+return false
+end
+if text == 'خخخخخ' or text == 'خخخخخخخخخخ' then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[اهدا يوحش ميصحش كدا 😒😹](t.me/eLmLoK0)')
 return false
 end
 
@@ -15176,7 +14862,7 @@ Text = ' ♤ هوا ابن القمر دا الي ضافك😹 ⇦♤'..Name
 sendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 end,nil)
 else
-send(msg.chat_id_, msg.id_,' ♤ انت دخلت عبر الرابط يوسخ 🌝') 
+send(msg.chat_id_, msg.id_,' ♤ انت دخلت عبر الرابط يوسخ 🕊') 
 end
 end,nil)
 else
@@ -15198,7 +14884,7 @@ Text = ' ♤ هوا ابن الكلب دا الي ضافك😹 ⇦♤'..Name
 sendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 end,nil)
 else
-send(msg.chat_id_, msg.id_,' ♤ انت دخلت عبر الرابط يوسخ 🌝') 
+send(msg.chat_id_, msg.id_,' ♤ انت دخلت عبر الرابط يوسخ 🕊') 
 end
 end,nil)
 else
@@ -15703,7 +15389,7 @@ local List = {
 ► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 #username 𓃚  ꙰
 ► ??𝗗 #id 𓃚 ꙰
 ► 𝗦𝗧𝗔𝗦 #stast 𓃚 ꙰
-► 𝗠𝗦𝗔?? #msgs ?? ꙰
+► 𝗠𝗦𝗔?? #msgs 𓃚 ꙰
 ► 𝗖𝗛 - ♤@eLmLoK0♤ ♤.
 ]],
 [[
@@ -20427,7 +20113,7 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/units' then
 local Teext =[[
-W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 °𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°
+W??𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 °𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -20503,7 +20189,7 @@ local Name_Bot = (database:get(bot_id..'Name:Bot') or 'الملوك')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
-local Fun = {'لوكي وزاحف من ساع زحفلي وحضرته 😒','خوش ولد و ورده مال الله 💋🙄','يلعب ع البنات ??', 'ولد زايعته الكاع 😶🙊','صاك يخبل ومعضل ','محلو وشواربه جنها مكناسه 😂🤷🏼‍♀️','اموت عليه 🌝','هوه غير ا��حب مال اني ??♤️','مو خوش ولد صراحه ☹️','ادبسز وميحترم البنات  ', 'فد واحد قذر 🙄😒','ماطيقه كل ما اكمشه ريحته جنها بخاخ بف باف مال حشرات 😂🤷‍♀️','مو خوش ولد 🤓' } 
+local Fun = {'لوكي وزاحف من ساع زحفلي وحضرته 😒','خوش ولد و ورده مال الله 💋🙄','يلعب ع البنات ??', 'ولد زايعته الكاع 😶🙊','صاك يخبل ومعضل ','محلو وشواربه جنها مكناسه 😂🤷🏼‍♀️','اموت عليه 🕊','هوه غير ا��حب مال اني ??♤️','مو خوش ولد صراحه ☹️','ادبسز وميحترم البنات  ', 'فد واحد قذر 🙄😒','ماطيقه كل ما اكمشه ريحته جنها بخاخ بف باف مال حشرات 😂🤷‍♀️','مو خوش ولد 🤓' } 
 send(msg.chat_id_, result.id_,''..Fun[math.random(#Fun)]..'')   
 end   
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, FunBot, nil)
