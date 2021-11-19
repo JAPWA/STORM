@@ -3365,7 +3365,7 @@ end
 if text == 'SOURCE' or text == 'سورس' or text == 'السورس' or text == 'source' or text == 'يا سورس' or text == 'سورسي' then 
 local Text = [[
 ┏━-━━━━━━-━━━━━━━-━┓
-                [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
+               [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
 ┗━-━━━━━━-━━━━━━━-━┛
   ┏━━━━━━━━━━━━━━━┓
     [𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 𝒐𝒏 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎](http://t.me/eLmLoK0)    
@@ -14843,26 +14843,16 @@ end
 end 
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil) 
 end
-if text == "كشف" and not database:get(bot_id..'Bot:Id'..msg.chat_id_) then
-tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
-local rtp = Rutba(msg.sender_user_id_,msg.chat_id_)
-local Msguser = tonumber(database:get(bot_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_) or 1)
-local msg_id = msg.id_/2097152/0.5
-local Text = "مبروك المداام حامل"
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '┆♥ معرفك⇐'.."GetUser",user_id_,url="t.me/"..data.username_}},
-{{text = '┆♥ رتبتك⇐'..rtp, url="t.me/"..data.username_}},
-{{text = '┆♥ ايديك⇐'.."GetMessage",chat_id_, url="t.me/"..data.username_}},
-}
-local function getpro(extra, result, success)
-if result.photos_[0] then
-https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil)
+if text == 'كشف' and tonumber(msg.reply_to_message_id_) > 0 then
+function start_function(extra, result, success)
+tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(extra,data) 
+local rtp = Rutba(result.sender_user_id_,msg.chat_id_)
+local username = ('[@'..data.username_..']' or 'لا يوجد')
+local iduser = result.sender_user_id_
+send(msg.chat_id_, msg.id_,'♤الايدي ~ ♤'..iduser..'♤\n♤المعرف ~ ♤'..username..'♤\n♤الرتبه ~ ♤'..rtp..'♤\n♤نوع الكشف ~ بالرد')
 end,nil)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 end
 ---------
 if text and text:match("^كشف @(.*)$") then
@@ -15968,7 +15958,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ➭- 𝒔𝒕𝒂𓂅 #stast 𓍯. 💕
-➮- 𝐮𝐬𝐞𝐫𓂅 #username 𓍯. 💕
+➮- 𝐮𝐬𝐞𝐫?? #username 𓍯. 💕
 ➭- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯. 💕
 ➭- 𝐢?? 𓂅 #id 𓍯. 💕
 ➭- 𝗖𝗛 - ♤@eLmLoK0♤ ♤.
@@ -16408,7 +16398,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ♤ ♤ 𝐢𝐝  𓃠 #id .
-♤ ♤ 𝐮𝐬𝐞𝐫 𓃠 #username .
+♤ ♤ 𝐮𝐬??𝐫 𓃠 #username .
 ♤ ♤ 𝐦𝐬𝐠 𓃠 #msgs .
 ♤ ♤ 𝐬𝐭𝐚 𓃠 #stast .
 ♤ ♤ 𝒆𝒅𝒊𝒕 𓃠 #edit .
@@ -16667,53 +16657,33 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ♤ لا تستطيع استخدام البوت \n ♤  يرجى الاشتراك بالقناه اولا \n ♤  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ┆🌎 لا تستطيع استخدام البوت \n ┆🌎  يرجى الاشتراك بالقناه اولا \n ┆🌎  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
-local Num = tonumber(database:get(bot_id..'Add:Contact'..msg.chat_id_..':'..msg.sender_user_id_) or 0) 
-if Num == 0 then 
-Text = ' ♤ لم تقم بأضافه احد'
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
+if result.username_ then
+username = result.username_ 
 else
-Text = ' ♤ عدد جهاتك * ⇦♤ '..Num..' ♤ *'
+username = 'sasa_boody'
 end
-send(msg.chat_id_, msg.id_,Text) 
-end
-if text == "تنظيف المشتركين" and DevSoFi(msg) then 
-if AddChannel(msg.sender_user_id_) == false then
-local textchuser = database:get(bot_id..'text:ch:user')
-if textchuser then
-send(msg.chat_id_, msg.id_,'['..textchuser..']')
-else
-send(msg.chat_id_, msg.id_,'- لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n- اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
-end
-return false
-end
-local pv = database:smembers(bot_id.."User_Bot")
-local sendok = 0
-for i = 1, #pv do
-tdcli_function({ID='GetChat',chat_id_ = pv[i]
-},function(arg,dataq)
-tdcli_function ({ ID = "SendChatAction",  
-chat_id_ = pv[i], action_ = {  ID = "SendMessageTypingAction", progress_ = 100} 
-},function(arg,data) 
-if data.ID and data.ID == "Ok"  then
-else
-database:srem(bot_id.."User_Bot",pv[i])
-sendok = sendok + 1
-end
-if #pv == i then 
-if sendok == 0 then
-send(msg.chat_id_, msg.id_,' ♤  لا يوجد مشتركين وهميين في البوت \n')   
-else
-local ok = #pv - sendok
-send(msg.chat_id_, msg.id_,' ♤ عدد المشتركين الان  ⇦♤( '..#pv..' )\n- تم ازالة  ⇦♤( '..sendok..' ) من المشتركين\n- الان عدد المشتركين الحقيقي  ⇦♤( '..ok..' ) مشترك \n')   
-end
-end
+local msg_id = msg.id_/2097152/0.5  
+local textt = ' ┆جهاتك '..database:get(bot_id..'text:ch:user')
+local Boody ='لم تقم باضافة احد'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = textt, url="http://t.me/"..username},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Boody).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
+tdcli_function ({ database = "getbot_id..'text:ch:user", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end,nil)
-end,nil)
-end
-return false
 end
 if text == "تنظيف الجروبات" and DevSoFi(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
