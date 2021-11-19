@@ -4621,6 +4621,7 @@ local msg_id = msg.id_/2097152/0.5
 local Text = "معلوماتك"
 keyboard = {} 
 keyboard.inline_keyboard = {
+{{text = tessttmos, url = "http://t.me/"..sudos.UserName}},
 {{text = 'رتبتك⇐'..rtp, url="t.me/"..data.username_}},
 {{text = 'معرفك⇐'..data.username_,url="t.me/"..data.username_}},
 {{text = 'ايديك⇐'..msg.sender_user_id_, url="t.me/"..data.username_}},
@@ -15939,7 +15940,7 @@ Msᴀɢ ~ #msgs
 ᯓ 𝗖𝗛 - ♤@eLmLoK0♤ ♤.
 ]],
 [[
-.𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
+.𖣂 𝙪𝙨𝙚𝙧𝙣𝙖??𝙚 , #username  🖤 ↴
 .𖣂 𝙨𝙩𝙖𝙨𝙩 , #stast  🖤 ↴
 .𖣂 𝙡𝘿 , #id  🖤 ↴
 .𖣂 𝘼𝙪𝙩𝙤 , #auto  🖤 ↴
