@@ -2764,31 +2764,42 @@ end
 -------------------------------------------------------------------------------------------------------------
 if text == 'تفعيل' and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-local textchuser = database :get(bot_id ..'text:ch:user')
-if textchuser then
-send(msg.chat_id_, msg.id_,'['..textchuser..']')
+local uu_mido68 = database :get(bot_id ..'text:ch:user')
+if uu_mido68 then
+send(msg.chat_id_, msg.id_,''..uu_mido68..']')
 else
-send(msg.chat_id_, msg.id_,' ♤  لا تستطيع استخدام البوت \n  ♤  يرجى الاشتراك بالقناه اولا \n  ♤  اشترك هنا ['..database :get(bot_id ..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ︙  لا تستطيع استخدام البوت \n  ︙  يرجى الاشتراك بالقناه اولا \n  ︙  اشترك هنا ['..database :get(bot_id ..'add:ch:username')..']')
 end
 return false
 end
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,' ♤  عذرا يرجى ترقيه البوت مشرف !')
+send(msg.chat_id_, msg.id_,' ︙  عذرا يرجى ترقيه البوت مشرف !')
 return false  
 end
 tdcli_function ({ ID = "GetChannelFull", channel_id_ = getChatId(msg.chat_id_).ID }, function(arg,data)  
 if tonumber(data.member_count_) < tonumber(database :get(bot_id ..'Num:Add:Bot') or 0) and not DevSoFi(msg) then
-send(msg.chat_id_, msg.id_,' ♤  عدد اعضاء الكروب قليله يرجى جمع >> {'..(database :get(bot_id ..'Num:Add:Bot') or 0)..'} عضو')
+send(msg.chat_id_, msg.id_,' ︙  عدد اعضاء الجروب قليله يرجى جمع >> {'..(database :get(bot_id ..'Num:Add:Bot') or 0)..'} عضو')
 return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)  
 if database :sismember(bot_id ..'Chek:Groups',msg.chat_id_) then
-send(msg.chat_id_, msg.id_,' ♤ الـجـروب مـفعـل مـن قبـل')
+send(msg.chat_id_, msg.id_,' ︙ الـجـروب مـفعـل مـن قبـل')
 else
-sendText(msg.chat_id_,'\n ♤ مـن قبـل ⇔ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n  ♤ تـم تـشغـيل الـبوت فـي الـجـروب  {'..chat.title_..'}',msg.id_/2097152/0.5,'md')
+local Text ="︙تم تفعيل المجموعه "..chat.title_
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text ='ترتيب الاوامر ', callback_data="/eelmlok1"},{text =' رفع الادمنيه ', callback_data="/eelmlok2"},
+},
+{
+{text =' اخفاء الكليشه ', callback_data="/hide"},
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 database :sadd(bot_id ..'Chek:Groups',msg.chat_id_)
-local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
+local Name = '['..result.first_name_..''
 local NameChat = chat.title_
 local IdChat = msg.chat_id_
 local NumMember = data.member_count_
@@ -2797,17 +2808,6 @@ if linkgpp.ok == true then
 LinkGp = linkgpp.result
 else
 LinkGp = 'لا يوجد'
-end
-Text = '\n ♤ تـم تـشغـيل الـبوت فـي الـجـروب جـديد'..
-'\n  ♤ بواسطة {『'..Name..'』}'..
-'\n  ♤ ايدي الجروب {'..IdChat..'}'..
-'\n  ♤ اسم الجروب {['..NameChat..']}'..
-'\n  ♤ الرابط {['..LinkGp..']}'
-sendText(SUDO,Text,0,'md')
-end
-end,nil) 
-end,nil) 
-end,nil)
 end
 if text == 'تعطيل' and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
@@ -15516,7 +15516,7 @@ local List = {
 🇪🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast 💘.
 🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 - 𝗖?? - ♤@eLmLoK0♤ ♤.
+🇪?? - 𝗖?? - ♤@eLmLoK0♤ ♤.
 ]],
 [[
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
@@ -17527,7 +17527,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♤ 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼',url="https://my.telegram.org/auth?to=delete"},{text = '♤ 𝙴𝙽𝚂𝚃𝙰', url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}}, 
+{{text = '♤ ??𝙴𝙻𝙴𝙶𝚁𝙰𝙼',url="https://my.telegram.org/auth?to=delete"},{text = '♤ 𝙴𝙽𝚂𝚃𝙰', url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}}, 
 {{text = '♤ 𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺', url="https://www.facebook.com/help/deleteaccount"},{text = '♤ 𝚂𝙽𝙰𝙱𝚂𝙷𝙰𝚃', url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}}, 
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
@@ -18421,7 +18421,7 @@ datainlineText = "لديه رتبه مميز"
 datainline = {
 {{text ='♤  ادمن',callback_data=data.sender_user_id_.."mod"..userid}},
 {{text ='♤  مدير',callback_data=data.sender_user_id_.."Manager"..userid}},
-{{text = '°𝒃??𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},
+{{text = '°𝒃𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 else
@@ -18883,7 +18883,7 @@ datainline = {
 elseif Mod(data) then
 datainline = {
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
-{{text = '°??𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},
+{{text = '°𝒃𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 end
@@ -19143,6 +19143,61 @@ keyboard.inline_keyboard = {
 }
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("*• تم رفعه مطور ثانوي مجموعه*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))
 return false
+end
+
+if Text == '/eelmlok1' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+local Text ='تم ترتيب الاوامر بالشكل التالي\n𖠕︙ ايدي - ا .\n𖠕︙ مميز - م .\n𖠕︙ ادمن - اد .\n𖠕︙ مدير - مد . \n𖠕︙ منشى - من .\n𖠕︙ المنشئ الاساسي - اس .\n𖠕︙ تعطيل الايدي بالصوره - تعط .\n𖠕︙ تفعيل الايدي بالصوره - تفع .\n𖠕︙ تنزيل الكل - تك .\n𖠕︙ اضف رد - رد .\n𖠕︙ حذف رد - حذ .\n𖠕︙ تثبيت - ت '
+database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"ا")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":م","رفع مميز")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"م")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":اد","رفع ادمن")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"اد")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":مد","رفع مدير")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"مد")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":من","رفع منشئ")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"من")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":اس","رفع منشئ اساسي")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"اس")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصوره")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"تك")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":رد","اضف رد")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"رد")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":حذ","حذف رد")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"حذ")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":ت","تثبيت")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"ت")
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text =' اخفاء الكليشه ', callback_data="/hide"},
+},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+if Text == '/eelmlok2' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+local Text ='︙تـم رفع الادمنيه بنجاح'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text =' اخفاء الكليشه ', callback_data="/hide"},
+},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 
 if Text == '/mlp6' then
