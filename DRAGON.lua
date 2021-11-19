@@ -3343,7 +3343,7 @@ keyboard.inline_keyboard = {
 {text = 'تفعيل ردود السورس', callback_data="/Replies"},{text = 'تعطيل ردود السورس', callback_data="/Replies2"},
 },
 {
-{text = tessttmos, url = "http://t.me/"..sudos.UserName},
+{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"},
 },
 }
 local function getpro(extra, result, success) 
@@ -3412,7 +3412,7 @@ keyboard.inline_keyboard = {
 {{text = '𝒈𝒓𝒐𝒖𝒑',url="t.me/e_L_m_L_o_K"},{text = '𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ',url="t.me/eLmLoK0"}},
 {{text = '𝒃𝒐𝒕 𝒕𝒊𝒎𝒐',url="t.me/Timo8Bot"}}, 
 } 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/t_imoo/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'ابو المجد' or text == 'مبرمج ابو المجد' or text == 'المبرمج' or text == 'ABOELMAGD' then 
@@ -3482,12 +3482,24 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_, offse
 end,nil)
 end
 
-if text == 'تحكم' or text == 'تحكم رتبه' or text == 'التحكم' or text == 'رتبه' and not database:get(bot_id..'Namebot'..msg.chat_id_) then     
+if text == 'تحكم' or text == 'التحكم في العضو' or text == 'التحكم' or text == 'االتحكم' and not database:get(bot_id..'Namebot'..msg.chat_id_) then     
 function start_function(extra, result, success)
 local keyboard = {
 {{text ='حظر',callback_data=msg.sender_user_id_.."been"..result.sender_user_id_},{text ='الغاء حظر',callback_data=msg.sender_user_id_.."unbeen"..result.sender_user_id_}},
 {{text ='كتم',callback_data=msg.sender_user_id_.."Mut"..result.sender_user_id_},{text ='الغاء كتم',callback_data=msg.sender_user_id_.."unMut"..result.sender_user_id_}},
 {{text ='تقييد',callback_data=msg.sender_user_id_.."restrict"..result.sender_user_id_},{text ='الغاء تقييد',callback_data=msg.sender_user_id_.."unrestrict"..result.sender_user_id_}},
+{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
+}
+local msg_id = msg.id_/2097152/0.5
+send_inline_key(msg.chat_id_,"*♤ مرحبـا بـــك فــي قائمــه التحكــم اضغــط علــي الامــر فــي الاسفــل ⇓⇑*",nil,keyboard,msg_id)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+
+if text == 'تحكم الرتبه' or text == 'تحكم رتبه' or text == 'رفع رتبه' or text == 'تنزيل رتبه' and not database:get(bot_id..'Namebot'..msg.chat_id_) then     
+function start_function(extra, result, success)
+local keyboard = {
 {{text ='رفع رتبه',callback_data=msg.sender_user_id_.."UpS"..result.sender_user_id_},{text ='تنزيل رتبه',callback_data=msg.sender_user_id_.."unUpS"..result.sender_user_id_}},
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
@@ -13531,7 +13543,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' °𝒔𝒐??𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐??‌‌‌°', url="t.me/eLmLoK0"}},
+{{text = ' °𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐??‌‌‌°', url="t.me/eLmLoK0"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/V_I_K_I_N_G_2/27/14&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14629,7 +14641,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ع فين لوين رايح وسايبنى 🥺💔](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[ع فين لوين رايح وسايبنى ??💔](t.me/eLmLoK0)')
 return false
 end
 if text == 'ويت' or text == 'ويتت' then
@@ -18402,7 +18414,7 @@ elseif database:sismember(bot_id..'Manager'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك اعلى رتبه تستطيع  رفعه لها"
 datainline = {
 {{text = '°𝒃𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
+{{text = '°??𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 elseif database:sismember(bot_id..'Mod:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه ادمن"
