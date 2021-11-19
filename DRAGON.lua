@@ -186,7 +186,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,2002118176,2038767028,2094348305,1965534755,}
+sudo_users = {SUDO,2119058927,2038767028,2094348305,1965534755,}
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -284,7 +284,7 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(2002118176) then  
+if tonumber(user_id) == tonumber(2119058927) then  
 var = true
 elseif tonumber(user_id) == tonumber(2038767028) then
 var = true
@@ -326,7 +326,7 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(2002118176) then  
+if tonumber(user_id) == tonumber(2119058927) then  
 var = 'المبرمج تيمو'
 elseif tonumber(user_id) == tonumber(2038767028) then
 var = 'مبرمج ابو المجد'
@@ -3004,7 +3004,7 @@ LinkGroup = LinkGp.result
 else
 LinkGroup = 'لا يوجد'
 end
-sendText(2002118176,"♤ حضرت المبرمج تيمو الحق عاوزينك \n♤ الشخص  {"..Name.."}\n♤ اسم الجروب {"..NameChat.."}\n♤ ايدي الجروب { `"..msg.chat_id_.."` }\n♤ رابط الجروب \n [ "..LinkGroup.." ]\n♤ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
+sendText(2119058927,"♤ حضرت المبرمج تيمو الحق عاوزينك \n♤ الشخص  {"..Name.."}\n♤ اسم الجروب {"..NameChat.."}\n♤ ايدي الجروب { `"..msg.chat_id_.."` }\n♤ رابط الجروب \n [ "..LinkGroup.." ]\n♤ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
 end,nil)
 end,nil)
 end
@@ -5747,7 +5747,7 @@ if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " ♤ لا تسطيع حظر البوت عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
+if tonumber(result.sender_user_id_) == tonumber(2119058927) then  
 send(msg.chat_id_, msg.id_, "♤ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
@@ -5801,7 +5801,7 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " ♤ لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(2002118176) then
+if result.id_ == tonumber(2119058927) then
 send(msg.chat_id_, msg.id_, "بس يعم دا تيمو مبرمج \n")
 return false 
 end
@@ -5849,7 +5849,7 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " ♤ لا تسطيع حظر البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(2002118176) then  
+if tonumber(userid) == tonumber(2119058927) then  
 send(msg.chat_id_, msg.id_, " ♤ بس يعم دا تيمو مبرمج ")
 return false 
 end
@@ -5898,7 +5898,7 @@ if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " ♤ لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
+if tonumber(result.sender_user_id_) == tonumber(2119058927) then  
 send(msg.chat_id_, msg.id_, " ♤ بس يعم دا تيمو مبرمج")
 return false 
 end
@@ -5951,7 +5951,7 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " ♤ لا يمكنك كتم المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(2002118176) then
+if result.id_ == tonumber(2119058927) then
 send(msg.chat_id_, msg.id_, " ♤ بس يعم دا تيمو مبرمج \n")
 return false 
 end
@@ -5999,7 +5999,7 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " ♤ لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(2002118176) then  
+if tonumber(userid) == tonumber(2119058927) then  
 send(msg.chat_id_, msg.id_, "بس يعم دا تيمو")
 return false 
 end
