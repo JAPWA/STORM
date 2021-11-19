@@ -3365,13 +3365,13 @@ end
 if text == 'SOURCE' or text == 'سورس' or text == 'السورس' or text == 'source' or text == 'يا سورس' or text == 'سورسي' then 
 local Text = [[
 ┏━-━━━━━━-━━━━━━━-━┓
-              [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
+                [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
 ┗━-━━━━━━-━━━━━━━-━┛
-┏━━━━━━━━━━━━━━━┓
-  [𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 𝒐𝒏 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎](http://t.me/eLmLoK0)    
-┗━━━━━━━━━━━━━━━┛
+  ┏━━━━━━━━━━━━━━━┓
+    [𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 𝒐𝒏 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎](http://t.me/eLmLoK0)    
+  ┗━━━━━━━━━━━━━━━┛
 ┏━-━━━━━━-━━━━━━━-━┓
-             [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
+               [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
 ┗━-━━━━━━-━━━━━━━-━┛
 ]]
 keyboard = {} 
@@ -3387,13 +3387,13 @@ end
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
 local Text = [[
 ┏━-━━━━━━-━━━━━━━-━┓
-              [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
+                [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
 ┗━-━━━━━━-━━━━━━━-━┛
-┏━━━━━━━━━━━━━━━┓
-  [𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 𝒐𝒏 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎](http://t.me/eLmLoK0)    
-┗━━━━━━━━━━━━━━━┛
+  ┏━━━━━━━━━━━━━━━┓
+    [𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 𝒐𝒏 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎](http://t.me/eLmLoK0)    
+  ┗━━━━━━━━━━━━━━━┛
 ┏━-━━━━━━-━━━━━━━-━┓
-              [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
+                [𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)
 ┗━-━━━━━━-━━━━━━━-━┛
 ]]
 keyboard = {} 
@@ -14843,16 +14843,26 @@ end
 end 
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil) 
 end
-if text == 'كشف' and tonumber(msg.reply_to_message_id_) > 0 then
-function start_function(extra, result, success)
-tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(extra,data) 
-local rtp = Rutba(result.sender_user_id_,msg.chat_id_)
-local username = ('[@'..data.username_..']' or 'لا يوجد')
-local iduser = result.sender_user_id_
-send(msg.chat_id_, msg.id_,'♤الايدي ~ ♤'..iduser..'♤\n♤المعرف ~ ♤'..username..'♤\n♤الرتبه ~ ♤'..rtp..'♤\n♤نوع الكشف ~ بالرد')
+if text == "كشف" and not database:get(bot_id..'Bot:Id'..msg.chat_id_) then
+tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
+local rtp = Rutba(msg.sender_user_id_,msg.chat_id_)
+local Msguser = tonumber(database:get(bot_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_) or 1)
+local msg_id = msg.id_/2097152/0.5
+local Text = "مبروك المداام حامل"
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '┆♥ معرفك⇐'.."GetUser",user_id_,url="t.me/"..data.username_}},
+{{text = '┆♥ رتبتك⇐'..rtp, url="t.me/"..data.username_}},
+{{text = '┆♥ ايديك⇐'.."GetMessage",chat_id_, url="t.me/"..data.username_}},
+}
+local function getpro(extra, result, success)
+if result.photos_[0] then
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end end
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil)
 end,nil)
-end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 end
 ---------
 if text and text:match("^كشف @(.*)$") then
