@@ -14851,8 +14851,8 @@ local msg_id = msg.id_/2097152/0.5
 local Text = "مبروك المداام حامل"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '┆♥ رتبتك⇐♤'..rtp..'♤\n}},
-{{text = '┆♥ ايديك⇐'..♤'..iduser..'♤\n}},
+{{text = '┆♥ رتبتك⇐'..rtp..'\n}},
+{{text = '┆♥ ايديك⇐'..iduser..'\n}},
 }
 local function getpro(extra, result, success)
 if result.photos_[0] then
@@ -19029,7 +19029,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = '°𝒃𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
+{{text = '°𝒔𝒐𝒖??𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 elseif BasicConstructor(data) then
 datainline = {
