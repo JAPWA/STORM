@@ -3317,9 +3317,6 @@ local DRAGON = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = tessttmos, url = "http://t.me/"..sudos.UserName},
-},
-{
 {text = 'تحديث السورس', callback_data="/rsayly"},{text = 'تحديث الملفات', callback_data="/s7katy"},
 },
 {
@@ -3343,13 +3340,10 @@ local DRAGON = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = tessttmos, url = "http://t.me/"..sudos.UserName},
-},
-{
 {text = 'تفعيل ردود السورس', callback_data="/Replies"},{text = 'تعطيل ردود السورس', callback_data="/Replies2"},
 },
 {
-{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"},
+{text = tessttmos, url = "http://t.me/"..sudos.UserName},
 },
 }
 local function getpro(extra, result, success) 
@@ -3514,9 +3508,6 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{
-{text = tessttmos, url = "http://t.me/"..sudos.UserName},
-},
 {
 {text = '°غنيلي°', callback_data="/mlp1"},{text = '°استوري°', callback_data="/mlp2"},
 },
@@ -13540,7 +13531,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' °𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐??‌‌‌°', url="t.me/eLmLoK0"}},
+{{text = ' °𝒔𝒐??𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐??‌‌‌°', url="t.me/eLmLoK0"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/V_I_K_I_N_G_2/27/14&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15511,7 +15502,7 @@ local List = {
 - StA🇪🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
-- ??𝗛 🇪🇬 ꙰  ♤@eLmLoK0♤ ♤.
+- 𝗖𝗛 🇪🇬 ꙰  ♤@eLmLoK0♤ ♤.
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -18882,7 +18873,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = '°𝒃𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '°𝒔𝒐𝒖??𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
+{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 elseif Mod(data) then
 datainline = {
@@ -19765,7 +19756,7 @@ end
 local Teext =[[
 💥 اهلا بك في قسم الاوامر ..↑⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
  اختر الامر الذي تريدها .↑⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
-ده من الازرار بلاسفل . ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆??𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
+ده من الازرار بلاسفل . ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
 ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
 ❲[°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ](t.me/eLmLoK0)❳ 
 ]]
