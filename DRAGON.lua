@@ -4843,9 +4843,6 @@ local Jabwa = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = tessttmos, url = "http://t.me/"..sudos.UserName},
-},
-{
 {text = textt, url= "https://t.me/"..result.username_..""},
 },
 }
@@ -4870,9 +4867,6 @@ local textt = ' تم تعطيل الحمايه بواسطه '..Rutba(msg.sender_
 local Jabwa = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{
-{text = tessttmos, url = "http://t.me/"..sudos.UserName},
-},
 {
 {text = textt, url= "https://t.me/"..result.username_..""},
 },
