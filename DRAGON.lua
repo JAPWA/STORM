@@ -18109,6 +18109,61 @@ keyboard.inline_keyboard = {
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 
+if Text == '/eelmlok1' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+local Text ='تم ترتيب الاوامر بالشكل التالي\n𖠕︙ ايدي - ا .\n𖠕︙ مميز - م .\n𖠕︙ ادمن - اد .\n𖠕︙ مدير - مد . \n𖠕︙ منشى - من .\n𖠕︙ المنشئ الاساسي - اس .\n𖠕︙ تعطيل الايدي بالصوره - تعط .\n𖠕︙ تفعيل الايدي بالصوره - تفع .\n𖠕︙ تنزيل الكل - تك .\n𖠕︙ اضف رد - رد .\n𖠕︙ حذف رد - حذ .\n𖠕︙ تثبيت - ت '
+database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"ا")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":م","رفع مميز")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"م")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":اد","رفع ادمن")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"اد")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":مد","رفع مدير")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"مد")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":من","رفع منشئ")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"من")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":اس","رفع منشئ اساسي")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"اس")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصوره")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"تك")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":رد","اضف رد")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"رد")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":حذ","حذف رد")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"حذ")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":ت","تثبيت")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"ت")
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text =' اخفاء الكليشه ', callback_data="/hide"},
+},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+if Text == '/eelmlok2' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+local Text ='︙تـم رفع الادمنيه بنجاح'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text =' اخفاء الكليشه ', callback_data="/hide"},
+},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+
 if Text and Text:match("^(%d+)unbeen(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('unbeen',''):gsub(notId,'')
@@ -19143,61 +19198,6 @@ keyboard.inline_keyboard = {
 }
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("*• تم رفعه مطور ثانوي مجموعه*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))
 return false
-end
-
-if Text == '/eelmlok1' then
-if not CoSu(data) then
-local notText = '✘ عذرا الاوامر هذه لا تخصك'
-https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
-return false
-end
-local Text ='تم ترتيب الاوامر بالشكل التالي\n𖠕︙ ايدي - ا .\n𖠕︙ مميز - م .\n𖠕︙ ادمن - اد .\n𖠕︙ مدير - مد . \n𖠕︙ منشى - من .\n𖠕︙ المنشئ الاساسي - اس .\n𖠕︙ تعطيل الايدي بالصوره - تعط .\n𖠕︙ تفعيل الايدي بالصوره - تفع .\n𖠕︙ تنزيل الكل - تك .\n𖠕︙ اضف رد - رد .\n𖠕︙ حذف رد - حذ .\n𖠕︙ تثبيت - ت '
-database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
- database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"ا")
- database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":م","رفع مميز")
- database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"م")
- database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":اد","رفع ادمن")
- database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"اد")
- database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":مد","رفع مدير")
- database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"مد")
- database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":من","رفع منشئ")
- database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"من")
- database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":اس","رفع منشئ اساسي")
- database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"اس")
- database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصوره")
- database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
- database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
- database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
- database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
- database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"تك")
- database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":رد","اضف رد")
- database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"رد")
- database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":حذ","حذف رد")
- database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"حذ")
- database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":ت","تثبيت")
- database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"ت")
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text =' اخفاء الكليشه ', callback_data="/hide"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/eelmlok2' then
-if not CoSu(data) then
-local notText = '✘ عذرا الاوامر هذه لا تخصك'
-https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
-return false
-end
-local Text ='︙تـم رفع الادمنيه بنجاح'
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text =' اخفاء الكليشه ', callback_data="/hide"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 
 if Text == '/mlp6' then
