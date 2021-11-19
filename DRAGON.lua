@@ -3317,10 +3317,10 @@ local DRAGON = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '♤ تحديث السورس ♤', callback_data="/rsayly"},
+{text = tessttmos, url = "http://t.me/"..sudos.UserName},
 },
 {
-{text = '♤ تحديث الملفات ♤', callback_data="/s7katy"},
+{text = 'تحديث السورس', callback_data="/rsayly"},{text = 'تحديث الملفات', callback_data="/s7katy"},
 },
 {
 {text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"},
@@ -3343,10 +3343,10 @@ local DRAGON = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '♤ تفعيل ردود السورس ♤', callback_data="/Replies"},
+{text = tessttmos, url = "http://t.me/"..sudos.UserName},
 },
 {
-{text = '♤ تعطيل ردود السورس ♤', callback_data="/Replies2"},
+{text = 'تفعيل ردود السورس', callback_data="/Replies"},{text = 'تعطيل ردود السورس', callback_data="/Replies2"},
 },
 {
 {text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"},
@@ -3514,6 +3514,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
+{
+{text = tessttmos, url = "http://t.me/"..sudos.UserName},
+},
 {
 {text = '°غنيلي°', callback_data="/mlp1"},{text = '°استوري°', callback_data="/mlp2"},
 },
@@ -15508,7 +15511,7 @@ local List = {
 - StA🇪🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
-- 𝗖𝗛 🇪🇬 ꙰  ♤@eLmLoK0♤ ♤.
+- ??𝗛 🇪🇬 ꙰  ♤@eLmLoK0♤ ♤.
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -18879,7 +18882,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = '°𝒃𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
+{{text = '°𝒔𝒐𝒖??𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 elseif Mod(data) then
 datainline = {
@@ -19762,7 +19765,7 @@ end
 local Teext =[[
 💥 اهلا بك في قسم الاوامر ..↑⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
  اختر الامر الذي تريدها .↑⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
-ده من الازرار بلاسفل . ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
+ده من الازرار بلاسفل . ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆??𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
 ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
 ❲[°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ](t.me/eLmLoK0)❳ 
 ]]
