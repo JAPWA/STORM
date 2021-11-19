@@ -2782,14 +2782,15 @@ send(msg.chat_id_, msg.id_,' ︙  عدد اعضاء الجروب قليله ير
 return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
+tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)  
 if database :sismember(bot_id ..'Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,' ︙ الـجـروب مـفعـل مـن قبـل')
 else
-local Text ="︙تم تفعيل المجموعه "..chat.title_
+local Text ="᥀︙تم تفعيل المجموعه "..chat.title_
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text ='ترتيب الاوامر ', callback_data="/eelmlok1"},{text =' رفع الادمنيه ', callback_data="/eelmlok2"},
+{text ='ترتيب الاوامر ', callback_data="/awamer1"},{text =' رفع الادمنيه ', callback_data="/admen2"},
 },
 {
 {text =' اخفاء الكليشه ', callback_data="/hide"},
@@ -2807,6 +2808,18 @@ if linkgpp.ok == true then
 LinkGp = linkgpp.result
 else
 LinkGp = 'لا يوجد'
+end
+Text = '\n ☆ تـم تـشغـيل الـبوت فـي الـجـروب جـديد'..
+'\n ☆بواسطة {'..Name..'}'..
+'\n ☆ايدي الجروب {'..IdChat..'}'..
+'\n ☆اسم الجروب {['..NameChat..']}'..
+'\n ☆الرابط {['..LinkGp..']}'
+sendText(SUDO,Text,0,'md')
+sendText(1603288696,Text,0,'md')
+end
+end,nil) 
+end,nil) 
+end,nil)
 end
 if text == 'تعطيل' and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
@@ -12660,7 +12673,7 @@ Namebot = (database:get(bot_id..'Name:Bot') or 'الملوك')
 local DRAGON_Msg = {
 ' نعم يروحي♥️',
 ' بتشقط وجي ويت 🤪',
-' ايوا جاي 🙈',
+' ايوا جاي ??',
 ' يعم هتسحر واجي 😾',
 ' طب متصلي على النبي كدا 💜',
 ' تع اشرب شاي 💙',
@@ -18108,13 +18121,13 @@ keyboard.inline_keyboard = {
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 
-if Text == '/eelmlok1' then
+if Text == '/awamer1' then
 if not CoSu(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-local Text ='تم ترتيب الاوامر بالشكل التالي\n𖠕︙ ايدي - ا .\n𖠕︙ مميز - م .\n𖠕︙ ادمن - اد .\n𖠕︙ مدير - مد . \n𖠕︙ منشى - من .\n𖠕︙ المنشئ الاساسي - اس .\n𖠕︙ تعطيل الايدي بالصوره - تعط .\n𖠕︙ تفعيل الايدي بالصوره - تفع .\n𖠕︙ تنزيل الكل - تك .\n𖠕︙ اضف رد - رد .\n𖠕︙ حذف رد - حذ .\n𖠕︙ تثبيت - ت '
+local Text ='تم ترتيب الاوامر بالشكل التالي\n︙ ايدي - ا .\n︙ مميز - م .\n︙ ادمن - اد .\n︙ مدير - مد . \n︙ منشى - من .\n︙ المنشئ الاساسي - اس .\n︙ تعطيل الايدي بالصوره - تعط .\n︙ تفعيل الايدي بالصوره - تفع .\n︙ تنزيل الكل - تك .\n︙ اضف رد - رد .\n︙ حذف رد - حذ .\n︙ تثبيت - ت '
 database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
  database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"ا")
  database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":م","رفع مميز")
@@ -18147,7 +18160,7 @@ keyboard.inline_keyboard = {
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
-if Text == '/eelmlok2' then
+if Text == '/admen2' then
 if not CoSu(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
@@ -19387,7 +19400,7 @@ local Teext =[[
  ♤الادمن ♢ المنشئ ♢ المالك
  ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
  ♤❲ المميز❳ ♤
- ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
+ ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆??𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
  ♤ كشف
  ♤ المحظورين
  ♤ المكتومين
@@ -19956,7 +19969,7 @@ return false
 end
 local Teext =[[
 💥 اهلا بك في قسم الاوامر ..↑⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
- اختر الامر الذي تريدها .↑⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
+ اختر الامر الذي تريدها .↑⩹━━━⊶❲✧𝒔??𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
 ده من الازرار بلاسفل . ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
 ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
  ❲[°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ](t.me/eLmLoK0)❳ 
