@@ -2782,7 +2782,6 @@ send(msg.chat_id_, msg.id_,' ︙  عدد اعضاء الجروب قليله ير
 return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
-tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)  
 if database :sismember(bot_id ..'Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,' ︙ الـجـروب مـفعـل مـن قبـل')
 else
@@ -15516,7 +15515,7 @@ local List = {
 🇪🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast 💘.
 🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪?? - 𝗖?? - ♤@eLmLoK0♤ ♤.
+🇪🇬 - 𝗖?? - ♤@eLmLoK0♤ ♤.
 ]],
 [[
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
@@ -17527,7 +17526,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♤ ??𝙴𝙻𝙴𝙶𝚁𝙰𝙼',url="https://my.telegram.org/auth?to=delete"},{text = '♤ 𝙴𝙽𝚂𝚃𝙰', url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}}, 
+{{text = '♤ 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼',url="https://my.telegram.org/auth?to=delete"},{text = '♤ 𝙴𝙽𝚂𝚃𝙰', url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}}, 
 {{text = '♤ 𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺', url="https://www.facebook.com/help/deleteaccount"},{text = '♤ 𝚂𝙽𝙰𝙱𝚂𝙷𝙰𝚃', url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}}, 
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
