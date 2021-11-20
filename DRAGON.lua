@@ -3388,8 +3388,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝒕𝒊𝒎𝒐  ',url="t.me/ttimo_8lby"},{text = '𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅',url="t.me/ABO_ELMAGD2"}},
-{{text = '𝒐𝒎𝒂𝒓  ',url="t.me/teemElmelok"},{text = '𝒎𝒐𝒔𝒕𝒂𝒇𝒂 ',url="t.me/J_A_B_W_A"}},
+{{text = '𝒎𝒚 𝒅𝒆𝒗 ', callback_data="/units"},{text = '𝒎𝒚 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ', callback_data="/theytry"}},  
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ', url="t.me/eLmLoK0"}},
 {{text = 'أضفہ ألبہوتہ أليہ مہجہمہوعہتہكہ°' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -3432,7 +3431,7 @@ local Text = [[
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝒐𝒎𝒂𝒓',url="t.me/teemElmelok"}}, 
+{{text = '??𝒎𝒂𝒓',url="t.me/teemElmelok"}}, 
 {{text = '𝒈𝒓𝒐𝒖𝒑',url="t.me/omar_moot"},{text = '𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ',url="t.me/OMARmoot"}},
 {{text = '𝒃𝒐𝒕 𝒐𝒎𝒂𝒓',url="t.me/omarteembot"}}, 
 } 
@@ -3540,11 +3539,11 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝒕𝒊𝒎𝒐',url="t.me/ttimo_8lby"}},
-{{text = '𝒈𝒓𝒐𝒖𝒑',url="t.me/e_L_m_L_o_K"},{text = '𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ',url="t.me/eLmLoK0"}},
-{{text = '𝒃𝒐𝒕 𝒕𝒊𝒎𝒐',url="t.me/Timo8Bot"}}, 
-} 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/t_imoo/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+{{text = '♤ 𝒕𝒊𝒎𝒐',url="t.me/ttimo_8lby"}},
+{{text = '♤ 𝒃𝒐𝒕 𝒕𝒊𝒎𝒐',url="t.me/Timo8Bot"}}, 
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/t_imoo/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'روايات' or text == 'الروايات' or text == 'ررويات' then
 local Text = [[
@@ -4789,7 +4788,7 @@ ght = math.random(1,62);
 local Text = 'تـم اخـتيار هـذه الـصوره لـك ❤️🕊'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text =  '°??𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°' ,url="t.me/eLmLoK0"}},
+{{text =  '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°' ,url="t.me/eLmLoK0"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/elmlok990/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -20432,7 +20431,7 @@ return false
 end
 end
 if text and text ~="صراحه" and database:get(bot_id..":"..msg.sender_user_id_..":rkko_Bots"..msg.chat_id_) == "sendrkkoe" then
-numj = {"اما قله ادب صحيح كلو كدب فى كدب💔😔"," ده مظبوط🙂😹"," اقلك الكلام ده كدب واللى قالولك كداب وانت كداب واللى بيتفرج كمان كداب🤝😂"," ده برجوله وموثق كمان♤️😁","فعلا بتتكلم صح??","يجدع قول كلام غير دا😹","احس هل شي كذب♤💕","طب عيني ف عينك كدا ??","انت صح",};
+numj = {"اما قله ادب صحيح كلو كدب فى كدب💔😔"," ده مظبوط🙂😹"," اقلك الكلام ده كدب واللى قالولك كداب وانت كداب واللى بيتفرج كمان كداب🤝😂"," ده برجوله وموثق كمان♤️😁","فعلا بتتكلم صح🤗","يجدع قول كلام غير دا😹","احس هل شي كذب♤💕","طب عيني ف عينك كدا ??","انت صح",};
 sendnuj = numj[math.random(#numj)]
 xl = ' ⟨  '..text..'  ⟩ \n '..sendnuj..'.'
 send(msg.chat_id_, msg.id_,xl) 
