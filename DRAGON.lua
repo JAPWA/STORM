@@ -19236,6 +19236,16 @@ https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='
 return false
 end
 if Text == 'nzllne'..data.sender_user_id_ then if database:sismember(bot_id.."Sudo:User",data.sender_user_id_) then dev = "المطور ،" else dev = "" end
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+local Text =' تم تنزيلك من جميع الرتب'
+os.execute('rm -rf DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/main/DRAGON.lua')
+send(msg.chat_id_, msg.id_,' تم تنزيل جميع الرتب')
+dofile('DRAGON.lua')  
 if database:sismember(bot_id..'CoSu'..msg.chat_id_, data.sender_user_id_) then cu = 'مالك ،' else cu = "" end
 if database:sismember(bot_id.."Basic:Constructor"..msg.chat_id_, data.sender_user_id_) then crr = "منشئ اساسي ،" else crr = "" end
 if database:sismember(bot_id..'Constructor'..msg.chat_id_, data.sender_user_id_) then cr = "منشئ ،" else cr = "" end
@@ -19266,7 +19276,17 @@ else
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end end
 end
-if Text == 'noKikedMe'..data.sender_user_id_ then  
+if Text == 'noKikedMe'..data.sender_user_id_ then 
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+local Text =' تم الغاء الامر بنجاح'
+os.execute('rm -rf DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/main/DRAGON.lua')
+send(msg.chat_id_, msg.id_,' تم الغاء الامر بنجاح')
+dofile('DRAGON.lua')  
 local Text =" تم الغاء الأمر بنجاح "
 keyboard = {} 
 keyboard.inline_keyboard = {
