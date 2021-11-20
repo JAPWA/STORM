@@ -19265,8 +19265,6 @@ https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. ms
 else
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
-end,nil)
 end
 if Text == 'noKikedMe'..data.sender_user_id_ then  
 local Text =" تم الغاء الأمر بنجاح "
@@ -19280,8 +19278,6 @@ https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. ms
 else
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
-end,nil)
 end
 
 if Text == '/mlp6' then
