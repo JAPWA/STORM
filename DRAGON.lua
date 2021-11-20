@@ -1309,11 +1309,11 @@ HardDisk=`df -lh | awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'`
 CPUPer=`top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`
 uptime=`uptime | awk -F'( |,|:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes."}'`
 echo '⇗ نظام التشغيل ⇖•\n* '"$linux_version"'*' 
-echo '⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n  ♤︙↝ الذاكره العشوائيه ↜  ↚\n* '"$memUsedPrc"'*'
-echo '⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n  ♤︙↝ وحـده الـتـخـزيـن ↜  ↚\n* '"$HardDisk"'*'
-echo '⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n  ♤︙↝ الـمــعــالــج ↜  ↚\n* '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
-echo '⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n  ♤︙↝ الــدخــول ↜  ↚\n* '`whoami`'*'
-echo '⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n  ♤︙↝ مـده تـشغيـل الـسـيـرفـر ↜ ↚\n* '"$uptime"'*'
+echo '⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n  ♤↝ الذاكره العشوائيه ↜  ↚\n* '"$memUsedPrc"'*'
+echo '⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n  ♤↝ وحـده الـتـخـزيـن ↜  ↚\n* '"$HardDisk"'*'
+echo '⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n  ♤↝ الـمــعــالــج ↜  ↚\n* '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
+echo '⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n  ♤↝ الــدخــول ↜  ↚\n* '`whoami`'*'
+echo '⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n  ♤↝ مـده تـشغيـل الـسـيـرفـر ↜ ↚\n* '"$uptime"'*'
 ]]):read('*all'))  
 end
 if text == 'ت ث' and DevSoFi(msg) then 
@@ -2764,29 +2764,40 @@ end
 -------------------------------------------------------------------------------------------------------------
 if text == 'تفعيل' and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-local textchuser = database :get(bot_id ..'text:ch:user')
-if textchuser then
-send(msg.chat_id_, msg.id_,'['..textchuser..']')
+local uu_mido68 = database :get(bot_id ..'text:ch:user')
+if uu_mido68 then
+send(msg.chat_id_, msg.id_,'['..uu_mido68..']')
 else
-send(msg.chat_id_, msg.id_,' ♤  لا تستطيع استخدام البوت \n  ♤  يرجى الاشتراك بالقناه اولا \n  ♤  اشترك هنا ['..database :get(bot_id ..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ♤ لا تستطيع استخدام البوت \n  ♤ يرجى الاشتراك بالقناه اولا \n  ♤ اشترك هنا ['..database :get(bot_id ..'add:ch:username')..']')
 end
 return false
 end
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,' ♤  عذرا يرجى ترقيه البوت مشرف !')
+send(msg.chat_id_, msg.id_,' ♤ عذرا يرجى ترقيه البوت مشرف !')
 return false  
 end
 tdcli_function ({ ID = "GetChannelFull", channel_id_ = getChatId(msg.chat_id_).ID }, function(arg,data)  
 if tonumber(data.member_count_) < tonumber(database :get(bot_id ..'Num:Add:Bot') or 0) and not DevSoFi(msg) then
-send(msg.chat_id_, msg.id_,' ♤  عدد اعضاء الكروب قليله يرجى جمع >> {'..(database :get(bot_id ..'Num:Add:Bot') or 0)..'} عضو')
+send(msg.chat_id_, msg.id_,' ♤ عدد اعضاء الجروب قليله يرجى جمع >> {'..(database :get(bot_id ..'Num:Add:Bot') or 0)..'} عضو')
 return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)  
 if database :sismember(bot_id ..'Chek:Groups',msg.chat_id_) then
-send(msg.chat_id_, msg.id_,' ♤ الـجـروب مـفعـل مـن قبـل')
+send(msg.chat_id_, msg.id_,' ♤الـجـروب مـفعـل مـن قبـل')
 else
-sendText(msg.chat_id_,'\n ♤ مـن قبـل ⇔ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n  ♤ تـم تـشغـيل الـبوت فـي الـجـروب  {'..chat.title_..'}',msg.id_/2097152/0.5,'md')
+local Text ="♤تم تفعيل المجموعه "..chat.title_
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text ='ترتيب الاوامر ', callback_data="/bodyy1"},{text =' رفع الادمنيه ', callback_data="/bodyyy2"},
+},
+{
+{text =' اخفاء الكليشه ', callback_data="/hide"},
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 database :sadd(bot_id ..'Chek:Groups',msg.chat_id_)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
 local NameChat = chat.title_
@@ -2798,12 +2809,13 @@ LinkGp = linkgpp.result
 else
 LinkGp = 'لا يوجد'
 end
-Text = '\n ♤ تـم تـشغـيل الـبوت فـي الـجـروب جـديد'..
-'\n  ♤ بواسطة {『'..Name..'』}'..
-'\n  ♤ ايدي الجروب {'..IdChat..'}'..
-'\n  ♤ اسم الجروب {['..NameChat..']}'..
-'\n  ♤ الرابط {['..LinkGp..']}'
+Text = '\n ☆ تـم تـشغـيل الـبوت فـي الـجـروب جـديد'..
+'\n ☆بواسطة {'..Name..'}'..
+'\n ☆ايدي الجروب {'..IdChat..'}'..
+'\n ☆اسم الجروب {['..NameChat..']}'..
+'\n ☆الرابط {['..LinkGp..']}'
 sendText(SUDO,Text,0,'md')
+sendText(1603288696,Text,0,'md')
 end
 end,nil) 
 end,nil) 
@@ -14892,15 +14904,23 @@ end,nil)
 end,nil)
 end 
 if text == 'نزلني' or text == 'نزيلني' and GetChannelMember(msg) then 
-if not database:get(bot_id..'Cick:Me'..msg.chat_id_) then 
+tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
+local rtp = Rutba(msg.sender_user_id_,msg.chat_id_)
+local Msguser = tonumber(database:get(bot_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_) or 1)
+local msg_id = msg.id_/2097152/0.5
 local Text = ": هل انت متاكد  من تنزيلك من جميع الرتب: "
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text="نعم",callback_data="nzllne"..msg.sender_user_id_},{text="لا",callback_data="noKikedMe"..msg.sender_user_id_}},
 }
-local msg_id = msg.id_/2097152/0.5
+local function getpro(extra, result, success)
+if result.photos_[0] then
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end 
+end end
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
+end,nil)
 end
 if text == 'اطردني' or text == 'طردني' and GetChannelMember(msg) then   
 if not database:get(bot_id..'Cick:Me'..msg.chat_id_) then
@@ -15464,7 +15484,7 @@ local List = {
 ]],
 [[
 𖡋 𝐔𝐒𝐄 #username 
-𖡋 𝐌𝐒𝐆 #msgs 
+𖡋 𝐌𝐒?? #msgs 
 𖡋 𝐒𝐓𝐀 #stast 
 𖡋 𝐈𝐃 #id 
 𖡋 𝐄𝐃𝐈𝐓 #edit
@@ -15911,7 +15931,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 𝒔𝒕𝒂𓂅 #stast 𓍯
-𝐮𝐬𝐞𝐫𓂅 #username 𓍯
+𝐮𝐬??𝐫𓂅 #username 𓍯
 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯
 𝐢𝐝 𓂅 #id 𓍯
 𓂅 𝗖𝗛 - ♤@eLmLoK0♤ ♤.
@@ -17427,8 +17447,8 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♤ 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼',url="https://my.telegram.org/auth?to=delete"},{text = '♤ 𝙴𝙽𝚂𝚃𝙰', url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}}, 
-{{text = '♤ 𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺', url="https://www.facebook.com/help/deleteaccount"},{text = '♤ 𝚂𝙽𝙰𝙱𝚂𝙷𝙰𝚃', url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}}, 
+{{text = '𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎',url="https://my.telegram.org/auth?to=delete"},{text = '𝒆𝒏𝒔𝒕𝒂', url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}}, 
+{{text = '𝒇𝒂𝒄𝒆𝒃𝒐𝒐𝒌', url="https://www.facebook.com/help/deleteaccount"},{text = '𝒔𝒏𝒂𝒃𝒔𝒉𝒂𝒕', url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}}, 
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 local msg_id = msg.id_/2097152/0.5
@@ -17799,28 +17819,28 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°',url='http://t.me/eLmLoK0'}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ♤ ︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ♤ ♤ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if (data and data.code_ and data.code_ == 3) then 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°',url='http://t.me/eLmLoK0'}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ♤ ︙البوت ليس ادمن يرجى ترقيتي !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ♤ ♤البوت ليس ادمن يرجى ترقيتي !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if data and data.code_ and data.code_ == 400 and data.message_ == "USER_ADMIN_INVALID" then 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°',url='http://t.me/eLmLoK0'}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ♤ ︙عذرا لا استطيع طرد ادمنية الكروب*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ♤ ♤عذرا لا استطيع طرد ادمنية الكروب*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if data and data.ID and data.ID == 'Ok' then
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°',url='http://t.me/eLmLoK0'}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ♤ ︙الحمد لله ارتحنا منو*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ♤ ♤الحمد لله ارتحنا منو*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 end,nil)   
 end
@@ -18191,7 +18211,7 @@ if Text and Text:match("^(%d+)unbeen(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('unbeen',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18206,7 +18226,7 @@ if Text and Text:match("^(%d+)been(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('been',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18259,7 +18279,7 @@ if Text and Text:match("^(%d+)unMut(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('unMut',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18279,7 +18299,7 @@ if Text and Text:match("^(%d+)Mut(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('Mut',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18317,7 +18337,7 @@ if Text and Text:match("^(%d+)unrestrict(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('unrestrict',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18331,7 +18351,7 @@ if Text and Text:match("^(%d+)restrict(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('restrict',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18369,7 +18389,7 @@ if Text and Text:match("^(%d+)UpS(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('UpS',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18602,7 +18622,7 @@ if Text and Text:match("^(%d+)Basic(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('Basic',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18618,7 +18638,7 @@ if Text and Text:match("^(%d+)Constructor(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('Constructor',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18634,7 +18654,7 @@ if Text and Text:match("^(%d+)Manager(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('Manager',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18650,7 +18670,7 @@ if Text and Text:match("^(%d+)Mod(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('Mod',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18666,7 +18686,7 @@ if Text and Text:match("^(%d+)Special(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('Special',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18682,7 +18702,7 @@ if Text and Text:match("^(%d+)unUpS(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('unUpS',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18761,7 +18781,7 @@ if Text and Text:match("^(%d+)unBasic(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('unBasic',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18810,7 +18830,7 @@ if Text and Text:match("^(%d+)unConstructor(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('unConstructor',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18892,7 +18912,7 @@ if Text and Text:match("^(%d+)unManager(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('unManager',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -18974,7 +18994,7 @@ if Text and Text:match("^(%d+)unmod(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('unmod',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -19056,7 +19076,7 @@ if Text and Text:match("^(%d+)unSpecial(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('unSpecial',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -19139,7 +19159,7 @@ if Text and Text:match("^(%d+)Bbk(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('Bbk',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -19157,7 +19177,7 @@ if Text and Text:match("^(%d+)DelLsta(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('DelLsta',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText = '♤︙عذرا الاوامر هذه لا تخصك'
+local notText = '♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -19194,7 +19214,7 @@ if Text and Text:match("^(%d+)Devban(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('Devban',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -19210,7 +19230,7 @@ if Text and Text:match("^(%d+)SirSudoGp(.*)$") then
 local notId  = Text:match("(%d+)")  
 local userid = Text:gsub('SirSudoGp',''):gsub(notId,'')
 if tonumber(data.sender_user_id_) ~= tonumber(notId) then  
-local notText ='♤ ︙عذرا الاوامر هذه لا تخصك'
+local notText ='♤ ♤عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -19246,10 +19266,10 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" ☆ تم تنزيلك من جميع الرتب")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  تم تنزيلك من جميع الرتب")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if Text == 'noKikedMe'..data.sender_user_id_ then  
-local Text ="☆ تم الغاء الأمر بنجاح "
+local Text =" تم الغاء الأمر بنجاح "
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
@@ -19381,6 +19401,61 @@ keyboard.inline_keyboard = {
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ', url="t.me/eLmLoK0"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+end
+
+if Text == '/bodyy1' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+local Text ='تم ترتيب الاوامر بالشكل التالي\n♤ايدي - ا .\n♤مميز - م .\n♤ادمن - اد .\n♤مدير - مد . \n♤منشى - من .\n♤المنشئ الاساسي - اس .\n♤تعطيل الايدي بالصوره - تعط .\n♤تفعيل الايدي بالصوره - تفع .\n♤تنزيل الكل - تك .\n♤اضف رد - رد .\n♤حذف رد - حذ .\n♤تثبيت - ت '
+database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"ا")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":م","رفع مميز")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"م")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":اد","رفع ادمن")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"اد")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":مد","رفع مدير")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"مد")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":من","رفع منشئ")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"من")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":اس","رفع منشئ اساسي")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"اس")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصوره")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"تك")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":رد","اضف رد")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"رد")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":حذ","حذف رد")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"حذ")
+ database:set(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..":ت","تثبيت")
+ database:sadd(bot_id.."List:Cmd:Group:New"..msg.chat_id_,"ت")
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text =' اخفاء الكليشه ', callback_data="/hide"},
+},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+if Text == '/bodyyy2' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+local Text ='♤ تـم رفع الادمنيه بنجاح'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text =' اخفاء الكليشه ', callback_data="/hide"},
+},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 
 if Text == '/help1' then
