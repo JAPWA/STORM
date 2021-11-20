@@ -3369,26 +3369,23 @@ end,nil)
 end
 
 if text == 'SOURCE' or text == 'سورس' or text == 'السورس' or text == 'source' or text == 'يا سورس' or text == 'سورسي' then 
-tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
-local rtp = Rutba(msg.sender_user_id_,msg.chat_id_)
-local Msguser = tonumber(database:get(bot_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_) or 1)
-local msg_id = msg.id_/2097152/0.5
-local tessttmos = 'اسم بوت ⇐ '..Namebot..''
-local Text = "سورس"
+local Text = [[
+┏━-━━━━━━-━━━━━━━-━┓
+              𓆩[𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)𓆪
+              
+   𓆩[𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 𝒐𝒏 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎](http://t.me/eLmLoK0)𓆪
+
+             𓆩[𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)𓆪
+┗━-━━━━━━-━━━━━━━-━┛
+]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝒎𝒚 𝒅𝒆𝒗 ', callback_data="/units"},{text = '𝒎𝒚 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ', callback_data="/theytry"}},  
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ',url="https://t.me/eLmLoK0"}}, 
 {{text = 'أضفہ ألبہوتہ أليہ مہجہمہوعہتہكہ°' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
-local function getpro(extra, result, success)
-if result.photos_[0] then
-https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
-end,nil)
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/timo_019/40&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
@@ -14904,23 +14901,21 @@ end,nil)
 end,nil)
 end 
 if text == 'نزلني' or text == 'نزيلني' and GetChannelMember(msg) then 
-tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
-local rtp = Rutba(msg.sender_user_id_,msg.chat_id_)
-local Msguser = tonumber(database:get(bot_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_) or 1)
-local msg_id = msg.id_/2097152/0.5
+if not bot_data:get(ban_id..'Cick:Me'..msg.chat_id_) then 
 local Text = ": هل انت متاكد  من تنزيلك من جميع الرتب: "
+local tessttmos = 'اسم بوت ⇐ '..Namebot..''
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text="نعم",callback_data="nzllne"..msg.sender_user_id_},{text="لا",callback_data="noKikedMe"..msg.sender_user_id_}},
+{
+{text="نعم",callback_data="nzllne"..msg.sender_user_id_},
+},
+{
+{text="لا",callback_data="noKikedMe"..msg.sender_user_id_},
+},
 }
-local function getpro(extra, result, success)
-if result.photos_[0] then
-https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else
+local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
-end,nil)
+end 
 end
 if text == 'اطردني' or text == 'طردني' and GetChannelMember(msg) then   
 if not database:get(bot_id..'Cick:Me'..msg.chat_id_) then
@@ -16343,7 +16338,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ⚕𝙐𝙎𝙀𝙍??𝘼𝙈𝙀 : #username
-⚕𝙈𝙀𝙎𝙎??𝙂??𝙎 : #msgs
+⚕𝙈𝙀𝙎𝙎??𝙂𝙀𝙎 : #msgs
 ⚕𝙎𝙏𝘼𝙏𝙎 : #stast
 ⚕𝙄𝘿 : #id
 ⚕??𝙀𝙒𝙀𝙇𝙎 : #game
