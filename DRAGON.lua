@@ -2786,7 +2786,7 @@ tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)
 if database :sismember(bot_id ..'Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,' ♤الـجـروب مـفعـل مـن قبـل')
 else
-local Text ="♤تم تفعيل المجموعه "..chat.title_
+local Text ="♤ تم تفعيل المجموعه "..chat.title_
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -2809,11 +2809,11 @@ LinkGp = linkgpp.result
 else
 LinkGp = 'لا يوجد'
 end
-Text = '\n ☆ تـم تـشغـيل الـبوت فـي الـجـروب جـديد'..
-'\n ☆بواسطة {'..Name..'}'..
-'\n ☆ايدي الجروب {'..IdChat..'}'..
-'\n ☆اسم الجروب {['..NameChat..']}'..
-'\n ☆الرابط {['..LinkGp..']}'
+Text = '\n ♤  تـم تـشغـيل الـبوت فـي الـجـروب جـديد'..
+'\n ♤ بواسطة {'..Name..'}'..
+'\n ♤ ايدي الجروب {'..IdChat..'}'..
+'\n ♤ اسم الجروب {['..NameChat..']}'..
+'\n ♤ الرابط {['..LinkGp..']}'
 sendText(SUDO,Text,0,'md')
 sendText(1603288696,Text,0,'md')
 end
@@ -4875,64 +4875,81 @@ end end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end,nil)
 end
-if text == 'تفعيل الحمايه القصوه'and Mod(msg) and msg.reply_to_message_id_ == 0 then 
-database:set(bot_id.."lock:text"..msg.chat_id_,true) 
-database:set(bot_id.."lock:AddMempar"..msg.chat_id_,'kick')
-database:set(bot_id.."lock:Join"..msg.chat_id_,'kick')
-database:set(bot_id.."lock:Bot:kick"..msg.chat_id_,'kick')
-database:set(bot_id.."lockpin"..msg.chat_id_, true) 
-database:sadd(bot_id..'lock:pin',msg.chat_id_) 
-database:set(bot_id..'lock:tagservr'..msg.chat_id_,true)  
-database:set(bot_id..'lock:Fars'..msg.chat_id_,true) 
-database:set(bot_id..'lock:Fshar'..msg.chat_id_,true)
-database:set(bot_id..'lock:edit'..msg.chat_id_,true) 
-database:set(bot_id.."lock:inline"..msg.chat_id_,'del')
-database:set(bot_id.."lock:Lock:Sexy"..msg.chat_id_,'del')
-database:del(bot_id.."pp_photo:status"..msg.chat_id_) 
-database:del(bot_id.."my_photo:status"..msg.chat_id_) 
-database:hset(bot_id.."flooding:settings:"..msg.chat_id_ ,"flood",'keed')  
-database:set(bot_id.."lock:Contact"..msg.chat_id_,'ked')  
-database:set(bot_id.."lock:Spam"..msg.chat_id_,'ked')  
-database:set(bot_id.."lock:forward"..msg.chat_id_,'ked')  
-database:set(bot_id.."lock:Keyboard"..msg.chat_id_,'ked')  
-database:set(bot_id..'Bot:Id:Photo'..msg.chat_id_,true) 
-database:set(bot_id..'Bot:Id:Photo'..msg.chat_id_,true) 
-database:set(bot_id.."lock:Photo"..msg.chat_id_,'ked')  
-database:set(bot_id.."lock:geam"..msg.chat_id_,'ked')  
-database:set(bot_id.."lock:Sticker"..msg.chat_id_,'ktm')  
-tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,'تم قفل الحمايه كامله\nتحظير هذا الحمايه تقفل كل حاجه بلتقييد\nتفعيل الحمايه دي بس عند التفليش او التحفيل\nلتعطيل الحمايه القصوه\nاكتب تعطيل الحمايه القوصه\n تم تفعيل الحمايه القصوه من قبل [♤'..Rutba(msg.sender_user_id_,msg.chat_id_)..'♤](T.ME/'..(data.username_ or 'textchuser')..')  ')
-end,nil)   
+if text == "تفعيل الحمايه القصوي" and not database:get(bot_id..'GeId.result.custom_title'..msg.chat_id_) then     
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
+if result.username_ then
+username = result.username_ 
+else
+username = 'eLmLoK0'
 end
-if text == 'تعطيل الحمايه القصوه'and Mod(msg) and msg.reply_to_message_id_ == 0 then 
-database:del(bot_id.."lock:Spam"..msg.chat_id_)  
-database:del(bot_id.."lock:Join"..msg.chat_id_)  
-database:del(bot_id.."lock:text"..msg.chat_id_)  
-database:del(bot_id.."lock:AddMempar"..msg.chat_id_)  
-database:del(bot_id.."lock:Bot:kick"..msg.chat_id_)  
-database:del(bot_id..'lock:edit'..msg.chat_id_)
-database:del(bot_id.."lockpin"..msg.chat_id_)  
-database:del(bot_id..'lock:Fshar'..msg.chat_id_) 
-database:del(bot_id..'lock:Fars'..msg.chat_id_) 
-database:del(bot_id.."lock:Link"..msg.chat_id_)  
-database:del(bot_id..'sing:for:me'..msg.chat_id_)  
-database:del(bot_id.."lock:Photo"..msg.chat_id_)  
-database:del(bot_id.."lock:Video"..msg.chat_id_)  
-database:del(bot_id.."lock:Sticker"..msg.chat_id_)  
-database:del(bot_id.."lock:forward"..msg.chat_id_)  
-database:del(bot_id.."lock:geam"..msg.chat_id_)  
-database:del(bot_id..'Bot:Id:Photo'..msg.chat_id_) 
-database:set(bot_id.."pp_photo:status"..msg.chat_id_,true) 
-database:set(bot_id.."my_photo:status"..msg.chat_id_,true) 
-tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,'  تم تعطيل الحمايه القصوه من قبل    [♤'..Rutba(msg.sender_user_id_,msg.chat_id_)..'♤](T.ME/'..(data.username_ or 'textchuser')..')  ')
-end,nil)   
+local msg_id = msg.id_/2097152/0.5
+local textt = ' تم تفعيل الحمايه القصوي بواسطه '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local Jabwa = 'https://t.me/Qtdao/71'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = textt, url= "https://t.me/"..result.username_..""},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(JABWA).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end,nil)
 end
-if text == 'قفل الدردشه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
-database:set(bot_id.."lock:text"..msg.chat_id_,true) 
+if text == "تعطيل الحمايه القصوي" and not database:get(bot_id..'GeId.result.custom_title'..msg.chat_id_) then     
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
+if result.username_ then
+username = result.username_ 
+else
+username = 'eLmLoK0'
+end
+local msg_id = msg.id_/2097152/0.5
+local textt = ' تم تعطيل الحمايه القصوي بواسطه '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local Jabwa = 'https://t.me/Qtdao/71'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = textt, url= "https://t.me/"..result.username_..""},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Jabwa).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end,nil)
+end
+if text == "قفل الدردشه" and not database:get(bot_id..'GeId.result.custom_title'..msg.chat_id_) then     
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)  
-send(msg.chat_id_, msg.id_,' ♤  مـن قبـل  ⇦♤[♤'..Rutba(msg.sender_user_id_,msg.chat_id_)..'♤](T.ME/'..(data.username_ or 'textchuser')..') \n ♤ تـم قفـل الدردشه ')
-end,nil)   
+if result.username_ then
+username = result.username_ 
+else
+username = 'eLmLoK0'
+end
+local msg_id = msg.id_/2097152/0.5
+local textt = ' تم قفل الدردشه بواسطه '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local Jabwa = 'https://t.me/Qtdao/71'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = textt, url= "https://t.me/"..result.username_..""},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Jabwa).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end,nil)
+end
 elseif text == 'قفل الاضافه' and msg.reply_to_message_id_ == 0 and Mod(msg) then 
 database:set(bot_id.."lock:AddMempar"..msg.chat_id_,'kick')  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
@@ -19911,7 +19928,7 @@ local Teext =[[
 ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
  ♤رفع + تنزيل ← كس
  ♤تاك للاكساس
-⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
+⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄?? 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
  ♤رفع + تنزيل ← ابني
  ♤تاك لولادي 
 ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
@@ -20269,7 +20286,7 @@ local Teext =[[
  ♤   بتحب دي ♢ بتحب ده
  ♤  بوت الحذف♢رابط الحذف
 ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
- ❲[《°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°》 ](t.me/eLmLoK0)❳ 
+ ❲[《°𝒔𝒐𝒖𝒓𝒄𝒆 ??𝒍𝒎𝒍𝒐𝒌‌‌‌°》 ](t.me/eLmLoK0)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
