@@ -1635,38 +1635,47 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 
-if text == ("المطورين") and SudoBot(msg) then
+if text == ("المطورين") and msa3d(msg) then
 local list = database:smembers(bot_id..'Sudo:User')
-t = "\n ♤ قائمة المطورين \n⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n"
+t = "\n  قائمة مطورين البوت \n⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n"
+keyboard = {
+{{text=" مسح المطورين ",callback_data="/DelSudoBot"}},
+}
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
-t = t..""..k.."- ♤ '..v..' ♤\n"
+t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = " ♤ لا يوجد مطورين"
+t = "  لا يوجد مطورين خلاص اتمسحه "
+keyboard = nil
 end
-send(msg.chat_id_, msg.id_, t)
+local msg_id = msg.id_/2097152/0.5
+send_inline_key(msg.chat_id_,t,nil,keyboard,msg_id)
 end
-if text == ("قائمه العام") and SudoBot(msg) then
-local list = database:smembers(bot_id..'GBan:User')
-t = "\n ♤ قائمه المحظورين عام \n⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n"
+if text == ("قائمه العام") and msa3d(msg) then
+local list = database:smembers(bot_id..'GDRG:User')
+t = "\n  قائمه المحظورين عام \n⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\n"
+keyboard = {
+{{text=" مسح القائمه ",callback_data="/DELGDRGUSER"}},
+}
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
-t = t..""..k.."- ♤ '..v..' ♤\n"
+t = t..""..k.."- 『 '..v..' 』\n"
 end
 end
 if #list == 0 then
-t = " ♤ لا يوجد محظورين عام"
+t = "لا يوجد محظورين عام"
+keyboard = nil
 end
-send(msg.chat_id_, msg.id_, t)
-return false
+local msg_id = msg.id_/2097152/0.5
+send_inline_key(msg.chat_id_,t,nil,keyboard,msg_id)
 end
 if text == ("قائمه الكتم العام") and SudoBot(msg) then
 local list = database:smembers(bot_id..'Gmute:User')
@@ -17122,10 +17131,9 @@ end
 return false
 end
 local Text =[[
-اهلا بك في اوامر المجموعه.🚦
-⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
-اختر الامر الذي تريده بـ الأسفل.⬇️
-[°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°](t.me/eLmLoK0)
+اهــلا بــك فــي اوامـــر المـجـمـوعــه ⚡️
+[✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧ ✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧](t.me/eLmLoK0)
+اخـتـر الامـر الـذي تـريـده بالاسـفـل ⇓⇑
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
