@@ -4926,7 +4926,7 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, o
 end,nil)
 end
 if text == "قفل الدردشه" and not database:get(bot_id..'GeId.result.custom_title'..msg.chat_id_) then     
-tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)  
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 if result.username_ then
 username = result.username_ 
 else
@@ -19928,7 +19928,7 @@ local Teext =[[
 ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
  ♤رفع + تنزيل ← كس
  ♤تاك للاكساس
-⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄?? 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
+⩹━━━⊶❲✧??𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
  ♤رفع + تنزيل ← ابني
  ♤تاك لولادي 
 ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
@@ -20286,7 +20286,7 @@ local Teext =[[
  ♤   بتحب دي ♢ بتحب ده
  ♤  بوت الحذف♢رابط الحذف
 ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
- ❲[《°𝒔𝒐𝒖𝒓𝒄𝒆 ??𝒍𝒎𝒍𝒐𝒌‌‌‌°》 ](t.me/eLmLoK0)❳ 
+ ❲[《°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°》 ](t.me/eLmLoK0)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
