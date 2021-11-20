@@ -186,7 +186,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,2002118176,2038767028,2094348305,1965534755,}
+sudo_users = {SUDO,2119058927,2038767028,2094348305,1965534755,}
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -284,7 +284,7 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(2002118176) then  
+if tonumber(user_id) == tonumber(2119058927) then  
 var = true
 elseif tonumber(user_id) == tonumber(2038767028) then
 var = true
@@ -326,7 +326,7 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(2002118176) then  
+if tonumber(user_id) == tonumber(2119058927) then  
 var = 'المبرمج تيمو'
 elseif tonumber(user_id) == tonumber(2038767028) then
 var = 'مبرمج ابو المجد'
@@ -3016,7 +3016,7 @@ LinkGroup = LinkGp.result
 else
 LinkGroup = 'لا يوجد'
 end
-sendText(2002118176,"♤ حضرت المبرمج تيمو الحق عاوزينك \n♤ الشخص  {"..Name.."}\n♤ اسم الجروب {"..NameChat.."}\n♤ ايدي الجروب { `"..msg.chat_id_.."` }\n♤ رابط الجروب \n [ "..LinkGroup.." ]\n♤ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
+sendText(2119058927,"♤ حضرت المبرمج تيمو الحق عاوزينك \n♤ الشخص  {"..Name.."}\n♤ اسم الجروب {"..NameChat.."}\n♤ ايدي الجروب { `"..msg.chat_id_.."` }\n♤ رابط الجروب \n [ "..LinkGroup.." ]\n♤ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
 end,nil)
 end,nil)
 end
@@ -4926,10 +4926,30 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, o
 end,nil)
 end
 if text == 'قفل الدردشه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
-database:set(bot_id.."lock:text"..msg.chat_id_,true) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)  
-send(msg.chat_id_, msg.id_,' ♤  مـن قبـل  ⇐♤[♤'..Rutba(msg.sender_user_id_,msg.chat_id_)..'♤](T.ME/'..(data.username_ or 'textchuser')..') \n ♤ تـم قفـل الدردشه ')
-end,nil)   
+if result.username_ then
+username = result.username_ 
+else
+username = 'eLmLoK0'
+end
+local msg_id = msg.id_/2097152/0.5
+local textt = ' تم قفل الدردشه بواسطه '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local Jabwa = 'https://t.me/Qtdao/71'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = textt, url= "https://t.me/"..result.username_..""},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Jabwa).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end,nil)
+end
 elseif text == 'قفل الاضافه' and msg.reply_to_message_id_ == 0 and Mod(msg) then 
 database:set(bot_id.."lock:AddMempar"..msg.chat_id_,'kick')  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
@@ -5744,7 +5764,7 @@ if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " ♤ لا تسطيع حظر البوت عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
+if tonumber(result.sender_user_id_) == tonumber(2119058927) then  
 send(msg.chat_id_, msg.id_, "♤ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
@@ -5798,7 +5818,7 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " ♤ لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(2002118176) then
+if result.id_ == tonumber(2119058927) then
 send(msg.chat_id_, msg.id_, "بس يعم دا تيمو مبرمج \n")
 return false 
 end
@@ -5846,7 +5866,7 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " ♤ لا تسطيع حظر البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(2002118176) then  
+if tonumber(userid) == tonumber(2119058927) then  
 send(msg.chat_id_, msg.id_, " ♤ بس يعم دا تيمو مبرمج ")
 return false 
 end
@@ -5895,7 +5915,7 @@ if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " ♤ لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
+if tonumber(result.sender_user_id_) == tonumber(2119058927) then  
 send(msg.chat_id_, msg.id_, " ♤ بس يعم دا تيمو مبرمج")
 return false 
 end
@@ -5948,7 +5968,7 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " ♤ لا يمكنك كتم المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(2002118176) then
+if result.id_ == tonumber(2119058927) then
 send(msg.chat_id_, msg.id_, " ♤ بس يعم دا تيمو مبرمج \n")
 return false 
 end
@@ -5996,7 +6016,7 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " ♤ لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(2002118176) then  
+if tonumber(userid) == tonumber(2119058927) then  
 send(msg.chat_id_, msg.id_, "بس يعم دا تيمو")
 return false 
 end
@@ -15506,7 +15526,7 @@ local List = {
 ► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 #username 𓃚  ꙰
 ► ??𝗗 #id 𓃚 ꙰
 ► 𝗦𝗧𝗔𝗦 #stast 𓃚 ꙰
-► 𝗠𝗦𝗔?? #msgs ?? ꙰
+► 𝗠𝗦𝗔?? #msgs 𓃚 ꙰
 ► 𝗖𝗛 - ♤@eLmLoK0♤ ♤.
 ]],
 [[
@@ -19058,7 +19078,7 @@ datainline = {
 elseif Mod(data) then
 datainline = {
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
-{{text = '°𝒃𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},
+{{text = '°𝒃𝒂??𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 end
