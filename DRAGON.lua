@@ -19240,7 +19240,7 @@ if not CoSu(data) then
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-local Text =' تم تنزيلك من جميع الرتب'
+local Text ="تم تنزيلك من جميع الرتب"
 os.execute('rm -rf DRAGON.lua')
 os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' تم تنزيل جميع الرتب')
@@ -19280,7 +19280,6 @@ if not CoSu(data) then
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-local Text =' تم الغاء الامر بنجاح'
 os.execute('rm -rf DRAGON.lua')
 os.execute('wget https://raw.githubusercontent.com/JAPWA/STORM/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' تم الغاء الامر بنجاح')
@@ -19945,7 +19944,7 @@ local Teext =[[
 🎖┇ 𝙱𝙰??𝙸𝙲 𝙳𝙴𝚅????𝙾𝙿𝙴?? 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .
 ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
  ♤ اهلا بك عزيزي 🔊
- ♤ اوامر مطور الاساسي 👨🏼‍✈️
+ ♤ اوامر مطور الاساسي ??🏼‍✈️
  ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
  ♤ تفعيل
  ♤ تعطيل
