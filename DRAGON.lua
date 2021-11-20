@@ -3309,6 +3309,17 @@ end
 end
 end,nil)   
 end
+if text == 'نزلني' or text == 'نزيلني' and GetChannelMember(msg) then 
+if not database:get(bot_id..'Cick:Me'..msg.chat_id_) then 
+local Text = "هل انت متاكد  من تنزيلك من جميع الرتب"
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text="نعم",callback_data="nzllne"..msg.sender_user_id_},{text="لا",callback_data="noKikedMe"..msg.sender_user_id_}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end 
+end
 if text == 'التحديث ' or text == 'تحديث السورس' or text == 'تحديث' and not database:get(bot_id..'Namebot'..msg.chat_id_) then     
 tdcli_function ({ID = "GetUser",user_id_ = bot_id, offset_},function(extra,result,success)
 local msg_id = msg.id_/2097152/0.5  
@@ -3560,7 +3571,7 @@ keyboard = {} keyboard.inline_keyboard = {
 {{text = 'لقاء مع كاتب رعب', url="https://t.me/rwayatelmlok/6"},{text = 'الانسان الاخير', url="https://t.me/rwayatelmlok/15"}},
 {{text = '⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺', url="https://t.me/eLmLoK0"}},
 {{text = '𝒕𝒊𝒎𝒐',url="t.me/ttimo_8lby"}},
-{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
+{{text = '°𝒔??𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/timo_019/16&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -17204,13 +17215,13 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'العاب السورس🕹', callback_data="/mute-name"},{text = 'مميزات🎪', callback_data="/change-photo"},
+{text = 'العاب السورس', callback_data="/mute-name"},{text = 'مميزات🎪', callback_data="/change-photo"},
 },
 {
-{text = 'العاب متطوره🎮', callback_data="/sofi"},
+{text = 'العاب متطوره', callback_data="/sofi"},
 },
 {
-{text = 'الاوامر🎡', callback_data="/help90"},
+{text = 'الاوامر', callback_data="/help90"},
 },
 {
 {text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"},
@@ -17340,7 +17351,7 @@ send(msg.chat_id_, msg.id_," ☆ مريم  معطله")
 return false  
 end
 local Text = [[
-ا🚶‍♂طـفـي الـنـور واسـتـمـتـع بالـلـعـبـه🚶‍♂
+اطـفـي الـنـور واسـتـمـتـع بالـلـعـبـه🚶‍♂
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -17429,7 +17440,8 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♤ 𝒃𝒐𝒕', url="t.me/LC6BOT"}}, 
+{{text = ' 𝒃𝒐𝒕', url="t.me/LC6BOT"}}, {text = ' 𝒃𝒐𝒕', url="t.me/DTeLebot"}}, 
+{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/LC6BOT&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -18173,6 +18185,33 @@ keyboard.inline_keyboard = {
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+
+if Text == 'nzllne'..data.sender_user_id_ then if database:sismember(bot_id.."Sudo:User",data.sender_user_id_) then dev = "المطور ،" else dev = "" end
+if database:sismember(bot_id..'CoSu'..msg.chat_id_, data.sender_user_id_) then cu = 'مالك ،' else cu = "" end
+if database:sismember(bot_id.."Basic:Constructor"..msg.chat_id_, data.sender_user_id_) then crr = "منشئ اساسي ،" else crr = "" end
+if database:sismember(bot_id..'Constructor'..msg.chat_id_, data.sender_user_id_) then cr = "منشئ ،" else cr = "" end
+if database:sismember(bot_id..'Manager'..msg.chat_id_, data.sender_user_id_) then own = "مدير ،" else own = "" end
+if database:sismember(bot_id..'S00F4:MN:TF'..msg.chat_id_, data.sender_user_id_) then mn = 'منظف ،' else mn = '' end
+if database:sismember(bot_id..'Mod:User'..msg.chat_id_, data.sender_user_id_) then mod = "ادمن ،" else mod = "" end
+if database:sismember(bot_id..'Special:User'..msg.chat_id_, data.sender_user_id_) then vip = "مميز ،" else vip = "" end
+if Can_or_NotCan(data.sender_user_id_,msg.chat_id_) ~= false then local text = "\n 🦅 تم تنزيلك من الرتب التاليه \n 🦅  { "..dev..""..crr..""..cr..""..own..""..mod..""..mn..""..vip.." } \n"
+else
+local text = "\n  انت لاتمتلك رتبه \n"
+end
+database:srem(bot_id.."Sudo:User", data.sender_user_id_)
+database:srem(bot_id.."CoSu"..msg.chat_id_,data.sender_user_id_)
+database:srem(bot_id.."Basic:Constructor"..msg.chat_id_,data.sender_user_id_)
+database:srem(bot_id..'Constructor'..msg.chat_id_, data.sender_user_id_)
+database:srem(bot_id..'Manager'..msg.chat_id_, data.sender_user_id_)
+database:srem(bot_id..'Mod:User'..msg.chat_id_, data.sender_user_id_)
+database:srem(bot_id..'S00F4:MN:TF'..msg.chat_id_, data.sender_user_id_)
+database:srem(bot_id..'Special:User'..msg.chat_id_, data.sender_user_id_)
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ',url="https://t.me/eLmLoK0"}}, 
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" 🦅تم تنزيلك من جميع الرتب")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if Text and Text:match("^(%d+)unbeen(.*)$") then
@@ -20010,7 +20049,7 @@ keyboard.inline_keyboard = {
 {{text = 'لعبه كشف الكذب', callback_data="/help47"}},
 {{text = 'مريم', callback_data="/help36"},{text = 'عقاب', callback_data="/help42"}},
 {{text = '◗القائمه الرائسيه◖', callback_data="/add"}},
-{{text = '°𝒔𝒐𝒖??𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
+{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
