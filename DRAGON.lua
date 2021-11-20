@@ -14901,7 +14901,7 @@ end,nil)
 end,nil)
 end 
 if text == 'نزلني' or text == 'نزيلني' and GetChannelMember(msg) then 
-if not bot_data:get(ban_id..'Cick:Me'..msg.chat_id_) then 
+if not database:get(bot_id..'Cick:Me'..msg.chat_id_) then 
 local Text = ": هل انت متاكد  من تنزيلك من جميع الرتب: "
 local tessttmos = 'اسم بوت ⇐ '..Namebot..''
 keyboard = {} 
