@@ -14901,7 +14901,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {
 {text="نعم",callback_data="nzllne"..msg.sender_user_id_},
-}.
+},
 {
 {text="لا",callback_data="noKikedMe"..msg.sender_user_id_},
 },
