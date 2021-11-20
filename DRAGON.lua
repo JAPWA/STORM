@@ -17440,7 +17440,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' 𝒃𝒐𝒕', url="t.me/LC6BOT"}}, {text = ' 𝒃𝒐𝒕', url="t.me/DTeLebot"}}, 
+{{text = ' 𝒃𝒐𝒕', url="t.me/LC6BOT"}, {text = ' 𝒃𝒐𝒕', url="t.me/DTeLebot"}}, 
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 local msg_id = msg.id_/2097152/0.5
