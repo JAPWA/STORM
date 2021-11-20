@@ -4925,31 +4925,11 @@ end end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end,nil)
 end
-if text == "قفل الدردشه" and not database:get(bot_id..'GeId.result.custom_title'..msg.chat_id_) then     
-tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
-if result.username_ then
-username = result.username_ 
-else
-username = 'eLmLoK0'
-end
-local msg_id = msg.id_/2097152/0.5
-local textt = ' تم قفل الدردشه بواسطه '..Rutba(msg.sender_user_id_,msg.chat_id_)
-local Jabwa = 'https://t.me/Qtdao/71'
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = textt, url= "https://t.me/"..result.username_..""},
-},
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Jabwa).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
-end,nil)
-end
+if text == 'قفل الدردشه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
+database:set(bot_id.."lock:text"..msg.chat_id_,true) 
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)  
+send(msg.chat_id_, msg.id_,' ♤  مـن قبـل  ⇦♤[♤'..Rutba(msg.sender_user_id_,msg.chat_id_)..'♤](T.ME/'..(data.username_ or 'textchuser')..') \n ♤ تـم قفـل الدردشه ')
+end,nil)   
 elseif text == 'قفل الاضافه' and msg.reply_to_message_id_ == 0 and Mod(msg) then 
 database:set(bot_id.."lock:AddMempar"..msg.chat_id_,'kick')  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
@@ -15510,7 +15490,7 @@ local List = {
 [[
 𖤂 ~ 𝑢𝑠𝑒 #username  𖤐
 𖤂 ~ 𝑚??𝑔 #msgs 𖤐
-𖤂 ~ 𝑠𝑡𝑎 #stast  
+𖤂 ~ 𝑠??𝑎 #stast  
 𖤂 ~ 𝑖𝑑 #id 𖤐
 𖤂 ~ 𝑒𝑑𝑖𝑡 #edit 𖤐
 𖤂 ~ 𝗖𝗛 - ♤@eLmLoK0♤ ♤.
@@ -18475,7 +18455,7 @@ datainlineText = "لديه رتبه مدير"
 datainline = {
 {{text ='♤  منشئ',callback_data=data.sender_user_id_.."Constructor"..userid}},
 {{text = '°𝒃𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
+{{text = '°𝒔𝒐𝒖𝒓𝒄?? 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 elseif database:sismember(bot_id..'Mod:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه ادمن"
@@ -19928,7 +19908,7 @@ local Teext =[[
 ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
  ♤رفع + تنزيل ← كس
  ♤تاك للاكساس
-⩹━━━⊶❲✧??𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
+⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
  ♤رفع + تنزيل ← ابني
  ♤تاك لولادي 
 ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
