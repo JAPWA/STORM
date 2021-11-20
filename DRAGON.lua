@@ -17332,14 +17332,15 @@ database:del(bot_id.."my_maryam:status"..msg.chat_id_)
 send(msg.chat_id_, msg.id_," ♤ تـم تـعـطـيل مريم") 
 return false end
 end
+
 if text == 'مريم' then
-local my_ph = bot_data:get(ban_id.."my_maryam:status"..msg.chat_id_)
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_," ☆ مريم  معطله") 
 return false  
 end
 local Text = [[
-🥀اطفي النور واستمتع بلعبه •
+ا🚶‍♂طـفـي الـنـور واسـتـمـتـع بالـلـعـبـه🚶‍♂
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -20009,7 +20010,7 @@ keyboard.inline_keyboard = {
 {{text = 'لعبه كشف الكذب', callback_data="/help47"}},
 {{text = 'مريم', callback_data="/help36"},{text = 'عقاب', callback_data="/help42"}},
 {{text = '◗القائمه الرائسيه◖', callback_data="/add"}},
-{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
+{{text = '°𝒔𝒐𝒖??𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
