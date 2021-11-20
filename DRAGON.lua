@@ -3424,7 +3424,7 @@ keyboard.inline_keyboard = {
 {{text = '𝒈𝒓𝒐𝒖𝒑',url="t.me/e_L_m_L_o_K"},{text = '𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ',url="t.me/eLmLoK0"}},
 {{text = '𝒃𝒐𝒕 𝒕𝒊𝒎𝒐',url="t.me/Timo8Bot"}}, 
 } 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/t_imoo/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'ابو المجد' or text == 'مبرمج ابو المجد' or text == 'المبرمج' or text == 'ABOELMAGD' then 
@@ -11707,18 +11707,6 @@ t = t..i.."-  `"..v.."` \n"
 end
 send(msg.chat_id_, msg.id_, t..'⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺\nاضغط علي الاسم ليتم نسخه\n⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺ٴ\n ♤ ❲[°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ](t.me/eLmLoK0)❳ ♤ ')
 end
-if text == "تعطيل اليوتيوب" and Manager(msg) then
-send(msg.chat_id_, msg.id_, 'تم تعطيل اليوتيوب')
-database:set(bot_id.."AY:youtube"..msg.chat_id_,"close")
-end
-if text == "تفعيل اليوتيوب" and Manager(msg) then
-send(msg.chat_id_, msg.id_,'تم تفعيل اليوتيوب')
-database:set(bot_id.."AY:youtube"..msg.chat_id_,"open")
-end
-if text and text:match("^بحث (.*)$") and database:get(bot_id.."AY:youtube"..msg.chat_id_) == "open" then
-local text = text:match("^بحث (.*)$")
-https.request('https://fierce-retreat-69845.herokuapp.com/youtube.php?text='..text..'&chat_id='..msg.chat_id_..'&message_id='..msg.id_..'&token='..token..'&id='..msg.sender_user_id_)
-end
 if text == "ضع رابط" or text == 'وضع رابط' then
 if msg.reply_to_message_id_ == 0  and Mod(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
@@ -15971,7 +15959,7 @@ Msᴀɢ ~ #msgs
 👳🏼‍♂ - 𝄬 id . #id . 🇪🇬
 👳🏼‍♂ - 𝄬 auto . #auto . 🇪🇬
 👳🏼‍♂ - 𝄬 msgs . #msgs . 🇪🇬
-👳🏼‍♂ - 𝄬 𝗖𝗛 - ♤@eLmLoK0♤.
+👳??‍♂ - 𝄬 𝗖𝗛 - ♤@eLmLoK0♤.
 ]],
 [[
 ➭- 𝒔𝒕𝒂𓂅 #stast 𓍯. 💕
@@ -19343,21 +19331,6 @@ keyboard.inline_keyboard = {
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
-if text and text:match("^yout (.*)$") then
-local id = text:match("^yout (.*)$")
-https.request('https://fierce-retreat-69845.herokuapp.com/youtube.php?data='..id..'&chat_id='..data.chat_id_..'&message_id='..Msg_id/2097152/0.5..'&token='..token)
-return false
-end
-if text and text:match("^mp4@(.*)$") then
-local id = text:match("^mp4@(.*)$")
-https.request('https://fierce-retreat-69845.herokuapp.com/youtube.php?YYYBD=mp4&chat_id='..data.chat_id_..'&message_id='..Msg_id/2097152/0.5..'&token='..token..'&id='..id)
-return false
-end
-if text and text:match("^mp3@(.*)$") then
-local id = text:match("^mp3@(.*)$")
-https.request('https://fierce-retreat-69845.herokuapp.com/youtube.php?YYYBD=mp3&chat_id='..data.chat_id_..'&message_id='..Msg_id/2097152/0.5..'&token='..token..'&id='..id)
-return false
-end
 
 if Text == '/help1' then
 if not Mod(data) then
@@ -19757,7 +19730,7 @@ local Teext =[[
  ♤   بتحب دي ♢ بتحب ده
  ♤  بوت الحذف♢رابط الحذف
 ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
-❲[°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ](t.me/eLmLoK0)❳ 
+❲[°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆??𝒎𝒍𝒐𝒌‌‌‌° ](t.me/eLmLoK0)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
