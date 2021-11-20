@@ -19237,7 +19237,6 @@ return false
 end
 if Text == 'nzllne'..data.sender_user_id_ then if database:sismember(bot_id.."Sudo:User",data.sender_user_id_) then dev = "المطور ،" else dev = "" end
 if not CoSu(data) then
-local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
@@ -19278,7 +19277,6 @@ end end
 end
 if Text == 'noKikedMe'..data.sender_user_id_ then 
 if not CoSu(data) then
-local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
