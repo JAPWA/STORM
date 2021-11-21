@@ -6348,15 +6348,45 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/wffhvv/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == "لو خيروك بالصور" and not  bot_data:get(ban_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(1,24); 
-local Text ='مرحبا اليك لو خيروك بالصوره🍁🌝' 
+if text == "لو خيروك بالصور" and not  bot_data:get(ban_id.."sing:for:me"..msg.chat_id_) then
+ban = math.random(1,33); 
+local Text ='مرحبا اليك لو خيروك بالصوره ✨🌚' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'كتابات أخري', callback_data="/asr4"}}, 
+{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/kbbnv/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SourceSaidi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "انصحني بالصور" and not  bot_data:get(ban_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(1,28); 
+local Text ='مرحبا اليك انصحني بالصور ✨🌚' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/TIMO_JABWA2/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "رمزيات ولاد" or text ==  "صور ولاد"  and not  bot_data:get(ban_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(1,62); 
+local Text = 'تـم اخـتيار هـذه الـصوره لـك ✨🌚'
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/elmlok990/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "رمزيات بنات" or text ==  "صور بنات"  and not  bot_data:get(ban_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(1,62); 
+local Text = 'تـم اخـتيار هـذه الـصوره لـك ✨🌚'  
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/elmlokk0/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 
@@ -12475,7 +12505,7 @@ kickme = '✘'
 end
 NUM_MSG_MAX = bot_data:hget(ban_id.."flooding:settings:"..msg.chat_id_,"floodmax") or 0
 local text = 
-'\n◃────𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈────▹'..
+'\n◃────𝘚𝘖??𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈────▹'..
 '\n ۝ اعدادات الجروب كتالي √↓'..
 '\n◃────𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈────▹'..
 '\n ۝  علامة ال {✓} تعني مفعل'..
@@ -14008,7 +14038,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝚃𝙱𝙰', url="t.me/su_hatba"}},
+{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙷??𝚃𝙱𝙰', url="t.me/su_hatba"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/gam_bol/13&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -16387,7 +16417,7 @@ return false
 end
 https.request("https://api.telegram.org/bot"..token.."/restrictChatMember?chat_id="..Chat_id.."&user_id="..userid)
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},}
+keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈??𝘉𝘈', url="t.me/su_hatba"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*۝ تــم تقييــده بنجــاح*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 return false
