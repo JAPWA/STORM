@@ -3909,10 +3909,10 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 ----------------------------------------------------------------- انتهئ الاوامر الجديدة
-if text == 'ردود' or text == 'تفعيل ردود السورس' or text == 'تعطيل ردود السورس' and not database:get(bot_id..'Namebot'..msg.chat_id_) then     
-tdcli_function ({ID = "GetUser",user_id_ = bot_id, offset_},function(extra,result,success)
+if text == 'ردود' or text == 'تفعيل ردود السورس' or text == 'تعطيل ردود السورس' and not bot_data:get(ban_id..'Namebot'..msg.chat_id_) then     
+tdcli_function ({ID = "GetUser",user_id_ = ban_id, offset_},function(extra,result,success)
 local msg_id = msg.id_/2097152/0.5  
-local textt = "V_I_K_I_N_G_1"..(database:get(bot_id..'Name:Bot') or 'صعيدي')
+local textt = "V_I_K_I_N_G_1"..(bot_data:get(ban_id..'Name:Bot') or 'صعيدي')
 local DRAGON = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -3932,7 +3932,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 else 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(DRAGON).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_, offset_ = 0, limit_ = 1 }, getpro, nil) 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end,nil)
 end
 
@@ -3960,7 +3960,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sezr_su/26&caption='  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'تحكم' or text == 'تحكم رتبه' or text == 'التحكم' or text == 'رتبه' and not database:get(bot_id..'Namebot'..msg.chat_id_) then     
+if text == 'تحكم' or text == 'تحكم رتبه' or text == 'التحكم' or text == 'رتبه' and not bot_data:get(ban_id..'Namebot'..msg.chat_id_) then     
 function start_function(extra, result, success)
 local keyboard = {
 {{text ='۝  حظر',callback_data=msg.sender_user_id_.."been"..result.sender_user_id_},{text ='۝  الغاء حظر',callback_data=msg.sender_user_id_.."unbeen"..result.sender_user_id_}},
@@ -4666,8 +4666,8 @@ send(msg.chat_id_, msg.id_,'['..vdragonv_Msg[math.random(#vdragonv_Msg)]..']')
 return false 
 end
 if text == "صراحه" or text == "الصراحه" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
-if not database:get(bot_id..'Cick:rkko'..msg.chat_id_) then
-database:set(bot_id..":"..msg.sender_user_id_..":rkko_Bots"..msg.chat_id_,"sendrkkoe")
+if not bot_data:get(ban_id..'Cick:rkko'..msg.chat_id_) then
+bot_data:set(ban_id..":"..msg.sender_user_id_..":rkko_Bots"..msg.chat_id_,"sendrkkoe")
 local LEADER_Msg = {
 "صراحه  |  صوتك حلوة؟",
 "صراحه  |  التقيت الناس مع وجوهين؟",
@@ -16222,7 +16222,7 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-database:srem(bot_id..'Ban:User'..Chat_id, userid)
+bot_data:srem(ban_id..'Ban:User'..Chat_id, userid)
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = Chat_id, user_id_ = userid, status_ = { ID = "ChatMemberStatusLeft" },},function(arg,ban) end,nil)   
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},}
@@ -16237,7 +16237,7 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-if database:get(bot_id..'Lock:kick'..Chat_id) and not Constructor(data) then
+if bot_data:get(ban_id..'Lock:kick'..Chat_id) and not Constructor(data) then
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" *۝ تم تعطيل الحظر*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -16249,7 +16249,7 @@ keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_us
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("*۝ لا تستطيع (كتم،طرد،حظر،تققيد) مطور السورس او الاساسي*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false
 end
-if tonumber(userid) == tonumber(bot_id) then  
+if tonumber(userid) == tonumber(ban_id) then  
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" *۝ لا تسطيع حظر البوت* ")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -16273,7 +16273,7 @@ keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_us
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(' *۝ البوت ليس ادمن يرجى ترقيتي !*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false  
 end
-database:sadd(bot_id..'Ban:User'..Chat_id, userid)
+bot_data:sadd(ban_id..'Ban:User'..Chat_id, userid)
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*۝ تـــم حظـــره بنجـــاح*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -16290,13 +16290,13 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-if not database:sismember(bot_id..'Muted:User'..Chat_id,userid) then
+if not bot_data:sismember(ban_id..'Muted:User'..Chat_id,userid) then
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*۝ الشخص غير مكتوم*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false
 end
-database:srem(bot_id..'Muted:User'..Chat_id, userid)
+bot_data:srem(ban_id..'Muted:User'..Chat_id, userid)
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*۝ تــم الغــاء كتمــه*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -16310,7 +16310,7 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-if tonumber(userid) == tonumber(bot_id) then  
+if tonumber(userid) == tonumber(ban_id) then  
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = '۝ 𝙱𝙰??𝙺',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape( " *۝ لا تسطيع كتم البوت* ")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -16333,7 +16333,7 @@ keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_us
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(' *۝ البوت ليس ادمن يرجى ترقيتي !*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false  
 end
-database:sadd(bot_id..'Muted:User'..Chat_id, userid)
+bot_data:sadd(ban_id..'Muted:User'..Chat_id, userid)
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*۝ تــم كتمــه بنجــاح*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -16362,7 +16362,7 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-if tonumber(userid) == tonumber(bot_id) then  
+if tonumber(userid) == tonumber(ban_id) then  
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape( " *۝ لا تسطيع تقييد البوت* ")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -16401,20 +16401,20 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 if CoSu (data) then
-if database:sismember(bot_id..'Basic:Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
 datainlineText = "لديه رتبه منشئ اساسي"
 datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Constructor'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 datainlineText = "لديه رتبه منشئ"
 datainline = {
 {{text ='۝  منشئ اساسي',callback_data=data.sender_user_id_.."Basic"..userid}},
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Manager'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 datainlineText = "لديه رتبه مدير"
 datainline = {
 {{text ='۝  منشئ',callback_data=data.sender_user_id_.."Constructor"..userid}},
@@ -16422,7 +16422,7 @@ datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Mod:User'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه ادمن"
 datainline = {
 {{text ='۝  مدير',callback_data=data.sender_user_id_.."Manager"..userid}},
@@ -16431,7 +16431,7 @@ datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Special:User'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه مميز"
 datainline = {
 {{text ='۝  ادمن',callback_data=data.sender_user_id_.."mod"..userid}},
@@ -16454,20 +16454,20 @@ datainline = {
 }
 end
 elseif BasicConstructor(data) then
-if database:sismember(bot_id..'Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك اعلى رتبه تستطيع  رفعه لها"
 datainline = {	
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Manager'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 datainlineText = "لديه رتبه مدير"
 datainline = {
 {{text ='۝  منشئ',callback_data=data.sender_user_id_.."Constructor"..userid}},
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '°𝒔𝒐𝒖𝒓𝒄?? 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
-elseif database:sismember(bot_id..'Mod:User'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه ادمن"
 datainline = {
 {{text ='۝  مدير',callback_data=data.sender_user_id_.."Manager"..userid}},
@@ -16475,7 +16475,7 @@ datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Special:User'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه مميز"
 datainline = {
 {{text ='۝  ادمن',callback_data=data.sender_user_id_.."mod"..userid}},
@@ -16496,32 +16496,32 @@ datainline = {
 }
 end
 elseif Constructor(data) then
-if database:sismember(bot_id..'Basic:Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه اعلى من رتبتك"
 datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Constructor'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه مشابهه ل رتبتك"
 datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Manager'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك اعلى رتبه تستطيع  رفعه لها"
 datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Mod:User'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه ادمن"
 datainline = {
 {{text ='۝  مدير',callback_data=data.sender_user_id_.."Manager"..userid}},
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Special:User'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه مميز"
 datainline = {
 {{text ='۝  ادمن',callback_data=data.sender_user_id_.."mod"..userid}},
@@ -16540,31 +16540,31 @@ datainline = {
 }
 end
 elseif Manager(data) then
-if database:sismember(bot_id..'Basic:Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه اعلى من رتبتك"
 datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '۝ 𝚂𝙾𝚄𝚁??𝙴 𝒆𝒍𝒎𝒍𝒐𝒌', url="t.me/eLmLoK0"}},
 }
-elseif database:sismember(bot_id..'Constructor'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه مشابهه ل رتبتك"
 datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Manager'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه مشابهه ل رتبتك"
 datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Mod:User'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك اعلى رتبه تستطيع  رفعه لها"
 datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Special:User'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه مميز"
 datainline = {
 {{text ='۝ ادمن',callback_data=data.sender_user_id_.."mod"..userid}},
@@ -16581,31 +16581,31 @@ datainline = {
 }
 end
 elseif Mod(data) then
-if database:sismember(bot_id..'Basic:Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه اعلى من رتبتك"
 datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Constructor'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه اعلى من رتبتك"
 datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Manager'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه اعلى من رتبتك"
 datainline = {
 {{text = '۝ 𝙱??𝙲𝙺',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Mod:User'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه مشابهه ل رتبتك"
 datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
 }
-elseif database:sismember(bot_id..'Special:User'..Chat_id,userid) then
+elseif bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك اعلى رتبه تستطيع  رفعه لها"
 datainline = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
@@ -16633,7 +16633,7 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-database:sadd(bot_id..'Basic:Constructor'..data.chat_id_, userid)
+bot_data:sadd(ban_id..'Basic:Constructor'..data.chat_id_, userid)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
@@ -16649,7 +16649,7 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-database:sadd(bot_id..'Constructor'..data.chat_id_, userid)
+bot_data:sadd(ban_id..'Constructor'..data.chat_id_, userid)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '°𝒃𝒂𝒄??°',callback_data=data.sender_user_id_.."Bbk"..userid}},
@@ -16665,7 +16665,7 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-database:sadd(bot_id..'Manager'..data.chat_id_, userid)
+bot_data:sadd(ban_id..'Manager'..data.chat_id_, userid)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
@@ -16681,7 +16681,7 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-database:sadd(bot_id..'Mod:User'..data.chat_id_, userid)
+bot_data:sadd(ban_id..'Mod:User'..data.chat_id_, userid)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
@@ -16697,7 +16697,7 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-database:sadd(bot_id..'Special:User'..data.chat_id_, userid)
+bot_data:sadd(ban_id..'Special:User'..data.chat_id_, userid)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
@@ -16713,27 +16713,27 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-if database:sismember(bot_id..'Basic:Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
 Ba = " ✔"
 else
 Ba = "❌"
 end
-if database:sismember(bot_id..'Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 Co = " ✔"
 else
 Co = "❌"
 end
-if database:sismember(bot_id..'Manager'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 Ma = " ✔"
 else
 Ma = "❌"
 end
-if database:sismember(bot_id..'Mod:User'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 Mo = " ✔"
 else
 Mo = "❌"
 end
-if database:sismember(bot_id..'Special:User'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 Sp = " ✔"
 else
 Sp = "❌"
@@ -16792,30 +16792,30 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-if database:sismember(bot_id..'Basic:Constructor'..Chat_id,userid) then
-database:srem(bot_id..'Basic:Constructor'..Chat_id,userid)
+if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
+bot_data:srem(ban_id..'Basic:Constructor'..Chat_id,userid)
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape("تــم تنزيلــه بنجــاح (✔)").."&show_alert=true")
 Ba = "❌"
 else
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape("بالفعــل هــو ليــس منشــئ اساســي ❌").."&show_alert=true")
 Ba = "❌"
 end
-if database:sismember(bot_id..'Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 Co = " ✔"
 else
 Co = "❌"
 end
-if database:sismember(bot_id..'Manager'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 Ma = " ✔"
 else
 Ma = "❌"
 end
-if database:sismember(bot_id..'Mod:User'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 Mo = " ✔"
 else
 Mo = "❌"
 end
-if database:sismember(bot_id..'Special:User'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 Sp = " ✔"
 else
 Sp = "❌"
@@ -16841,30 +16841,30 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-if database:sismember(bot_id..'Constructor'..Chat_id,userid) then
-database:srem(bot_id..'Constructor'..Chat_id,userid)
+if bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
+bot_data:srem(ban_id..'Constructor'..Chat_id,userid)
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape("تــم تنزيلــه بنجــاح (✔)").."&show_alert=true")
 Co = "❌"
 else
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape("بالفعل هو ليس بمنشئ ❌").."&show_alert=true")
 Co = "❌"
 end
-if database:sismember(bot_id..'Basic:Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
 Ba = " ✔"
 else
 Ba = "❌"
 end
-if database:sismember(bot_id..'Manager'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 Ma = " ✔"
 else
 Ma = "❌"
 end
-if database:sismember(bot_id..'Mod:User'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 Mo = " ✔"
 else
 Mo = "❌"
 end
-if database:sismember(bot_id..'Special:User'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 Sp = " ✔"
 else
 Sp = "❌"
@@ -16923,30 +16923,30 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-if database:sismember(bot_id..'Manager'..Chat_id,userid) then
-database:srem(bot_id..'Manager'..Chat_id,userid)
+if bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
+bot_data:srem(ban_id..'Manager'..Chat_id,userid)
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape("تــم تنزيلــه بنجــاح (✔)").."&show_alert=true")
 Ma = "❌"
 else
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape("بالفعل هو ليس بمدير ❌").."&show_alert=true")
 Ma = "❌"
 end
-if database:sismember(bot_id..'Basic:Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
 Ba = " ✔"
 else
 Ba = "❌"
 end
-if database:sismember(bot_id..'Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 Co = " ✔"
 else
 Co = "❌"
 end
-if database:sismember(bot_id..'Mod:User'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 Mo = " ✔"
 else
 Mo = "❌"
 end
-if database:sismember(bot_id..'Special:User'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 Sp = " ✔"
 else
 Sp = "❌"
@@ -17005,30 +17005,30 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-if database:sismember(bot_id..'Mod:User'..Chat_id,userid) then
-database:srem(bot_id..'Mod:User'..Chat_id,userid)
+if bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
+bot_data:srem(ban_id..'Mod:User'..Chat_id,userid)
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape("تــم تنزيلــه بنجــاح (✔)").."&show_alert=true")
 Mo = "❌"
 else
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape("بالفعل هو ليس بأدمن ❌").."&show_alert=true")
 Mo = "❌"
 end
-if database:sismember(bot_id..'Manager'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 Ma = " ✔"
 else
 Ma = "❌"
 end
-if database:sismember(bot_id..'Basic:Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
 Ba = " ✔"
 else
 Ba = "❌"
 end
-if database:sismember(bot_id..'Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 Co = " ✔"
 else
 Co = "❌"
 end
-if database:sismember(bot_id..'Special:User'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 Sp = " ✔"
 else
 Sp = "❌"
@@ -17087,30 +17087,30 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-if database:sismember(bot_id..'Special:User'..Chat_id,userid) then
-database:srem(bot_id..'Special:User'..Chat_id,userid)
+if bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
+bot_data:srem(ban_id..'Special:User'..Chat_id,userid)
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape("تــم تنزيلــه بنجــاح (✔)").."&show_alert=true")
 Sp = "❌"
 else
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape("بالفعــل هو ليــس مميــز ❌").."&show_alert=true")
 Sp = "❌"
 end
-if database:sismember(bot_id..'Manager'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 Ma = " ✔"
 else
 Ma = "❌"
 end
-if database:sismember(bot_id..'Basic:Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
 Ba = " ✔"
 else
 Ba = "❌"
 end
-if database:sismember(bot_id..'Constructor'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 Co = " ✔"
 else
 Co = "❌"
 end
-if database:sismember(bot_id..'Mod:User'..Chat_id,userid) then
+if bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 Mo = " ✔"
 else
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape("بالفعــل هــو ليــس ادمــن ❌").."&show_alert=true")
@@ -17190,25 +17190,25 @@ return false
 end
 if userid == "55" then
 Vs = 'تم مسح المطورين'
-database:del(bot_id..'Sudo:User')
+bot_data:del(ban_id..'Sudo:User')
 elseif userid == "77" then
 Vs = 'تم مسح المالكين'
-database:del(bot_id..'CoSu'..msg.chat_id_)
+bot_data:del(ban_id..'CoSu'..msg.chat_id_)
 elseif userid == "99" then
 Vs = 'تم مسح المنشئين الاساسيين'
-database:del(bot_id..'Basic:Constructor'..msg.chat_id_)
+bot_data:del(ban_id..'Basic:Constructor'..msg.chat_id_)
 elseif userid == "120" then
 Vs = 'تم مسح المنشئين'
-database:del(bot_id..'Constructor'..msg.chat_id_)
+bot_data:del(ban_id..'Constructor'..msg.chat_id_)
 elseif userid == "140" then
 Vs = 'تم مسح المدراء'
-database:del(bot_id..'Manager'..msg.chat_id_)
+bot_data:del(ban_id..'Manager'..msg.chat_id_)
 elseif userid == "160" then
 Vs = 'تم مسح الادمنيه'
-database:del(bot_id..'Mod:User'..msg.chat_id_)
+bot_data:del(ban_id..'Mod:User'..msg.chat_id_)
 elseif userid == "180" then
 Vs = 'تم مسح المميزين'
-database:del(bot_id..'Special:User'..msg.chat_id_)
+bot_data:del(ban_id..'Special:User'..msg.chat_id_)
 end
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -17225,7 +17225,7 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-database:sadd(bot_id.."Dev:ban:2", userid)
+bot_data:sadd(ban_id.."Dev:ban:2", userid)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
@@ -17241,7 +17241,7 @@ local notText ='۝ ۝عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-database:sadd(bot_id.."SirSudoGp", userid)
+bot_data:sadd(ban_id.."SirSudoGp", userid)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},
@@ -18155,7 +18155,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Text = '• تم تفعيل ردود السورس '
-bot_data:set(bot_id.."my_GHoeq2:status"..Chat_id,true)  
+bot_data:set(ban_id.."my_GHoeq2:status"..Chat_id,true)  
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -18171,7 +18171,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Text = '• تم تعطيل ردود السورس '
-bot_data:del(bot_id.."my_GHoeq2:status"..Chat_id)  
+bot_data:del(ban_id.."my_GHoeq2:status"..Chat_id)  
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -21501,8 +21501,8 @@ send(msg.chat_id_, msg.id_,xl)
 bot_data:del(ban_id..":"..msg.sender_user_id_..":rjo_Bots"..msg.chat_id_)
 end
 if text == "صراحه" or text == "الصراحه" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
-if not database:get(bot_id..'Cick:rkko'..msg.chat_id_) then
-database:set(bot_id..":"..msg.sender_user_id_..":rkko_Bots"..msg.chat_id_,"sendrkkoe")
+if not bot_data:get(ban_id..'Cick:rkko'..msg.chat_id_) then
+bot_data:set(ban_id..":"..msg.sender_user_id_..":rkko_Bots"..msg.chat_id_,"sendrkkoe")
 local LEADER_Msg = {
 "صراحه  |  صوتك حلوة؟",
 "صراحه  |  التقيت الناس مع وجوهين؟",
