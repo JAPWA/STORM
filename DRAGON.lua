@@ -3493,6 +3493,9 @@ local Jabwa = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
+{text = tessttmos, url = "http://t.me/"..sudos.UserName},
+},
+{
 {text = 'غنيلي ويجز', callback_data="/wigze"},{text = 'غنيلي تامر حسني', callback_data="/tmrho"},
 },
 {
@@ -3515,6 +3518,9 @@ keyboard.inline_keyboard = {
 },
 {
 {text = 'غنيلي كايروكي', callback_data="/powuc"},{text = 'غنيلي بابلو', callback_data="/iopwl"},
+},
+{
+{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"},
 },
 }
 local function getpro(extra, result, success) 
@@ -15432,7 +15438,7 @@ local List = {
 ]],
 [[
 𓄼🇪🇭 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
-𓄼🇪🇭 𝑺𝒕𝒂𝒔𝒕 : #stast    ☥
+𓄼🇪🇭 ??𝒕𝒂𝒔𝒕 : #stast    ☥
 𓄼🇪🇭 𝒊𝒅 : #id ‌‌‏⚚
 𓄼🇪🇭 𝑮𝒂𝒎𝒆𝑺 : #edit ⚚
 𓄼🇪🇭 𝑴𝒔𝒈𝒔 : #msgs 𓆊
@@ -20457,7 +20463,7 @@ W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 °𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍�
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' 𝒕𝒊𝒎𝒐',url="t.me/ttimo_8lby"},{text = '𝒎𝒐𝒔𝒕𝒂𝒇𝒂',url="t.me/J_A_B_W_A"}},
+{{text = ' 𝒕𝒊𝒎𝒐',url="t.me/ttimo_8lby"},{text = '𝒎𝒐??𝒕𝒂𝒇𝒂',url="t.me/J_A_B_W_A"}},
 {{text = ' 𝒐𝒎𝒂𝒓',url="t.me/teemElmelok"},{text = '𝒂𝒃𝒐 𝒆𝒍𝒎𝒂𝒈𝒅',url="t.me/ABO_ELMAGD2"}},
 {{text = '°𝒃𝒂𝒄𝒌°', callback_data="/HHH"}},
 }
