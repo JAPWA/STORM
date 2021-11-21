@@ -17885,167 +17885,6 @@ keyboard.inline_keyboard = {
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
-if text == "/loxop" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/loxop"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
-if text == "/iopwl" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/iopwl"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/powuc" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/powuc"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/prldx" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/prldx"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/tamra" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/tamra"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/fkina" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/fkina"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/sdidh" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/sdidh"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/uspxd" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/uspxd"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/timop" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/timop"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/sezrt" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/sezrt"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/tmrho" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/tmrho"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/amrdya" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/amrdya"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/wigze" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/wigze"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/hmaky" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/hmaky"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/opeav" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/opeav"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "/timseez" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(3,42); 
-local Text ='لاختيار اغنيه اخري اتك ع زر بالاسفل' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'اغنيه اخري', callback_data="/timseez"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/emeuii /'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 if Text == '/question1' then
 local Teext =[[
 ♤ من اول شخص قال سبحان ربي الاعلى
@@ -18598,7 +18437,7 @@ elseif database:sismember(bot_id..'Constructor'..Chat_id,userid) then
 datainlineText = "لديه رتبه منشئ"
 datainline = {
 {{text ='♤  منشئ اساسي',callback_data=data.sender_user_id_.."Basic"..userid}},
-{{text = '°𝒃??𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},
+{{text = '°𝒃𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
 elseif database:sismember(bot_id..'Manager'..Chat_id,userid) then
@@ -20286,7 +20125,7 @@ local Teext =[[
  اختر الامر الذي تريدها .↑⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
 ده من الازرار بلاسفل . ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
 ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
- ❲[°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎??𝒐𝒌‌‌‌° ](t.me/eLmLoK0)❳ 
+ ❲[°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ](t.me/eLmLoK0)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
