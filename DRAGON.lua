@@ -17511,29 +17511,41 @@ Text = '\n ♤ تم تعطيل الردود'
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'روابط حذف' or text == 'رابط حذف' or text == 'رابط الحذف' then
-local Text = [[
-روابــط حــذف حــســابــات ♤
-]]
+tdcli_function ({ID = "GetUser",user_id_ = bot_id, offset_},function(extra,result,success)
+local msg_id = msg.id_/2097152/0.5  
+local textt = "eLmLoK0"..(database:get(bot_id..'Name:Bot') or 'الملوك')
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎',url="https://my.telegram.org/auth?to=delete"},{text = '𝒆𝒏𝒔𝒕𝒂', url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}}, 
 {{text = '𝒇𝒂𝒄𝒆𝒃𝒐𝒐𝒌', url="https://www.facebook.com/help/deleteaccount"},{text = '𝒔𝒏𝒂𝒃𝒔𝒉𝒂𝒕', url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}}, 
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/timo_019/19&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Jabwa).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end,nil)
 end
 if text == 'بوت الحذف' or text == 'بوت حذف' or text == 'بوت حذف حسابات' then
-local Text = [[
-بــــوت حـــذف حــســابــات ♤
-]]
+tdcli_function ({ID = "GetUser",user_id_ = bot_id, offset_},function(extra,result,success)
+local msg_id = msg.id_/2097152/0.5  
+local textt = "eLmLoK0"..(database:get(bot_id..'Name:Bot') or 'الملوك')
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = ' 𝒃𝒐𝒕', url="t.me/LC6BOT"}, {text = ' 𝒃𝒐𝒕', url="t.me/DTeLebot"}}, 
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/LC6BOT&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Jabwa).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end,nil)
 end
 if text == 'تغير المطور الاساسي' and SudoBot(msg) then
 database:set(bot_id..'new:sudo'..msg.chat_id_..msg.sender_user_id_,'id') 
@@ -18360,7 +18372,7 @@ return false
 end
 database:srem(bot_id..'Muted:User'..Chat_id, userid)
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '°??𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},}
+keyboard.inline_keyboard = {{{text = '°𝒃𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*♤ تــم الغــاء كتمــه*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false
 end
