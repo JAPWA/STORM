@@ -3363,7 +3363,7 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_, offse
 end,nil)
 end
 
-if text == 'SOURCE' or text == 'سورس' or text == 'السورس' or text == 'source' or text == 'يا سورس' or text == 'سورسي' then 
+if text == 'يا سورس' or text == 'سورس' or text == 'السورس' or text == 'عايز بوت' or text == 'عايزه بوت' or text == 'مين نصبلك' then 
 tdcli_function ({ID = "GetUser",user_id_ = bot_id, offset_},function(extra,result,success)
 local msg_id = msg.id_/2097152/0.5  
 local textt = "eLmLoK0"..(database:get(bot_id..'Name:Bot') or 'الملوك')
@@ -3383,26 +3383,6 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end,nil)
-end
-
-if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
-local Text = [[
-┏━-━━━━━━-━━━━━━━-━┓
-              𓆩[𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)𓆪
-              
-   𓆩[𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 𝒐𝒏 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎](http://t.me/eLmLoK0)𓆪
-
-             𓆩[𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)𓆪
-┗━-━━━━━━-━━━━━━━-━┛
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '𝒎𝒚 𝒅𝒆𝒗 ', callback_data="/units"},{text = '𝒎𝒚 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ', callback_data="/theytry"}},  
-{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ', url="t.me/eLmLoK0"}},
-{{text = 'أضفہ ألبہوتہ أليہ مہجہمہوعہتہكہ°' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/timo_019/40&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'تيمو' or text == 'مبرمج تيمو' or text == 'مبرمج السورس' or text == 'TIMO' then 
@@ -4343,7 +4323,7 @@ local TWEET_Msg = {
 "‏ لا تعودني على دفء شمسك● إذا كان في نيتك الغروب .َ 🙂 .!",
 "‏من علامات جمال المرأة .. بختها المايل ! ♤️",
 "‏ علينا إحياء زَمن الرّسائل الورقيّة وسط هذه الفوضى الالكترونية العَارمة.💜 ",
-"‏ : كُلما أتبع قلبي يدلني إليك . 😜",
+"‏ : كُلما أتبع قلبي يدلني إليك . ??",
 "‏ انك الجميع و كل من احتل قلبي🫀🤍 ",
 "‏ بس لما أنا ببقى فايق● ببقى أبكم له ودان.💖 ",
 "‏ ‏ممكن اكون اختارت غلط بس والله حبيت بجد🖇️ ",
@@ -12714,7 +12694,7 @@ local DRAGON_Msg = {
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
 local texxtt = ''..Namebot..''
-local tessttmos = " اسم البوت ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
+local tessttmos = " اسمي ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12750,7 +12730,7 @@ local DRAGON_Msg = {
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
 local texxtt = ''..Namebot..''
-local tessttmos = " اسم البوت ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
+local tessttmos = " اسمي "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
