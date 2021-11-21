@@ -3991,7 +3991,18 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/s_e_z_r0&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-
+if text == 'عايز سورس' or text == 'عايزه سورس' or text == 'محتاج سورس' then
+local Text = [[
+لو حابب تعمل سورس توصل مع المبرمج سيزر ⇊
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر',url="t.me/s_e_z_r0"}},
+{{text = '•ʙᴏᴛ ✰', callback_data="/gqjik"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/s_e_z_r0&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 
 if text=="اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 bot_data:setex(ban_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -12505,7 +12516,7 @@ kickme = '✘'
 end
 NUM_MSG_MAX = bot_data:hget(ban_id.."flooding:settings:"..msg.chat_id_,"floodmax") or 0
 local text = 
-'\n◃────𝘚𝘖??𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈────▹'..
+'\n◃────𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈────▹'..
 '\n ۝ اعدادات الجروب كتالي √↓'..
 '\n◃────𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈────▹'..
 '\n ۝  علامة ال {✓} تعني مفعل'..
@@ -14038,7 +14049,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙷??𝚃𝙱𝙰', url="t.me/su_hatba"}},
+{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝚃𝙱𝙰', url="t.me/su_hatba"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/gam_bol/13&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15349,7 +15360,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 🇪🇬 - 𝄬 username . #username  𓃠
-🇪🇬 - 𝄬 stast . #stast  𓃠
+🇪?? - 𝄬 stast . #stast  𓃠
 🇪🇬 - 𝄬 id . #id 𓃠
 🇪🇬 - 𝄬 gmas . #gmas 𓃠
 🇪🇬 - 𝄬 msgs . #msgs  𓃠
@@ -16417,7 +16428,7 @@ return false
 end
 https.request("https://api.telegram.org/bot"..token.."/restrictChatMember?chat_id="..Chat_id.."&user_id="..userid)
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈??𝘉𝘈', url="t.me/su_hatba"}},}
+keyboard.inline_keyboard = {{{text = 'رجــوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘈𝘛𝘉𝘈', url="t.me/su_hatba"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*۝ تــم تقييــده بنجــاح*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 return false
