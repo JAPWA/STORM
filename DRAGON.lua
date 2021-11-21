@@ -14179,10 +14179,14 @@ else
 username = 'eLmLoK0'
 end
 local msg_id = msg.id_/2097152/0.5  
+local tessttmos = " اسم بوت ⤌ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 local textt = ' ❤️🕊 رتبتك⇐ '..Rutba(msg.sender_user_id_,msg.chat_id_)
 local Jabwa = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
+{
+{text = tessttmos, url = "http://t.me/"..sudos.UserName},
+},
 {
 {text = textt, url="http://t.me/"..username},
 },
@@ -14229,10 +14233,14 @@ else
 username = 'sasa_boody'
 end
 local msg_id = msg.id_/2097152/0.5  
+local tessttmos = " اسم بوت ⤌ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 local textt = ' ❤️🕊 انت يا قلبي⇐'..Rutba(msg.sender_user_id_,msg.chat_id_)
 local Boody = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
+{
+{text = tessttmos, url = "http://t.me/"..sudos.UserName},
+},
 {
 {text = textt, url="http://t.me/"..username},
 },
@@ -15888,7 +15896,7 @@ local List = {
 𝐔𝐬𝐞𝐫𝐍𝐚☤🇪🇬- #username 
 𝐒𝐭𝐚𝐬𝐓 ☤🇪??- #stast 
 ??𝐬𝐠𝐒☤🇪🇬 - #msgs
-𝗖𝗛☤🇪?? - ♤@eLmLoK0♤ ♤.
+𝗖𝗛☤🇪🇬 - ♤@eLmLoK0♤ ♤.
 ]],
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
@@ -19614,7 +19622,7 @@ local Teext =[[
  ♤ المنشئين ♢  مسح المنشئين
  ♤  ❲ + ❳ جميع ماسبق
  ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
-❲[《°𝒔𝒐𝒖𝒓𝒄?? 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°》 ](t.me/eLmLoK0)❳ 
+❲[《°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°》 ](t.me/eLmLoK0)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
