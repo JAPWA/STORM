@@ -14179,7 +14179,7 @@ else
 username = 'eLmLoK0'
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = ' ❤️🕊 رتبتك في البوت⇐ '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = ' ❤️🕊 رتبتك⇐ '..Rutba(msg.sender_user_id_,msg.chat_id_)
 local Jabwa = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14229,7 +14229,7 @@ else
 username = 'sasa_boody'
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = ' ❤️🕊 انت يا قلبي '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = ' ❤️🕊 انت يا قلبي⇐'..Rutba(msg.sender_user_id_,msg.chat_id_)
 local Boody = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14276,7 +14276,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[مع الف سلامه يقلبي متجيش تاني 😹💔🎶](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[يـلا امشي مش عايزينك 😹💔🎶](t.me/eLmLoK0)')
 return false
 end
 
@@ -14286,7 +14286,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ♤ معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خالتك جرت ورايا ❤️🕊](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[هاي ورحمه الله وبركاته ❤️🕊](t.me/eLmLoK0)')
 return false
 end
 
@@ -14296,7 +14296,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خدوني معاكم برايفت والنبي 🥺💜](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[متخدوني معاكو لله 🥺💜](t.me/eLmLoK0)')
 return false
 end
 
@@ -14346,7 +14346,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت الي حلو ياقمر 🤤🕊](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[لا وحشه 🤤🕊](t.me/eLmLoK0)')
 return false
 end
 
@@ -14356,7 +14356,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[موت بعيد م ناقصين مصايب 😑😂](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[متموت حد ماسكك 😑😂](t.me/eLmLoK0)')
 return false
 end
 
@@ -14367,7 +14367,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[جتك اوهه م سامع ولا ايي 😹👻](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[مش سامعني ولا ايه 😹👻](t.me/eLmLoK0)')
 return false
 end
 
@@ -14377,7 +14377,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[فرح خالتك قريب 😹💋💃🏻](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[فرحي علي امك قريب 😹💋💃🏻](t.me/eLmLoK0)')
 return false
 end
 
@@ -14397,7 +14397,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[لف ورجع تانى مشحوار 😂🚶‍♂👻](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[امشي تاني 😂🚶‍♂👻](t.me/eLmLoK0)')
 return false
 end
 if text == 'بخ' or text == 'عو' then
@@ -14406,7 +14406,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[يوه خضتني ياسمك اي 🥺💔](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[ياعم خضتني في ايه 🥺💔](t.me/eLmLoK0)')
 return false
 end
 if text == 'حبيبي' or text == 'حبيبتي' then
@@ -14415,7 +14415,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[اوه ياه 🕊😂](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[حبك برص 🕊😂](t.me/eLmLoK0)')
 return false
 end
 if text == 'تمام' or text == 'تمم' then
@@ -14424,7 +14424,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[امك اسمها احلام 😹😹](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[زنقتك في الحمام 😹😹](t.me/eLmLoK0)')
 return false
 end
 if text == 'خلاص' or text == 'خلص' then
@@ -14451,7 +14451,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي ❤️🕊](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[بتضحك علي خبتك ❤️🕊](t.me/eLmLoK0)')
 return false
 end
 if text == '😹' or text == '😹😹😹' then
@@ -14460,7 +14460,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي ❤️🕊](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[بتضحك علي خبتك ❤️🕊](t.me/eLmLoK0)')
 return false
 end
 if text == '🤔' or text == '🤔🤔🤔' then
@@ -14487,7 +14487,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انا عايز مح انا كمان 🥺💛](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[بس ياشاذ 🥺💛](t.me/eLmLoK0)')
 return false
 end
 if text == '😭' or text == '😭😭😭' then
@@ -14496,7 +14496,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[بتعيط تيب لي طيب 😥](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[متعيطش خلاص 😥](t.me/eLmLoK0)')
 return false
 end
 if text == '🥺' or text == '🥺🥺🥺' then
@@ -14514,7 +14514,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[اعدل وشك ونت بتكلمني 😒🙄](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[اعدل وشك دا 😒🙄](t.me/eLmLoK0)')
 return false
 end
 if text == 'بحبك' or text == 'حبق' then
@@ -14523,7 +14523,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وانا كمان بعشقك يا روحي 🤗🥰](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[وانا بعشق امك 🤗🥰](t.me/eLmLoK0)')
 return false
 end
 if text == 'مح' or text == 'هات مح' then
@@ -14532,7 +14532,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[محات حياتي يروحي ❤️🕊](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[ بس ياشاذ 🥺](t.me/eLmLoK0)')
 return false
 end
 if text == 'هلا' or text == 'اهلا' then
@@ -14541,7 +14541,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[هلا بيك ياروحي 👋💛](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[اهلا منورتش 👋💛](t.me/eLmLoK0)')
 return false
 end
 if text == 'هشش' or text == 'اششش' then
@@ -14559,7 +14559,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[دايما ياحبيبي ❤️🕊](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[يارب دايما ياروحي ❤️🕊](t.me/eLmLoK0)')
 return false
 end
 if text == 'بف' or text == 'بص بف' then
@@ -14568,7 +14568,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف 🥺💔](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[ايوه خدها بف واخربها ياوسخ 🥺💔](t.me/eLmLoK0)')
 return false
 end
 if text == 'صباح الخير' or text == 'مساء الخير' then
@@ -14586,7 +14586,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ونجيب اشخاص 😂😜](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[ايوه خدها خاص واخربها ياوسخ 😂😜](t.me/eLmLoK0)')
 return false
 end
 if text == 'سلام عليكم' or text == 'السلام عليكم' then
@@ -14604,7 +14604,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خخخ امال 😹](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[محصلش يا كداب 😹](t.me/eLmLoK0)')
 return false
 end 
 if text == 'اه' or text == 'اها' then
@@ -14613,7 +14613,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[اه اي يا قدع عيب 😹💔](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[اه وجع ولا دلع 😹💔](t.me/eLmLoK0)')
 return false
 end
 if text == 'كسم' or text == 'كسمك' then
@@ -14622,7 +14622,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[عيب ياوسخ 🙄💔](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[عيب يا ابن الوسخه 🙄💔](t.me/eLmLoK0)')
 return false
 end
 if text == 'بوتي' or text == 'يا بوتي' then
@@ -14631,7 +14631,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[روح وعقل بوتك 🥺💔](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[اي يا قلبي 🥺💔](t.me/eLmLoK0)')
 return false
 end
 if text == 'متيجي' or text == 'تع' then
@@ -14640,7 +14640,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[لا عيب بتكسف 😹💔](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[لا تعالي انت 😹💔](t.me/eLmLoK0)')
 return false
 end
 if text == 'هيح' or text == 'لسه صاحي' then
@@ -14649,7 +14649,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[صح النوم 😹💔](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[صباح الزفت 😹💔](t.me/eLmLoK0)')
 return false
 end
 if text == 'صباح النور' or text == 'باح خير' then
@@ -14667,7 +14667,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ده نورك ي قلبي 🕊💙](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[دا نوري انا 🕊💙](t.me/eLmLoK0)')
 return false
 end
 if text == 'باي' or text == 'انا ماشي' then
@@ -14676,7 +14676,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ع فين لوين رايح وسايبنى 🥺💔](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[يلا امشي مش عازينك 🥺💔](t.me/eLmLoK0)')
 return false
 end
 if text == 'ويت' or text == 'ويتت' then
@@ -14694,7 +14694,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[اهدا يوحش ميصحش كدا 😒😹](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[عيب يا ابن الوسخه 😒😹](t.me/eLmLoK0)')
 return false
 end
 
@@ -14708,10 +14708,14 @@ username = 'eLmLoK0'
 end
 local msg_id = msg.id_/2097152/0.5  
 local textt = "• ليس لديك صور "..(database:get(bot_id..'Name:Bot_') or 'اخري •')
+local tessttmos = " اسم بوت ⤌ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 local Jabwa = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard = {} 
 keyboard.inline_keyboard = {
+{
+{text = tessttmos, url = "http://t.me/"..sudos.UserName},
+},
 {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
@@ -15884,7 +15888,7 @@ local List = {
 𝐔𝐬𝐞𝐫𝐍𝐚☤🇪🇬- #username 
 𝐒𝐭𝐚𝐬𝐓 ☤🇪??- #stast 
 ??𝐬𝐠𝐒☤🇪🇬 - #msgs
-𝗖𝗛☤🇪🇬 - ♤@eLmLoK0♤ ♤.
+𝗖𝗛☤🇪?? - ♤@eLmLoK0♤ ♤.
 ]],
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
@@ -19610,7 +19614,7 @@ local Teext =[[
  ♤ المنشئين ♢  مسح المنشئين
  ♤  ❲ + ❳ جميع ماسبق
  ⩹━━━⊶❲✧𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌✧❳⊷━━━⩺
-❲[《°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°》 ](t.me/eLmLoK0)❳ 
+❲[《°𝒔𝒐𝒖𝒓𝒄?? 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°》 ](t.me/eLmLoK0)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
