@@ -17513,11 +17513,12 @@ end
 if text == 'روابط حذف' or text == 'رابط حذف' or text == 'رابط الحذف' then
 tdcli_function ({ID = "GetUser",user_id_ = bot_id, offset_},function(extra,result,success)
 local msg_id = msg.id_/2097152/0.5  
-local textt = "لديك روابط "..(database:get(bot_id..'getChatMember') or 'حذف')  
+local textt = "eLmLoK0"..(database:get(bot_id..'Name:Bot') or 'الملوك')
+local tessttmos = " روابط حذف بوت "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = textt, url= "https://t.me/"..result.username_..""}},
-{{text = '??𝒆𝒍𝒆𝒈𝒓𝒂𝒎',url="https://my.telegram.org/auth?to=delete"},{text = '𝒆𝒏𝒔𝒕𝒂', url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}}, 
+{{text = tessttmos, url = "http://t.me/"..sudos.UserName}},
+{{text = '𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎',url="https://my.telegram.org/auth?to=delete"},{text = '𝒆𝒏𝒔𝒕𝒂', url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}}, 
 {{text = '𝒇𝒂𝒄𝒆𝒃𝒐𝒐𝒌', url="https://www.facebook.com/help/deleteaccount"},{text = '𝒔𝒏𝒂𝒃𝒔𝒉𝒂𝒕', url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}}, 
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
@@ -17533,10 +17534,11 @@ end
 if text == 'بوت الحذف' or text == 'بوت حذف' or text == 'بوت حذف حسابات' then
 tdcli_function ({ID = "GetUser",user_id_ = bot_id, offset_},function(extra,result,success)
 local msg_id = msg.id_/2097152/0.5  
-local textt = "لديك بوتات "..(database:get(bot_id..'getChatMember') or 'حذف')  
+local textt = "eLmLoK0"..(database:get(bot_id..'Name:Bot') or 'الملوك')
+local tessttmos = " بوتات حذف بوت "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = textt, url= "https://t.me/"..result.username_..""}},
+{{text = tessttmos, url = "http://t.me/"..sudos.UserName}},
 {{text = ' 𝒃𝒐𝒕', url="t.me/LC6BOT"}, {text = ' 𝒃𝒐𝒕', url="t.me/DTeLebot"}}, 
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
 }
@@ -18457,7 +18459,7 @@ https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='
 else
 if data.can_be_deleted_ == false then 
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '°𝒃𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},}
+keyboard.inline_keyboard = {{{text = '°𝒃𝒂𝒄𝒌°',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '°??𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(' *♤ البوت ليس ادمن يرجى ترقيتي !*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false  
 end
