@@ -3463,7 +3463,7 @@ if text == 'سوال وجواب' or text == 'سوال' or text == 'جواب' or 
 tdcli_function ({ID = "GetUser",user_id_ = bot_id, offset_},function(extra,result,success)
 local msg_id = msg.id_/2097152/0.5  
 local textt = "eLmLoK0"..(database:get(bot_id..'Name:Bot') or 'الملوك')
-local tessttmos = " اسم بوت ⤌ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
+local tessttmos = " اسم البوت ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 local Jabwa = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -3488,7 +3488,7 @@ if text == 'اغاني' or text == 'غنولي' or text == 'غني' or text == '
 tdcli_function ({ID = "GetUser",user_id_ = bot_id, offset_},function(extra,result,success)
 local msg_id = msg.id_/2097152/0.5  
 local textt = "eLmLoK0"..(database:get(bot_id..'Name:Bot') or 'الملوك')
-local tessttmos = " اسم بوت ⤌ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
+local tessttmos = " اسم البوت ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 local Jabwa = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14179,8 +14179,8 @@ else
 username = 'eLmLoK0'
 end
 local msg_id = msg.id_/2097152/0.5  
-local tessttmos = " اسم بوت ⤌ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
-local textt = ' ❤️🕊 رتبتك⇐ '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local tessttmos = " اسم البوت ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
+local textt = 'رتبتك⇐ '..Rutba(msg.sender_user_id_,msg.chat_id_)
 local Jabwa = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14233,8 +14233,8 @@ else
 username = 'sasa_boody'
 end
 local msg_id = msg.id_/2097152/0.5  
-local tessttmos = " اسم بوت ⤌ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
-local textt = ' ❤️🕊 انت يا قلبي⇐'..Rutba(msg.sender_user_id_,msg.chat_id_)
+local tessttmos = " اسم البوت ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
+local textt = 'انت يا قلبي⇐'..Rutba(msg.sender_user_id_,msg.chat_id_)
 local Boody = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14716,7 +14716,7 @@ username = 'eLmLoK0'
 end
 local msg_id = msg.id_/2097152/0.5  
 local textt = "• ليس لديك صور "..(database:get(bot_id..'Name:Bot_') or 'اخري •')
-local tessttmos = " اسم بوت ⤌ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
+local tessttmos = " اسم البوت ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 local Jabwa = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard = {} 
@@ -14771,9 +14771,13 @@ username = 'eLmLoK0'
 end
 local msg_id = msg.id_/2097152/0.5  
 local textt = "الساعه الان⇐"..os.date("%I:%M%p")
+local tessttmos = " اسم البوت ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 local Sasa3 = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
+{
+{text = tessttmos, url = "http://t.me/"..sudos.UserName},
+},
 {
 {text = textt, url = "https://t.me/"..result.username_..""},
 },
@@ -14796,9 +14800,13 @@ username = 'eLmLoK0'
 end
 local msg_id = msg.id_/2097152/0.5  
 local textt = "التاريخ⇐"..os.date("%Y/%m/%d")
+local tessttmos = " اسم البوت ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 local Sasa3 = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
+{
+{text = tessttmos, url = "http://t.me/"..sudos.UserName}, 
+},
 {
 {text = textt, url = "https://t.me/"..result.username_..""},
 },
@@ -14821,10 +14829,14 @@ else
 username = 'e_l_m_o_l_k'
 end
 local msg_id = msg.id_/2097152/0.5
-local textt = "♤ غيرها بقا الصوره "..(database:get(bot_id..'getChatMember') or 'عفنت ♤')  
+local textt = "اخـر صـوره "..(database:get(bot_id..'getChatMember') or 'لـديـك')  
+local tessttmos = " اسم البوت ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 local Jabwa = 'https://t.me/timo_019/39'
 keyboard = {} 
 keyboard.inline_keyboard = {
+{
+{text = tessttmos, url = "http://t.me/"..sudos.UserName}, 
+},
 {
 {text = textt, url= "https://t.me/"..result.username_..""},
 },
@@ -15141,7 +15153,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..V_I_K_I_N_G_3..']')
 else
-send(msg.chat_id_, msg.id_,' ☆ لا تستطيع استخدام البوت \n ☆  يرجى الاشتراك بالقناه اولا \n ☆  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ♤ لا تستطيع استخدام البوت \n ♤  يرجى الاشتراك بالقناه اولا \n ♤  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -15227,7 +15239,7 @@ else
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي '..Name..' \n¦• 𝚄𝚂𝙴𝚁 ↝  '..Name..'    ↝💘\n¦• 𝙼𝚂𝙶𝚂↝ '..Msguser..'.   ↝💘\n ¦• 𝚁𝙰𝙽𝙺↝ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'    ↝💘\n¦• 𝙸𝙳↝  '..msg.sender_user_id_..'    ↝💘\n¦• 𝒄𝒉↝   @V_I_K_I_N_G_3 ↝🇧??\n')
 else
-send(msg.chat_id_, msg.id_, '\n ☆ الصوره ⋙ ليس لديك صور في حسابك'..'[\n¦• 𝚄𝚂𝙴𝚁 ↝ '..username..'\n¦• 𝙼𝚂𝙶𝚂↝ '..Msguser..'\n¦• 𝙸𝙳↝  '..msg.sender_user_id_..'\n¦• 𝒄𝒉↝  @V_I_K_I_N_G_3\n')
+send(msg.chat_id_, msg.id_, '\n ♤ الصوره ⋙ ليس لديك صور في حسابك'..'[\n¦• 𝚄𝚂𝙴𝚁 ↝ '..username..'\n¦• 𝙼𝚂𝙶𝚂↝ '..Msguser..'\n¦• 𝙸𝙳↝  '..msg.sender_user_id_..'\n¦• 𝒄𝒉↝  @V_I_K_I_N_G_3\n')
 end 
 end
 end
@@ -15263,7 +15275,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..V_I_K_I_N_G_3..']')
 else
-send(msg.chat_id_, msg.id_,' ☆ لا تستطيع استخدام البوت \n ☆  يرجى الاشتراك بالقناه اولا \n ☆  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ♤ لا تستطيع استخدام البوت \n ♤  يرجى الاشتراك بالقناه اولا \n ♤  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -15349,7 +15361,7 @@ else
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي '..Name..' \n¦• 𝚄𝚂𝙴𝚁 ↝  '..Name..'    ↝💘\n¦• 𝙼𝚂𝙶𝚂↝ '..Msguser..'.   ↝💘\n ¦• 𝚁𝙰??𝙺↝ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'    ↝💘\n¦• 𝙸𝙳↝  '..msg.sender_user_id_..'    ↝💘\n¦• 𝒄𝒉↝   @V_I_K_I_N_G_3 ↝🇧??\n')
 else
-send(msg.chat_id_, msg.id_, '\n ☆ الصوره ⋙ ليس لديك صور في حسابك'..'[\n¦• 𝚄??𝙴𝚁 ↝ '..username..'\n¦• 𝙼𝚂𝙶𝚂↝ '..Msguser..'\n¦• 𝙸𝙳↝  '..msg.sender_user_id_..'\n¦• 𝒄𝒉↝  @V_I_K_I_N_G_3\n')
+send(msg.chat_id_, msg.id_, '\n ♤ الصوره ⋙ ليس لديك صور في حسابك'..'[\n¦• 𝚄??𝙴𝚁 ↝ '..username..'\n¦• 𝙼𝚂𝙶𝚂↝ '..Msguser..'\n¦• 𝙸𝙳↝  '..msg.sender_user_id_..'\n¦• 𝒄𝒉↝  @V_I_K_I_N_G_3\n')
 end 
 end
 end
