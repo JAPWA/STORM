@@ -17939,7 +17939,13 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessageText?ch
 end
 end,nil)   
 end
-
+if Text == 'zxcxz2'..data.sender_user_id_ then  
+local Text ="تم الغاء الأمر بنجاح"
+keyboard = {} 
+keyboard.inline_keyboard = {
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+end
 if Text == '/question1' then
 local Teext =[[
 ♤ من اول شخص قال سبحان ربي الاعلى
@@ -19361,15 +19367,6 @@ local Text =" تم الغاء الأمر بنجاح "
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°', url="t.me/eLmLoK0"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-end
-
-if Text == 'zxcxz2'..data.sender_user_id_ then  
-local Text ="تم الغاء الأمر بنجاح"
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌°',url='http://t.me/eLmLoK0'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
