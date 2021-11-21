@@ -12737,19 +12737,23 @@ end
 if text == "بوت" then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'الملوك') 
 local DRAGON_Msg = { 
-'اسمي '..Namebot..' يا روحي🌝♥',
-'اسمي  '..Namebot..' يا قمر 🌙🌹',
-'اسمي  '..Namebot..' يامزه 🌚🌹',
-'اسمي  '..Namebot..' يعم 🌝💜',
-'اسمي الكيوت '..Namebot..' 🌝🚶',
-'اسمي  '..Namebot..' ياحياتي🌚💜',
-'اسمي  '..Namebot..' يوتكه🌚💜',
+'عايز ايه مني🌚❤️',
+'زهقتني ياعم❤️🌚',
+'موجود يا قلبي💙🌝',
+,نعم ياقلبي🌝💙',
+'متصدعنيش ياعم🌝💙',
+'ايوا جاي💙🚶‍♂',
+'بحب امك🚶‍♂💙',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
 local texxtt = ''..Namebot..''
+local tessttmos = " اسم البوت ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 keyboard = {} 
 keyboard.inline_keyboard = {
+{
+{text = tessttmos, url = "http://t.me/"..sudos.UserName},
+},
 {
 {text = texxtt, url="http://t.me/"..sudos.UserName},
 },
@@ -16297,7 +16301,7 @@ Msᴀɢ ~ #msgs
 ▽ ¦❀• 𝗖𝗛 - ♤@eLmLoK0♤ ♤
 ]],
 [[
-• ❉ 𝑼𝑬𝑺 : #username ‌‌‏.
+• ❉ ??𝑬𝑺 : #username ‌‌‏.
 • ❉ 𝑺𝑻𝑨 : #stast .
 • ❉ 𝑰𝑫 : #id  ‌‌‏.
 • ❉  𝑴𝑺𝑮 : #msgs 𓆊.
