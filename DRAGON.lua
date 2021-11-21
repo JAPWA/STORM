@@ -3373,8 +3373,10 @@ local Text = [[
              𓆩[𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌](http://t.me/eLmLoK0)𓆪
 ┗━-━━━━━━-━━━━━━━-━┛
 ]]
+local tessttmos = " اسم البوت ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 keyboard = {} 
 keyboard.inline_keyboard = {
+{{text = tessttmos, url = "http://t.me/"..sudos.UserName}},
 {{text = '𝒎𝒚 𝒅𝒆𝒗 ', callback_data="/units"},{text = '𝒎𝒚 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 ', callback_data="/theytry"}},  
 {{text = '°𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒍𝒎𝒍𝒐𝒌‌‌‌° ',url="https://t.me/eLmLoK0"}}, 
 {{text = 'أضفہ ألبہوتہ أليہ مہجہمہوعہتہكہ°' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
@@ -12701,23 +12703,23 @@ end
 if text == ""..(database:get(bot_id..'Name:Bot') or 'الملوك').."" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'الملوك')
 local DRAGON_Msg = {
-' نعم يروحي♥️',
-' بتشقط وجي ويت 🤪',
-' ايوا جاي 🙈',
-' يعم هتسحر واجي 😾',
-' طب متصلي على النبي كدا 💜',
-' تع اشرب شاي 💙',
-' دوس على الخوخه 🍑',
-' متيجي 😉',
-' ياض خش نام 😂',
-' انا '..Namebot..' احسن البوتات 🤩',
-' نعم 🖤'
+'عايز ايه مني🌚❤️',
+'زهقتني ياعم❤️🌚',
+'موجود يا قلبي💙🌝',
+'نعم يا قلبي🌝💙',
+'متصدعنيش ياعم🌝💙',
+'ايوا جاي💙🚶‍♂',
+'بحب امك🚶‍♂💙',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
 local texxtt = ''..Namebot..''
+local tessttmos = " اسم البوت ⇐ "..(database:get(bot_id..'Name:Bot') or "..Namebot..") 
 keyboard = {} 
 keyboard.inline_keyboard = {
+{
+{text = tessttmos, url = "http://t.me/"..sudos.UserName},
+},
 {
 {text = texxtt, url="http://t.me/"..sudos.UserName},
 },
